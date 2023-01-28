@@ -13,3 +13,6 @@ options.txt
 usercache.json
 usernamecache.json
 minecraftinstance.json
+
+# dev configs
+config/jei/jei-client.ini
