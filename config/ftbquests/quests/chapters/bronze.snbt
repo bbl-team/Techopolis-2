@@ -1,0 +1,709 @@
+{
+	id: "3F6F97E9CBAE07CC"
+	group: ""
+	order_index: 1
+	filename: "bronze"
+	title: "Basic Technium"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: [
+				"5B64B3B72A3B2846"
+				"619596D72ACC9321"
+			]
+			id: "036E712A542EA7AD"
+			tasks: [{
+				id: "49AC0D45D33BFC07"
+				type: "item"
+				item: "thermal:bronze_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["036E712A542EA7AD"]
+			id: "103F5798F61311C4"
+			tasks: [{
+				id: "42476DF1C5FF0E06"
+				type: "item"
+				item: "thermal:bronze_block"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			dependencies: [
+				"103F5798F61311C4"
+				"575CBD25BFA74059"
+			]
+			id: "0A8781A8F8C61547"
+			tasks: [{
+				id: "305F62495DAC6078"
+				type: "item"
+				item: "techopolis:basic_technium_ingot"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			dependencies: ["6F3AFD2DE9AA90FF"]
+			id: "575CBD25BFA74059"
+			tasks: [{
+				id: "3A6190CC978E8B38"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			description: ["27 blocks placed in a 3x3x3 will create a coke oven"]
+			dependencies: [
+				"585611BCEA421159"
+				"678B96B48205D70F"
+				"6FAFDAF962E37B1A"
+				"2CE7A4BB5688F744"
+			]
+			id: "033F37D32E9AFA4B"
+			tasks: [{
+				id: "6D3A74480ACC375A"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			dependencies: ["033F37D32E9AFA4B"]
+			id: "526A426B1077F895"
+			tasks: [{
+				id: "0EB7EF3FE06153C3"
+				type: "item"
+				item: "immersiveengineering:coal_coke"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			dependencies: ["033F37D32E9AFA4B"]
+			id: "6F3AFD2DE9AA90FF"
+			tasks: [{
+				id: "1537B8E8D656C155"
+				type: "item"
+				item: {
+					id: "ceramicbucket:ceramic_bucket"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "immersiveengineering:creosote"
+							Amount: 1000
+						}
+					}
+				}
+				match_nbt: true
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["036E712A542EA7AD"]
+			id: "2CE7A4BB5688F744"
+			tasks: [{
+				id: "6D5C99F7452B5820"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			dependencies: ["4AE876E9D7B9C821"]
+			id: "0FB7CA5CD479C47F"
+			tasks: [{
+				id: "4743A4A674C7F4C5"
+				type: "item"
+				item: "minecraft:lapis_block"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			description: ["Allows the mining of new ores"]
+			dependencies: ["0FB7CA5CD479C47F"]
+			id: "513A8CFE17CD1682"
+			tasks: [{
+				id: "10AFFDCEA83E9188"
+				type: "item"
+				item: "miners:miner_tier_3"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			description: ["Used to as the support frame for tier 3 miners"]
+			dependencies: ["513A8CFE17CD1682"]
+			id: "79797A838F69D864"
+			tasks: [{
+				id: "5F48F29F90707574"
+				type: "item"
+				item: "miners:lapis_support_frame"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["79797A838F69D864"]
+			id: "47B0E076825A61B7"
+			tasks: [{
+				id: "6F76A48228BB71CE"
+				type: "item"
+				title: "Any #forge:ores/copper"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/copper"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["79797A838F69D864"]
+			id: "2FC1E7DD3C363B42"
+			tasks: [{
+				id: "744F280980C94BC7"
+				type: "item"
+				title: "Any #forge:ores/tin"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/tin"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["2FC1E7DD3C363B42"]
+			id: "5B64B3B72A3B2846"
+			tasks: [{
+				id: "4D9484BCAEA34360"
+				type: "item"
+				item: "geolosys:tin_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			dependencies: ["47B0E076825A61B7"]
+			id: "619596D72ACC9321"
+			tasks: [{
+				id: "695A38B17701F5A9"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			id: "585611BCEA421159"
+			tasks: [{
+				id: "04F8A982A6D79EE9"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			id: "678B96B48205D70F"
+			tasks: [{
+				id: "020A56101467433E"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			id: "6FAFDAF962E37B1A"
+			tasks: [{
+				id: "08E7221F50679DF6"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			description: ["A basic bucket"]
+			dependencies: ["6FAFDAF962E37B1A"]
+			id: "79D7332923C6EAF5"
+			tasks: [{
+				id: "75ADDE3725CC165C"
+				type: "item"
+				item: "ceramicbucket:unfired_clay_bucket"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.0d
+			dependencies: [
+				"585611BCEA421159"
+				"678B96B48205D70F"
+				"6FAFDAF962E37B1A"
+			]
+			id: "07405FEFE4522747"
+			tasks: [{
+				id: "014CE1E147858E15"
+				type: "item"
+				item: "techopolis:grout"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.0d
+			description: ["This can be used to make sand, gravel and clay"]
+			dependencies: ["07405FEFE4522747"]
+			id: "6E2D7E410A47066C"
+			tasks: [{
+				id: "1212FD51D9BA667E"
+				type: "item"
+				item: "techopolis:grout_dust"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.0d
+			description: ["Does go well with hot fluids"]
+			dependencies: ["79D7332923C6EAF5"]
+			id: "5E4AA8EB45085DBB"
+			tasks: [{
+				id: "7366DFC30257AFD7"
+				type: "item"
+				item: "ceramicbucket:ceramic_bucket"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -11.0d
+			description: ["Each additional jumbo furnace placed into the bottom right slot of the jumbo furnace will allow the furnace to smelt an additional item"]
+			dependencies: ["17D6503944931ACE"]
+			id: "6693C3403AE61716"
+			tasks: [{
+				id: "6F71DE77D63B88D8"
+				type: "item"
+				item: "jumbofurnace:jumbo_furnace"
+			}]
+		}
+		{
+			title: "The Big One"
+			x: -4.5d
+			y: -11.0d
+			description: ["Placing a 3x3x3 of furnaces will make a jumbo furnace"]
+			dependencies: ["71B4B8123D5C4126"]
+			id: "17D6503944931ACE"
+			tasks: [{
+				id: "22AF69BBB50D765E"
+				type: "item"
+				item: "minecraft:furnace"
+				count: 27L
+			}]
+		}
+		{
+			x: -4.5d
+			y: -10.0d
+			description: [
+				"Made inside the jumbo furnace."
+				"Can be used to cap miners to increase speed"
+			]
+			dependencies: ["17D6503944931ACE"]
+			id: "2E9117DE6E2F7B1F"
+			tasks: [{
+				id: "64E5B6215487E3BC"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -9.0d
+			description: ["Made inside the jumbo furnace"]
+			dependencies: ["2E9117DE6E2F7B1F"]
+			id: "339C3067A93E65E7"
+			tasks: [{
+				id: "2AD294A9F542CB1A"
+				type: "item"
+				item: "minecraft:smooth_stone"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -8.0d
+			description: ["Allows the mining of new ores and blocks. Also works for stone and colored stone"]
+			dependencies: ["339C3067A93E65E7"]
+			id: "46289E8C580B19D0"
+			tasks: [{
+				id: "490F41270C2DE108"
+				type: "item"
+				item: "miners:miner_tier_2"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -7.0d
+			description: ["Used to as the support frame for tier 2 miners"]
+			dependencies: ["46289E8C580B19D0"]
+			id: "0A97CA0CF1C0F04E"
+			tasks: [{
+				id: "5F56A0C31E11684A"
+				type: "item"
+				item: "miners:stone_support_frame"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.0d
+			description: [
+				"Requires a ore collector tier 1 to collect."
+				"Can be created in a Tier 2 Miner"
+			]
+			dependencies: ["0A97CA0CF1C0F04E"]
+			id: "6C635E5180D061E5"
+			tasks: [{
+				id: "6CE8EC516027BBD2"
+				type: "item"
+				title: "Any #forge:ores/lapis"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/lapis"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.0d
+			description: [
+				"Requires a ore collector tier 1 to collect."
+				"Can be created in a Tier 2 Miner"
+			]
+			dependencies: ["0A97CA0CF1C0F04E"]
+			id: "4DA74E187693DFCC"
+			tasks: [{
+				id: "3F525EC5194D1D70"
+				type: "item"
+				title: "Any #forge:ores/coal"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/coal"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -5.0d
+			description: ["5 coal ore in a jumbo furnace will make coal"]
+			dependencies: ["4DA74E187693DFCC"]
+			id: "0A782ED04D2AAF58"
+			tasks: [{
+				id: "025E89985D0B7D79"
+				type: "item"
+				item: "minecraft:coal"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.0d
+			description: ["5 lapis ore in a jumbo furnace will make lapis"]
+			dependencies: ["6C635E5180D061E5"]
+			id: "4AE876E9D7B9C821"
+			tasks: [{
+				id: "0BDB888D3F94C867"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.5d
+			description: ["Drops items off the conveyor below it"]
+			dependencies: ["1C3EE28FE8374131"]
+			id: "6E077A2CBC6EDA45"
+			tasks: [{
+				id: "7F4B8E5BD69A4584"
+				type: "item"
+				item: "immersiveengineering:conveyor_dropper"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -3.5d
+			description: ["Moving those items around"]
+			dependencies: [
+				"4AE876E9D7B9C821"
+				"0A782ED04D2AAF58"
+			]
+			id: "1C3EE28FE8374131"
+			tasks: [{
+				id: "410FC55831326B6B"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			description: ["Used to sort items onto different conveyors"]
+			dependencies: ["1C3EE28FE8374131"]
+			id: "109F326C178660FD"
+			tasks: [{
+				id: "435E9A4CCA66AF2C"
+				type: "item"
+				item: "immersiveengineering:sorter"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			description: ["Splits the conveyor into 2 different directions"]
+			dependencies: ["1C3EE28FE8374131"]
+			id: "36C0EB2C31B0B726"
+			tasks: [{
+				id: "1BA39C68BEC46086"
+				type: "item"
+				item: "immersiveengineering:conveyor_splitter"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.5d
+			description: ["Allows for verticle conveyors"]
+			dependencies: ["1C3EE28FE8374131"]
+			id: "7C830FEB42B45008"
+			tasks: [{
+				id: "3E7B477E3F2CD1E2"
+				type: "item"
+				item: "immersiveengineering:conveyor_vertical"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			description: ["Auto crafts saved receives when it recives a redstone pulse"]
+			dependencies: ["4AE876E9D7B9C821"]
+			id: "588BB5E2078A325A"
+			tasks: [{
+				id: "040DD43C981EF79C"
+				type: "item"
+				item: "craftingautomat:autocrafter"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			description: ["Produces a redstone pulse every 2 seconds"]
+			dependencies: ["588BB5E2078A325A"]
+			id: "4645B206F5734C66"
+			tasks: [{
+				id: "525DDE490C2FEEDE"
+				type: "item"
+				item: "opolisutilities:redstone_clock"
+			}]
+		}
+		{
+			title: "Punch Tree Get Wood"
+			x: -5.5d
+			y: -17.0d
+			description: ["As all good modpacks start"]
+			id: "28F99B9C211991A4"
+			tasks: [{
+				id: "32A605DD76C98FE6"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -16.0d
+			description: ["Logs make planks"]
+			dependencies: ["28F99B9C211991A4"]
+			id: "630F5DC9B4C60522"
+			tasks: [{
+				id: "58CC3C15D4501A6A"
+				type: "item"
+				title: "Any #minecraft:planks"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -15.0d
+			description: ["Just a crafting table"]
+			dependencies: ["630F5DC9B4C60522"]
+			id: "2BC70BF398BCD219"
+			tasks: [{
+				id: "525578E3AFE743A4"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -15.0d
+			description: ["Store your items"]
+			dependencies: ["2BC70BF398BCD219"]
+			id: "4E07541FE3EB378E"
+			tasks: [{
+				id: "4DA2540D0CBEC511"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -14.0d
+			dependencies: ["2BC70BF398BCD219"]
+			id: "01979ABBD28C7205"
+			tasks: [{
+				id: "153FDE613E7898AA"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -12.0d
+			description: ["Better than wood"]
+			dependencies: ["02D13FBDA8D3D5A8"]
+			id: "63F50BA9A109C2A8"
+			tasks: [{
+				id: "347C1C4D23BED382"
+				type: "item"
+				item: {
+					id: "minecraft:stone_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -13.0d
+			description: ["Stone broken will get you cobblestone"]
+			dependencies: ["01979ABBD28C7205"]
+			id: "02D13FBDA8D3D5A8"
+			tasks: [{
+				id: "7E1653F527C373D5"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -11.0d
+			description: ["Your first miner"]
+			dependencies: ["63F50BA9A109C2A8"]
+			id: "71B4B8123D5C4126"
+			tasks: [{
+				id: "452A199FF2B5A0A1"
+				type: "item"
+				item: "miners:miner_tier_1"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -10.0d
+			description: ["Used to as the support frame for tier 1 miners"]
+			dependencies: ["71B4B8123D5C4126"]
+			id: "0AAF658A5A312807"
+			tasks: [{
+				id: "733CA50AFC8C634B"
+				type: "item"
+				item: "miners:wooden_support_frame"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -9.0d
+			description: ["Can be used to cap miners to increase speed"]
+			dependencies: ["0AAF658A5A312807"]
+			id: "6A39D27317A0ACC3"
+			tasks: [{
+				id: "3DF9C2AAC5EA45DA"
+				type: "item"
+				title: "Any #minecraft:wooden_fences"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:wooden_fences"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -15.0d
+			description: ["Basic smelting"]
+			dependencies: ["2BC70BF398BCD219"]
+			id: "600C4EBE7AA4E881"
+			tasks: [{
+				id: "70123FAE791D91FF"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -7.0d
+			dependencies: ["46289E8C580B19D0"]
+			id: "46C22FEDA01C4346"
+			tasks: [{
+				id: "505795D7EF7538BF"
+				type: "item"
+				item: "techopolis:ore_remover_tier_1"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

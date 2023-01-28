@@ -1,0 +1,14 @@
+# root folders
+Saves/
+downloads/
+journeymap/
+local/
+logs/
+
+# root files
+.curseclient
+patchouli_data.json
+rhino.local.properties
+options.txt
+usercache.json
+usernamecache.json
