@@ -4,6 +4,7 @@ downloads/
 journeymap/
 local/
 logs/
+backups/
 
 # root files
 .curseclient
@@ -16,3 +17,6 @@ minecraftinstance.json
 
 # dev configs
 config/jei/jei-client.ini
+backups/backups.json
+config/sidebar_buttons.json
+config/ftbbackups2.json
