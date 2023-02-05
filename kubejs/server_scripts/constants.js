@@ -2,6 +2,10 @@
 
 //Misc Items
 
+//Techopolis
+
+const basic_technium = 'techopolis:basic_technium_ingot'
+
 const hopper = 'minecraft:hopper'
 const wooden_hopper = 'woodenhopper:wooden_hopper'
 
@@ -23,6 +27,7 @@ const flint = 'minecraft:flint'
 
 const glass = '#forge:glass'
 const stone = '#forge:stone'
+const deepslate = 'minecraft:deepslate'
 const gravel = 'minecraft:gravel'
 const cobblestone = '#forge:cobblestone'
 const sand = '#forge:sand'

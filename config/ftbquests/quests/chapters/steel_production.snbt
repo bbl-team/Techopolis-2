@@ -1,0 +1,11 @@
+{
+	id: "325201F6059F25FF"
+	group: "2E909DF337DB0A54"
+	order_index: 2
+	filename: "steel_production"
+	title: "Big Machines"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

@@ -1,0 +1,75 @@
+{
+	id: "78C8FD010561E9D6"
+	group: "2E909DF337DB0A54"
+	order_index: 1
+	filename: "redstone"
+	title: "Redstone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -0.5d
+			description: ["Allows your prospectors pickaxe to collect redstone fragments"]
+			dependencies: ["2F6370C05C7CE2D4"]
+			id: "16E53B43D43DF3FA"
+			tasks: [{
+				id: "534C0173E6248A6A"
+				type: "item"
+				item: "caveopolis:redstone_fragment"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect redstone fragments"]
+			dependencies: ["1A9C1C8827F5E753"]
+			id: "2F6370C05C7CE2D4"
+			tasks: [{
+				id: "0A17DEFEB125AF7C"
+				type: "item"
+				item: "techopolis:reaserch_pappers_redstone"
+			}]
+			rewards: [{
+				id: "35DA35A1708E9C78"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p redstone"
+				player_command: true
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			description: ["Can be made in a tier 5 miner. After crafting 36 of the ore"]
+			dependencies: ["16E53B43D43DF3FA"]
+			id: "4ADE60FEF4165B56"
+			tasks: [{
+				id: "5D1CA7565EEFDBCE"
+				type: "item"
+				title: "Any #forge:ores/redstone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/redstone"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			description: ["3 redstone ore in a jumbo furnace will make a redstone dust"]
+			dependencies: ["4ADE60FEF4165B56"]
+			id: "32953767237ABD2F"
+			tasks: [{
+				id: "7C1E17FFC95E56EC"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

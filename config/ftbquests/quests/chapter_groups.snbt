@@ -1,3 +1,7 @@
 {
-	chapter_groups: [{ id: "063215D6A3060400", title: "Starting Up" }]
+	chapter_groups: [
+		{ id: "0C8FA6EE4828F266", title: "Research Pappers" }
+		{ id: "063215D6A3060400", title: "Starting Up" }
+		{ id: "2E909DF337DB0A54", title: "Advancing" }
+	]
 }

@@ -1,0 +1,11 @@
+{
+	id: "14C0C41B4A669963"
+	group: "2E909DF337DB0A54"
+	order_index: 3
+	filename: "little_logistics"
+	title: "Little Logistics"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

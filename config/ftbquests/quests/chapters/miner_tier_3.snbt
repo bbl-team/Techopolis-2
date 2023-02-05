@@ -1,0 +1,183 @@
+{
+	id: "7CF8652E435689F7"
+	group: "063215D6A3060400"
+	order_index: 2
+	filename: "miner_tier_3"
+	title: "Copper \\& Tin"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -1.0d
+			description: ["Can be used to cap miners to increase speed"]
+			dependencies: ["4AE876E9D7B9C821"]
+			id: "0FB7CA5CD479C47F"
+			tasks: [{
+				id: "4743A4A674C7F4C5"
+				type: "item"
+				item: "minecraft:lapis_block"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			description: ["Allows the mining of new ores"]
+			dependencies: ["0FB7CA5CD479C47F"]
+			id: "513A8CFE17CD1682"
+			tasks: [{
+				id: "10AFFDCEA83E9188"
+				type: "item"
+				item: "miners:miner_tier_3"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			description: ["Used as the support frame for tier 3 miners"]
+			dependencies: ["513A8CFE17CD1682"]
+			id: "79797A838F69D864"
+			tasks: [{
+				id: "5F48F29F90707574"
+				type: "item"
+				item: "miners:lapis_support_frame"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: ["Can be made in a tier 3 miner. After crafting 36 of the ore"]
+			dependencies: ["2C204F59B10B9D89"]
+			id: "47B0E076825A61B7"
+			tasks: [{
+				id: "6F76A48228BB71CE"
+				type: "item"
+				title: "Any #forge:ores/copper"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/copper"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: ["Can be made in a tier 3 miner. After crafting 36 of the ore"]
+			dependencies: ["4E56EAAE3CB2098D"]
+			id: "2FC1E7DD3C363B42"
+			tasks: [{
+				id: "744F280980C94BC7"
+				type: "item"
+				title: "Any #forge:ores/tin"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/tin"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			description: [""]
+			id: "38C73DCF420B6E5B"
+			tasks: [{
+				id: "1A5DCFDFB499025B"
+				type: "item"
+				item: "minecraft:coal_block"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect copper and tin fragments"]
+			dependencies: [
+				"38C73DCF420B6E5B"
+				"0FB7CA5CD479C47F"
+			]
+			id: "7FDF4DCFDCF8820F"
+			tasks: [{
+				id: "74C3CAF8ADE26783"
+				type: "item"
+				item: "techopolis:reaserch_pappers_copper_and_tin"
+			}]
+			rewards: [{
+				id: "19C9D33192111F2D"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p copper_and_tin"
+				player_command: true
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["7FDF4DCFDCF8820F"]
+			id: "2C204F59B10B9D89"
+			tasks: [{
+				id: "58581E8FAF9C2DDF"
+				type: "item"
+				item: "caveopolis:copper_fragment"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["7FDF4DCFDCF8820F"]
+			id: "4E56EAAE3CB2098D"
+			tasks: [{
+				id: "1F2F57671ABC086B"
+				type: "item"
+				item: "caveopolis:tin_fragment"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			description: ["5 copper ore in a jumbo furnace will make a copper ingot"]
+			dependencies: ["47B0E076825A61B7"]
+			id: "619596D72ACC9321"
+			tasks: [{
+				id: "695A38B17701F5A9"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			description: ["5 tin ore in a jumbo furnace will make a tin ingot"]
+			dependencies: ["2FC1E7DD3C363B42"]
+			id: "5B64B3B72A3B2846"
+			tasks: [{
+				id: "2F6416E3D7176BC2"
+				type: "item"
+				item: "alltheores:tin_ingot"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			description: ["An alloy of copper and tin"]
+			dependencies: [
+				"5B64B3B72A3B2846"
+				"619596D72ACC9321"
+			]
+			id: "036E712A542EA7AD"
+			tasks: [{
+				id: "44C18466D90FEE61"
+				type: "item"
+				item: "alltheores:bronze_ingot"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

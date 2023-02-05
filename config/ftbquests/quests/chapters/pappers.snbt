@@ -1,0 +1,28 @@
+{
+	id: "2A83842051347040"
+	group: "0C8FA6EE4828F266"
+	order_index: 0
+	filename: "pappers"
+	title: "Pappers"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		description: ["Unlocks storage drawers"]
+		id: "58F677B9EDA60121"
+		tasks: [{
+			id: "07134ADB5B8523E4"
+			type: "item"
+			item: "techopolis:reaserch_pappers_storage_drawers"
+		}]
+		rewards: [{
+			id: "02C18716D13C3E5F"
+			type: "command"
+			auto: "enabled"
+			command: "/gamestage add @p storage_drawers"
+			player_command: true
+		}]
+	}]
+	quest_links: [ ]
+}
