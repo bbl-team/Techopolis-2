@@ -1,0 +1,190 @@
+{
+	id: "13CAC2CF257FA1B8"
+	group: "2E909DF337DB0A54"
+	order_index: 0
+	filename: "iron_and_aluminum"
+	title: "Iron And Aluminum"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["54E3D524E91021A3"]
+			id: "2EFDB6F0CBB4B566"
+			tasks: [{
+				id: "765FF41CD5B05778"
+				type: "item"
+				item: "techopolis:aluminum_fragment"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["54E3D524E91021A3"]
+			id: "2971694017334AB9"
+			tasks: [{
+				id: "2B5DC33EF26C8FC4"
+				type: "item"
+				item: "caveopolis:iron_fragment"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			description: ["Allows your prospectors pickaxe to collect iron and aluminum fragments"]
+			id: "54E3D524E91021A3"
+			tasks: [{
+				id: "3179C138FA515179"
+				type: "item"
+				item: "techopolis:reaserch_pappers_iron_and_aluminum"
+			}]
+			rewards: [{
+				id: "262AE7F307E3F386"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p iron_and_aluminum"
+				player_command: true
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			description: ["Can be made in a tier 4 miner. After crafting 36 of the ore"]
+			dependencies: ["2971694017334AB9"]
+			id: "47519063E00FCB19"
+			tasks: [{
+				id: "30506F7FA36D50DD"
+				type: "item"
+				title: "Any #forge:ores/iron"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/iron"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: ["Can be made in a tier 4 miner. After crafting 36 of the ore"]
+			dependencies: ["2EFDB6F0CBB4B566"]
+			id: "526EF4B8CE492AE0"
+			tasks: [{
+				id: "5603F2CDB739B67B"
+				type: "item"
+				title: "Any #forge:ores/aluminum"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/aluminum"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			description: ["5 iron ore in a jumbo furnace will make a iron ingot"]
+			dependencies: ["47519063E00FCB19"]
+			id: "06938867F7C87DDA"
+			tasks: [{
+				id: "7C49BE2284DA7D55"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["5 aluminum ore in a jumbo furnace will make a aluminum ingot"]
+			dependencies: ["526EF4B8CE492AE0"]
+			id: "29C4025B689A8430"
+			tasks: [{
+				id: "533AC42D6764CC8B"
+				type: "item"
+				item: "alltheores:aluminum_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			description: ["Allows the mining of new ores"]
+			dependencies: ["06938867F7C87DDA"]
+			id: "3A80FB2F4FC01FD6"
+			tasks: [{
+				id: "1669485DE92710C0"
+				type: "item"
+				item: "miners:miner_tier_5"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			description: ["Used as the support frame for tier 5 miners"]
+			dependencies: ["3A80FB2F4FC01FD6"]
+			id: "67FBB0440F23A5AB"
+			tasks: [{
+				id: "7EEA3B505FAD1E7C"
+				type: "item"
+				item: "miners:iron_support_frame"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			dependencies: ["42562083BAEF7B85"]
+			id: "1A9C1C8827F5E753"
+			tasks: [{
+				id: "30C40228F3586774"
+				type: "item"
+				item: "alltheores:steel_block"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			description: ["Coal coke and iron can be used to create steel"]
+			dependencies: ["25F584D71B0454FA"]
+			id: "42562083BAEF7B85"
+			tasks: [{
+				id: "313366FB70B93223"
+				type: "item"
+				item: "alltheores:steel_ingot"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			description: ["27 blocks placed in a 3x3x3 will create a blast furnace"]
+			dependencies: [
+				"29C4025B689A8430"
+				"06938867F7C87DDA"
+			]
+			id: "25F584D71B0454FA"
+			tasks: [{
+				id: "313F05437BABC257"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: ["Useful for moving items and fluids across distance"]
+			dependencies: ["06938867F7C87DDA"]
+			id: "412BEB5F65D0F707"
+			tasks: [{
+				id: "13E26F18A87C5540"
+				type: "item"
+				item: "minecraft:rail"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

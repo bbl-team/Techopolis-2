@@ -1,0 +1,259 @@
+{
+	id: "69CD53B4A37BF2FA"
+	group: "063215D6A3060400"
+	order_index: 0
+	filename: "basic_tech"
+	title: "Basic Tech"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Punch Tree Get Wood"
+			x: -1.0d
+			y: -4.5d
+			description: ["As all good modpacks start"]
+			id: "28F99B9C211991A4"
+			tasks: [{
+				id: "32A605DD76C98FE6"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			description: ["Logs can be used to make planks"]
+			dependencies: ["28F99B9C211991A4"]
+			id: "630F5DC9B4C60522"
+			tasks: [{
+				id: "58CC3C15D4501A6A"
+				type: "item"
+				title: "Any #minecraft:planks"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			description: ["Just a crafting table stores inventory "]
+			dependencies: ["630F5DC9B4C60522"]
+			id: "2BC70BF398BCD219"
+			tasks: [{
+				id: "525578E3AFE743A4"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			description: ["Store your items"]
+			dependencies: ["2BC70BF398BCD219"]
+			id: "4E07541FE3EB378E"
+			tasks: [{
+				id: "4DA2540D0CBEC511"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			description: ["A basic wooden tool"]
+			dependencies: ["2BC70BF398BCD219"]
+			id: "01979ABBD28C7205"
+			tasks: [{
+				id: "153FDE613E7898AA"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			description: ["Stone broken will get you cobblestone"]
+			dependencies: ["01979ABBD28C7205"]
+			id: "02D13FBDA8D3D5A8"
+			tasks: [{
+				id: "7E1653F527C373D5"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			description: ["Better than wood"]
+			dependencies: ["02D13FBDA8D3D5A8"]
+			id: "63F50BA9A109C2A8"
+			tasks: [{
+				id: "347C1C4D23BED382"
+				type: "item"
+				item: {
+					id: "minecraft:stone_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			description: ["Cook your stuff"]
+			dependencies: ["02D13FBDA8D3D5A8"]
+			id: "600C4EBE7AA4E881"
+			tasks: [{
+				id: "70123FAE791D91FF"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			shape: "square"
+			description: ["Allows the collection of coal and lapis fragments from colored stone in the world"]
+			dependencies: [
+				"63F50BA9A109C2A8"
+				"600C4EBE7AA4E881"
+			]
+			id: "387F6E6102BAC495"
+			tasks: [{
+				id: "539B2C55B6422A28"
+				type: "item"
+				item: {
+					id: "techopolis:prospectors_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "44C373BBA095C6F9"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p coal_and_lapis"
+				player_command: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["Your first miner. Use the miners guide book for more information!"]
+			dependencies: ["01979ABBD28C7205"]
+			id: "71B4B8123D5C4126"
+			tasks: [{
+				id: "452A199FF2B5A0A1"
+				type: "item"
+				item: "miners:miner_tier_1"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			description: ["Can be used to cap miners to increase speed"]
+			dependencies: ["0AAF658A5A312807"]
+			id: "6A39D27317A0ACC3"
+			tasks: [{
+				id: "3DF9C2AAC5EA45DA"
+				type: "item"
+				title: "Any #minecraft:wooden_fences"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:wooden_fences"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			description: ["Used as the support frame for tier 1 miners"]
+			dependencies: ["71B4B8123D5C4126"]
+			id: "0AAF658A5A312807"
+			tasks: [{
+				id: "733CA50AFC8C634B"
+				type: "item"
+				item: "miners:wooden_support_frame"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			description: ["Made inside the jumbo furnace"]
+			dependencies: ["2E9117DE6E2F7B1F"]
+			id: "339C3067A93E65E7"
+			tasks: [{
+				id: "2AD294A9F542CB1A"
+				type: "item"
+				item: "minecraft:smooth_stone"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			description: [
+				"Made inside the jumbo furnace."
+				"Can be used to cap miners to increase speed"
+			]
+			dependencies: ["17D6503944931ACE"]
+			id: "2E9117DE6E2F7B1F"
+			tasks: [{
+				id: "64E5B6215487E3BC"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			title: "The Big One"
+			x: -2.5d
+			y: 0.5d
+			description: ["Placing a 3x3x3 of furnaces will make a jumbo furnace"]
+			dependencies: ["600C4EBE7AA4E881"]
+			id: "17D6503944931ACE"
+			tasks: [{
+				id: "22AF69BBB50D765E"
+				type: "item"
+				item: "minecraft:furnace"
+				count: 27L
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			description: ["Each additional jumbo furnace placed into the bottom right slot of the jumbo furnace will allow the furnace to smelt an additional item"]
+			dependencies: ["17D6503944931ACE"]
+			id: "6693C3403AE61716"
+			tasks: [{
+				id: "6F71DE77D63B88D8"
+				type: "item"
+				item: "jumbofurnace:jumbo_furnace"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
