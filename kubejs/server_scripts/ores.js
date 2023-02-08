@@ -35,6 +35,21 @@ ServerEvents.recipes(event => {
 
 	event.shaped('1x minecraft:redstone_ore', [' F ','FSF',' F '], {S:stone, F: 'caveopolis:redstone_fragment'}).id('techopolis:redstone_ore')
 	event.shaped('1x minecraft:deepslate_redstone_ore', [' F ','FSF',' F '], {S:deepslate, F: 'caveopolis:redstone_fragment'}).id('techopolis:deepslate_redstone_ore')
+
+	event.shaped('1x alltheores:nickel_ore', [' F ','FSF',' F '], {S:stone, F: 'caveopolis:nickel_fragment'}).id('techopolis:nickel_ore')
+	event.shaped('1x alltheores:deepslate_nickel_ore', [' F ','FSF',' F '], {S:deepslate, F: 'caveopolis:nickel_fragment'}).id('techopolis:deepslate_nickel_ore')
+
+	event.shaped('1x minecraft:gold_ore', [' F ','FSF',' F '], {S:stone, F: 'caveopolis:gold_fragment'}).id('techopolis:gold_ore')
+	event.shaped('1x minecraft:deepslate_gold_ore', [' F ','FSF',' F '], {S:deepslate, F: 'caveopolis:gold_fragment'}).id('techopolis:deepslate_gold_ore')
+
+	event.shaped('1x alltheores:silver_ore', [' F ','FSF',' F '], {S:stone, F: 'caveopolis:silver_fragment'}).id('techopolis:silver_ore')
+	event.shaped('1x alltheores:deepslate_silver_ore', [' F ','FSF',' F '], {S:deepslate, F: 'caveopolis:silver_fragment'}).id('techopolis:deepslate_silver_ore')
+
+	event.shaped('1x alltheores:lead_ore', [' F ','FSF',' F '], {S:stone, F: 'caveopolis:lead_fragment'}).id('techopolis:lead_ore')
+	event.shaped('1x alltheores:deepslate_lead_ore', [' F ','FSF',' F '], {S:deepslate, F: 'caveopolis:lead_fragment'}).id('techopolis:deepslate_lead_ore')
+
+	event.shaped('1x techopolis:crystal_ore', [' F ','FSF',' F '], {S:stone, F: 'techopolis:crystal_fragment'}).id('techopolis:crystal_ore')
+//	event.shaped('1x alltheores:deepslate_crystal_ore', [' F ','FSF',' F '], {S:deepslate, F: 'caveopolis:crystal_fragment'}).id('techopolis:deepslate_crystal_ore')
 	
     //Caveopolis removed fragments to ores
 
@@ -52,6 +67,13 @@ ServerEvents.recipes(event => {
     event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/aluminum", count: 5}], result:{item: "alltheores:aluminum_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_aluminum_ingot')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/iron", count: 5}], result:{item: "minecraft:iron_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_iron_ingot')
 	
-    event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/redstone", count: 3}], result:{item: "minecraft:redstone"},experience: 0.1}).id('techopolis:jumbo_furnace_iron_ingot')
+    event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/redstone", count: 3}], result:{item: "minecraft:redstone"},experience: 0.1}).id('techopolis:jumbo_furnace_redstone')
+    event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/nickel", count: 5}], result:{item: "alltheores:nickel_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_nickel_ingot')
+   
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/gold", count: 5}], result:{item: "minecraft:gold_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_gold_ingot')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/silver", count: 5}], result:{item: "alltheores:silver_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_silver_ingot')
+	
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/lead", count: 5}], result:{item: "alltheores:lead_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_lead_ingot')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/crystals", count: 5}], result:{item: "techopolis:crystalline"},experience: 0.1}).id('techopolis:jumbo_furnace_crystalline_ingot')
 
 })

@@ -30,7 +30,7 @@
 		{
 			x: -1.5d
 			y: -3.0d
-			description: ["This modpack uses game stage to block certain mods, items and blocks till they can be unlocked"]
+			description: ["This modpack uses game stage to block certain mods, items and blocks untill they can be unlocked"]
 			id: "22C7618730BFF6DD"
 			tasks: [{
 				id: "4382F3D9F6D28970"
@@ -56,7 +56,7 @@
 			x: -3.5d
 			y: -3.0d
 			description: [
-				"Reaserch pappers are craftable items that can be used to unlock new recipes, functions and mods."
+				"Reaserch pappers are craftable and purchacable items that can be used to unlock new recipes, functions and mods."
 				"These quests are marked as a square in the book"
 			]
 			id: "69C3852C09C7A71F"
@@ -74,6 +74,17 @@
 				id: "12C9532BB54EF759"
 				type: "checkmark"
 				title: "Technium is awesome"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			description: ["Hostile mobs will not spawn"]
+			id: "5764958CACD7B62B"
+			tasks: [{
+				id: "7C500B7A4981C356"
+				type: "checkmark"
+				title: "Hostile Mobs"
 			}]
 		}
 	]

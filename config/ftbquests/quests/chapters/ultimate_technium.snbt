@@ -1,0 +1,82 @@
+{
+	id: "4CBF466AA90A5502"
+	group: "5ACAB4963B8539AD"
+	order_index: 3
+	filename: "ultimate_technium"
+	title: "Ultimate Technium"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "28612D6665C7F943"
+			tasks: [{
+				id: "336C792F9E235A89"
+				type: "item"
+				item: "techopolis:ultimate_technium_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			id: "192796C73BBB3360"
+			tasks: [{
+				id: "1274508F26543938"
+				type: "item"
+				item: "techopolis:infused_crystalline"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			id: "0484AFE72B6A98BD"
+			tasks: [{
+				id: "2CEDCDAE4DF91086"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			id: "040F0A894E213F4C"
+			tasks: [{
+				id: "571E81E1B5809887"
+				type: "item"
+				item: "mekanism:ingot_refined_glowstone"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			id: "13F1BEBD35444BD6"
+			tasks: [{
+				id: "551031759CBF55C6"
+				type: "item"
+				item: "thermal:sulfur"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			id: "4162BF7CD9BAC8A4"
+			tasks: [{
+				id: "5C8E135FE069E367"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			id: "76164875DEDCC46C"
+			tasks: [{
+				id: "6303F4ED97F04697"
+				type: "item"
+				item: "powah:steel_energized"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

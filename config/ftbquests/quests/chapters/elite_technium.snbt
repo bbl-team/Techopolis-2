@@ -1,0 +1,43 @@
+{
+	id: "7A8CF1E50FF6B35E"
+	group: "7880DAE5186B4734"
+	order_index: 3
+	filename: "elite_technium"
+	title: "Elite Technium"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.5d
+			y: 1.5d
+			description: ["Ore can be turned into ingots"]
+			id: "63C221565DDC685C"
+			tasks: [{
+				id: "7A3B6316C6D0A92E"
+				type: "item"
+				item: "alltheores:lead_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			id: "6F4C751E6B28A610"
+			tasks: [{
+				id: "2EEC9DA9B099AA12"
+				type: "item"
+				item: "minecraft:amethyst_shard"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			id: "567397C43EE09E8E"
+			tasks: [{
+				id: "3690FE2B218D7F73"
+				type: "item"
+				item: "immersiveengineering:dust_wood"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

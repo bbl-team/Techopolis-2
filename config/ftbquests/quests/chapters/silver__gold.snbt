@@ -1,0 +1,156 @@
+{
+	id: "128C3063420C3FE2"
+	group: "7880DAE5186B4734"
+	order_index: 0
+	filename: "silver__gold"
+	title: "Silver \\& Gold"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -0.5d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect silver and gold fragments"]
+			id: "6FB83E8D157794FB"
+			tasks: [{
+				id: "60D7385B700E2F26"
+				type: "item"
+				item: "techopolis:reaserch_pappers_silver_and_gold"
+			}]
+			rewards: [{
+				id: "3709965488E9F01C"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p silver_and_gold"
+				player_command: true
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["6FB83E8D157794FB"]
+			id: "04BBCCB2B940824E"
+			tasks: [{
+				id: "13BD920A06BBDEE0"
+				type: "item"
+				item: "caveopolis:silver_fragment"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["6FB83E8D157794FB"]
+			id: "7A2D8FA0525482B6"
+			tasks: [{
+				id: "47F96646633A0A72"
+				type: "item"
+				item: "caveopolis:gold_fragment"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			description: ["Can be made in a tier 5 miner. After crafting 36 of the ore"]
+			dependencies: ["04BBCCB2B940824E"]
+			id: "69E1FC24D1F1C014"
+			tasks: [{
+				id: "2880D24263E20795"
+				type: "item"
+				title: "Any #forge:ores/silver"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/silver"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			description: ["Can be made in a tier 5 miner. After crafting 36 of the ore"]
+			dependencies: ["7A2D8FA0525482B6"]
+			id: "369F76D7A027AFC9"
+			tasks: [{
+				id: "5AECA90B406C69E1"
+				type: "item"
+				title: "Any #forge:ores/gold"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/gold"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			description: ["Ore can be turned into ingots"]
+			dependencies: ["69E1FC24D1F1C014"]
+			id: "112EB49C5C299473"
+			tasks: [{
+				id: "091ED0CBD96131C8"
+				type: "item"
+				item: "alltheores:silver_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			description: ["Ore can be turned into ingots"]
+			dependencies: ["369F76D7A027AFC9"]
+			id: "1536B900C06EFB4B"
+			tasks: [{
+				id: "36742411A8486D87"
+				type: "item"
+				item: "minecraft:gold_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			description: ["An alloy of silver and gold"]
+			dependencies: [
+				"1536B900C06EFB4B"
+				"112EB49C5C299473"
+			]
+			id: "6E55A0DF26DD01B3"
+			tasks: [{
+				id: "587AF8FE635A32C8"
+				type: "item"
+				item: "alltheores:electrum_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			description: ["Allows the mining of new ores"]
+			dependencies: ["1536B900C06EFB4B"]
+			id: "6A5CE5DEF7464094"
+			tasks: [{
+				id: "74635147BF2A1D2B"
+				type: "item"
+				item: "miners:miner_tier_6"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			description: ["Used as the support frame for tier 6 miners"]
+			dependencies: ["6A5CE5DEF7464094"]
+			id: "3408533719C7A45E"
+			tasks: [{
+				id: "49D09D56DFA2D548"
+				type: "item"
+				item: "miners:gold_support_frame"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

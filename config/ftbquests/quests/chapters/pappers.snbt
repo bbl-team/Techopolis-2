@@ -6,23 +6,135 @@
 	title: "Pappers"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 0.0d
-		y: 0.0d
-		description: ["Unlocks storage drawers"]
-		id: "58F677B9EDA60121"
-		tasks: [{
-			id: "07134ADB5B8523E4"
-			type: "item"
-			item: "techopolis:reaserch_pappers_storage_drawers"
-		}]
-		rewards: [{
-			id: "02C18716D13C3E5F"
-			type: "command"
-			auto: "enabled"
-			command: "/gamestage add @p storage_drawers"
-			player_command: true
-		}]
-	}]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Unlocks storage drawers"]
+			id: "58F677B9EDA60121"
+			tasks: [{
+				id: "07134ADB5B8523E4"
+				type: "item"
+				item: "techopolis:reaserch_pappers_storage_drawers"
+			}]
+			rewards: [{
+				id: "02C18716D13C3E5F"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p storage_drawers"
+				player_command: true
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			id: "7EA82C0EF86589AB"
+			tasks: [{
+				id: "70857FFFD0D4F9E7"
+				type: "checkmark"
+				title: "Oil Power"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			id: "6ACCA41715D1B217"
+			tasks: [{
+				id: "3E9C1DE09FA0550F"
+				type: "checkmark"
+				title: "Flux networks"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			id: "3D07A8E546E51E60"
+			tasks: [{
+				id: "64210BDF7BBA17A3"
+				type: "checkmark"
+				title: "Niter Ore"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			id: "1B44675677F6E176"
+			tasks: [{
+				id: "6E840543D04CE068"
+				type: "checkmark"
+				title: "ender ore"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			id: "350C86CA69BFFC4C"
+			tasks: [{
+				id: "3837109F29129865"
+				type: "checkmark"
+				title: "solar power"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			id: "27A0D000ECB353DF"
+			tasks: [{
+				id: "27E6CF678A616FCC"
+				type: "checkmark"
+				title: "ae2"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			id: "398DF72F51E0D650"
+			tasks: [{
+				id: "4F7272F35EC0075F"
+				type: "checkmark"
+				title: "rs"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			id: "792B83C50FC38F7F"
+			tasks: [{
+				id: "52545C5B01D1967B"
+				type: "checkmark"
+				title: "Laser Io"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			id: "75B3714D9E28440A"
+			tasks: [{
+				id: "75E9C0ABDEC780E4"
+				type: "checkmark"
+				title: "x net"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			id: "1040AC51E7A91728"
+			tasks: [{
+				id: "6161C10147CFFBAA"
+				type: "checkmark"
+				title: "Tempad"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 0.0d
+			id: "623D5353C4530F89"
+			tasks: [{
+				id: "3104F898ABCA3178"
+				type: "checkmark"
+				title: "compressium"
+			}]
+		}
+	]
 	quest_links: [ ]
 }
