@@ -7,7 +7,8 @@
 	"alltheores",
     "thermal",
     "immersiveengineering",
-    "mekanism"
+    "mekanism",
+	"refinedstorage"
   ],
   "stoneStrata": [
     "stone",
@@ -29,7 +30,8 @@
     "forge:rods/{material}",
     "forge:wires/{material}",
     "forge:storage_blocks/{material}",
-    "forge:storage_blocks/raw_{material}"
+    "forge:storage_blocks/raw_{material}",
+	"forge:silicon"
   ],
   "materials": [
     "aeternium",
@@ -78,7 +80,9 @@
     "tin",
     "tungsten",
     "uranium",
-    "zinc"
+    "zinc",
+	"silicon",
+	"wood"
   ],
   "priorityOverrides": {},
   "ignoredTags": [],

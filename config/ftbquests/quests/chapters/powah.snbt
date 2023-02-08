@@ -1,0 +1,189 @@
+{
+	id: "08AA2B963419A4EE"
+	group: "5ACAB4963B8539AD"
+	order_index: 2
+	filename: "powah"
+	title: "Powah"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			description: ["Ore can be turned into this"]
+			dependencies: ["7A99E678E1F87FEC"]
+			id: "3AA81C9F7490FF6D"
+			tasks: [{
+				id: "64F6E186564933BC"
+				type: "item"
+				item: "alltheores:uranium_ingot"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			description: ["Can be made in a tier 8 miner. After crafting 36 of the ore"]
+			dependencies: ["153B80CE9387D76F"]
+			id: "7A99E678E1F87FEC"
+			tasks: [{
+				id: "147C00341DBE50B6"
+				type: "item"
+				item: "alltheores:uranium_ore"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["20F6AF13651B0E56"]
+			id: "153B80CE9387D76F"
+			tasks: [{
+				id: "70EAF8DCFD830BBA"
+				type: "item"
+				item: "caveopolis:uranium_fragment"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect uranium fragments"]
+			id: "20F6AF13651B0E56"
+			tasks: [{
+				id: "6DF7782F24BB8661"
+				type: "item"
+				item: "techopolis:reaserch_pappers_uranium"
+			}]
+			rewards: [{
+				id: "474D2A9973D0B0A1"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p uranium"
+				player_command: true
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			shape: "square"
+			description: ["Unlocks powah, a high power mod"]
+			dependencies: ["3AA81C9F7490FF6D"]
+			id: "11BA3E2891DD14F2"
+			tasks: [{
+				id: "05C86F793B4DD72F"
+				type: "item"
+				item: "techopolis:reaserch_pappers_powah"
+			}]
+			rewards: [
+				{
+					id: "4191EC139B8C7FB3"
+					type: "command"
+					auto: "enabled"
+					command: "/gamestage add @p powah"
+					player_command: true
+				}
+				{
+					id: "64D795833ECA3A0F"
+					type: "item"
+					item: "powah:book"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 7.0d
+			description: ["Requires 36 block to make the reactor"]
+			dependencies: ["34BA1BD60E7218BD"]
+			id: "1EA6BDE3C2243A81"
+			tasks: [{
+				id: "07AFBC783A269056"
+				type: "item"
+				item: "powah:reactor_starter"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			dependencies: ["11BA3E2891DD14F2"]
+			id: "45B090A30526BF17"
+			tasks: [{
+				id: "115F28CDA63C6E3D"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["45B090A30526BF17"]
+			id: "761B151BDBFA9A28"
+			tasks: [{
+				id: "0514991EB68427FB"
+				type: "item"
+				item: "powah:dielectric_rod"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			dependencies: ["45B090A30526BF17"]
+			id: "7A12EE80F899AB6A"
+			tasks: [{
+				id: "0EF4E4DD9F8461EF"
+				type: "item"
+				item: "powah:dielectric_rod_horizontal"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			dependencies: [
+				"7A12EE80F899AB6A"
+				"761B151BDBFA9A28"
+			]
+			id: "2AF25D6489390004"
+			tasks: [{
+				id: "298477CCF431E216"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			dependencies: [
+				"4404EB037042C13E"
+				"42D710DA8B6790D7"
+			]
+			id: "34BA1BD60E7218BD"
+			tasks: [{
+				id: "4321801496880BEC"
+				type: "item"
+				item: "powah:uraninite"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			dependencies: ["2AF25D6489390004"]
+			id: "4404EB037042C13E"
+			tasks: [{
+				id: "586BD36996AFA240"
+				type: "item"
+				item: "powah:energizing_orb"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.0d
+			dependencies: ["2AF25D6489390004"]
+			id: "42D710DA8B6790D7"
+			tasks: [{
+				id: "2E8799EE03475062"
+				type: "item"
+				item: "powah:energizing_rod_starter"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

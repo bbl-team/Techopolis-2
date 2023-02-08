@@ -12,7 +12,7 @@
 			y: 0.0d
 			description: [
 				"Founds inside broken colored stone when broken with the prospectors pickaxe."
-				"Can also be used to burn a item in a furnace"
+				"Can also be used to burn an item in a furnace"
 			]
 			dependencies: ["387F6E6102BAC495"]
 			id: "6F177B8812061E5F"
@@ -25,6 +25,7 @@
 		{
 			x: 1.0d
 			y: 0.0d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["387F6E6102BAC495"]
 			id: "73DBA5E8CF18E787"
 			tasks: [{
@@ -173,8 +174,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 4.0d
+			x: 3.5d
+			y: 3.0d
 			description: ["Produces a redstone pulse every 2 seconds"]
 			dependencies: ["588BB5E2078A325A"]
 			id: "4645B206F5734C66"

@@ -1,0 +1,284 @@
+{
+	id: "4BDD82C4FB4C8E20"
+	group: "7880DAE5186B4734"
+	order_index: 1
+	filename: "thermal"
+	title: "Thermal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -3.0d
+			shape: "square"
+			description: ["Unlocks Thermal Series "]
+			id: "508CD0F62F48F4F1"
+			tasks: [{
+				id: "5ED9583092452781"
+				type: "item"
+				item: "techopolis:reaserch_pappers_thermal"
+			}]
+			rewards: [{
+				id: "7516054DDBF4A41F"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p thermal"
+				player_command: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			description: ["Base machine frame for thermal"]
+			dependencies: ["508CD0F62F48F4F1"]
+			id: "67E07DA9F74F035A"
+			tasks: [{
+				id: "4B91D41E0A90AD08"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect lead fragments"]
+			dependencies: ["752C19F90108100C"]
+			id: "3A7B8FE35CD46B6A"
+			tasks: [{
+				id: "2E6E2FAFDF2F58FC"
+				type: "item"
+				item: "techopolis:reaserch_pappers_lead"
+			}]
+			rewards: [{
+				id: "41D54DEF79DE0C67"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p lead"
+				player_command: true
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Dramatically increases amounts obtained from ores"]
+			dependencies: ["4900034EC570D784"]
+			id: "0EACBCBE982A6905"
+			tasks: [{
+				id: "6AFEA484367DF1A5"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			description: ["RECIPE MAY CHANGE"]
+			dependencies: ["67E07DA9F74F035A"]
+			id: "4900034EC570D784"
+			tasks: [{
+				id: "7A15BA621C50C999"
+				type: "item"
+				item: "thermal:rf_coil"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			description: ["Turn lava into power"]
+			dependencies: ["4900034EC570D784"]
+			id: "5D0105277642D22B"
+			tasks: [{
+				id: "612B1934E0146D39"
+				type: "item"
+				item: "thermal:dynamo_magmatic"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: ["Pulverizing silver ore has a chance to drop lead dust "]
+			dependencies: ["0EACBCBE982A6905"]
+			id: "752C19F90108100C"
+			tasks: [{
+				id: "402F8BF3604592F8"
+				type: "item"
+				item: "alltheores:lead_dust"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: ["Allows your prospectors pickaxe to collect lead fragments"]
+			dependencies: ["3A7B8FE35CD46B6A"]
+			id: "1032510B33A4D68F"
+			tasks: [{
+				id: "55CDB1CB3472E3DE"
+				type: "item"
+				item: "caveopolis:lead_fragment"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: ["Can be made in a tier 5 miner. After crafting 36 of the ore"]
+			dependencies: ["1032510B33A4D68F"]
+			id: "0B7785E36E11B017"
+			tasks: [{
+				id: "0660477434B3E9BF"
+				type: "item"
+				title: "Any #forge:ores/lead"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/lead"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: ["Ore can be turned into ingots"]
+			dependencies: ["0B7785E36E11B017"]
+			id: "4A95BC727850982E"
+			tasks: [{
+				id: "116E5D01ED2169B0"
+				type: "item"
+				item: "alltheores:lead_ingot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: [
+				"74B14DE0ED533B11"
+				"323417A71D25B20F"
+			]
+			id: "2DB7995FD828A58E"
+			tasks: [{
+				id: "41B4EB84E7C8F1FE"
+				type: "item"
+				item: "thermal:machine_crystallizer"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["Made in the metal press"]
+			dependencies: ["388FB0B4C197DA0E"]
+			id: "74B14DE0ED533B11"
+			tasks: [{
+				id: "654C3EA0C6C8C9DD"
+				type: "item"
+				item: "alltheores:signalum_plate"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["An alloy"]
+			dependencies: [
+				"2420D51CE175BB3A"
+				"24FE1087AA60DAC2"
+			]
+			dependency_requirement: "one_completed"
+			id: "388FB0B4C197DA0E"
+			tasks: [{
+				id: "2539DDB3FB74AAA1"
+				type: "item"
+				item: "alltheores:signalum_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			description: ["A mix of copper, redstone and silver"]
+			dependencies: ["0EACBCBE982A6905"]
+			id: "24FE1087AA60DAC2"
+			tasks: [{
+				id: "17E2E5152915BA00"
+				type: "item"
+				item: "alltheores:signalum_dust"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			description: ["Can be used to alloy up to 3 items"]
+			dependencies: ["4900034EC570D784"]
+			id: "2420D51CE175BB3A"
+			tasks: [{
+				id: "06A5351DF58BFC44"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			description: ["Hardened glass is very sdtrong"]
+			dependencies: ["2420D51CE175BB3A"]
+			id: "323417A71D25B20F"
+			tasks: [{
+				id: "0C96D6875FF97ED4"
+				type: "item"
+				item: "thermal:obsidian_glass"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			description: ["A base from crystals, requires liquid glass"]
+			dependencies: [
+				"1ADDF2856FA22558"
+				"2DB7995FD828A58E"
+				"293907B2564C3A17"
+			]
+			id: "34B42292099422B5"
+			tasks: [{
+				id: "3F3B9B1981CCB34D"
+				type: "item"
+				item: "techopolis:crystal_base"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			description: ["Sometimes can come out of pulverizing sandstone"]
+			dependencies: ["0EACBCBE982A6905"]
+			id: "1ADDF2856FA22558"
+			tasks: [{
+				id: "5322CCB0E8B80983"
+				type: "item"
+				item: "thermal:niter"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			description: ["Can be used to make liquid glass"]
+			dependencies: ["323417A71D25B20F"]
+			id: "293907B2564C3A17"
+			tasks: [{
+				id: "1E409353D1CDFE1F"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			description: ["Extra watery"]
+			dependencies: ["34B42292099422B5"]
+			id: "0C92584DC4F48D63"
+			tasks: [{
+				id: "1BC4903ECF02E88F"
+				type: "item"
+				item: "minecraft:prismarine_shard"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

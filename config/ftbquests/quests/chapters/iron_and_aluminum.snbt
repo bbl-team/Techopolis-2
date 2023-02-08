@@ -3,7 +3,7 @@
 	group: "2E909DF337DB0A54"
 	order_index: 0
 	filename: "iron_and_aluminum"
-	title: "Iron And Aluminum"
+	title: "Iron \\& Aluminum"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -34,6 +34,7 @@
 		{
 			x: -0.5d
 			y: -1.0d
+			shape: "square"
 			description: ["Allows your prospectors pickaxe to collect iron and aluminum fragments"]
 			id: "54E3D524E91021A3"
 			tasks: [{
@@ -138,6 +139,7 @@
 		{
 			x: -0.5d
 			y: 5.0d
+			description: ["Just a block of steel"]
 			dependencies: ["42562083BAEF7B85"]
 			id: "1A9C1C8827F5E753"
 			tasks: [{
@@ -183,6 +185,81 @@
 				id: "13E26F18A87C5540"
 				type: "item"
 				item: "minecraft:rail"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 8.0d
+			description: ["3 redstone ore in a jumbo furnace will make a redstone dust"]
+			dependencies: ["4ADE60FEF4165B56"]
+			id: "32953767237ABD2F"
+			tasks: [{
+				id: "7C1E17FFC95E56EC"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 7.0d
+			description: ["Can be made in a tier 5 miner. After crafting 36 of the ore"]
+			dependencies: ["16E53B43D43DF3FA"]
+			id: "4ADE60FEF4165B56"
+			tasks: [{
+				id: "5D1CA7565EEFDBCE"
+				type: "item"
+				title: "Any #forge:ores/redstone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/redstone"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.0d
+			description: ["Allows your prospectors pickaxe to collect redstone fragments"]
+			dependencies: ["2F6370C05C7CE2D4"]
+			id: "16E53B43D43DF3FA"
+			tasks: [{
+				id: "534C0173E6248A6A"
+				type: "item"
+				item: "caveopolis:redstone_fragment"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect redstone fragments"]
+			dependencies: ["1A9C1C8827F5E753"]
+			id: "2F6370C05C7CE2D4"
+			tasks: [{
+				id: "0A17DEFEB125AF7C"
+				type: "item"
+				item: "techopolis:reaserch_pappers_redstone"
+			}]
+			rewards: [{
+				id: "35DA35A1708E9C78"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p redstone"
+				player_command: true
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			description: ["The fluid absorber is a machine that will create a fluid. See the miners guide book for more information"]
+			dependencies: ["67FBB0440F23A5AB"]
+			id: "74DBA04853F82320"
+			tasks: [{
+				id: "5BC490261DBC47D7"
+				type: "item"
+				item: "miners:fluid_absorber"
 			}]
 		}
 	]

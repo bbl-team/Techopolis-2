@@ -1,0 +1,150 @@
+{
+	id: "2EC21B93D12BE112"
+	group: "5ACAB4963B8539AD"
+	order_index: 0
+	filename: "diamond__emerald"
+	title: "Diamond \\& Emerald"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: -1.0d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect diamond and emerald fragments"]
+			id: "754CDB1500697856"
+			tasks: [{
+				id: "67BDDA22F3CF73D0"
+				type: "item"
+				item: "techopolis:reaserch_pappers_diamond_and_emerald"
+			}]
+			rewards: [{
+				id: "6AC8C7FCF1BC7BDF"
+				type: "command"
+				command: "/gamestage add @p diamond_and_emerald"
+				player_command: true
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["754CDB1500697856"]
+			id: "46BF2A7DDE527A02"
+			tasks: [{
+				id: "3DDE3D9C5E63F7EF"
+				type: "item"
+				item: "caveopolis:diamond_fragment"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["754CDB1500697856"]
+			id: "3EBEDB8A637EF9ED"
+			tasks: [{
+				id: "088C8C9F00C040BD"
+				type: "item"
+				item: "caveopolis:emerald_fragment"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			description: ["Can be made in a tier 7 miner. After crafting 36 of the ore"]
+			dependencies: ["3EBEDB8A637EF9ED"]
+			id: "17F9CAAE448FE585"
+			tasks: [{
+				id: "7A0FAFA400629C7E"
+				type: "item"
+				item: "minecraft:emerald_ore"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			description: ["Can be made in a tier 6 miner. After crafting 36 of the ore"]
+			dependencies: ["46BF2A7DDE527A02"]
+			id: "21B61C58BEEB9180"
+			tasks: [{
+				id: "366E4CB697851F2A"
+				type: "item"
+				item: "minecraft:diamond_ore"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			description: ["Ore can be turned into this"]
+			dependencies: ["21B61C58BEEB9180"]
+			id: "2BFC9EF9A5F18491"
+			tasks: [{
+				id: "0F7DB91A4B3B8E5F"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			description: ["Ore can be turned into this"]
+			dependencies: ["17F9CAAE448FE585"]
+			id: "083C8E8E7BDD1140"
+			tasks: [{
+				id: "1172C92FB6D665CA"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			description: ["Allows the mining of new ores"]
+			dependencies: ["2BFC9EF9A5F18491"]
+			id: "73BDA8127D3F7A2A"
+			tasks: [{
+				id: "56ED8A1A0A764844"
+				type: "item"
+				item: "miners:miner_tier_7"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			description: ["Used as the support frame for tier 7 miners"]
+			dependencies: ["73BDA8127D3F7A2A"]
+			id: "667A7951F63580CC"
+			tasks: [{
+				id: "4BADAE47AF566923"
+				type: "item"
+				item: "miners:diamond_support_frame"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			description: ["Allows the mining of new ores"]
+			dependencies: ["083C8E8E7BDD1140"]
+			id: "25C218686FF44CBD"
+			tasks: [{
+				id: "77475D78C48E7E55"
+				type: "item"
+				item: "miners:miner_tier_8"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			description: ["Used as the support frame for tier 8 miners"]
+			dependencies: ["25C218686FF44CBD"]
+			id: "3D985E8F592D42B5"
+			tasks: [{
+				id: "7EC8F8BD8CF11162"
+				type: "item"
+				item: "miners:emerald_support_frame"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -12,11 +12,19 @@ mods.recipestages.Recipes.setRecipeStageByMod("storage_drawers", "framedcompactd
 ItemStages.createModRestriction("storagedrawers", "storage_drawers");
 ItemStages.createModRestriction("framedcompactdrawers", "storage_drawers");
 
-ItemStages.restrict(<item:thermal:tin_ingot>, "starting_items");
-ItemStages.createModRestriction("thermal", "advancing");
+ItemStages.createModRestriction("extendedcrafting", "all");
+ItemStages.createModRestriction("immersive_aircraft", "all");
 
-ItemStages.createModRestriction("extendedcrafting", "null");
-ItemStages.createModRestriction("immersive_aircraft", "null");
+
+ItemStages.createModRestriction("littlelogistics", "little_logistics");
+ItemStages.createModRestriction("thermal", "thermal");
+ItemStages.createModRestriction("ae2", "all");
+ItemStages.createModRestriction("refinedstorage", "all");
+ItemStages.createModRestriction("mekanism", "mekanism");
+ItemStages.createModRestriction("waystones", "waystones");
+ItemStages.createModRestriction("powah", "powah");
+ItemStages.createModRestriction("beyond_earth", "beyond_earth");
+ItemStages.createModRestriction("compressium", "beyond_earth");
 
 
 

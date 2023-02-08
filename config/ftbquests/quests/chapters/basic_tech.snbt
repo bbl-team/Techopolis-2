@@ -133,7 +133,7 @@
 			x: -1.0d
 			y: 1.5d
 			shape: "square"
-			description: ["Allows the collection of coal and lapis fragments from colored stone in the world"]
+			description: ["Allows the collection of coal and lapis fragments from colored stone in the world."]
 			dependencies: [
 				"63F50BA9A109C2A8"
 				"600C4EBE7AA4E881"
@@ -168,6 +168,17 @@
 				id: "452A199FF2B5A0A1"
 				type: "item"
 				item: "miners:miner_tier_1"
+			}]
+			rewards: [{
+				id: "54AD235187958D20"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "miners:guide_book"
+					}
+				}
 			}]
 		}
 		{
@@ -232,7 +243,7 @@
 			title: "The Big One"
 			x: -2.5d
 			y: 0.5d
-			description: ["Placing a 3x3x3 of furnaces will make a jumbo furnace"]
+			description: ["Placing a 3x3x3 of furnaces will make a jumbo furnace. This is the heart of techopolis"]
 			dependencies: ["600C4EBE7AA4E881"]
 			id: "17D6503944931ACE"
 			tasks: [{
@@ -252,6 +263,18 @@
 				id: "6F71DE77D63B88D8"
 				type: "item"
 				item: "jumbofurnace:jumbo_furnace"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			description: ["The tree absorber is a huge multiblock that will create tree resources for you. See the miners guide book for more information"]
+			dependencies: ["02D13FBDA8D3D5A8"]
+			id: "26F70A55222021C1"
+			tasks: [{
+				id: "205D13804740FF6E"
+				type: "item"
+				item: "miners:tree_absorber"
 			}]
 		}
 	]
