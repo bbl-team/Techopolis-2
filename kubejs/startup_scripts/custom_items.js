@@ -59,7 +59,7 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:crystalline_dust')
 	event.create('techopolis:crystal_base')
 	event.create('techopolis:infused_crystalline')
-	event.create('techopolis:prismarine_dust').texture("alltheores:item/uranium_dust").color(0, 0xF6FCFC)
+	event.create('techopolis:prismarine_dust').color(0, 0xF6FCFC)
 
 	event.create('techopolis:prospectors_pickaxe', 'pickaxe').tier('diamond')
 
