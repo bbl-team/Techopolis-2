@@ -4,6 +4,13 @@
 	order_index: 0
 	filename: "basic_tech"
 	title: "Basic Tech"
+	icon: {
+		id: "techopolis:prospectors_pickaxe"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -25,6 +32,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "7E558D2C56BBA4CF"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.0d
@@ -44,6 +56,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "184066F7D7502E55"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.0d
@@ -56,6 +73,11 @@
 				type: "item"
 				item: "minecraft:crafting_table"
 			}]
+			rewards: [{
+				id: "2CDE6EE01047FE06"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
@@ -67,6 +89,11 @@
 				id: "4DA2540D0CBEC511"
 				type: "item"
 				item: "minecraft:chest"
+			}]
+			rewards: [{
+				id: "7A3CCE7BD40D6105"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -86,6 +113,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "6924D5661A851A6E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.0d
@@ -97,6 +129,11 @@
 				id: "7E1653F527C373D5"
 				type: "item"
 				item: "minecraft:cobblestone"
+			}]
+			rewards: [{
+				id: "0918D17249F2A316"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -116,6 +153,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "07F49A6F4551000F"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.5d
@@ -128,12 +170,17 @@
 				type: "item"
 				item: "minecraft:furnace"
 			}]
+			rewards: [{
+				id: "636FC8A20F2F8106"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.0d
 			y: 1.5d
 			shape: "square"
-			description: ["Allows the collection of coal and lapis fragments from colored stone in the world."]
+			description: ["Can be used to find coal and lapis fragments inside colored stone"]
 			dependencies: [
 				"63F50BA9A109C2A8"
 				"600C4EBE7AA4E881"
@@ -199,6 +246,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "17CBDB56A7F3E5FD"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
@@ -211,6 +263,11 @@
 				type: "item"
 				item: "miners:wooden_support_frame"
 			}]
+			rewards: [{
+				id: "407FDDD8972A0B81"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -2.5d
@@ -222,6 +279,11 @@
 				id: "2AD294A9F542CB1A"
 				type: "item"
 				item: "minecraft:smooth_stone"
+			}]
+			rewards: [{
+				id: "4353F803E03BCC43"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -238,6 +300,11 @@
 				type: "item"
 				item: "minecraft:stone"
 			}]
+			rewards: [{
+				id: "1FC4C1602DE8810D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			title: "The Big One"
@@ -252,6 +319,11 @@
 				item: "minecraft:furnace"
 				count: 27L
 			}]
+			rewards: [{
+				id: "4984F79FDC039D26"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -3.5d
@@ -261,6 +333,11 @@
 			id: "6693C3403AE61716"
 			tasks: [{
 				id: "6F71DE77D63B88D8"
+				type: "item"
+				item: "jumbofurnace:jumbo_furnace"
+			}]
+			rewards: [{
+				id: "17F7A6885B8B184E"
 				type: "item"
 				item: "jumbofurnace:jumbo_furnace"
 			}]
@@ -275,6 +352,11 @@
 				id: "205D13804740FF6E"
 				type: "item"
 				item: "miners:tree_absorber"
+			}]
+			rewards: [{
+				id: "3EA6FE075D1F383C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

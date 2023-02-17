@@ -1,0 +1,70 @@
+{
+	id: "2E12E91FB97A8445"
+	group: "0C8FA6EE4828F266"
+	order_index: 2
+	filename: "advanced"
+	title: "Advanced Research"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -0.5d
+			id: "7EA82C0EF86589AB"
+			tasks: [{
+				id: "70857FFFD0D4F9E7"
+				type: "checkmark"
+				title: "Oil Power"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			id: "749623B39DCD0907"
+			tasks: [{
+				id: "58A3921B1E231F01"
+				type: "checkmark"
+				title: "B Buck Crafting"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			id: "350C86CA69BFFC4C"
+			tasks: [{
+				id: "3837109F29129865"
+				type: "checkmark"
+				title: "solar power"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			subtitle: "Unlocks a crafting recipe for B Bucks"
+			id: "5FD0F6B5EE2DB404"
+			tasks: [
+				{
+					id: "4B8114D2E0389CA7"
+					type: "item"
+					item: "techopolis:research_papers_b_bucks_1"
+					consume_items: true
+				}
+				{
+					id: "4B1BC9A22534E756"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "586799639C7B99D7"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p b_bucks_1"
+				player_command: true
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -26,13 +26,15 @@
 			description: ["Allows your prospectors pickaxe to collect osmium fragments"]
 			id: "77993E2FE0139206"
 			tasks: [{
-				id: "11FC8DC02A011134"
+				id: "616C283C5B472A6C"
 				type: "item"
-				item: "techopolis:reaserch_pappers_osmium"
+				item: "techopolis:research_papers_osmium"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "2B5220FC20CB5858"
 				type: "command"
+				auto: "enabled"
 				command: "/gamestage add @p osmium"
 				player_command: false
 			}]
@@ -40,7 +42,7 @@
 		{
 			x: 2.0d
 			y: -4.0d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["77993E2FE0139206"]
 			id: "425EAE7628342EEC"
 			tasks: [{
@@ -80,9 +82,10 @@
 			dependencies: ["15CABEDFCBA1EE1F"]
 			id: "3829B954A7E883E8"
 			tasks: [{
-				id: "231ADE11861DE5B5"
+				id: "73CF9A304E19156D"
 				type: "item"
-				item: "techopolis:reaserch_pappers_mekanism"
+				item: "techopolis:research_papers_mekanism"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "6A8D7059C4C189DD"

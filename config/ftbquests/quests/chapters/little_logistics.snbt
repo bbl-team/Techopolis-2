@@ -4,6 +4,7 @@
 	order_index: 1
 	filename: "little_logistics"
 	title: "Little Logistics"
+	icon: "littlelogistics:steam_locomotive"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -18,9 +19,10 @@
 			dependencies: ["32953767237ABD2F"]
 			id: "67234EB7B4F995EC"
 			tasks: [{
-				id: "310F099842E5E548"
+				id: "495D2FEC8C3F6E49"
 				type: "item"
-				item: "techopolis:reaserch_pappers_little_logistic"
+				item: "techopolis:research_papers_little_logistic"
+				consume_items: true
 			}]
 			rewards: [
 				{
@@ -41,6 +43,11 @@
 						}
 					}
 				}
+				{
+					id: "1AD768DB22E2D6EE"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+				}
 			]
 		}
 		{
@@ -53,6 +60,11 @@
 				id: "50214FABAD80C805"
 				type: "item"
 				item: "littlelogistics:rapid_hopper"
+			}]
+			rewards: [{
+				id: "7322304CFEBA1792"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -67,6 +79,11 @@
 				type: "item"
 				item: "littlelogistics:seater_car"
 			}]
+			rewards: [{
+				id: "0731E0DBD2C84EB9"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
@@ -79,6 +96,11 @@
 				id: "4C43B3D339FE119A"
 				type: "item"
 				item: "littlelogistics:steam_locomotive"
+			}]
+			rewards: [{
+				id: "5194146CFF898B73"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -93,6 +115,11 @@
 				type: "item"
 				item: "littlelogistics:chest_car"
 			}]
+			rewards: [{
+				id: "4B62D22AD7B3A3FC"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.5d
@@ -105,6 +132,11 @@
 				id: "4C16737D1330AB30"
 				type: "item"
 				item: "littlelogistics:fluid_car"
+			}]
+			rewards: [{
+				id: "41BB0A81CA42AC26"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -127,6 +159,11 @@
 				type: "item"
 				item: "littlelogistics:spring"
 			}]
+			rewards: [{
+				id: "59D4C95348C46D76"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -3.0d
@@ -139,6 +176,11 @@
 				id: "0D9DD2FE18A31CAE"
 				type: "item"
 				item: "littlelogistics:tug"
+			}]
+			rewards: [{
+				id: "266D06A478F84C45"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -153,6 +195,11 @@
 				type: "item"
 				item: "littlelogistics:barge"
 			}]
+			rewards: [{
+				id: "1BB1E3009D54678C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -2.0d
@@ -165,6 +212,11 @@
 				id: "4F76281C924FC364"
 				type: "item"
 				item: "littlelogistics:fishing_barge"
+			}]
+			rewards: [{
+				id: "0A55D35351B5D82A"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -179,6 +231,11 @@
 				type: "item"
 				item: "littlelogistics:seater_barge"
 			}]
+			rewards: [{
+				id: "509465EC695EA1A8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.5d
@@ -192,6 +249,11 @@
 				type: "item"
 				item: "littlelogistics:fluid_barge"
 			}]
+			rewards: [{
+				id: "6690FA764C9755C4"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.5d
@@ -204,6 +266,11 @@
 				id: "0639382EE1E3CA5D"
 				type: "item"
 				item: "littlelogistics:locomotive_dock_rail"
+			}]
+			rewards: [{
+				id: "12B91341F2DEDEA5"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -221,6 +288,11 @@
 				type: "item"
 				item: "littlelogistics:car_dock_rail"
 			}]
+			rewards: [{
+				id: "54986800901710DE"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -0.5d
@@ -233,6 +305,11 @@
 				id: "69BB7998AF0019BA"
 				type: "checkmark"
 				title: "Rails"
+			}]
+			rewards: [{
+				id: "5363888A597D1F9C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -247,6 +324,11 @@
 				type: "item"
 				item: "littlelogistics:tug_route"
 			}]
+			rewards: [{
+				id: "17EF00521B836647"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 2.0d
@@ -259,6 +341,11 @@
 				id: "779A4FD125122C4A"
 				type: "item"
 				item: "littlelogistics:locomotive_route"
+			}]
+			rewards: [{
+				id: "1482A56B8396DE14"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

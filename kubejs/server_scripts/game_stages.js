@@ -1,5 +1,71 @@
 // priority: 99
 
+//Recipes Restrictions Handled by Kubejs 
+
+ServerEvents.recipes(event => {
+
+    event.shaped('1x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: basic_technium}).id('techopolis:b_bucks_1').stage('b_bucks_1')
+
+
+
+//Recipe Staging (Credit EnigmaQuip for the assist )
+
+    const $CraftingRecipe = Java.loadClass('net.minecraft.world.item.crafting.CraftingRecipe')
+    function addStageByMod(stage, modid) {
+       event.forEachRecipe({ mod: modid }, recipe => {
+            if (recipe.originalRecipe instanceof $CraftingRecipe) {
+                recipe.stage(stage)
+            }
+        })
+    }
+
+    addStageByMod("storage_drawers", "storagedrawers")
+    addStageByMod("storage_drawers", "framedcompactdrawers")
+    addStageByMod("littlelogistics", "little_logistics")
+    addStageByMod("thermal", "thermal")
+    addStageByMod("all", "ae2")
+    addStageByMod("all", "refinedstorage")
+    addStageByMod("mekanism", "mekanism")
+    addStageByMod("waystones", "waystones")
+    addStageByMod("powah", "powah")
+    addStageByMod("beyond_earth", "beyond_earth")
+    addStageByMod("compressium", "compressium")
+
+
+    // clear stages from certain tag based recipes
+    let storageTags = AlmostUnified.getTags().filter(tag => {
+        return /forge:storage_blocks/.test(tag)
+    })
+    storageTags.forEach(tag => {
+        let item = AlmostUnified.getPreferredItemForTag(tag)
+        event.forEachRecipe({ output: item }, recipe => {
+            recipe.stage("")
+        })
+    })
+
+    let ingotTags = AlmostUnified.getTags().filter(tag => {
+        return /forge:ingots/.test(tag)
+    })
+    ingotTags.forEach(tag => {
+        let item = AlmostUnified.getPreferredItemForTag(tag)
+        event.forEachRecipe({ output: item }, recipe => {
+            recipe.stage("")
+        })
+    })
+
+    let nuggetsTags = AlmostUnified.getTags().filter(tag => {
+        return /forge:nuggets/.test(tag)
+    })
+    nuggetsTags.forEach(tag => {
+        let item = AlmostUnified.getPreferredItemForTag(tag)
+        event.forEachRecipe({ output: item }, recipe => {
+            recipe.stage("")
+        })
+    })
+
+})
+
+
 //Login Event
 
 PlayerEvents.loggedIn(event => {

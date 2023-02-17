@@ -4,6 +4,7 @@
 	order_index: 3
 	filename: "advanced_technium"
 	title: "Advanced Technium"
+	icon: "techopolis:advanced_technium_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -24,6 +25,11 @@
 				type: "item"
 				item: "techopolis:advanced_technium_ingot"
 			}]
+			rewards: [{
+				id: "6B1CE90FEACCE422"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -0.5d
@@ -34,6 +40,11 @@
 				id: "5CBB26C44FCECAAF"
 				type: "item"
 				item: "immersiveengineering:sheetmetal_aluminum"
+			}]
+			rewards: [{
+				id: "0B4F6CD98F5BF8EB"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -46,6 +57,11 @@
 				type: "item"
 				item: "alltheores:aluminum_plate"
 			}]
+			rewards: [{
+				id: "15B3770D421C9BDD"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.5d
@@ -56,6 +72,11 @@
 				id: "3AFEEF089F81C027"
 				type: "item"
 				item: "techopolis:lava_bottle"
+			}]
+			rewards: [{
+				id: "4D18271581039A2C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -68,17 +89,24 @@
 				type: "item"
 				item: "alltheores:steel_gear"
 			}]
+			rewards: [{
+				id: "06F7F48BBDAE083D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 3.0d
+			x: 2.5d
 			y: 2.0d
 			shape: "square"
 			description: ["Allows your prospectors pickaxe to collect nickel fragments"]
+			dependencies: ["4E163D2E36B02693"]
 			id: "70D42E3638198D5B"
 			tasks: [{
-				id: "6A16CE973241457F"
+				id: "2E8CBC8D7316BFCE"
 				type: "item"
-				item: "techopolis:reaserch_pappers_nickel"
+				item: "techopolis:research_papers_nickel"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "478F9156ACD53A40"
@@ -99,9 +127,15 @@
 				type: "item"
 				item: "alltheores:constantan_ingot"
 			}]
+			rewards: [{
+				id: "73824D414759666D"
+				type: "item"
+				item: "alltheores:constantan_ingot"
+				count: 3
+			}]
 		}
 		{
-			x: 0.0d
+			x: -0.5d
 			y: 2.0d
 			description: ["5 nickel ore in a jumbo furnace will make a copper ingot"]
 			dependencies: ["1B10854F711792BD"]
@@ -111,9 +145,15 @@
 				type: "item"
 				item: "alltheores:nickel_ingot"
 			}]
+			rewards: [{
+				id: "25BB35D6872BCA7B"
+				type: "item"
+				item: "alltheores:nickel_ingot"
+				count: 5
+			}]
 		}
 		{
-			x: 1.0d
+			x: 0.5d
 			y: 2.0d
 			description: ["Can be made in a tier 5 miner. After crafting 36 of the ore"]
 			dependencies: ["21C8381D5A181D74"]
@@ -123,17 +163,27 @@
 				type: "item"
 				item: "alltheores:nickel_ore"
 			}]
+			rewards: [{
+				id: "24D5E4F3083FA430"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 2.0d
+			x: 1.5d
 			y: 2.0d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["70D42E3638198D5B"]
 			id: "21C8381D5A181D74"
 			tasks: [{
 				id: "0C693FC7B64E39B7"
 				type: "item"
 				item: "caveopolis:nickel_fragment"
+			}]
+			rewards: [{
+				id: "3797D144741F4E3B"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -166,6 +216,12 @@
 				id: "798CCDABCAABF207"
 				type: "item"
 				item: "alltheores:invar_ingot"
+			}]
+			rewards: [{
+				id: "2D309974F55D5095"
+				type: "item"
+				item: "alltheores:invar_ingot"
+				count: 3
 			}]
 		}
 	]

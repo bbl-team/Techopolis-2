@@ -4,6 +4,7 @@
 	order_index: 0
 	filename: "silver__gold"
 	title: "Silver \\& Gold"
+	icon: "miners:miner_tier_6"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -12,11 +13,13 @@
 			y: -0.5d
 			shape: "square"
 			description: ["Allows your prospectors pickaxe to collect silver and gold fragments"]
+			dependencies: ["2509E345839FFA86"]
 			id: "6FB83E8D157794FB"
 			tasks: [{
-				id: "60D7385B700E2F26"
+				id: "3AA53DE1FB6598C1"
 				type: "item"
-				item: "techopolis:reaserch_pappers_silver_and_gold"
+				item: "techopolis:research_papers_silver_and_gold"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "3709965488E9F01C"
@@ -29,7 +32,7 @@
 		{
 			x: -0.5d
 			y: 0.5d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["6FB83E8D157794FB"]
 			id: "04BBCCB2B940824E"
 			tasks: [{
@@ -37,17 +40,27 @@
 				type: "item"
 				item: "caveopolis:silver_fragment"
 			}]
+			rewards: [{
+				id: "63EE8FE85399B200"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.5d
 			y: 0.5d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["6FB83E8D157794FB"]
 			id: "7A2D8FA0525482B6"
 			tasks: [{
 				id: "47F96646633A0A72"
 				type: "item"
 				item: "caveopolis:gold_fragment"
+			}]
+			rewards: [{
+				id: "73E5266F46F23901"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -68,6 +81,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1F0FB686B4BDBB6F"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.5d
@@ -87,6 +105,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "65AD993813A3B590"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -0.5d
@@ -99,6 +122,12 @@
 				type: "item"
 				item: "alltheores:silver_ingot"
 			}]
+			rewards: [{
+				id: "2AA90065867D21AE"
+				type: "item"
+				item: "alltheores:silver_ingot"
+				count: 5
+			}]
 		}
 		{
 			x: 0.5d
@@ -110,6 +139,12 @@
 				id: "36742411A8486D87"
 				type: "item"
 				item: "minecraft:gold_ingot"
+			}]
+			rewards: [{
+				id: "3FAB96F5D178CD94"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 5
 			}]
 		}
 		{
@@ -126,6 +161,12 @@
 				type: "item"
 				item: "alltheores:electrum_ingot"
 			}]
+			rewards: [{
+				id: "59B00C4FCF4FA05B"
+				type: "item"
+				item: "alltheores:electrum_ingot"
+				count: 3
+			}]
 		}
 		{
 			x: 1.0d
@@ -138,6 +179,11 @@
 				type: "item"
 				item: "miners:miner_tier_6"
 			}]
+			rewards: [{
+				id: "11581BA66A60AF04"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
@@ -149,6 +195,11 @@
 				id: "49D09D56DFA2D548"
 				type: "item"
 				item: "miners:gold_support_frame"
+			}]
+			rewards: [{
+				id: "4036F88661D323C5"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

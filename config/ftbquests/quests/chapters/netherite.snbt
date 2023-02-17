@@ -1,0 +1,20 @@
+{
+	id: "4CFEF128DAB17ABD"
+	group: "7921F36F1DB604AD"
+	order_index: 1
+	filename: "netherite"
+	title: "Netherite"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "0317C3DFA9206EC4"
+		tasks: [{
+			id: "78E004E558691C7C"
+			type: "item"
+			item: "minecraft:netherite_ingot"
+		}]
+	}]
+	quest_links: [ ]
+}

@@ -1,0 +1,304 @@
+{
+	id: "62F03DF9ED1C3B6F"
+	group: "0C8FA6EE4828F266"
+	order_index: 0
+	filename: "ores_are_us"
+	title: "Ores Are Us"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Copper Ore"
+			icon: "minecraft:copper_ore"
+			x: -1.5d
+			y: -2.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["7FDF4DCFDCF8820F"]
+			can_repeat: true
+			id: "3ECB6CF2B9F8A12D"
+			tasks: [{
+				id: "172CA6B392861E77"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "063B7EAEEB51D8D0"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 7720120041341267424L
+			}]
+		}
+		{
+			title: "Lapis Ore"
+			icon: "minecraft:lapis_ore"
+			x: -2.5d
+			y: -2.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["387F6E6102BAC495"]
+			can_repeat: true
+			id: "555E7B9E897D37E5"
+			tasks: [{
+				id: "734726069C320054"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0D61D3221A03F833"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 44784926761333649L
+			}]
+		}
+		{
+			title: "Coal Ore"
+			icon: "minecraft:coal_ore"
+			x: -3.5d
+			y: -2.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["387F6E6102BAC495"]
+			can_repeat: true
+			id: "2B636E575E4E9AEF"
+			tasks: [{
+				id: "0D905A28780BD07C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2C2E1370C16A02B1"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 8038555962348419902L
+			}]
+		}
+		{
+			title: "Tin Ore"
+			icon: "alltheores:tin_ore"
+			x: -0.5d
+			y: -2.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["7FDF4DCFDCF8820F"]
+			can_repeat: true
+			id: "21B8782C44916832"
+			tasks: [{
+				id: "743205970B9547C7"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+		}
+		{
+			title: "Iron Ore"
+			icon: "minecraft:iron_ore"
+			x: -3.5d
+			y: -1.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["54E3D524E91021A3"]
+			can_repeat: true
+			id: "125B91C91F89262E"
+			tasks: [{
+				id: "68516B3CDB212337"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "57796F75470FA79E"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 6649697968234308275L
+			}]
+		}
+		{
+			title: "Aluminum Ore"
+			icon: "alltheores:aluminum_ore"
+			x: -2.5d
+			y: -1.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["54E3D524E91021A3"]
+			can_repeat: true
+			id: "72831EFA953E631C"
+			tasks: [{
+				id: "18BADCDE34C06773"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "04B0160F5AAF7D28"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 7801650294595784525L
+			}]
+		}
+		{
+			title: "Redstone Ore"
+			icon: "minecraft:redstone_ore"
+			x: -1.5d
+			y: -1.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["2F6370C05C7CE2D4"]
+			can_repeat: true
+			id: "55109AE2C17D1F7A"
+			tasks: [{
+				id: "0DC8BF1700B5B9DF"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2198844877EF7137"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5378403392031148060L
+			}]
+		}
+		{
+			title: "Gold Ore"
+			icon: "minecraft:gold_ore"
+			x: -2.5d
+			y: 0.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["6FB83E8D157794FB"]
+			can_repeat: true
+			id: "46C439585DA77EE1"
+			tasks: [{
+				id: "23CEE2E6876105A0"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0B6DEA65AFCC7D98"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 2319034663305502595L
+			}]
+		}
+		{
+			title: "Silver Ore"
+			icon: "alltheores:silver_ore"
+			x: -3.5d
+			y: 0.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["6FB83E8D157794FB"]
+			can_repeat: true
+			id: "77A39A299277CDB7"
+			tasks: [{
+				id: "0731325E74075857"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "268B2F66041A7308"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 22806223161619705L
+			}]
+		}
+		{
+			title: "Lead Ore"
+			icon: "mekanism:lead_ore"
+			x: -1.5d
+			y: 0.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["3A7B8FE35CD46B6A"]
+			can_repeat: true
+			id: "21679607891176F1"
+			tasks: [{
+				id: "42D895D3CD28F56A"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "59DAE1B7FE054F2C"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 2629490773798883321L
+			}]
+		}
+		{
+			title: "Niter Ore"
+			icon: "thermal:niter_ore"
+			x: -0.5d
+			y: 0.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["03A682276628C44C"]
+			can_repeat: true
+			id: "2F2751A08C79D60E"
+			tasks: [{
+				id: "6AA21605EC859A02"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0DA9EEF6EB54B2DE"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 8770132009881267967L
+			}]
+		}
+		{
+			title: "Crystal Ore"
+			icon: "techopolis:crystal_ore"
+			x: 0.5d
+			y: 0.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["0CA1B3A8B242C68F"]
+			can_repeat: true
+			id: "49FA8139BD32EA90"
+			tasks: [{
+				id: "517DFEE21EE690E3"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6712420701F253AC"
+				type: "item"
+				item: "techopolis:crystal_ore"
+				count: 36
+			}]
+		}
+		{
+			title: "Nickel Ore"
+			icon: "alltheores:nickel_ore"
+			x: -0.5d
+			y: -1.0d
+			subtitle: "Buy a node of ore"
+			dependencies: ["70D42E3638198D5B"]
+			id: "2EF39F406B2D0A52"
+			tasks: [{
+				id: "0670F6CC4DDA309D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "27CA8FD717297A28"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 415347514841201346L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

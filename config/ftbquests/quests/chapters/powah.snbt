@@ -34,7 +34,7 @@
 		{
 			x: -0.5d
 			y: -2.0d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["20F6AF13651B0E56"]
 			id: "153B80CE9387D76F"
 			tasks: [{
@@ -50,9 +50,10 @@
 			description: ["Allows your prospectors pickaxe to collect uranium fragments"]
 			id: "20F6AF13651B0E56"
 			tasks: [{
-				id: "6DF7782F24BB8661"
+				id: "2747B5BEDFEB41C4"
 				type: "item"
-				item: "techopolis:reaserch_pappers_uranium"
+				item: "techopolis:research_papers_uranium"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "474D2A9973D0B0A1"
@@ -70,9 +71,10 @@
 			dependencies: ["3AA81C9F7490FF6D"]
 			id: "11BA3E2891DD14F2"
 			tasks: [{
-				id: "05C86F793B4DD72F"
+				id: "18E1086BC902AC64"
 				type: "item"
-				item: "techopolis:reaserch_pappers_powah"
+				item: "techopolis:research_papers_powah"
+				consume_items: true
 			}]
 			rewards: [
 				{

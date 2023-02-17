@@ -4,6 +4,7 @@
 	order_index: 1
 	filename: "coal__lapis"
 	title: "Coal \\& Lapis"
+	icon: "miners:miner_tier_2"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -11,7 +12,7 @@
 			x: 0.0d
 			y: 0.0d
 			description: [
-				"Founds inside broken colored stone when broken with the prospectors pickaxe."
+				"Found inside colored stone when broken with the prospectors pickaxe."
 				"Can also be used to burn an item in a furnace"
 			]
 			dependencies: ["387F6E6102BAC495"]
@@ -21,17 +22,27 @@
 				type: "item"
 				item: "caveopolis:coal_fragment"
 			}]
+			rewards: [{
+				id: "4C827323207C6733"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
 			y: 0.0d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["387F6E6102BAC495"]
 			id: "73DBA5E8CF18E787"
 			tasks: [{
 				id: "6AD02A87AFD990D9"
 				type: "item"
 				item: "caveopolis:lapis_lazuli_fragment"
+			}]
+			rewards: [{
+				id: "7D166DA50229246D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -45,6 +56,11 @@
 				type: "item"
 				item: "minecraft:coal_ore"
 			}]
+			rewards: [{
+				id: "36DF199516EB3553"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
@@ -56,6 +72,11 @@
 				id: "7EB4A9B4E6D3D6F5"
 				type: "item"
 				item: "minecraft:lapis_ore"
+			}]
+			rewards: [{
+				id: "2F4DB2B6A3BB7E25"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -73,6 +94,11 @@
 				type: "item"
 				item: "miners:miner_tier_2"
 			}]
+			rewards: [{
+				id: "5106E3D4522A697F"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.5d
@@ -84,6 +110,11 @@
 				id: "5F56A0C31E11684A"
 				type: "item"
 				item: "miners:stone_support_frame"
+			}]
+			rewards: [{
+				id: "3D214CABDBDE7B38"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -97,6 +128,12 @@
 				type: "item"
 				item: "minecraft:lapis_lazuli"
 			}]
+			rewards: [{
+				id: "53121D532960BB7F"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+				count: 5
+			}]
 		}
 		{
 			x: -0.5d
@@ -109,6 +146,12 @@
 				type: "item"
 				item: "minecraft:coal"
 			}]
+			rewards: [{
+				id: "66E2B4137049E5DE"
+				type: "item"
+				item: "minecraft:coal"
+				count: 5
+			}]
 		}
 		{
 			x: -0.5d
@@ -118,6 +161,11 @@
 			id: "109F326C178660FD"
 			tasks: [{
 				id: "435E9A4CCA66AF2C"
+				type: "item"
+				item: "immersiveengineering:sorter"
+			}]
+			rewards: [{
+				id: "440E02A7FFF5C5E3"
 				type: "item"
 				item: "immersiveengineering:sorter"
 			}]
@@ -136,6 +184,12 @@
 				type: "item"
 				item: "immersiveengineering:conveyor_basic"
 			}]
+			rewards: [{
+				id: "09364A90B8CFAE16"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+				count: 24
+			}]
 		}
 		{
 			x: -1.0d
@@ -147,6 +201,11 @@
 				id: "7F4B8E5BD69A4584"
 				type: "item"
 				item: "immersiveengineering:conveyor_dropper"
+			}]
+			rewards: [{
+				id: "1BF43693465D6D50"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -160,6 +219,11 @@
 				type: "item"
 				item: "immersiveengineering:conveyor_splitter"
 			}]
+			rewards: [{
+				id: "1D963F8502052EA1"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.5d
@@ -171,6 +235,11 @@
 				id: "3E7B477E3F2CD1E2"
 				type: "item"
 				item: "immersiveengineering:conveyor_vertical"
+			}]
+			rewards: [{
+				id: "046165212B0252F9"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -184,15 +253,25 @@
 				type: "item"
 				item: "opolisutilities:redstone_clock"
 			}]
+			rewards: [{
+				id: "141D2DC259CCEC36"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 2.5d
 			y: 3.0d
-			description: ["Auto crafts saved receives when it recives a redstone pulse"]
+			description: ["Auto crafts saved receives when it recives a redstone pulse. Useful for simple crafts"]
 			dependencies: ["4AE876E9D7B9C821"]
 			id: "588BB5E2078A325A"
 			tasks: [{
 				id: "040DD43C981EF79C"
+				type: "item"
+				item: "craftingautomat:autocrafter"
+			}]
+			rewards: [{
+				id: "6058F20406A815AD"
 				type: "item"
 				item: "craftingautomat:autocrafter"
 			}]
@@ -207,6 +286,11 @@
 				id: "29B6CE4AA017BEBE"
 				type: "item"
 				item: "immersiveengineering:conveyor_extract"
+			}]
+			rewards: [{
+				id: "668FCA5CB97FABD5"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

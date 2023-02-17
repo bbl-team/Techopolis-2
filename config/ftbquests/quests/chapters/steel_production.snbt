@@ -4,6 +4,7 @@
 	order_index: 2
 	filename: "steel_production"
 	title: "Big Machines"
+	icon: "immersiveengineering:crusher"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -12,12 +13,15 @@
 			icon: "immersiveengineering:metal_press"
 			x: -3.0d
 			y: -1.0d
-			description: ["One of the most important multiblocks, allows yout to make plates, rods and much more."]
+			shape: "square"
+			description: ["One of the most important multiblocks, allows yout to make plates, rods and much more. Requires power"]
+			dependencies: ["32953767237ABD2F"]
 			id: "65025BEFE156E86D"
 			tasks: [{
-				id: "09EAC1AF1FABE4E9"
+				id: "54BDA2998731EB33"
 				type: "item"
-				item: "techopolis:reaserch_pappers_metal_press"
+				item: "techopolis:research_papers_metal_press"
+				consume_items: true
 			}]
 			rewards: [
 				{
@@ -50,32 +54,25 @@
 			]
 		}
 		{
-			x: 1.0d
-			y: 0.5d
-			description: ["Basic wire"]
-			dependencies: ["6B3A52BDB5E49A20"]
-			id: "245CF8CAC9EBD3D0"
-			tasks: [{
-				id: "6F9340DC30E60975"
-				type: "item"
-				item: "immersiveengineering:wire_copper"
-			}]
-		}
-		{
-			x: 2.0d
-			y: 0.5d
+			x: -3.0d
+			y: -2.0d
 			description: ["Used to connect to lv wire relays and connectors"]
-			dependencies: ["245CF8CAC9EBD3D0"]
+			dependencies: ["32953767237ABD2F"]
 			id: "436E6EB98CEF176A"
 			tasks: [{
 				id: "0613830FE8AE7348"
 				type: "item"
 				item: "immersiveengineering:wirecoil_copper"
 			}]
+			rewards: [{
+				id: "75A1E36235341F7D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 3.0d
-			y: 0.5d
+			x: -2.0d
+			y: -2.0d
 			description: ["Attaches to block that make or need power"]
 			dependencies: ["436E6EB98CEF176A"]
 			id: "6276C82E16C03BF7"
@@ -84,10 +81,15 @@
 				type: "item"
 				item: "immersiveengineering:connector_lv"
 			}]
+			rewards: [{
+				id: "400788B6A31C9E80"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 4.0d
-			y: 0.5d
+			x: -1.0d
+			y: -2.0d
 			description: ["Used to make you energy travel over longer distances"]
 			dependencies: ["6276C82E16C03BF7"]
 			id: "05D4F8B4D9BB2109"
@@ -96,10 +98,15 @@
 				type: "item"
 				item: "immersiveengineering:connector_lv_relay"
 			}]
+			rewards: [{
+				id: "67718811ADCB4979"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 2.0d
-			y: -1.0d
+			x: -3.0d
+			y: -3.0d
 			description: ["Turns rotation into power"]
 			dependencies: ["436E6EB98CEF176A"]
 			id: "14F13D88EE56EC77"
@@ -108,10 +115,15 @@
 				type: "item"
 				item: "immersiveengineering:dynamo"
 			}]
+			rewards: [{
+				id: "13FF8A49696F3725"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 2.5d
-			y: -2.0d
+			x: -2.5d
+			y: -4.0d
 			description: ["Used to make the windmill"]
 			dependencies: ["14F13D88EE56EC77"]
 			id: "2D590648BF838F74"
@@ -120,10 +132,15 @@
 				type: "item"
 				item: "immersiveengineering:windmill_blade"
 			}]
+			rewards: [{
+				id: "2DFBCFDB7B9D75B2"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 3.5d
-			y: -2.0d
+			x: -1.5d
+			y: -4.0d
 			description: ["Can be applied to a windmill to add a sail to it, this makes it spin faster creating more power"]
 			dependencies: ["2D590648BF838F74"]
 			id: "3BCB15A29B3FE75E"
@@ -132,10 +149,15 @@
 				type: "item"
 				item: "immersiveengineering:windmill_sail"
 			}]
+			rewards: [{
+				id: "0D2714AA602F7BD8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 2.5d
-			y: -3.0d
+			x: -2.5d
+			y: -5.0d
 			description: ["Creates RF when placed in the air"]
 			dependencies: ["2D590648BF838F74"]
 			id: "73F5A7AE464B19FD"
@@ -144,10 +166,15 @@
 				type: "item"
 				item: "immersiveengineering:windmill"
 			}]
+			rewards: [{
+				id: "48590808E1568DA1"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 1.5d
-			y: -3.0d
+			x: -3.5d
+			y: -5.0d
 			description: ["Creates RF when flowing water spins it"]
 			dependencies: ["0293B9D13FB6A16B"]
 			id: "255109058E5B20AE"
@@ -156,10 +183,15 @@
 				type: "item"
 				item: "immersiveengineering:watermill"
 			}]
+			rewards: [{
+				id: "348E3CE5361DAD52"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: 1.5d
-			y: -2.0d
+			x: -3.5d
+			y: -4.0d
 			description: ["Used to make the water wheel"]
 			dependencies: ["14F13D88EE56EC77"]
 			id: "0293B9D13FB6A16B"
@@ -167,6 +199,11 @@
 				id: "38AEDA735C9DF57D"
 				type: "item"
 				item: "immersiveengineering:waterwheel_segment"
+			}]
+			rewards: [{
+				id: "395052A6F59C8B8A"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -180,10 +217,15 @@
 				type: "item"
 				item: "immersiveengineering:workbench"
 			}]
+			rewards: [{
+				id: "4473B0687074EAE0"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
-			y: 0.5d
+			y: 0.0d
 			description: ["Allows the metal press to make wires"]
 			dependencies: ["62CA8057322A2EEF"]
 			id: "6B3A52BDB5E49A20"
@@ -191,6 +233,11 @@
 				id: "2EFB02BBAD1ECB7B"
 				type: "item"
 				item: "immersiveengineering:mold_wire"
+			}]
+			rewards: [{
+				id: "748C2EFA8B94A999"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -204,6 +251,11 @@
 				type: "item"
 				item: "immersiveengineering:mold_plate"
 			}]
+			rewards: [{
+				id: "42CBBA28FBEF3C63"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
@@ -215,6 +267,11 @@
 				id: "5E300F3F390D6224"
 				type: "item"
 				item: "alltheores:steel_plate"
+			}]
+			rewards: [{
+				id: "06B8E53BCB60FA52"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -230,6 +287,11 @@
 				type: "item"
 				item: "immersiveengineering:fluid_pump"
 			}]
+			rewards: [{
+				id: "26227881688A57E2"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.0d
@@ -240,6 +302,11 @@
 				id: "5FFE4EC6DD31A940"
 				type: "item"
 				item: "alltheores:iron_plate"
+			}]
+			rewards: [{
+				id: "5ECF03D3D61BAF74"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -253,6 +320,11 @@
 				type: "item"
 				item: "immersiveengineering:mold_gear"
 			}]
+			rewards: [{
+				id: "7243C94FE5D1FE4D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
@@ -264,6 +336,11 @@
 				id: "77459F0927056917"
 				type: "item"
 				item: "immersiveengineering:mold_rod"
+			}]
+			rewards: [{
+				id: "1D60A912B07EE5BC"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]
