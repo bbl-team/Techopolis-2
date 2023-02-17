@@ -58,10 +58,10 @@ ServerEvents.recipes(event => {
     //Ores In Jumbo Furnace
 
 
-	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/lapis", count: 5}], result:{item: "minecraft:lapis_lazuli"},experience: 0.1}).id('techopolis:jumbo_furnace_lapis_ingot')
-	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/coal", count: 5}], result:{item: "minecraft:coal"},experience: 0.1}).id('techopolis:jumbo_furnace_coal_ingot')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/lapis", count: 3}], result:{item: "minecraft:lapis_lazuli"},experience: 0.1}).id('techopolis:jumbo_furnace_lapis_ingot')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/coal", count: 3}], result:{item: "minecraft:coal"},experience: 0.1}).id('techopolis:jumbo_furnace_coal_ingot')
 	
-    event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/tin", count: 5}], result:{item: "alltheores:tin_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_tin_ingot')
+    event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/tin", count: 4}], result:{item: "alltheores:tin_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_tin_ingot')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/copper", count: 5}], result:{item: "minecraft:copper_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_copper_ingot')
 	
     event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/aluminum", count: 5}], result:{item: "alltheores:aluminum_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_aluminum_ingot')
@@ -75,5 +75,9 @@ ServerEvents.recipes(event => {
 	
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/lead", count: 5}], result:{item: "alltheores:lead_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_lead_ingot')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/crystals", count: 5}], result:{item: "techopolis:crystalline"},experience: 0.1}).id('techopolis:jumbo_furnace_crystalline_ingot')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/niter", count: 5}], result:{item: "thermal:niter"},experience: 0.1}).id('techopolis:jumbo_furnace_niter')
+	
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/diamond", count: 8}], result:{item: "minecraft:diamond"},experience: 0.1}).id('techopolis:jumbo_furnace_diamond')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/emerald", count: 8}], result:{item: "miencraft:emerald"},experience: 0.1}).id('techopolis:jumbo_furnace_emerald')
 
 })

@@ -4,13 +4,14 @@
 	order_index: 2
 	filename: "miner_tier_3"
 	title: "Copper \\& Tin"
+	icon: "miners:miner_tier_3"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: -0.5d
 			y: 0.0d
-			description: ["Can be used to cap miners to increase speed"]
+			description: ["Can be used to cap multiblocks to increase speed"]
 			dependencies: ["4AE876E9D7B9C821"]
 			id: "0FB7CA5CD479C47F"
 			tasks: [{
@@ -36,6 +37,11 @@
 				type: "item"
 				item: "miners:miner_tier_3"
 			}]
+			rewards: [{
+				id: "4161118EE9555442"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -0.5d
@@ -47,6 +53,11 @@
 				id: "5F48F29F90707574"
 				type: "item"
 				item: "miners:lapis_support_frame"
+			}]
+			rewards: [{
+				id: "01CD863C546FA134"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -67,6 +78,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4AECF01ECFFE4C04"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -2.0d
@@ -86,11 +102,16 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "6559C85F324372E7"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -2.5d
 			y: -1.0d
-			description: [""]
+			description: ["Just a block of coal"]
 			id: "38C73DCF420B6E5B"
 			tasks: [{
 				id: "1A5DCFDFB499025B"
@@ -98,9 +119,9 @@
 				item: "minecraft:coal_block"
 			}]
 			rewards: [{
-				id: "6EF17824276A2BA0"
+				id: "6E6DCCC552D398EA"
 				type: "item"
-				item: "techopolis:blank_research_pappers"
+				item: "techopolis:blank_research_papers"
 			}]
 		}
 		{
@@ -117,6 +138,7 @@
 				id: "4B439EC1B9B4A5FC"
 				type: "item"
 				item: "techopolis:research_papers_copper_and_tin"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "19C9D33192111F2D"
@@ -129,7 +151,7 @@
 		{
 			x: -3.0d
 			y: 1.0d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["7FDF4DCFDCF8820F"]
 			id: "2C204F59B10B9D89"
 			tasks: [{
@@ -137,17 +159,27 @@
 				type: "item"
 				item: "caveopolis:copper_fragment"
 			}]
+			rewards: [{
+				id: "3B47FAEE1A15BA51"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -2.0d
 			y: 1.0d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["7FDF4DCFDCF8820F"]
 			id: "4E56EAAE3CB2098D"
 			tasks: [{
 				id: "1F2F57671ABC086B"
 				type: "item"
 				item: "caveopolis:tin_fragment"
+			}]
+			rewards: [{
+				id: "5590E87B283F45D8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -161,6 +193,12 @@
 				type: "item"
 				item: "minecraft:copper_ingot"
 			}]
+			rewards: [{
+				id: "2EDFC581D03A1055"
+				type: "item"
+				item: "minecraft:copper_ingot"
+				count: 5
+			}]
 		}
 		{
 			x: -2.0d
@@ -172,6 +210,12 @@
 				id: "2F6416E3D7176BC2"
 				type: "item"
 				item: "alltheores:tin_ingot"
+			}]
+			rewards: [{
+				id: "52056761B7547F95"
+				type: "item"
+				item: "alltheores:tin_ingot"
+				count: 5
 			}]
 		}
 		{
@@ -187,6 +231,40 @@
 				id: "44C18466D90FEE61"
 				type: "item"
 				item: "alltheores:bronze_ingot"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			description: ["Can be used to cap multiblocks to increase speed. Note copper blocks will change into oxidized which do not work with multiblocks"]
+			dependencies: ["619596D72ACC9321"]
+			id: "69162D7AFC5550D4"
+			tasks: [{
+				id: "12B3BA3A926A2D75"
+				type: "item"
+				item: "minecraft:copper_block"
+			}]
+			rewards: [{
+				id: "031AAF908196F3D6"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			description: ["Can be used to cap multiblocks to increase speed"]
+			dependencies: ["5B64B3B72A3B2846"]
+			id: "56DBAA7DE51C9E1A"
+			tasks: [{
+				id: "162948703AD66CB4"
+				type: "item"
+				item: "alltheores:tin_block"
+			}]
+			rewards: [{
+				id: "32FB61E9B96D7873"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

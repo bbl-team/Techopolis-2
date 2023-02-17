@@ -10,6 +10,10 @@
 		{
 			x: 0.0d
 			y: 0.0d
+			dependencies: [
+				"192796C73BBB3360"
+				"0FFC67F841864FEE"
+			]
 			id: "28612D6665C7F943"
 			tasks: [{
 				id: "336C792F9E235A89"
@@ -18,8 +22,9 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -0.5d
 			y: -1.0d
+			description: ["Used to make technium"]
 			id: "192796C73BBB3360"
 			tasks: [{
 				id: "1274508F26543938"
@@ -28,53 +33,14 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 0.0d
-			id: "0484AFE72B6A98BD"
-			tasks: [{
-				id: "2CEDCDAE4DF91086"
-				type: "item"
-				item: "mekanism:alloy_atomic"
-			}]
-		}
-		{
-			x: 1.0d
-			y: 0.0d
-			id: "040F0A894E213F4C"
-			tasks: [{
-				id: "571E81E1B5809887"
-				type: "item"
-				item: "mekanism:ingot_refined_glowstone"
-			}]
-		}
-		{
-			x: 0.0d
-			y: 1.0d
-			id: "13F1BEBD35444BD6"
-			tasks: [{
-				id: "551031759CBF55C6"
-				type: "item"
-				item: "thermal:sulfur"
-			}]
-		}
-		{
-			x: -1.0d
-			y: 1.0d
-			id: "4162BF7CD9BAC8A4"
-			tasks: [{
-				id: "5C8E135FE069E367"
-				type: "item"
-				item: "powah:dielectric_paste"
-			}]
-		}
-		{
-			x: -1.0d
+			x: 0.5d
 			y: -1.0d
-			id: "76164875DEDCC46C"
+			description: ["Used to make technium"]
+			id: "0FFC67F841864FEE"
 			tasks: [{
-				id: "6303F4ED97F04697"
+				id: "71A3D3F5C5614C64"
 				type: "item"
-				item: "powah:steel_energized"
+				item: "immersiveengineering:sheetmetal_uranium"
 			}]
 		}
 	]

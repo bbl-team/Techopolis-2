@@ -135,3 +135,9 @@
 		#Set required buckets for fuel full, default: 3 buckets
 		FuelBuckets = 3
 
+["Water to Ice"]
+	#Enable or Disable Water the transformation of water into ice on the moon
+	"Water to ice moon" = false
+	#Enable or Disable Water the transformation of water into ice on glacio
+	"Water to ice glacio" = false
+

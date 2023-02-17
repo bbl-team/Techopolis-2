@@ -14,13 +14,15 @@
 			description: ["Allows your prospectors pickaxe to collect diamond and emerald fragments"]
 			id: "754CDB1500697856"
 			tasks: [{
-				id: "67BDDA22F3CF73D0"
+				id: "1BF5EB8786A890A1"
 				type: "item"
-				item: "techopolis:reaserch_pappers_diamond_and_emerald"
+				item: "techopolis:research_papers_diamond_and_emerald"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "6AC8C7FCF1BC7BDF"
 				type: "command"
+				auto: "enabled"
 				command: "/gamestage add @p diamond_and_emerald"
 				player_command: true
 			}]
@@ -28,7 +30,7 @@
 		{
 			x: -1.5d
 			y: 0.0d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["754CDB1500697856"]
 			id: "46BF2A7DDE527A02"
 			tasks: [{
@@ -40,7 +42,7 @@
 		{
 			x: -0.5d
 			y: 0.0d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["754CDB1500697856"]
 			id: "3EBEDB8A637EF9ED"
 			tasks: [{

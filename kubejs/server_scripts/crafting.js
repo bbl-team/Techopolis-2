@@ -17,54 +17,33 @@ ServerEvents.recipes(event => {
 
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "forge:nbt", item: "techopolis:grout", count: 1}], result:{item: "techopolis:grout_dust", count:2},experience: 0.1}).id('techopolis:grout_dust')
 
-	//Jumbo Furnace Basic Technium
-
-	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[
-		{type: "forge:nbt", item: "minecraft:smooth_stone", count: 32},
-		{type: "forge:nbt", item: "minecraft:lapis_lazuli", count: 16},
-		{type: "forge:nbt", item: "immersiveengineering:coal_coke", count: 16},
-		{type: "forge:nbt", item: "minecraft:clay_ball", count: 16},
-		{type: "forge:nbt", item: "immersiveengineering:treated_wood_horizontal", count: 16},
-		{type: "forge:nbt", item: "alltheores:bronze_block", count: 2}
-	], 
-	result:{item: "techopolis:basic_technium_ingot"},experience: 0.5}).id('techopolis:basic_technium_ingot')
-
-	//Jumbo Furnace Advanced Technium
-
-	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[
-		{type: "forge:nbt", item: "techopolis:lava_bottle", count: 32},
-		{type: "forge:nbt", item: "minecraft:redstone_block", count: 4},
-		{type: "forge:nbt", item: "alltheores:steel_gear", count: 8},
-		{type: "forge:nbt", item: "alltheores:invar_ingot", count: 16},
-		{type: "forge:nbt", item: "immersiveengineering:sheetmetal_aluminum", count: 32},
-		{type: "forge:nbt", item: "techopolis:basic_technium_ingot", count: 1}
-	], 
-	result:{item: "techopolis:advanced_technium_ingot"},experience: 0.5}).id('techopolis:advanced_technium_ingot')
-
-
-
-	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[
-		{type: "forge:nbt", item: "alltheores:tin_ingot", count: 1},
-		{type: "forge:nbt", item: "minecraft:copper_ingot", count: 3}
-	], 
-	result:{item: "alltheores:bronze_ingot", count:4},experience: 0.5}).id('tecbronzehopolis:_ingot')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{type: "forge:nbt", item: "alltheores:tin_ingot", count: 1},{type: "forge:nbt", item: "minecraft:copper_ingot", count: 3}],result:{item: "alltheores:bronze_ingot", count:4},experience: 0.5}).id('tecbronzehopolis:_ingot')
+	
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "minecraft:sand", count: 1}], result:{item: "minecraft:glass"},experience: 0.1}).id('techopolis:glass')
 
 	//Immersive 
 
+	event.shaped('1x immersiveengineering:hammer', [' B ',' SB','S  '], {S:stick, B: '#forge:ingots/bronze'}).id('immersiveengineering:crafting/hammer')
 	event.shaped('24x immersiveengineering:conveyor_basic', ['L L','CCC','SSS'], {S:'minecraft:smooth_stone_slab', C: coal, L: lapis}).id('immersiveengineering:crafting/conveyor_basic')
 	event.shaped('1x immersiveengineering:conveyor_dropper', ['C','W'], {C:conveyor, W: wooden_hopper}).id('immersiveengineering:crafting/conveyor_dropper')
 	event.shaped('1x immersiveengineering:sorter', ['WCW','CHC', 'WCW'], {C:conveyor, W: wooden_hopper, H:chest}).id('immersiveengineering:crafting/sorter')
 	event.shaped('3x immersiveengineering:conveyor_splitter', ['C C',' C '], {C:conveyor}).id('immersiveengineering:crafting/conveyor_splitter')
 	event.shaped('3x immersiveengineering:conveyor_extract', ['CW'], {C:conveyor, W: wooden_hopper}).id('immersiveengineering:crafting/conveyor_extract')
 	event.shaped('3x immersiveengineering:conveyor_vertical', ['C','C','C'], {C:conveyor}).id('immersiveengineering:crafting/conveyor_vertical')
+
+	event.shaped('1x immersiveengineering:jerrycan', ['CC','CC'], {C:'ceramicbucket:ceramic_bucket'}).id('immersiveengineering:crafting/jerrycan')
 	
-	event.shaped('3x immersiveengineering:cokebrick', [' G ','GBG',' G '], {G:'techopolis:grout', B:'minecraft:bricks'}).id('immersiveengineering:crafting/cokebrick')
+	event.shaped('3x immersiveengineering:cokebrick', [' G ','GBG',' G '], {G:'techopolis:grout_dust', B:'minecraft:bricks'}).id('immersiveengineering:crafting/cokebrick')
 	event.shaped('9x immersiveengineering:blastbrick', ['AGA','GBG','AGA'], {A:'#forge:ingots/aluminum', G:'minecraft:brick', B:'immersiveengineering:cokebrick'}).id('immersiveengineering:crafting/blastbrick')
 
 	event.shaped('8x immersiveengineering:treated_wood_horizontal', ['PPP','PBP','PPP'], {P: planks, B: Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"immersiveengineering:creosote"}}').strongNBT()}).id('techopolis:crafting/treated_wood_horizontal')
 
 	event.custom({"type":"immersiveengineering:blueprint","category":"molds","inputs":[{"base_ingredient":{"tag":"forge:ingots/steel"},"count":3},{"item":"immersiveengineering:wirecutter"}],"result":{"item":"immersiveengineering:mold_plate"}})
 	event.custom({"type":"immersiveengineering:bottling_machine","fluid":{"amount":200,"tag":"minecraft:lava"},"input":{"item":"minecraft:glass_bottle"},"results":[{"item":"techopolis:lava_bottle"}]})
+
+	event.shaped('4x immersiveengineering:wirecoil_copper', ['CCC','CTC','CCC'], {C: copper_ingot, T: stick}).id('techopolis:additional_copper_wire_recipe')
+
+
 
 	//IE Metal Press
 
@@ -80,12 +59,20 @@ ServerEvents.recipes(event => {
 	event.shaped('1x minecraft:sand', [' G ','G G',' G '], {G:'techopolis:grout_dust'}).id('techopolis:sand_from_grout')
 	event.shaped('1x minecraft:clay_ball', ['G'], {G:'techopolis:grout_dust'}).id('techopolis:clay_ball_from_grout')
 
+	//Extended Crafting
+
+	event.shaped('1x extendedcrafting:basic_table', ['CCC','TCT','CCC'], {C: 'immersiveengineering:coal_coke', T: 'minecraft:crafting_table'}).id('extendedcrafting:basic_table')
+	event.shaped('1x extendedcrafting:basic_auto_table', [' H ','HBH',' H '], {H: wooden_hopper, B: 'extendedcrafting:basic_table'}).id('extendedcrafting:basic_auto_table')
+
+	event.shaped('1x extendedcrafting:advanced_table', ['CCC','TCT','CCC'], {C: 'immersiveengineering:coal_coke', T: 'extendedcrafting:basic_table'}).id('extendedcrafting:advanced_table')
+	event.shaped('1x extendedcrafting:advanced_auto_table', [' H ','HBH',' H '], {H: wooden_hopper, B: 'extendedcrafting:advanced_table'}).id('extendedcrafting:advanced_auto_table')
+
+
 	//Replace 
 
 	event.replaceInput({id: 'craftingautomat:autocrafter'}, 'minecraft:dropper', 'minecraft:crafting_table')
-	event.replaceInput({id: 'immersiveengineering:crafting/hammer'}, 'minecraft:iron_ingot', 'alltheores:bronze_ingot')
-
-
+	event.replaceInput({id: 'littlelogistics:transmitter_component'}, 'minecraft:ender_pearl', 'minecraft:redstone')
+	event.replaceInput({id: 'littlelogistics:rapid_hopper'}, 'minecraft:gold_ingot', basic_technium)
 
 	//Thermal
 
@@ -107,6 +94,9 @@ ServerEvents.recipes(event => {
 
 	event.custom({"type": "thermal:smelter","ingredients": [{"item": "techopolis:crystalline_dust","count": 1},{"value": [{"item": "minecraft:diamond"}],"count": 1},{"item": "minecraft:emerald",
 			"count": 1}],"result": [{"item": "techopolis:infused_crystalline","count": 1}],"energy": 5000}).id('techopolis:infused_crystalline')
+
+	event.custom({"type": "thermal:smelter","ingredients": [{"item": "alltheores:ruby","count": 1},{"value": [{"item": "alltheores:sapphire"}],"count": 1},{"item": "alltheores:peridot",
+			"count": 1}],"result": [{"item": "minecraft:amethyst_shard","count": 1}],"energy": 5000}).id('techopolis:amethyst')
 
 	event.custom({"type": "thermal:crystallizer","ingredients": [{"fluid": "techopolis:liquid_glass","amount": 250},{"item": "thermal:niter"}],"result": [{"item": "techopolis:crystal_base"}],"energy": 2500})
 	event.custom({"type": "thermal:crystallizer","ingredients": [{"fluid": "techopolis:liquid_glass","amount": 250},{"item": "alltheores:ruby_dust"}],"result": [{"item": "alltheores:ruby"}],"energy": 2500})
@@ -144,6 +134,7 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_metal_press', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/redstone', L:basic_technium}).id('techopolis:rp_metal_press')
 	event.shaped('techopolis:research_papers_silver_and_gold', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/constantan', L:advanced_technium}).id('techopolis:rp_silver_and_gold')
 	event.shaped('techopolis:research_papers_lead', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:dusts/lead', L:advanced_technium}).id('techopolis:rp_lead')
+	event.shaped('techopolis:research_papers_niter', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:gems/niter', L:advanced_technium}).id('techopolis:rp_niter')
 	event.shaped('techopolis:research_papers_crystal', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'techopolis:crystal_base', L:advanced_technium}).id('techopolis:rp_crystal')
 	event.shaped('techopolis:research_papers_diamond_and_emerald', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/ruby', L:advanced_technium}).id('techopolis:rp_diamond_and_emerald')
 	event.shaped('techopolis:research_papers_osmium', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/emerald', L:elite_technium}).id('techopolis:rp_osmium')
@@ -154,11 +145,19 @@ ServerEvents.recipes(event => {
 
 	event.shaped('techopolis:research_papers_thermal', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/electrum', L:advanced_technium}).id('techopolis:rp_thermal')
 	event.shaped('techopolis:research_papers_little_logistic', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/redstone', L:'minecraft:rail'}).id('techopolis:rp_little_logistics')
+	event.shaped('techopolis:research_papers_storage_drawers', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:chest', L:'compressium:cobblestone_2'}).id('techopolis:rp_storage_drawers')
+	event.shaped('techopolis:research_papers_compressium', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#minecraft:logs', L:'minecraft:smooth_stone'}).id('techopolis:rp_compressium')
+	event.shaped('techopolis:research_papers_immersive_aircraft', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'immersiveengineering:coal_coke', L:'immersiveengineering:treated_wood_horizontal'}).id('techopolis:rp_immersive_aircraft')
+
+	
+	//Research Papers (misc)
+	
+	event.shaped('techopolis:research_papers_b_bucks_1', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'opolisutilities:b_bucks', L:basic_technium}).id('techopolis:rp_b_bucks_1')
 
 	//Miners
 
 	event.shaped('1x miners:miner_tier_2', ['SCS','LPL','SCS'], {S:'minecraft:smooth_stone', L:'#forge:ores/lapis', C:'#forge:ores/coal', P:'minecraft:stone_pickaxe'}).id('miners:miners/miner_tier_2')
-	event.shaped('1x miners:miner_tier_4', ['SCS','LPL','SCS'], {S:'minecraft:smooth_stone', L:'#forge:storage_blocks/copper', C:'#forge:ores/coal', P:basic_technium}).id('miners:miners/miner_tier_4')
+	event.shaped('1x miners:miner_tier_4', ['SCS','LPL','SCS'], {S:'minecraft:smooth_stone', L:'#forge:storage_blocks/tin', C:'#forge:ingots/copper', P:basic_technium}).id('miners:miners/miner_tier_4')
 	event.shaped('1x miners:tree_absorber', ['SCS','LPL','SCS'], {S:'minecraft:smooth_stone', L:'#minecraft:planks', C:'#minecraft:planks', P:'minecraft:stone_axe'}).id('miners:miners/tree_absorber')
 
 
@@ -179,6 +178,32 @@ ServerEvents.recipes(event => {
 	event.remove({type:'opolisutilities:resource_generator'})
 	event.remove({type:'opolisutilities:resource_generator_2'})
 	event.remove({type:'thermal:rock_gen'})
+
+
+
+
+	//Gamestages, Kubejs, Crafttweaker, Recipe Stages Compatability Section(For Missing Staged Recipes ONLY Please Ben)
+
+	/*
+
+	event.shaped(AlmostUnified.getPreferredItemForTag('forge:storage_blocks/tin'), ['TTT','TTT','TTT'], {T:AlmostUnified.getPreferredItemForTag('forge:ingots/tin')})
+	event.shaped(AlmostUnified.getPreferredItemForTag('forge:storage_blocks/bronze'), ['TTT','TTT','TTT'], {T:AlmostUnified.getPreferredItemForTag('forge:ingots/bronze')})
+
+	event.shapeless(Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/tin'), 9), [AlmostUnified.getPreferredItemForTag('forge:storage_blocks/tin')])
+	event.shapeless(Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/bronze'), 9), [AlmostUnified.getPreferredItemForTag('forge:storage_blocks/bronze')])
+
+	event.shaped(AlmostUnified.getPreferredItemForTag('forge:ingots/tin'), ['TTT','TTT','TTT'], {T:AlmostUnified.getPreferredItemForTag('forge:nuggets/tin')})
+	event.shaped(AlmostUnified.getPreferredItemForTag('forge:ingots/bronze'), ['TTT','TTT','TTT'], {T:AlmostUnified.getPreferredItemForTag('forge:nuggets/bronze')})
+
+	event.shapeless(Item.of(AlmostUnified.getPreferredItemForTag('forge:nuggets/tin'), 9), [AlmostUnified.getPreferredItemForTag('forge:ingots/tin')])
+	event.shapeless(Item.of(AlmostUnified.getPreferredItemForTag('forge:nuggets/bronze'), 9), [AlmostUnified.getPreferredItemForTag('forge:ingots/bronze')])
+
+	*/
+
+
+	//event.forEachRecipe({type:"minecraft:crafting_shaped", output:AlmostUnified.getPreferredItemForTag('forge:storage_blocks/tin')} )
+	
+
 
 
 })

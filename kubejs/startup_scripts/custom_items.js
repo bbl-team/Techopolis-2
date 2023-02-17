@@ -22,9 +22,14 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:research_papers_crystal').displayName('Research Papers: Crystal').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Crystal collection with your prospectors pickaxe§r")
 	event.create('techopolis:research_papers_diamond_and_emerald').displayName('Research Papers: Diamond and Emerald').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Diamond and Emerald collection with your prospectors pickaxe§r")
 	event.create('techopolis:research_papers_osmium').displayName('Research Papers: Osmium').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Osmium collection with your prospectors pickaxe§r")
+	event.create('techopolis:research_papers_niter').displayName('Research Papers: Niter').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Niter purchasing from the ore shop§r")
 	
 	event.create('techopolis:research_papers_sulfur').displayName('Research Papers: Sulfur').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2You can now craft sulfur ore§r")
 	event.create('techopolis:research_papers_uranium').displayName('Research Papers: Uranium').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2You can now craft sulfur ore§r")
+
+	event.create('techopolis:research_papers_oil').displayName('Research Papers: Uranium').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2You can now craft oil buckets§r")
+	
+	event.create('techopolis:research_papers_b_bucks_1').displayName('Research Papers: B Bucks').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
 	
 	
 	//research Mods
@@ -36,6 +41,8 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:research_papers_rs').displayName('Research Papers: Refined Storage').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Refined Storage§r")
 	event.create('techopolis:research_papers_mekanism').displayName('Research Papers: Mekanism').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Mekanism§r")
 	event.create('techopolis:research_papers_powah').displayName('Research Papers: Powah').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Powah§r")
+	event.create('techopolis:research_papers_compressium').displayName('Research Papers: Compressium').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Compressium§r")
+	event.create('techopolis:research_papers_immersive_aircraft').displayName('Research Papers: Immersive Aircraft').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Immersive Aircraft§r")
 
 	event.create('techopolis:research_papers_metal_press').displayName('Research Pappers: Metal Press').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Provides the blocks needed to make the Metal Press§r")
 
@@ -71,6 +78,18 @@ StartupEvents.registry('fluid', event => {
 	
     event.create('techopolis:liquid_glass').thinTexture(0xFFF2E2).bucketColor(0xFFF2E2).displayName('Liquid Glass')
 
-  
-  
-  })
+})
+
+ItemEvents.modification(event => {
+
+	event.modify('minecraft:oak_leaves', item => {item.burnTime = 100})
+	event.modify('minecraft:birch_leaves', item => {item.burnTime = 100})
+	event.modify('minecraft:jungle_leaves', item => {item.burnTime = 100})
+	event.modify('minecraft:dark_oak_leaves', item => {item.burnTime = 100})
+	event.modify('minecraft:acacia_leaves', item => {item.burnTime = 100})
+	event.modify('minecraft:spruce_leaves', item => {item.burnTime = 100})
+
+})
+
+
+

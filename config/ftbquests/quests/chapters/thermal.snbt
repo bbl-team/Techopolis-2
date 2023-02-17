@@ -4,6 +4,7 @@
 	order_index: 1
 	filename: "thermal"
 	title: "Thermal"
+	icon: "thermal:machine_frame"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -12,11 +13,13 @@
 			y: -3.0d
 			shape: "square"
 			description: ["Unlocks Thermal Series "]
+			dependencies: ["6E55A0DF26DD01B3"]
 			id: "508CD0F62F48F4F1"
 			tasks: [{
-				id: "5ED9583092452781"
+				id: "75FAACCA5F00890B"
 				type: "item"
-				item: "techopolis:reaserch_pappers_thermal"
+				item: "techopolis:research_papers_thermal"
+				consume_items: true
 			}]
 			rewards: [{
 				id: "7516054DDBF4A41F"
@@ -37,6 +40,18 @@
 				type: "item"
 				item: "thermal:machine_frame"
 			}]
+			rewards: [
+				{
+					id: "05D4F26059838CCC"
+					type: "item"
+					item: "thermal:machine_frame"
+				}
+				{
+					id: "6341E1A4D593E9C0"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -46,9 +61,9 @@
 			dependencies: ["752C19F90108100C"]
 			id: "3A7B8FE35CD46B6A"
 			tasks: [{
-				id: "2E6E2FAFDF2F58FC"
+				id: "264A51DA31D6D088"
 				type: "item"
-				item: "techopolis:reaserch_pappers_lead"
+				item: "techopolis:research_papers_lead"
 			}]
 			rewards: [{
 				id: "41D54DEF79DE0C67"
@@ -69,6 +84,11 @@
 				type: "item"
 				item: "thermal:machine_pulverizer"
 			}]
+			rewards: [{
+				id: "559D477375BE61BA"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
@@ -80,6 +100,11 @@
 				id: "7A15BA621C50C999"
 				type: "item"
 				item: "thermal:rf_coil"
+			}]
+			rewards: [{
+				id: "3F864937AB4FC4FD"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -93,6 +118,11 @@
 				type: "item"
 				item: "thermal:dynamo_magmatic"
 			}]
+			rewards: [{
+				id: "3ED6825CED516395"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
@@ -105,17 +135,27 @@
 				type: "item"
 				item: "alltheores:lead_dust"
 			}]
+			rewards: [{
+				id: "4CD9162EE114FF05"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
 			y: 3.0d
-			description: ["Allows your prospectors pickaxe to collect lead fragments"]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["3A7B8FE35CD46B6A"]
 			id: "1032510B33A4D68F"
 			tasks: [{
 				id: "55CDB1CB3472E3DE"
 				type: "item"
 				item: "caveopolis:lead_fragment"
+			}]
+			rewards: [{
+				id: "7FBDF9E1296CDD6E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -136,6 +176,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "74EB4199BB712936"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
@@ -148,6 +193,19 @@
 				type: "item"
 				item: "alltheores:lead_ingot"
 			}]
+			rewards: [
+				{
+					id: "37EC78C8EDD132E9"
+					type: "item"
+					item: "alltheores:lead_ingot"
+					count: 5
+				}
+				{
+					id: "3B27272DB472B3C4"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -162,6 +220,11 @@
 				type: "item"
 				item: "thermal:machine_crystallizer"
 			}]
+			rewards: [{
+				id: "4B3E1840FA0EEE7F"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 3.0d
@@ -173,6 +236,11 @@
 				id: "654C3EA0C6C8C9DD"
 				type: "item"
 				item: "alltheores:signalum_plate"
+			}]
+			rewards: [{
+				id: "15501B858755F9F8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -190,6 +258,11 @@
 				type: "item"
 				item: "alltheores:signalum_ingot"
 			}]
+			rewards: [{
+				id: "2B5D5DBDD71BB981"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
@@ -201,6 +274,11 @@
 				id: "17E2E5152915BA00"
 				type: "item"
 				item: "alltheores:signalum_dust"
+			}]
+			rewards: [{
+				id: "54A35B5C7AAC47DB"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -214,6 +292,11 @@
 				type: "item"
 				item: "thermal:machine_smelter"
 			}]
+			rewards: [{
+				id: "0BA5899F8871682C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 3.0d
@@ -225,6 +308,11 @@
 				id: "0C96D6875FF97ED4"
 				type: "item"
 				item: "thermal:obsidian_glass"
+			}]
+			rewards: [{
+				id: "3AC2FB2E657F5F2D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -242,6 +330,11 @@
 				type: "item"
 				item: "techopolis:crystal_base"
 			}]
+			rewards: [{
+				id: "4F0D205917A5CD19"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.5d
@@ -253,6 +346,11 @@
 				id: "5322CCB0E8B80983"
 				type: "item"
 				item: "thermal:niter"
+			}]
+			rewards: [{
+				id: "312A91414966A540"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -266,6 +364,11 @@
 				type: "item"
 				item: "thermal:machine_crucible"
 			}]
+			rewards: [{
+				id: "6AD472F62207E242"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 5.0d
@@ -277,6 +380,11 @@
 				id: "1BC4903ECF02E88F"
 				type: "item"
 				item: "minecraft:prismarine_shard"
+			}]
+			rewards: [{
+				id: "0C39BF5C547CF958"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

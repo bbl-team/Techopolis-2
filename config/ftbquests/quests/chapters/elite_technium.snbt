@@ -4,23 +4,30 @@
 	order_index: 3
 	filename: "elite_technium"
 	title: "Elite Technium"
+	icon: "techopolis:elite_technium_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -2.5d
-			y: 1.5d
+			x: -3.5d
+			y: -0.5d
 			description: ["Ore can be turned into ingots"]
+			dependencies: ["752C19F90108100C"]
 			id: "63C221565DDC685C"
 			tasks: [{
-				id: "7A3B6316C6D0A92E"
+				id: "6E24730F0B48C1F5"
 				type: "item"
-				item: "alltheores:lead_ingot"
+				item: "immersiveengineering:sheetmetal_lead"
 			}]
 		}
 		{
-			x: -1.5d
-			y: 1.5d
+			x: -2.5d
+			y: -0.5d
+			dependencies: [
+				"7B4C768FA469461C"
+				"1EAA8DE8294F4526"
+				"19B95DA4B894F735"
+			]
 			id: "6F4C751E6B28A610"
 			tasks: [{
 				id: "2EEC9DA9B099AA12"
@@ -29,13 +36,33 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -2.5d
 			y: 0.5d
-			id: "567397C43EE09E8E"
+			description: ["Next part of technium"]
+			dependencies: [
+				"02D5C38530DC28C4"
+				"63C221565DDC685C"
+				"7B4C768FA469461C"
+				"6F4C751E6B28A610"
+				"1EAA8DE8294F4526"
+				"19B95DA4B894F735"
+			]
+			id: "1CA69C7B4695EA81"
 			tasks: [{
-				id: "3690FE2B218D7F73"
+				id: "7089964183109DE9"
 				type: "item"
-				item: "immersiveengineering:dust_wood"
+				item: "techopolis:elite_technium_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			dependencies: ["6E55A0DF26DD01B3"]
+			id: "02D5C38530DC28C4"
+			tasks: [{
+				id: "5129874F32EF2A1E"
+				type: "item"
+				item: "alltheores:electrum_gear"
 			}]
 		}
 	]

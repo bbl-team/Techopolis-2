@@ -4,6 +4,7 @@
 	order_index: 2
 	filename: "crystals"
 	title: "Crystals"
+	icon: "techopolis:crystalline_dust"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -18,6 +19,11 @@
 				type: "item"
 				item: "techopolis:crystalline_dust"
 			}]
+			rewards: [{
+				id: "534701D78D8B0AEF"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.0d
@@ -30,10 +36,16 @@
 				type: "item"
 				item: "alltheores:ruby_dust"
 			}]
+			rewards: [{
+				id: "63BD484790AD144E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
 			y: 1.5d
+			description: ["Made with crystalline dust"]
 			dependencies: ["30B3BBEFD91121D0"]
 			id: "69D9CC830CD9416F"
 			tasks: [{
@@ -41,16 +53,27 @@
 				type: "item"
 				item: "alltheores:sapphire_dust"
 			}]
+			rewards: [{
+				id: "34F497DC7743E49D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
 			y: 1.0d
+			description: ["Made with crystalline dust"]
 			dependencies: ["30B3BBEFD91121D0"]
 			id: "07C39771EF0F465A"
 			tasks: [{
 				id: "601A70C0A5FA45E1"
 				type: "item"
 				item: "alltheores:peridot_dust"
+			}]
+			rewards: [{
+				id: "1A027385A4063DD2"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -64,6 +87,11 @@
 				type: "item"
 				item: "alltheores:ruby"
 			}]
+			rewards: [{
+				id: "0C34A1256CABF105"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
@@ -75,6 +103,11 @@
 				id: "78041F50043B2C06"
 				type: "item"
 				item: "alltheores:sapphire"
+			}]
+			rewards: [{
+				id: "5842A6BA5799D0A8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -88,9 +121,14 @@
 				type: "item"
 				item: "alltheores:peridot"
 			}]
+			rewards: [{
+				id: "2DC1693A2219780F"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: -2.5d
+			x: -1.0d
 			y: 0.0d
 			description: ["Ore can be turned into this"]
 			dependencies: ["0CA3F404C4857194"]
@@ -100,10 +138,16 @@
 				type: "item"
 				item: "techopolis:crystalline"
 			}]
+			rewards: [{
+				id: "7AC372FA474023DF"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: -2.5d
+			x: -1.0d
 			y: -1.0d
+			description: ["Crystal ore"]
 			dependencies: ["7366BCD17D4FBF32"]
 			id: "0CA3F404C4857194"
 			tasks: [{
@@ -111,11 +155,16 @@
 				type: "item"
 				item: "techopolis:crystal_ore"
 			}]
+			rewards: [{
+				id: "353DAA0B7D783A43"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: -2.5d
+			x: -1.0d
 			y: -2.0d
-			description: ["Founds inside broken colored stone when broken with the prospectors pickaxe."]
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
 			dependencies: ["0CA1B3A8B242C68F"]
 			id: "7366BCD17D4FBF32"
 			tasks: [{
@@ -123,18 +172,23 @@
 				type: "item"
 				item: "techopolis:crystal_fragment"
 			}]
+			rewards: [{
+				id: "6A6DE969A0326D82"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
-			x: -2.5d
+			x: -1.0d
 			y: -3.0d
 			shape: "square"
 			description: ["Allows your prospectors pickaxe to collect crystal fragments"]
 			dependencies: ["34B42292099422B5"]
 			id: "0CA1B3A8B242C68F"
 			tasks: [{
-				id: "73A558C499064CB1"
+				id: "4C179C1089E7FA37"
 				type: "item"
-				item: "techopolis:reaserch_pappers_crystal"
+				item: "techopolis:research_papers_crystal"
 			}]
 			rewards: [{
 				id: "3A527B3306887015"
