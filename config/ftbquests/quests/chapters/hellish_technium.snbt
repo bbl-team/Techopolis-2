@@ -1,20 +1,32 @@
 {
 	id: "4DE15CC92E25736C"
 	group: "7921F36F1DB604AD"
-	order_index: 0
+	order_index: 2
 	filename: "hellish_technium"
 	title: "Hellish Technium"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 0.0d
-		y: 0.0d
-		id: "4940CE1FACE39993"
-		tasks: [{
-			id: "7F37C600ADB36DFA"
-			type: "item"
-			item: "techopolis:hellish_technium_ingot"
-		}]
-	}]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "4940CE1FACE39993"
+			tasks: [{
+				id: "7F37C600ADB36DFA"
+				type: "item"
+				item: "techopolis:hellish_technium_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			id: "01DD316BE500FF09"
+			tasks: [{
+				id: "4A4332A720B8D0F5"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+			}]
+		}
+	]
 	quest_links: [ ]
 }

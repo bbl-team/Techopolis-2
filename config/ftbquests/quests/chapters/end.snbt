@@ -1,0 +1,11 @@
+{
+	id: "3655BE30BA1A5C27"
+	group: "62C5FE5ECA80879B"
+	order_index: 1
+	filename: "end"
+	title: "End"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

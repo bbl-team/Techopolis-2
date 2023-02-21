@@ -1,6 +1,6 @@
 {
 	chapter_groups: [
-		{ id: "0C8FA6EE4828F266", title: "Research Pappers" }
+		{ id: "0C8FA6EE4828F266", title: "Research Papers" }
 		{ id: "063215D6A3060400", title: "Basic Tech" }
 		{ id: "2E909DF337DB0A54", title: "Advanced Tech" }
 		{ id: "7880DAE5186B4734", title: "Elite Tech" }

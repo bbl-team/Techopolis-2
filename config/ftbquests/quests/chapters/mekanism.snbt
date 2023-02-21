@@ -24,6 +24,7 @@
 			y: -5.0d
 			shape: "square"
 			description: ["Allows your prospectors pickaxe to collect osmium fragments"]
+			dependencies: ["1CA69C7B4695EA81"]
 			id: "77993E2FE0139206"
 			tasks: [{
 				id: "616C283C5B472A6C"

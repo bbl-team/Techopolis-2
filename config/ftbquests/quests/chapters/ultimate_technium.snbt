@@ -25,6 +25,10 @@
 			x: -0.5d
 			y: -1.0d
 			description: ["Used to make technium"]
+			dependencies: [
+				"2BFC9EF9A5F18491"
+				"083C8E8E7BDD1140"
+			]
 			id: "192796C73BBB3360"
 			tasks: [{
 				id: "1274508F26543938"
@@ -36,6 +40,7 @@
 			x: 0.5d
 			y: -1.0d
 			description: ["Used to make technium"]
+			dependencies: ["3AA81C9F7490FF6D"]
 			id: "0FFC67F841864FEE"
 			tasks: [{
 				id: "71A3D3F5C5614C64"

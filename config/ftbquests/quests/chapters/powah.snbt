@@ -48,6 +48,7 @@
 			y: -3.0d
 			shape: "square"
 			description: ["Allows your prospectors pickaxe to collect uranium fragments"]
+			dependencies: ["5F3FA8616DC98F72"]
 			id: "20F6AF13651B0E56"
 			tasks: [{
 				id: "2747B5BEDFEB41C4"

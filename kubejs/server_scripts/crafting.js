@@ -59,6 +59,13 @@ ServerEvents.recipes(event => {
 	event.shaped('1x minecraft:sand', [' G ','G G',' G '], {G:'techopolis:grout_dust'}).id('techopolis:sand_from_grout')
 	event.shaped('1x minecraft:clay_ball', ['G'], {G:'techopolis:grout_dust'}).id('techopolis:clay_ball_from_grout')
 
+	event.shaped('1x minecraft:netherrack', [' L ','LSL',' L '], {L:'techopolis:lava_bottle', S:'#techopolis:colored_stone'}).id('techopolis:netherrack').stage('nether')
+	event.shaped('1x minecraft:soul_sand', [' L ','LSL',' L '], {L:'techopolis:lava_bottle', S:'#minecraft:sand'}).id('techopolis:sand').stage('nether')
+	event.shaped('1x minecraft:basalt', [' L ','LSL',' L '], {L:'techopolis:lava_bottle', S:'minecraft:smooth_stone'}).id('techopolis:basalt').stage('nether')
+
+	event.shaped('6x minecraft:netherite_scrap', ['BBB','SSS','BBB'], {B:'minecraft:nether_brick', S:'minecraft:soul_sand'}).id('techopolis:netherite_scrap').stage('debris')
+	event.shaped('1x minecraft:ancient_debris', [' S ','SBS',' S '], {S:'minecraft:netherite_scrap', B:'minecraft:basalt'}).id('techopolis:ancient_debris').stage('debris')
+
 	//Extended Crafting
 
 	event.shaped('1x extendedcrafting:basic_table', ['CCC','TCT','CCC'], {C: 'immersiveengineering:coal_coke', T: 'minecraft:crafting_table'}).id('extendedcrafting:basic_table')
@@ -67,13 +74,23 @@ ServerEvents.recipes(event => {
 	event.shaped('1x extendedcrafting:advanced_table', ['CCC','TCT','CCC'], {C: 'immersiveengineering:coal_coke', T: 'extendedcrafting:basic_table'}).id('extendedcrafting:advanced_table')
 	event.shaped('1x extendedcrafting:advanced_auto_table', [' H ','HBH',' H '], {H: wooden_hopper, B: 'extendedcrafting:advanced_table'}).id('extendedcrafting:advanced_auto_table')
 
+	event.shaped('1x extendedcrafting:elite_table', ['CCC','TCT','CCC'], {C: 'techopolis:ultimate_technium_ingot', T: 'extendedcrafting:advanced_table'}).id('extendedcrafting:elite_table')
+	event.shaped('1x extendedcrafting:elite_auto_table', [' H ','HBH',' H '], {H: hopper, B: 'extendedcrafting:elite_table'}).id('extendedcrafting:elite_auto_table')
+	event.shaped('1x extendedcrafting:advanced_auto_table', [' H ','HBH',' H '], {H: wooden_hopper, B: 'extendedcrafting:advanced_table'}).id('extendedcrafting:advanced_auto_table')
 
+	event.shaped('1x extendedcrafting:ultimate_table', ['CCC','TCT','CCC'], {C: 'techopolis:ultimate_technium_ingot', T: 'extendedcrafting:elite_table'}).id('extendedcrafting:ultimate_table')
+	event.shaped('1x extendedcrafting:ultimate_auto_table', [' H ','HBH',' H '], {H: hopper, B: 'extendedcrafting:ultimate_table'}).id('extendedcrafting:ultimate_auto_table')
+	
+	
+
+	
 	//Replace 
 
 	event.replaceInput({id: 'craftingautomat:autocrafter'}, 'minecraft:dropper', 'minecraft:crafting_table')
 	event.replaceInput({id: 'littlelogistics:transmitter_component'}, 'minecraft:ender_pearl', 'minecraft:redstone')
 	event.replaceInput({id: 'littlelogistics:rapid_hopper'}, 'minecraft:gold_ingot', basic_technium)
-
+	event.replaceInput({id: 'extendedcrafting:black_iron_ingot'}, 'minecraft:black_dye', 'minecraft:netherite_ingot')
+	
 	//Thermal
 
 	event.replaceInput({id: 'thermal:machine_frame'}, 'minecraft:iron_ingot', 'alltheores:silver_ingot')
@@ -140,6 +157,9 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_osmium', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/emerald', L:elite_technium}).id('techopolis:rp_osmium')
 	event.shaped('techopolis:research_papers_mekanism', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/osmium', L:elite_technium}).id('techopolis:rp_mekanism')
 	event.shaped('techopolis:research_papers_powah', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/uranium', L:elite_technium}).id('techopolis:rp_powah')
+	event.shaped('techopolis:research_papers_uranium', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'mekanism:alloy_atomic', L:elite_technium}).id('techopolis:rp_uranium')
+	event.shaped('techopolis:research_papers_debris', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:netherrack', L:ultimate_technium}).id('techopolis:rp_debris')
+	event.shaped('techopolis:research_papers_nether', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'techopolis:lava_bottle', L:ultimate_technium}).id('techopolis:rp_debris')
 	
 	//Reseach Papers (mods)
 
@@ -148,6 +168,7 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_storage_drawers', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:chest', L:'compressium:cobblestone_2'}).id('techopolis:rp_storage_drawers')
 	event.shaped('techopolis:research_papers_compressium', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#minecraft:logs', L:'minecraft:smooth_stone'}).id('techopolis:rp_compressium')
 	event.shaped('techopolis:research_papers_immersive_aircraft', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'immersiveengineering:coal_coke', L:'immersiveengineering:treated_wood_horizontal'}).id('techopolis:rp_immersive_aircraft')
+	event.shaped('techopolis:research_papers_extended_crafting', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:netherite_ingot', L:ultimate_technium}).id('techopolis:rp_extended_crafting')
 
 	
 	//Research Papers (misc)
@@ -166,44 +187,23 @@ ServerEvents.recipes(event => {
 	event.remove({id:'opolisutilities:resource_generator/resource_generator'})
 	event.remove({id:'opolisutilities:resource_generator_2'})
 	event.remove({id:'alltheores:steel_dust_from_alloy_blending'})
+	event.remove({id:'beyond_earth:iron_plate'})
+	event.remove({id:'minecraft:netherite_ingot'})
+	event.remove({id:'beyond_earth:desh_plate'})
 	event.remove({input:'alltheores:iron_ore_hammer'})
 	event.remove({input:'alltheores:copper_ore_hammer'})
 	event.remove({input:'alltheores:bronze_ore_hammer'})
 	event.remove({input:'alltheores:invar_ore_hammer'})
 	event.remove({input:'alltheores:platinum_ore_hammer'})
 	event.remove({input:'minecraft:fire_charge', output: '#forge:ingots'})
+	event.remove({input:'minecraft:fire_charge', output: '#forge:gems'})
+	event.remove({input:'minecraft:fire_charge', output: '#forge:dusts'})
 	event.remove({input:'minecraft:fire_charge', output: '#thermal:glass/hardened'})
 	event.remove({input:'#forge:nuggets/iron', output: '#forge:gears'})
 	event.remove({id:'/thermal:machines/press//'})
 	event.remove({type:'opolisutilities:resource_generator'})
 	event.remove({type:'opolisutilities:resource_generator_2'})
 	event.remove({type:'thermal:rock_gen'})
-
-
-
-
-	//Gamestages, Kubejs, Crafttweaker, Recipe Stages Compatability Section(For Missing Staged Recipes ONLY Please Ben)
-
-	/*
-
-	event.shaped(AlmostUnified.getPreferredItemForTag('forge:storage_blocks/tin'), ['TTT','TTT','TTT'], {T:AlmostUnified.getPreferredItemForTag('forge:ingots/tin')})
-	event.shaped(AlmostUnified.getPreferredItemForTag('forge:storage_blocks/bronze'), ['TTT','TTT','TTT'], {T:AlmostUnified.getPreferredItemForTag('forge:ingots/bronze')})
-
-	event.shapeless(Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/tin'), 9), [AlmostUnified.getPreferredItemForTag('forge:storage_blocks/tin')])
-	event.shapeless(Item.of(AlmostUnified.getPreferredItemForTag('forge:ingots/bronze'), 9), [AlmostUnified.getPreferredItemForTag('forge:storage_blocks/bronze')])
-
-	event.shaped(AlmostUnified.getPreferredItemForTag('forge:ingots/tin'), ['TTT','TTT','TTT'], {T:AlmostUnified.getPreferredItemForTag('forge:nuggets/tin')})
-	event.shaped(AlmostUnified.getPreferredItemForTag('forge:ingots/bronze'), ['TTT','TTT','TTT'], {T:AlmostUnified.getPreferredItemForTag('forge:nuggets/bronze')})
-
-	event.shapeless(Item.of(AlmostUnified.getPreferredItemForTag('forge:nuggets/tin'), 9), [AlmostUnified.getPreferredItemForTag('forge:ingots/tin')])
-	event.shapeless(Item.of(AlmostUnified.getPreferredItemForTag('forge:nuggets/bronze'), 9), [AlmostUnified.getPreferredItemForTag('forge:ingots/bronze')])
-
-	*/
-
-
-	//event.forEachRecipe({type:"minecraft:crafting_shaped", output:AlmostUnified.getPreferredItemForTag('forge:storage_blocks/tin')} )
-	
-
 
 
 })

@@ -12,6 +12,7 @@
 			y: -1.0d
 			shape: "square"
 			description: ["Allows your prospectors pickaxe to collect diamond and emerald fragments"]
+			dependencies: ["19B95DA4B894F735"]
 			id: "754CDB1500697856"
 			tasks: [{
 				id: "1BF5EB8786A890A1"

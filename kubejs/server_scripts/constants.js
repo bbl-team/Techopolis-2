@@ -7,6 +7,7 @@
 const basic_technium = 'techopolis:basic_technium_ingot'
 const advanced_technium = 'techopolis:advanced_technium_ingot'
 const elite_technium = 'techopolis:elite_technium_ingot'
+const ultimate_technium = 'techopolis:ultimate_technium_ingot'
 
 const hopper = 'minecraft:hopper'
 const wooden_hopper = 'woodenhopper:wooden_hopper'
