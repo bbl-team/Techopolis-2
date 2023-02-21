@@ -275,6 +275,13 @@
 					consume_items: true
 				}
 			]
+			rewards: [{
+				id: "01C3686071E7A563"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p immersive_aircraft"
+				player_command: true
+			}]
 		}
 		{
 			title: "Airship"
@@ -358,6 +365,36 @@
 				id: "0B224A528F88005C"
 				type: "item"
 				item: "immersive_aircraft:quadrocopter"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Unlocks Construction Wands"
+			description: ["Allows for faster building of simple shapes"]
+			id: "4FB13938D928B882"
+			tasks: [
+				{
+					id: "53C1B4412BEEF7D1"
+					type: "item"
+					item: "techopolis:research_papers_construction_wand"
+					consume_items: true
+				}
+				{
+					id: "336430EC945CEEC8"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "3ACAD88843C83928"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p construction_wand"
+				player_command: true
 			}]
 		}
 	]

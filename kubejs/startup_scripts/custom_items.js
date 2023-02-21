@@ -23,6 +23,8 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:research_papers_diamond_and_emerald').displayName('Research Papers: Diamond and Emerald').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Diamond and Emerald collection with your prospectors pickaxe§r")
 	event.create('techopolis:research_papers_osmium').displayName('Research Papers: Osmium').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Osmium collection with your prospectors pickaxe§r")
 	event.create('techopolis:research_papers_niter').displayName('Research Papers: Niter').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Niter purchasing from the ore shop§r")
+	event.create('techopolis:research_papers_debris').displayName('Research Papers: Ancient Debris').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Ancient Debris Crafting Recipe§r")
+	event.create('techopolis:research_papers_nether').displayName('Research Papers: Nether Materials').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Various New Crafting Recipes for nether items§r")
 	
 	event.create('techopolis:research_papers_sulfur').displayName('Research Papers: Sulfur').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2You can now craft sulfur ore§r")
 	event.create('techopolis:research_papers_uranium').displayName('Research Papers: Uranium').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2You can now craft sulfur ore§r")
@@ -43,6 +45,8 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:research_papers_powah').displayName('Research Papers: Powah').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Powah§r")
 	event.create('techopolis:research_papers_compressium').displayName('Research Papers: Compressium').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Compressium§r")
 	event.create('techopolis:research_papers_immersive_aircraft').displayName('Research Papers: Immersive Aircraft').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Immersive Aircraft§r")
+	event.create('techopolis:research_papers_extended_crafting').displayName('Research Papers: Extended Crafting').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks All Remaining Extended Crafting Items and Blocks§r")
+	event.create('techopolis:research_papers_construction_wand').displayName('Research Papers: Construction Wands').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Constructions Wands§r")
 
 	event.create('techopolis:research_papers_metal_press').displayName('Research Pappers: Metal Press').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Provides the blocks needed to make the Metal Press§r")
 
@@ -59,7 +63,7 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:crystalline_dust')
 	event.create('techopolis:crystal_base')
 	event.create('techopolis:infused_crystalline')
-	event.create('techopolis:prismarine_dust').color(0, 0xF6FCFC)
+	event.create('techopolis:prismarine_dust').texture("alltheores:item/uranium_dust").color(0, 0xF6FCFC)
 
 	event.create('techopolis:prospectors_pickaxe', 'pickaxe').tier('diamond')
 

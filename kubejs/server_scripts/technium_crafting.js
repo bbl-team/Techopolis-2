@@ -139,4 +139,126 @@ ServerEvents.recipes(event => {
 		}
 	}).id('techopolis:ultimate_technium_ingot')
 
+	//Black Iron Frame
+
+	event.custom({
+		"type": "extendedcrafting:shaped_table",
+		"pattern": [
+		  "AAAAAAAAA",
+		  "AABBBBBAA",
+		  "AB     BA",
+		  "AB     BA",
+		  "AB  C  BA",
+		  "AB     BA",
+		  "AB     BA",
+		  "AABBBBBAA",
+		  "AAAAAAAAA"
+		],
+		"key": {
+		  "A": {
+			"item": "extendedcrafting:black_iron_ingot"
+		  },
+		  "B": {
+			"item": "minecraft:tinted_glass"
+		  },
+		  "C": {
+			"item": "techopolis:ultimate_technium_ingot"
+		  }
+		},
+		"result": {
+		  "item": "extendedcrafting:frame"
+		}
+	}).id('extendedcrafting:frame')
+
+
+	//Crafting Core
+
+	event.custom({
+		"type": "extendedcrafting:shaped_table",
+		"pattern": [
+		  "AAAAAAAAA",
+		  " ABBBBBA ",
+		  "AAAAAAAAA",
+		  " ABBBBBA ",
+		  "AAAACAAAA",
+		  " ABBBBBA ",
+		  "AAAAAAAAA",
+		  " ABBBBBA ",
+		  "AAAAAAAAA"
+		],
+		"key": {
+		  "A": {
+			"item": "extendedcrafting:black_iron_ingot"
+		  },
+		  "B": {
+			"item": "mekanism:enriched_diamond"
+		  },
+		  "C": {
+			"item": "extendedcrafting:frame"
+		  }
+		},
+		"result": {
+		  "item": "extendedcrafting:crafting_core"
+		}
+	}).id('extendedcrafting:crafting_core')
+
+	//Pedestal
+
+	event.custom({
+		"type": "extendedcrafting:shaped_table",
+		"pattern": [
+		  " AAAAAAA ",
+		  " AAAAAAA ",
+		  "   AAA   ",
+		  "   AAA   ",
+		  "   AAA   ",
+		  "   AAA   ",
+		  "   AAA   ",
+		  "AAAABAAAA",
+		  "AAAAAAAAA"
+		],
+		"key": {
+		  "A": {
+			"item": "extendedcrafting:black_iron_ingot"
+		  },
+		  "B": {
+			"item": "extendedcrafting:frame"
+		  }
+		},
+		"result": {
+		  "item": "extendedcrafting:pedestal"
+		}
+	}).id('extendedcrafting:pedestal')
+
+	//Compressor
+
+	event.custom({
+		"type": "extendedcrafting:shaped_table",
+		"pattern": [
+		  "AAAAAAAAA",
+		  "AAAAAAAAA",
+		  "AAAAAAAAA",
+		  "AABBBBBAA",
+		  "AABBBBBAA",
+		  "AABBCBBAA",
+		  "AABBBBBAA",
+		  "AABBBBBAA",
+		  "AAAAAAAAA"
+		],
+		"key": {
+		  "A": {
+			"item": "extendedcrafting:black_iron_ingot"
+		  },
+		  "B": {
+			"item": "mekanism:enriched_diamond"
+		  },
+		  "C": {
+			"item": "extendedcrafting:frame"
+		  }
+		},
+		"result": {
+		  "item": "extendedcrafting:compressor"
+		}
+	}).id('extendedcrafting:compressor')
+
 })

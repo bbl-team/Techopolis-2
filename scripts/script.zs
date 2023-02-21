@@ -36,6 +36,7 @@ ItemStages.createModRestriction("waystones", "waystones");
 ItemStages.createModRestriction("powah", "powah");
 
 ItemStages.createModRestriction("beyond_earth", "beyond_earth");
+ItemStages.createModRestriction("constructionwand", "construction_wand");
 ItemStages.restrict(<item:beyond_earth:nasa_workbench>, "beyond_earth");
 
 

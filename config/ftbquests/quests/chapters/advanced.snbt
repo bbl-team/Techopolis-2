@@ -28,16 +28,6 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -0.5d
-			id: "350C86CA69BFFC4C"
-			tasks: [{
-				id: "3837109F29129865"
-				type: "checkmark"
-				title: "solar power"
-			}]
-		}
-		{
 			x: -4.0d
 			y: -0.5d
 			subtitle: "Unlocks a crafting recipe for B Bucks"
@@ -63,6 +53,16 @@
 				auto: "enabled"
 				command: "/gamestage add @p b_bucks_1"
 				player_command: true
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			id: "2BF594048BFE2106"
+			tasks: [{
+				id: "2193567DCAE1459B"
+				type: "checkmark"
+				title: "building gadgets"
 			}]
 		}
 	]

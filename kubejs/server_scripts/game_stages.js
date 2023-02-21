@@ -30,6 +30,10 @@ ServerEvents.recipes(event => {
     addStageByMod("powah", "powah")
     addStageByMod("beyond_earth", "beyond_earth")
     addStageByMod("compressium", "compressium")
+    addStageByMod("constructionwand", "construction_wand")
+    addStageByMod("nether", "nether")
+    addStageByMod("debris", "debris")
+    addStageByMod("extended_crafting", "extended_crafting")
 
 
     // clear stages from certain tag based recipes
@@ -57,6 +61,16 @@ ServerEvents.recipes(event => {
         return /forge:nuggets/.test(tag)
     })
     nuggetsTags.forEach(tag => {
+        let item = AlmostUnified.getPreferredItemForTag(tag)
+        event.forEachRecipe({ output: item }, recipe => {
+            recipe.stage("")
+        })
+    })
+
+    let dustTags = AlmostUnified.getTags().filter(tag => {
+        return /forge:dusts/.test(tag)
+    })
+    dustTags.forEach(tag => {
         let item = AlmostUnified.getPreferredItemForTag(tag)
         event.forEachRecipe({ output: item }, recipe => {
             recipe.stage("")

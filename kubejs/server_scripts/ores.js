@@ -8,10 +8,12 @@ ServerEvents.recipes(event => {
 	//Ore Remmove Recipes (Smelting)
 
 	event.remove({type:'minecraft:smelting', input:'#forge:ores'})
+	event.remove({type:'minecraft:smelting', input:'#forge:dusts', output:'#forge:ingots'})
 
 	//Ore Remmove Recipes (Blasing)
 
 	event.remove({type:'minecraft:blasting', input:'#forge:ores'})
+	event.remove({type:'minecraft:blasting', input:'#forge:dusts', output:'#forge:ingots'})
 
 	//Ore Crafting
 
@@ -78,6 +80,40 @@ ServerEvents.recipes(event => {
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/niter", count: 5}], result:{item: "thermal:niter"},experience: 0.1}).id('techopolis:jumbo_furnace_niter')
 	
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/diamond", count: 8}], result:{item: "minecraft:diamond"},experience: 0.1}).id('techopolis:jumbo_furnace_diamond')
-	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/emerald", count: 8}], result:{item: "miencraft:emerald"},experience: 0.1}).id('techopolis:jumbo_furnace_emerald')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/emerald", count: 8}], result:{item: "minecraft:emerald"},experience: 0.1}).id('techopolis:jumbo_furnace_emerald')
+
+	//Ore Processing Unification	
+
+	function oreUnificationOutputAmounts (type) {
+
+	let chosenIngot = AlmostUnified.getPreferredItemForTag(`forge:ingots/${type}`)
+	let chosenDust = AlmostUnified.getPreferredItemForTag(`forge:dusts/${type}`)
+
+	event.custom({type:"immersiveengineering:crusher","energy":6000,input:{"tag":`forge:ores/${type}`},"result":chosenDust,"secondaries":[]}).id(`immersiveengineering:crusher/ore_${type}`)
+	event.custom({type: "jumbofurnace:jumbo_smelting", ingredients:[{"type": "jumbofurnace:tag_stack", tag:`forge:dusts/${type}`, count:2}], result:chosenIngot, experience: 0.1}).id(`techopolis:dust_smelting_jumbo_furnace/ore_${type}`)
+	
+	}
+
+	oreUnificationOutputAmounts ('copper')	
+	oreUnificationOutputAmounts ('tin')	
+	oreUnificationOutputAmounts ('gold')
+	oreUnificationOutputAmounts ('aluminum')	
+	oreUnificationOutputAmounts ('lead')	
+	oreUnificationOutputAmounts ('nickel')	
+	oreUnificationOutputAmounts ('osmium')	
+	oreUnificationOutputAmounts ('platinum')	
+	oreUnificationOutputAmounts ('silver')	
+	oreUnificationOutputAmounts ('uranium')	
+	oreUnificationOutputAmounts ('iron')	
+	
+	/*
+
+	oreUnificationOutputAmounts ('coal')	
+	oreUnificationOutputAmounts ('redstone')	
+	oreUnificationOutputAmounts ('emerald')	
+	oreUnificationOutputAmounts ('lapis')	
+	oreUnificationOutputAmounts ('sulfur')	
+	oreUnificationOutputAmounts ('niter')	
+	*/
 
 })
