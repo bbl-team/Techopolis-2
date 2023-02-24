@@ -7,14 +7,14 @@ import mods.itemstages.Restriction;
 //mods.recipestages.Recipes.setRecipeStageByMod("storage_drawers", "framedcompactdrawers");
 //mods.recipestages.Recipes.setRecipeStageByMod("littlelogistics", "little_logistics");
 //mods.recipestages.Recipes.setRecipeStageByMod("thermal", "thermal");
-//mods.recipestages.Recipes.setRecipeStageByMod("all", "ae2");
-//mods.recipestages.Recipes.setRecipeStageByMod("all", "refinedstorage");
+//mods.recipestages.Recipes.setRecipeStageByMod("ae2", "ae2");
+//mods.recipestages.Recipes.setRecipeStageByMod("refinedstorage", "refinedstorage");
 //mods.recipestages.Recipes.setRecipeStageByMod("mekanism", "mekanism");
 //mods.recipestages.Recipes.setRecipeStageByMod("waystones", "waystones");
 //mods.recipestages.Recipes.setRecipeStageByMod("powah", "powah");
 //mods.recipestages.Recipes.setRecipeStageByMod("beyond_earth", "beyond_earth");
 //mods.recipestages.Recipes.setRecipeStageByMod("compressium", "compressium");
-//mods.recipestages.Recipes.setRecipeStageByMod("immersive_aircraft", "immersive_aircraft");
+//mods.recipestages.Recipes.setRecipeStageByMod("framed_blocks", "framedblocks");
 
 
 //REMOVED DONT NEED TO
@@ -26,11 +26,15 @@ ItemStages.createModRestriction("itemfilters", "null");
 
 ItemStages.createModRestriction("storagedrawers", "storage_drawers");
 ItemStages.createModRestriction("framedcompactdrawers", "storage_drawers");
+ItemStages.createModRestriction("framedblocks", "framed_blocks");
+ItemStages.createModRestriction("storagenetwork", "simple_storage");
+ItemStages.createModRestriction("fluxnetworks", "flux_networks");
+ItemStages.createModRestriction("tempad", "tempad");
 
 ItemStages.createModRestriction("littlelogistics", "little_logistics");
 ItemStages.createModRestriction("thermal", "thermal");
-ItemStages.createModRestriction("ae2", "all");
-ItemStages.createModRestriction("refinedstorage", "all");
+ItemStages.createModRestriction("ae2", "ae2");
+ItemStages.createModRestriction("refinedstorage", "refinedstorage");
 ItemStages.createModRestriction("mekanism", "mekanism");
 ItemStages.createModRestriction("waystones", "waystones");
 ItemStages.createModRestriction("powah", "powah");
