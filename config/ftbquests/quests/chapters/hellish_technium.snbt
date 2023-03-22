@@ -1,0 +1,71 @@
+{
+	id: "4DE15CC92E25736C"
+	group: "7921F36F1DB604AD"
+	order_index: 2
+	filename: "hellish_technium"
+	title: "Hellish Technium"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			description: ["The next tier of technium"]
+			dependencies: [
+				"01DD316BE500FF09"
+				"06E6D269540FF637"
+			]
+			id: "4940CE1FACE39993"
+			tasks: [{
+				id: "7F37C600ADB36DFA"
+				type: "item"
+				item: "techopolis:hellish_technium_ingot"
+			}]
+			rewards: [{
+				id: "743A97487C7E4752"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			description: ["Used to make technium"]
+			id: "01DD316BE500FF09"
+			tasks: [{
+				id: "4A4332A720B8D0F5"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+			}]
+			rewards: [{
+				id: "7382A5355C74A528"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			description: ["Used to make technium"]
+			dependencies: ["0ED532C326EB845C"]
+			id: "06E6D269540FF637"
+			tasks: [{
+				id: "3AE864FF6DF9C8B0"
+				type: "item"
+				item: {
+					id: "extendedcrafting:singularity"
+					Count: 1b
+					tag: {
+						Id: "extendedcrafting:technium"
+					}
+				}
+			}]
+			rewards: [{
+				id: "081D787837E7DF25"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,146 @@
+{
+	id: "71712DBCD61DCD01"
+	group: "7921F36F1DB604AD"
+	order_index: 1
+	filename: "extended_crafting"
+	title: "Extended Crafting"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -1.0d
+			description: ["A bigger crafting table"]
+			dependencies: ["0D6CE572D150663D"]
+			id: "4FB3CE69E2C9D966"
+			tasks: [{
+				id: "25CBD885A3A5B8A3"
+				type: "item"
+				item: "extendedcrafting:elite_table"
+			}]
+			rewards: [{
+				id: "1E607E1C0ACD7D33"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			shape: "square"
+			dependencies: ["0317C3DFA9206EC4"]
+			id: "0D6CE572D150663D"
+			tasks: [{
+				id: "1BB7BFCE69C003BD"
+				type: "item"
+				item: "techopolis:research_papers_extended_crafting"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "48FA90C5FB89C37F"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p extended_crafting"
+				player_command: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			description: ["The biggest of all the crafting tables"]
+			dependencies: ["4FB3CE69E2C9D966"]
+			id: "0BC239C66AF91DDA"
+			tasks: [{
+				id: "2163BAE4FAB3B56C"
+				type: "item"
+				item: "extendedcrafting:ultimate_table"
+			}]
+			rewards: [{
+				id: "4E7627F879F74413"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			description: ["Requires pedestals around it to craft items"]
+			dependencies: ["00ABDF3A1C60DA82"]
+			id: "56353C065BFD9161"
+			tasks: [{
+				id: "684542EBCC7A2998"
+				type: "item"
+				item: "extendedcrafting:crafting_core"
+			}]
+			rewards: [{
+				id: "7CD271707F085CEC"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			description: ["Used with the crafting core"]
+			dependencies: ["00ABDF3A1C60DA82"]
+			id: "2EB848B809998F04"
+			tasks: [{
+				id: "3F7937CBEB822404"
+				type: "item"
+				item: "extendedcrafting:pedestal"
+			}]
+			rewards: [{
+				id: "3A5D78D34C0C15BB"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			description: ["Compresses items into other items"]
+			dependencies: ["00ABDF3A1C60DA82"]
+			id: "0ED532C326EB845C"
+			tasks: [{
+				id: "54F33B229C3704F8"
+				type: "item"
+				item: "extendedcrafting:compressor"
+			}]
+			rewards: [{
+				id: "5D8DEA694133866A"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			description: ["Frame used to make most extended crafting machines"]
+			dependencies: ["7E150897DC9E5587"]
+			id: "00ABDF3A1C60DA82"
+			tasks: [{
+				id: "14DEFB5CD609B58F"
+				type: "item"
+				item: "extendedcrafting:frame"
+			}]
+			rewards: [{
+				id: "74DDF4518075B28E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			description: ["Used to make the extended crafting machines"]
+			dependencies: ["0BC239C66AF91DDA"]
+			id: "7E150897DC9E5587"
+			tasks: [{
+				id: "4F9DA55B02E26C0A"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,366 @@
+{
+	id: "325201F6059F25FF"
+	group: "2E909DF337DB0A54"
+	order_index: 2
+	filename: "steel_production"
+	title: "Big Machines"
+	icon: "immersiveengineering:crusher"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Metal Press"
+			icon: "immersiveengineering:metal_press"
+			x: -3.0d
+			y: -1.0d
+			shape: "square"
+			description: ["One of the most important multiblocks, allows yout to make plates, rods and much more. Requires power"]
+			dependencies: ["32953767237ABD2F"]
+			id: "65025BEFE156E86D"
+			tasks: [{
+				id: "54BDA2998731EB33"
+				type: "item"
+				item: "techopolis:research_papers_metal_press"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "30694EE3060F31D0"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "40F9F932E32508AC"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2
+				}
+				{
+					id: "1C2BE71DE7C50CD9"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "70E1EF49F0EF0557"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "59F97510D1905625"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			description: ["Used to connect to lv wire relays and connectors"]
+			dependencies: ["32953767237ABD2F"]
+			id: "436E6EB98CEF176A"
+			tasks: [{
+				id: "0613830FE8AE7348"
+				type: "item"
+				item: "immersiveengineering:wirecoil_copper"
+			}]
+			rewards: [{
+				id: "75A1E36235341F7D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			description: ["Attaches to block that make or need power"]
+			dependencies: ["436E6EB98CEF176A"]
+			id: "6276C82E16C03BF7"
+			tasks: [{
+				id: "39FC4F17C3F49F95"
+				type: "item"
+				item: "immersiveengineering:connector_lv"
+			}]
+			rewards: [{
+				id: "400788B6A31C9E80"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			description: ["Used to make you energy travel over longer distances"]
+			dependencies: ["6276C82E16C03BF7"]
+			id: "05D4F8B4D9BB2109"
+			tasks: [{
+				id: "66F7EF27E1282419"
+				type: "item"
+				item: "immersiveengineering:connector_lv_relay"
+			}]
+			rewards: [{
+				id: "67718811ADCB4979"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			description: ["Turns rotation into power"]
+			dependencies: ["436E6EB98CEF176A"]
+			id: "14F13D88EE56EC77"
+			tasks: [{
+				id: "53F5240135B1076F"
+				type: "item"
+				item: "immersiveengineering:dynamo"
+			}]
+			rewards: [{
+				id: "13FF8A49696F3725"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			description: ["Used to make the windmill"]
+			dependencies: ["14F13D88EE56EC77"]
+			id: "2D590648BF838F74"
+			tasks: [{
+				id: "0F3611938600C4C2"
+				type: "item"
+				item: "immersiveengineering:windmill_blade"
+			}]
+			rewards: [{
+				id: "2DFBCFDB7B9D75B2"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			description: ["Can be applied to a windmill to add a sail to it, this makes it spin faster creating more power"]
+			dependencies: ["2D590648BF838F74"]
+			id: "3BCB15A29B3FE75E"
+			tasks: [{
+				id: "4C6D06D199D1125C"
+				type: "item"
+				item: "immersiveengineering:windmill_sail"
+			}]
+			rewards: [{
+				id: "0D2714AA602F7BD8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			description: ["Creates RF when placed in the air"]
+			dependencies: ["2D590648BF838F74"]
+			id: "73F5A7AE464B19FD"
+			tasks: [{
+				id: "3B17DC0A9FD5F895"
+				type: "item"
+				item: "immersiveengineering:windmill"
+			}]
+			rewards: [{
+				id: "48590808E1568DA1"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			description: ["Creates RF when flowing water spins it"]
+			dependencies: ["0293B9D13FB6A16B"]
+			id: "255109058E5B20AE"
+			tasks: [{
+				id: "2654921D038CAF59"
+				type: "item"
+				item: "immersiveengineering:watermill"
+			}]
+			rewards: [{
+				id: "348E3CE5361DAD52"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.0d
+			description: ["Used to make the water wheel"]
+			dependencies: ["14F13D88EE56EC77"]
+			id: "0293B9D13FB6A16B"
+			tasks: [{
+				id: "38AEDA735C9DF57D"
+				type: "item"
+				item: "immersiveengineering:waterwheel_segment"
+			}]
+			rewards: [{
+				id: "395052A6F59C8B8A"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			description: ["Used to make molds for the metal press, as well as other items"]
+			dependencies: ["65025BEFE156E86D"]
+			id: "510B88BF447B0DC6"
+			tasks: [{
+				id: "2507AEE206DC90AA"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+			rewards: [{
+				id: "4473B0687074EAE0"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Allows the metal press to make wires"]
+			dependencies: ["62CA8057322A2EEF"]
+			id: "6B3A52BDB5E49A20"
+			tasks: [{
+				id: "2EFB02BBAD1ECB7B"
+				type: "item"
+				item: "immersiveengineering:mold_wire"
+			}]
+			rewards: [{
+				id: "748C2EFA8B94A999"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			description: ["Allows the metal press to make plates"]
+			dependencies: ["510B88BF447B0DC6"]
+			id: "165A2A5B4A7F5E92"
+			tasks: [{
+				id: "21E725C6040FA50B"
+				type: "item"
+				item: "immersiveengineering:mold_plate"
+			}]
+			rewards: [{
+				id: "42CBBA28FBEF3C63"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			description: ["Made in the metal press"]
+			dependencies: ["165A2A5B4A7F5E92"]
+			id: "62CA8057322A2EEF"
+			tasks: [{
+				id: "5E300F3F390D6224"
+				type: "item"
+				item: "alltheores:steel_plate"
+			}]
+			rewards: [{
+				id: "06B8E53BCB60FA52"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			title: "Bottling Machine"
+			icon: "immersiveengineering:bottling_machine"
+			x: -1.0d
+			y: 1.5d
+			description: ["Bottles up fluids, used to make lava bottles"]
+			dependencies: ["750C60FAC30747EC"]
+			id: "225CCAACE7BE7AAA"
+			tasks: [{
+				id: "3B00D1130FC9CBFC"
+				type: "item"
+				item: "immersiveengineering:fluid_pump"
+			}]
+			rewards: [{
+				id: "26227881688A57E2"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			description: ["Made in the metal press"]
+			dependencies: ["165A2A5B4A7F5E92"]
+			id: "750C60FAC30747EC"
+			tasks: [{
+				id: "5FFE4EC6DD31A940"
+				type: "item"
+				item: "alltheores:iron_plate"
+			}]
+			rewards: [{
+				id: "5ECF03D3D61BAF74"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			description: ["Allows the metal press to make gears"]
+			dependencies: ["62CA8057322A2EEF"]
+			id: "3695DA717A970405"
+			tasks: [{
+				id: "1B10C1BCD6126A08"
+				type: "item"
+				item: "immersiveengineering:mold_gear"
+			}]
+			rewards: [{
+				id: "7243C94FE5D1FE4D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			description: ["Allows the metal press to make rods"]
+			dependencies: ["62CA8057322A2EEF"]
+			id: "745524543D920584"
+			tasks: [{
+				id: "77459F0927056917"
+				type: "item"
+				item: "immersiveengineering:mold_rod"
+			}]
+			rewards: [{
+				id: "1D60A912B07EE5BC"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			description: ["The fluid can help you fill areas with fluid source blocks. Useful for filling the area for the fluid absorber"]
+			dependencies: ["750C60FAC30747EC"]
+			id: "2098220F8FC9F556"
+			tasks: [{
+				id: "6CA8E99D94343069"
+				type: "item"
+				item: "immersiveengineering:fluid_placer"
+			}]
+			rewards: [{
+				id: "0C5A0E97EFB07B1E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

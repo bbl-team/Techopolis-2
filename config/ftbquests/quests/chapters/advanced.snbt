@@ -1,0 +1,255 @@
+{
+	id: "2E12E91FB97A8445"
+	group: "0C8FA6EE4828F266"
+	order_index: 2
+	filename: "advanced"
+	title: "Advanced Research"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks a crafting recipe for B Bucks"
+			dependencies: ["3F6F97E9CBAE07CC"]
+			id: "5FD0F6B5EE2DB404"
+			tasks: [
+				{
+					id: "4B8114D2E0389CA7"
+					type: "item"
+					item: "techopolis:research_papers_b_bucks_1"
+					consume_items: true
+				}
+				{
+					id: "4B1BC9A22534E756"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "6AEE0BB107E973C7"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p b_bucks_1"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks Waystones Mod"
+			dependencies: ["2F6370C05C7CE2D4"]
+			id: "064296E3F76B874A"
+			tasks: [
+				{
+					id: "616F70722E2458A6"
+					type: "item"
+					item: "techopolis:research_papers_waystones"
+					consume_items: true
+				}
+				{
+					id: "0A120B2CCF563112"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "2A5FF863536CE39A"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p waystones"
+				player_command: false
+			}]
+		}
+		{
+			title: "Waystone"
+			icon: "waystones:waystone"
+			x: -1.5d
+			y: -2.0d
+			description: ["Right click to activate, can be used to teleport to other waystones"]
+			dependencies: ["064296E3F76B874A"]
+			can_repeat: true
+			id: "0B400CAFBEA08E84"
+			tasks: [{
+				id: "1B97ABD307F56189"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "684A2161D5260A10"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 9115771890789368411L
+				}
+				{
+					id: "641E9474E51D74A0"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 9115771890789368411L
+				}
+			]
+		}
+		{
+			title: "Warp Stone"
+			icon: {
+				id: "waystones:warp_stone"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: 1.0d
+			description: ["Teleport on the go"]
+			dependencies: ["064296E3F76B874A"]
+			can_repeat: true
+			id: "65B93B40EBC67AB4"
+			tasks: [{
+				id: "4EBB05F6421C6FE9"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5F3EAF83273A955A"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks Simple Storage Networks"
+			dependencies: ["2509E345839FFA86"]
+			id: "25DB88A6D7428AA2"
+			tasks: [
+				{
+					id: "030E5AC69713F230"
+					type: "item"
+					item: "techopolis:research_papers_simple_storage"
+					consume_items: true
+				}
+				{
+					id: "02E829CBEEA5FF23"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 24L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "4DDF399790109681"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p simple_storage"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks Building Gadgets Mod"
+			dependencies: ["2509E345839FFA86"]
+			id: "5BEE8060F4D59206"
+			tasks: [
+				{
+					id: "3D5D7C6EE76A574B"
+					type: "item"
+					item: "techopolis:research_papers_building_gadgets"
+					consume_items: true
+				}
+				{
+					id: "35857D927A1B7F39"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "14E4FDDBC121ABAC"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p building_gadgets"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks Time In A Bottle"
+			id: "416F17C4C1C97B14"
+			tasks: [
+				{
+					id: "7BDFD70E14A48AE7"
+					type: "item"
+					item: "techopolis:research_papers_tiab"
+					consume_items: true
+				}
+				{
+					id: "3771690690BBFDF4"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 48L
+				}
+			]
+			rewards: [{
+				id: "2E00D85D11DFB223"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p tiab"
+				player_command: false
+			}]
+		}
+		{
+			title: "Time In A Bottle"
+			icon: {
+				id: "tiab:time_in_a_bottle"
+				Count: 1b
+				tag: { }
+			}
+			x: 4.5d
+			y: -2.0d
+			description: ["Collects time for you, can be used to speed up block entites such as machines and miners"]
+			dependencies: ["416F17C4C1C97B14"]
+			can_repeat: true
+			id: "521CA10377C4008C"
+			tasks: [{
+				id: "7224878F092FB490"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1809AEC2C0738E5F"
+				type: "item"
+				item: {
+					id: "tiab:time_in_a_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

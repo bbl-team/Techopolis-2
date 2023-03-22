@@ -1,0 +1,55 @@
+{
+	id: "4CBF466AA90A5502"
+	group: "5ACAB4963B8539AD"
+	order_index: 3
+	filename: "ultimate_technium"
+	title: "Ultimate Technium"
+	icon: "techopolis:ultimate_technium_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Next part of technium"]
+			dependencies: [
+				"192796C73BBB3360"
+				"0FFC67F841864FEE"
+			]
+			id: "28612D6665C7F943"
+			tasks: [{
+				id: "336C792F9E235A89"
+				type: "item"
+				item: "techopolis:ultimate_technium_ingot"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			description: ["Used to make technium"]
+			dependencies: [
+				"2BFC9EF9A5F18491"
+				"083C8E8E7BDD1140"
+			]
+			id: "192796C73BBB3360"
+			tasks: [{
+				id: "1274508F26543938"
+				type: "item"
+				item: "techopolis:infused_crystalline"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			description: ["Used to make technium"]
+			dependencies: ["3AA81C9F7490FF6D"]
+			id: "0FFC67F841864FEE"
+			tasks: [{
+				id: "71A3D3F5C5614C64"
+				type: "item"
+				item: "immersiveengineering:sheetmetal_uranium"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

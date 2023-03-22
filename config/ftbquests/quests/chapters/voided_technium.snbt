@@ -1,0 +1,20 @@
+{
+	id: "5EC16E97D7090C5C"
+	group: "62C5FE5ECA80879B"
+	order_index: 3
+	filename: "voided_technium"
+	title: "Voided Technium"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "74BADCFA2F5010B6"
+		tasks: [{
+			id: "77CB615397F2F417"
+			type: "item"
+			item: "techopolis:voided_technium_ingot"
+		}]
+	}]
+	quest_links: [ ]
+}

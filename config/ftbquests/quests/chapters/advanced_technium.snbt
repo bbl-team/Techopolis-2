@@ -1,0 +1,208 @@
+{
+	id: "6E6324F46518405C"
+	group: "2E909DF337DB0A54"
+	order_index: 3
+	filename: "advanced_technium"
+	title: "Advanced Technium"
+	icon: "techopolis:advanced_technium_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			description: ["THe next tier of technium"]
+			dependencies: [
+				"7A1D3F791127ECC0"
+				"108319E9723943F5"
+				"3C4BA3DE04DF7BA3"
+				"09B82EEB6B26550B"
+			]
+			id: "2509E345839FFA86"
+			tasks: [{
+				id: "42879591E6A12C2C"
+				type: "item"
+				item: "techopolis:advanced_technium_ingot"
+			}]
+			rewards: [{
+				id: "6B1CE90FEACCE422"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			dependencies: ["1D7FBA1A2ABC6533"]
+			id: "7A1D3F791127ECC0"
+			tasks: [{
+				id: "5CBB26C44FCECAAF"
+				type: "item"
+				item: "immersiveengineering:sheetmetal_aluminum"
+			}]
+			rewards: [{
+				id: "0B4F6CD98F5BF8EB"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			dependencies: ["165A2A5B4A7F5E92"]
+			id: "1D7FBA1A2ABC6533"
+			tasks: [{
+				id: "478197C7A9CED15B"
+				type: "item"
+				item: "alltheores:aluminum_plate"
+			}]
+			rewards: [{
+				id: "15B3770D421C9BDD"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["225CCAACE7BE7AAA"]
+			id: "108319E9723943F5"
+			tasks: [{
+				id: "3AFEEF089F81C027"
+				type: "item"
+				item: "techopolis:lava_bottle"
+			}]
+			rewards: [{
+				id: "4D18271581039A2C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["3695DA717A970405"]
+			id: "3C4BA3DE04DF7BA3"
+			tasks: [{
+				id: "6DBBBF375B6C349D"
+				type: "item"
+				item: "alltheores:steel_gear"
+			}]
+			rewards: [{
+				id: "06F7F48BBDAE083D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect nickel fragments"]
+			dependencies: ["4E163D2E36B02693"]
+			id: "70D42E3638198D5B"
+			tasks: [{
+				id: "2E8CBC8D7316BFCE"
+				type: "item"
+				item: "techopolis:research_papers_nickel"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "478F9156ACD53A40"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p nickel"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			description: ["An alloy of nickel and copper"]
+			dependencies: ["0F7D01350DEFC340"]
+			id: "669A25F7FF900540"
+			tasks: [{
+				id: "5EF3E88266408CFA"
+				type: "item"
+				item: "alltheores:constantan_ingot"
+			}]
+			rewards: [{
+				id: "73824D414759666D"
+				type: "item"
+				item: "alltheores:constantan_ingot"
+				count: 3
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			description: ["5 nickel ore in a jumbo furnace will make a copper ingot"]
+			dependencies: ["1B10854F711792BD"]
+			id: "0F7D01350DEFC340"
+			tasks: [{
+				id: "0C91804CBA554D09"
+				type: "item"
+				item: "alltheores:nickel_ingot"
+			}]
+			rewards: [{
+				id: "25BB35D6872BCA7B"
+				type: "item"
+				item: "alltheores:nickel_ingot"
+				count: 5
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			description: ["Can be made in a tier 5 miner. After crafting 36 of the ore"]
+			dependencies: ["21C8381D5A181D74"]
+			id: "1B10854F711792BD"
+			tasks: [{
+				id: "6675A5080B79E982"
+				type: "item"
+				item: "alltheores:nickel_ore"
+			}]
+			rewards: [{
+				id: "24D5E4F3083FA430"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["70D42E3638198D5B"]
+			id: "21C8381D5A181D74"
+			tasks: [{
+				id: "0C693FC7B64E39B7"
+				type: "item"
+				item: "caveopolis:nickel_fragment"
+			}]
+			rewards: [{
+				id: "3797D144741F4E3B"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			description: ["An alloy of iron and nickel"]
+			dependencies: ["0F7D01350DEFC340"]
+			id: "09B82EEB6B26550B"
+			tasks: [{
+				id: "798CCDABCAABF207"
+				type: "item"
+				item: "alltheores:invar_ingot"
+			}]
+			rewards: [{
+				id: "2D309974F55D5095"
+				type: "item"
+				item: "alltheores:invar_ingot"
+				count: 3
+			}]
+		}
+	]
+	quest_links: [ ]
+}

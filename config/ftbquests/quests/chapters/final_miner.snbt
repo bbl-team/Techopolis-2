@@ -1,0 +1,60 @@
+{
+	id: "1BBF8A5D21805847"
+	group: "62C5FE5ECA80879B"
+	order_index: 0
+	filename: "final_miner"
+	title: "Final Miner"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.5d
+			description: ["Used as the support frame for tier 10 miners"]
+			dependencies: ["051A8B46FE9B2AC6"]
+			id: "0B5A9CDB488819B8"
+			tasks: [{
+				id: "5CB5E1F1DE75DAFE"
+				type: "item"
+				item: "miners:ultimate_support_frame"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: ["Allows the mining of new ores"]
+			dependencies: ["648F6DAF2770C1BC"]
+			id: "051A8B46FE9B2AC6"
+			tasks: [{
+				id: "1A1D55AA82302FC8"
+				type: "item"
+				item: "miners:miner_tier_10"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["Provides powerful effects when placed on top of various metal or gem blocks. Also used to cap miners, this is the final cap"]
+			dependencies: ["6DE49F48BEC4E5EF"]
+			id: "648F6DAF2770C1BC"
+			tasks: [{
+				id: "3CF245DA3E2427C0"
+				type: "item"
+				item: "minecraft:beacon"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			description: ["You could summon a wither but thats not very techopolis is it"]
+			dependencies: ["4940CE1FACE39993"]
+			id: "6DE49F48BEC4E5EF"
+			tasks: [{
+				id: "524D78A297E6F6D7"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
