@@ -1,0 +1,243 @@
+{
+	id: "19DD2C45534A936E"
+	group: "62C5FE5ECA80879B"
+	order_index: 2
+	filename: "the_moon"
+	title: "Travel The World"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.0d
+			y: 0.0d
+			description: ["Using your rocket and suit you can travel to the moon"]
+			dependencies: ["17303423E044A0A9"]
+			id: "357AA31C5974C6F9"
+			tasks: [{
+				id: "61ABFE3AC017555C"
+				type: "item"
+				item: "beyond_earth:moon_stone"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			description: ["Desh can be extracted from smelting a high amount of moon stone"]
+			dependencies: ["357AA31C5974C6F9"]
+			id: "4533BD240A4BD939"
+			tasks: [{
+				id: "14A4C2DF941DB2F1"
+				type: "item"
+				item: "beyond_earth:desh_nugget"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["4533BD240A4BD939"]
+			id: "4189BEEBF3AF2528"
+			tasks: [{
+				id: "50789BA36C15F37D"
+				type: "item"
+				item: "beyond_earth:desh_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			description: ["Used to travel to further planets"]
+			dependencies: ["4189BEEBF3AF2528"]
+			id: "27FC0C7E80D49B64"
+			tasks: [{
+				id: "545573C9AA32D1DB"
+				type: "item"
+				item: {
+					id: "beyond_earth:rocket_t2"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			description: ["Using your tier 2 rocket travel to mars"]
+			dependencies: ["27FC0C7E80D49B64"]
+			id: "4D6EAD66E0A38058"
+			tasks: [{
+				id: "59DC4F0CD50662E4"
+				type: "item"
+				item: "beyond_earth:mars_stone"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			description: ["Ostrum can be extracted from smelting a high amount of mars stone"]
+			dependencies: ["4D6EAD66E0A38058"]
+			id: "419945459CB31B90"
+			tasks: [{
+				id: "6FD925C899FC4521"
+				type: "item"
+				item: "beyond_earth:ostrum_nugget"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			dependencies: ["419945459CB31B90"]
+			id: "10256A909DF3621B"
+			tasks: [{
+				id: "7320F275235A851B"
+				type: "item"
+				item: "beyond_earth:ostrum_ingot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			description: ["Used to travel to further planets"]
+			dependencies: ["10256A909DF3621B"]
+			id: "6D5FF827A8563CE5"
+			tasks: [{
+				id: "3B3E18967B09F01D"
+				type: "item"
+				item: {
+					id: "beyond_earth:rocket_t3"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			description: ["Using your tier 3 rocket travel to venus. Caution you must have a upgraded space suit!"]
+			dependencies: [
+				"67CF17DC1973CDF0"
+				"7752E707DC885B8D"
+				"799A1E3A20BA0742"
+				"736F90358D93CC06"
+			]
+			id: "5AD10064B248F20F"
+			tasks: [{
+				id: "11A7C0B02B1DC19A"
+				type: "item"
+				item: "beyond_earth:venus_stone"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			description: ["Calorite can be extracted from smelting a high amount of venus stone"]
+			dependencies: ["5AD10064B248F20F"]
+			id: "5E77D8977D0B7119"
+			tasks: [{
+				id: "623466C8D38CAC24"
+				type: "item"
+				item: "beyond_earth:calorite_nugget"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			dependencies: ["5E77D8977D0B7119"]
+			id: "22B8586AF270BC8B"
+			tasks: [{
+				id: "6DAF4DF67FF25F6F"
+				type: "item"
+				item: "beyond_earth:calorite_ingot"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.0d
+			description: ["Used to travel to further planets"]
+			dependencies: ["22B8586AF270BC8B"]
+			id: "2CA3BCE7DAB08300"
+			tasks: [{
+				id: "0C17CA23D2AC8034"
+				type: "item"
+				item: {
+					id: "beyond_earth:rocket_t4"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.5d
+			dependencies: ["6D5FF827A8563CE5"]
+			id: "67CF17DC1973CDF0"
+			tasks: [{
+				id: "5EC780A809516311"
+				type: "item"
+				item: {
+					id: "beyond_earth:netherite_space_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.5d
+			dependencies: ["6D5FF827A8563CE5"]
+			id: "7752E707DC885B8D"
+			tasks: [{
+				id: "3B87AAF01C9C9080"
+				type: "item"
+				item: {
+					id: "beyond_earth:netherite_space_suit"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							oxygenStorage: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			dependencies: ["6D5FF827A8563CE5"]
+			id: "736F90358D93CC06"
+			tasks: [{
+				id: "539A668879BA6114"
+				type: "item"
+				item: {
+					id: "beyond_earth:netherite_space_pants"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			dependencies: ["6D5FF827A8563CE5"]
+			id: "799A1E3A20BA0742"
+			tasks: [{
+				id: "14A7F83FBD9CA787"
+				type: "item"
+				item: {
+					id: "beyond_earth:netherite_space_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

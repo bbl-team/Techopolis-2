@@ -1,0 +1,20 @@
+{
+	id: "637B2E389C5D21C0"
+	group: "7C41DB637AE42D48"
+	order_index: 0
+	filename: "final_technium"
+	title: "Final Technium"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.5d
+		y: 0.0d
+		id: "75CD1605D73AC0F5"
+		tasks: [{
+			id: "3E469A64736F9E80"
+			type: "item"
+			item: "techopolis:final_technium_ingot"
+		}]
+	}]
+	quest_links: [ ]
+}

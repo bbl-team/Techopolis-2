@@ -1,0 +1,10 @@
+{
+	id: "202EDDBD50245F83"
+	order_index: 7
+	title: "Gold Ore"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:gold_ore", count: 36 }
+		{ item: "minecraft:deepslate_gold_ore", count: 36 }
+	]
+}

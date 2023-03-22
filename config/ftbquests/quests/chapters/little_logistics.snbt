@@ -1,0 +1,353 @@
+{
+	id: "14C0C41B4A669963"
+	group: "2E909DF337DB0A54"
+	order_index: 1
+	filename: "little_logistics"
+	title: "Little Logistics"
+	icon: "littlelogistics:steam_locomotive"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -2.5d
+			shape: "square"
+			description: [
+				"Unlock the little logistics mod. Uses trains and boats to transport items and fluids by rail or by water."
+				"The guide book is very useful"
+			]
+			dependencies: ["32953767237ABD2F"]
+			id: "67234EB7B4F995EC"
+			tasks: [{
+				id: "495D2FEC8C3F6E49"
+				type: "item"
+				item: "techopolis:research_papers_little_logistic"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "5A79355C74DF5A74"
+					type: "command"
+					auto: "enabled"
+					command: "/gamestage add @p little_logistics"
+					player_command: false
+				}
+				{
+					id: "2675531CDBCB85A1"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "littlelogistics:guide"
+						}
+					}
+				}
+				{
+					id: "1AD768DB22E2D6EE"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			description: ["Like a normal hopper but faster, connect to the side of train docking rails to add items to the chest train cart"]
+			dependencies: ["67234EB7B4F995EC"]
+			id: "2977A2F9419ED35D"
+			tasks: [{
+				id: "50214FABAD80C805"
+				type: "item"
+				item: "littlelogistics:rapid_hopper"
+			}]
+			rewards: [{
+				id: "7322304CFEBA1792"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			description: ["A base for trains, can also be sat in"]
+			dependencies: ["67234EB7B4F995EC"]
+			optional: true
+			id: "5893DCA31476BFDB"
+			tasks: [{
+				id: "6B8A644798201665"
+				type: "item"
+				item: "littlelogistics:seater_car"
+			}]
+			rewards: [{
+				id: "0731E0DBD2C84EB9"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			description: ["Powered with coal, the engine of your train"]
+			dependencies: ["5893DCA31476BFDB"]
+			optional: true
+			id: "706C4ADDB0F9BDAD"
+			tasks: [{
+				id: "4C43B3D339FE119A"
+				type: "item"
+				item: "littlelogistics:steam_locomotive"
+			}]
+			rewards: [{
+				id: "5194146CFF898B73"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			description: ["Connects to your train to move items"]
+			dependencies: ["5893DCA31476BFDB"]
+			optional: true
+			id: "5F91BAAA4FCFEDAA"
+			tasks: [{
+				id: "79C36E5516E12D6A"
+				type: "item"
+				item: "littlelogistics:chest_car"
+			}]
+			rewards: [{
+				id: "4B62D22AD7B3A3FC"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			description: ["Connects to your train to move fluids"]
+			dependencies: ["5893DCA31476BFDB"]
+			optional: true
+			id: "795D503CC516E040"
+			tasks: [{
+				id: "4C16737D1330AB30"
+				type: "item"
+				item: "littlelogistics:fluid_car"
+			}]
+			rewards: [{
+				id: "41BB0A81CA42AC26"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			description: ["Used to connect trains and tugs together "]
+			dependencies: [
+				"795D503CC516E040"
+				"706C4ADDB0F9BDAD"
+				"5F91BAAA4FCFEDAA"
+				"01A2D0E5D6816660"
+				"49D5C51180BBFCD9"
+				"0AF910E62C3F474E"
+			]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "7AD21A558BEF79A1"
+			tasks: [{
+				id: "09FD3FAA7E5979A6"
+				type: "item"
+				item: "littlelogistics:spring"
+			}]
+			rewards: [{
+				id: "59D4C95348C46D76"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.0d
+			description: ["A basic steam tug"]
+			dependencies: ["67234EB7B4F995EC"]
+			optional: true
+			id: "6B0BADB8625A9B3F"
+			tasks: [{
+				id: "0D9DD2FE18A31CAE"
+				type: "item"
+				item: "littlelogistics:tug"
+			}]
+			rewards: [{
+				id: "266D06A478F84C45"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			description: ["Connects to your tug to move items"]
+			dependencies: ["6B0BADB8625A9B3F"]
+			optional: true
+			id: "01A2D0E5D6816660"
+			tasks: [{
+				id: "788FFDD9DEAC2872"
+				type: "item"
+				item: "littlelogistics:barge"
+			}]
+			rewards: [{
+				id: "1BB1E3009D54678C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["Connects to your tug, will automatically fish for you"]
+			dependencies: ["6B0BADB8625A9B3F"]
+			optional: true
+			id: "49D5C51180BBFCD9"
+			tasks: [{
+				id: "4F76281C924FC364"
+				type: "item"
+				item: "littlelogistics:fishing_barge"
+			}]
+			rewards: [{
+				id: "0A55D35351B5D82A"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			description: ["Allows you to ride your barge"]
+			dependencies: ["6B0BADB8625A9B3F"]
+			optional: true
+			id: "6C81CFA213151204"
+			tasks: [{
+				id: "16789491DD21257C"
+				type: "item"
+				item: "littlelogistics:seater_barge"
+			}]
+			rewards: [{
+				id: "509465EC695EA1A8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			description: ["Connects to your tug to move fluids"]
+			dependencies: ["6B0BADB8625A9B3F"]
+			optional: true
+			id: "0AF910E62C3F474E"
+			tasks: [{
+				id: "74EB8A1D8A914709"
+				type: "item"
+				item: "littlelogistics:fluid_barge"
+			}]
+			rewards: [{
+				id: "6690FA764C9755C4"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			description: ["Used to stop a train engine"]
+			dependencies: ["7AD21A558BEF79A1"]
+			optional: true
+			id: "7C93A3FBB3598383"
+			tasks: [{
+				id: "0639382EE1E3CA5D"
+				type: "item"
+				item: "littlelogistics:locomotive_dock_rail"
+			}]
+			rewards: [{
+				id: "12B91341F2DEDEA5"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			description: [
+				"The docking rail must be full lenght of a train ."
+				"Shift right click to change mode, blue is out orange is in"
+			]
+			dependencies: ["7AD21A558BEF79A1"]
+			optional: true
+			id: "48CF32326407A570"
+			tasks: [{
+				id: "5C2740429F576F48"
+				type: "item"
+				item: "littlelogistics:car_dock_rail"
+			}]
+			rewards: [{
+				id: "54986800901710DE"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			description: ["There are many different rails that can be used to make your train network as simple or as complicated as you want!"]
+			dependencies: ["7AD21A558BEF79A1"]
+			optional: true
+			id: "597E07D4B65FF32F"
+			tasks: [{
+				id: "69BB7998AF0019BA"
+				type: "checkmark"
+				title: "Rails"
+			}]
+			rewards: [{
+				id: "5363888A597D1F9C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			description: ["Helps direct your tugs"]
+			dependencies: ["6B0BADB8625A9B3F"]
+			optional: true
+			id: "1100898F1F1158BD"
+			tasks: [{
+				id: "5C94D9B54B9518EB"
+				type: "item"
+				item: "littlelogistics:tug_route"
+			}]
+			rewards: [{
+				id: "17EF00521B836647"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			description: ["Helps direct your trains"]
+			dependencies: ["5893DCA31476BFDB"]
+			optional: true
+			id: "2DDD9E2CDA263E99"
+			tasks: [{
+				id: "779A4FD125122C4A"
+				type: "item"
+				item: "littlelogistics:locomotive_route"
+			}]
+			rewards: [{
+				id: "1482A56B8396DE14"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

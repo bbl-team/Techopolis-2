@@ -1,0 +1,92 @@
+{
+	id: "7A8CF1E50FF6B35E"
+	group: "7880DAE5186B4734"
+	order_index: 3
+	filename: "elite_technium"
+	title: "Elite Technium"
+	icon: "techopolis:elite_technium_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.5d
+			y: -0.5d
+			description: ["Used to make technium"]
+			dependencies: ["752C19F90108100C"]
+			id: "63C221565DDC685C"
+			tasks: [{
+				id: "6E24730F0B48C1F5"
+				type: "item"
+				item: "immersiveengineering:sheetmetal_lead"
+			}]
+			rewards: [{
+				id: "43F0348DC512D20B"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			description: ["Used to make technium"]
+			dependencies: [
+				"7B4C768FA469461C"
+				"1EAA8DE8294F4526"
+				"19B95DA4B894F735"
+			]
+			id: "6F4C751E6B28A610"
+			tasks: [{
+				id: "2EEC9DA9B099AA12"
+				type: "item"
+				item: "minecraft:amethyst_shard"
+			}]
+			rewards: [{
+				id: "3F0AFC7005FDFF9A"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.5d
+			description: ["Next part of technium"]
+			dependencies: [
+				"02D5C38530DC28C4"
+				"63C221565DDC685C"
+				"7B4C768FA469461C"
+				"6F4C751E6B28A610"
+				"1EAA8DE8294F4526"
+				"19B95DA4B894F735"
+			]
+			id: "1CA69C7B4695EA81"
+			tasks: [{
+				id: "7089964183109DE9"
+				type: "item"
+				item: "techopolis:elite_technium_ingot"
+			}]
+			rewards: [{
+				id: "3DE85682D9CE0C83"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			description: ["Used to make technium"]
+			dependencies: ["6E55A0DF26DD01B3"]
+			id: "02D5C38530DC28C4"
+			tasks: [{
+				id: "5129874F32EF2A1E"
+				type: "item"
+				item: "alltheores:electrum_gear"
+			}]
+			rewards: [{
+				id: "10AC85A9029C0A35"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

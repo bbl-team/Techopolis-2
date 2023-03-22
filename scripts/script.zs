@@ -30,6 +30,7 @@ ItemStages.createModRestriction("framedblocks", "framed_blocks");
 ItemStages.createModRestriction("storagenetwork", "simple_storage");
 ItemStages.createModRestriction("fluxnetworks", "flux_networks");
 ItemStages.createModRestriction("tempad", "tempad");
+ItemStages.createModRestriction("tiab", "tiab");
 
 ItemStages.createModRestriction("littlelogistics", "little_logistics");
 ItemStages.createModRestriction("thermal", "thermal");

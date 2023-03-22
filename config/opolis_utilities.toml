@@ -7,9 +7,9 @@
 	#URL for your discord
 	"Discord URL" = "https://discord.gg/UpJknJ8"
 	#Modpack name
-	"Modpack name" = "TESTMODPACK"
+	"Modpack name" = "Techopolis 2"
 	#Modpack Version
-	"Modpack Version" = "VERSION"
+	"Modpack Version" = "A4.0"
 	#Mobs basic loot bag drop chance 0.0 = always, 1.0 = never, 0.5 = 50% chance, default = 0.75
 	"Mob Drop Chance" = 0.95
 

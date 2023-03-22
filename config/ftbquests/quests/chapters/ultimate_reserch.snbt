@@ -1,0 +1,146 @@
+{
+	id: "20F5B7A64D103FCD"
+	group: "0C8FA6EE4828F266"
+	order_index: 4
+	filename: "ultimate_reserch"
+	title: "Ultimate Reserch"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks Refined Storage, a mass storage mod, also unlocks quartz ore"
+			dependencies: ["28612D6665C7F943"]
+			id: "39E6CF877B31B6EF"
+			tasks: [
+				{
+					id: "7C70CC4A0BDA68C9"
+					type: "item"
+					item: "techopolis:research_papers_rs"
+					consume_items: true
+				}
+				{
+					id: "4518B34957A34346"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "13E8B1E8E30B98E3"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p refinedstorage"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks Applied Energistics, a mass storage mod, also unlocks quartz ore"
+			dependencies: ["28612D6665C7F943"]
+			id: "6C2428599B16CA35"
+			tasks: [
+				{
+					id: "642204D5C0AEBB38"
+					type: "item"
+					item: "techopolis:research_papers_ae2"
+					consume_items: true
+				}
+				{
+					id: "3685CF8FF163A68A"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "0A0AB8A0A24C7628"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p ae2"
+				player_command: false
+			}]
+		}
+		{
+			title: "Mysterous Cube"
+			icon: "ae2:mysterious_cube"
+			x: -1.5d
+			y: 1.0d
+			subtitle: "When broken will drop all the applied energistic presses"
+			dependencies: ["6C2428599B16CA35"]
+			can_repeat: true
+			id: "28D2B0F10DFF7FF8"
+			tasks: [{
+				id: "51DEF7B7161CA2E4"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0BE8C45A93D4E061"
+				type: "item"
+				item: "ae2:mysterious_cube"
+			}]
+		}
+		{
+			title: "Processor Binding"
+			icon: "refinedstorage:processor_binding"
+			x: 0.5d
+			y: 1.0d
+			subtitle: "Used to make refined storage processors"
+			dependencies: ["39E6CF877B31B6EF"]
+			can_repeat: true
+			id: "599837929636B1EA"
+			tasks: [{
+				id: "21F12A0231E6BAFF"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6C67652DF9A4F349"
+				type: "item"
+				item: "refinedstorage:processor_binding"
+				count: 64
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks a crafting recipe for B Bucks"
+			id: "3CBDCA222A5B8482"
+			tasks: [
+				{
+					id: "2976665C3811C83F"
+					type: "item"
+					item: "techopolis:research_papers_b_bucks_3"
+					consume_items: true
+				}
+				{
+					id: "3E36B5E7BB638A97"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "262F65F1FED58CBD"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p b_bucks_3"
+				player_command: false
+			}]
+		}
+	]
+	quest_links: [ ]
+}

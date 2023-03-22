@@ -1,0 +1,204 @@
+{
+	id: "3CD1D4880C9BA971"
+	group: "7880DAE5186B4734"
+	order_index: 2
+	filename: "crystals"
+	title: "Crystals"
+	icon: "techopolis:crystalline_dust"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Pulverized crystalline"]
+			dependencies: ["75C5C17120DB1AF3"]
+			id: "30B3BBEFD91121D0"
+			tasks: [{
+				id: "2B8160640DFE79B0"
+				type: "item"
+				item: "techopolis:crystalline_dust"
+			}]
+			rewards: [{
+				id: "534701D78D8B0AEF"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			description: ["Made with crystalline dust"]
+			dependencies: ["30B3BBEFD91121D0"]
+			id: "5714AC952D6A9AB8"
+			tasks: [{
+				id: "58C15DF45E380F45"
+				type: "item"
+				item: "alltheores:ruby_dust"
+			}]
+			rewards: [{
+				id: "63BD484790AD144E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: ["Made with crystalline dust"]
+			dependencies: ["30B3BBEFD91121D0"]
+			id: "69D9CC830CD9416F"
+			tasks: [{
+				id: "734264C0135ACA34"
+				type: "item"
+				item: "alltheores:sapphire_dust"
+			}]
+			rewards: [{
+				id: "34F497DC7743E49D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			description: ["Made with crystalline dust"]
+			dependencies: ["30B3BBEFD91121D0"]
+			id: "07C39771EF0F465A"
+			tasks: [{
+				id: "601A70C0A5FA45E1"
+				type: "item"
+				item: "alltheores:peridot_dust"
+			}]
+			rewards: [{
+				id: "1A027385A4063DD2"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			description: ["Using the dust in the crystallizer with liquid glass will create the gem"]
+			dependencies: ["5714AC952D6A9AB8"]
+			id: "19B95DA4B894F735"
+			tasks: [{
+				id: "0A2C3FB431ED23C2"
+				type: "item"
+				item: "alltheores:ruby"
+			}]
+			rewards: [{
+				id: "0C34A1256CABF105"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			description: ["Using the dust in the crystallizer with liquid glass will create the gem"]
+			dependencies: ["69D9CC830CD9416F"]
+			id: "1EAA8DE8294F4526"
+			tasks: [{
+				id: "78041F50043B2C06"
+				type: "item"
+				item: "alltheores:sapphire"
+			}]
+			rewards: [{
+				id: "5842A6BA5799D0A8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			description: ["Using the dust in the crystallizer with liquid glass will create the gem"]
+			dependencies: ["07C39771EF0F465A"]
+			id: "7B4C768FA469461C"
+			tasks: [{
+				id: "43BF57B9F79A95C4"
+				type: "item"
+				item: "alltheores:peridot"
+			}]
+			rewards: [{
+				id: "2DC1693A2219780F"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			description: ["Ore can be turned into this"]
+			dependencies: ["0CA3F404C4857194"]
+			id: "75C5C17120DB1AF3"
+			tasks: [{
+				id: "3A644BC9DC43088A"
+				type: "item"
+				item: "techopolis:crystalline"
+			}]
+			rewards: [{
+				id: "7AC372FA474023DF"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			description: ["Crystal ore"]
+			dependencies: ["7366BCD17D4FBF32"]
+			id: "0CA3F404C4857194"
+			tasks: [{
+				id: "6BE5DD0FA5CFC0EA"
+				type: "item"
+				item: "techopolis:crystal_ore"
+			}]
+			rewards: [{
+				id: "353DAA0B7D783A43"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["0CA1B3A8B242C68F"]
+			id: "7366BCD17D4FBF32"
+			tasks: [{
+				id: "73E0407916FFB911"
+				type: "item"
+				item: "techopolis:crystal_fragment"
+			}]
+			rewards: [{
+				id: "6A6DE969A0326D82"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect crystal fragments"]
+			dependencies: ["34B42292099422B5"]
+			id: "0CA1B3A8B242C68F"
+			tasks: [{
+				id: "4C179C1089E7FA37"
+				type: "item"
+				item: "techopolis:research_papers_crystal"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3A527B3306887015"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p crystal"
+				player_command: false
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -136,8 +136,8 @@
 		FuelBuckets = 3
 
 ["Water to Ice"]
-	#Enable or Disable Water the transformation of water into ice on the moon
+	#Enable or Disable the transformation of water into ice on the moon
 	"Water to ice moon" = false
-	#Enable or Disable Water the transformation of water into ice on glacio
+	#Enable or Disable the transformation of water into ice on glacio
 	"Water to ice glacio" = false
 

@@ -1,0 +1,395 @@
+{
+	id: "13CAC2CF257FA1B8"
+	group: "2E909DF337DB0A54"
+	order_index: 0
+	filename: "iron_and_aluminum"
+	title: "Iron \\& Aluminum"
+	icon: "miners:miner_tier_5"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["54E3D524E91021A3"]
+			id: "2EFDB6F0CBB4B566"
+			tasks: [{
+				id: "765FF41CD5B05778"
+				type: "item"
+				item: "techopolis:aluminum_fragment"
+			}]
+			rewards: [{
+				id: "3049818914C1F383"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["54E3D524E91021A3"]
+			id: "2971694017334AB9"
+			tasks: [{
+				id: "2B5DC33EF26C8FC4"
+				type: "item"
+				item: "caveopolis:iron_fragment"
+			}]
+			rewards: [{
+				id: "612215CFA948E332"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect iron and aluminum fragments"]
+			id: "54E3D524E91021A3"
+			tasks: [{
+				id: "0B17F59E0C92265B"
+				type: "item"
+				item: "techopolis:research_papers_iron_and_aluminum"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "262AE7F307E3F386"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p iron_and_aluminum"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			description: ["Can be made in a tier 4 miner. After crafting 36 of the ore"]
+			dependencies: ["2971694017334AB9"]
+			id: "47519063E00FCB19"
+			tasks: [{
+				id: "30506F7FA36D50DD"
+				type: "item"
+				title: "Any #forge:ores/iron"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/iron"
+					}
+				}
+			}]
+			rewards: [{
+				id: "337BECDBF362EADB"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: ["Can be made in a tier 4 miner. After crafting 36 of the ore"]
+			dependencies: ["2EFDB6F0CBB4B566"]
+			id: "526EF4B8CE492AE0"
+			tasks: [{
+				id: "5603F2CDB739B67B"
+				type: "item"
+				title: "Any #forge:ores/aluminum"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/aluminum"
+					}
+				}
+			}]
+			rewards: [{
+				id: "040CB41DA2AF9231"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			description: ["5 iron ore in a jumbo furnace will make a iron ingot"]
+			dependencies: ["47519063E00FCB19"]
+			id: "06938867F7C87DDA"
+			tasks: [{
+				id: "7C49BE2284DA7D55"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+			rewards: [{
+				id: "0EA3D947A989D623"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 5
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["5 aluminum ore in a jumbo furnace will make a aluminum ingot"]
+			dependencies: ["526EF4B8CE492AE0"]
+			id: "29C4025B689A8430"
+			tasks: [{
+				id: "533AC42D6764CC8B"
+				type: "item"
+				item: "alltheores:aluminum_ingot"
+			}]
+			rewards: [{
+				id: "1B9B918E268A8454"
+				type: "item"
+				item: "alltheores:aluminum_ingot"
+				count: 5
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			description: ["Allows the mining of new ores"]
+			dependencies: ["06938867F7C87DDA"]
+			id: "3A80FB2F4FC01FD6"
+			tasks: [{
+				id: "1669485DE92710C0"
+				type: "item"
+				item: "miners:miner_tier_5"
+			}]
+			rewards: [{
+				id: "3DA2EB66B4DF07CB"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			description: ["Used as the support frame for tier 5 miners"]
+			dependencies: ["3A80FB2F4FC01FD6"]
+			id: "67FBB0440F23A5AB"
+			tasks: [{
+				id: "7EEA3B505FAD1E7C"
+				type: "item"
+				item: "miners:iron_support_frame"
+			}]
+			rewards: [{
+				id: "7784CB50B46825F1"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			description: ["Just a block of steel"]
+			dependencies: ["42562083BAEF7B85"]
+			id: "1A9C1C8827F5E753"
+			tasks: [{
+				id: "30C40228F3586774"
+				type: "item"
+				item: "alltheores:steel_block"
+			}]
+			rewards: [{
+				id: "4A61A545BA806878"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			description: ["Coal coke and iron can be used to create steel"]
+			dependencies: ["25F584D71B0454FA"]
+			id: "42562083BAEF7B85"
+			tasks: [{
+				id: "313366FB70B93223"
+				type: "item"
+				item: "alltheores:steel_ingot"
+			}]
+			rewards: [{
+				id: "77441AF8970F993B"
+				type: "item"
+				item: "alltheores:steel_ingot"
+				count: 3
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			description: ["27 blocks placed in a 3x3x3 will create a blast furnace"]
+			dependencies: [
+				"29C4025B689A8430"
+				"06938867F7C87DDA"
+			]
+			id: "25F584D71B0454FA"
+			tasks: [{
+				id: "313F05437BABC257"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+			}]
+			rewards: [{
+				id: "02DCCFE3CE126317"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			description: ["Useful for moving items and fluids across distance"]
+			dependencies: ["06938867F7C87DDA"]
+			id: "412BEB5F65D0F707"
+			tasks: [{
+				id: "13E26F18A87C5540"
+				type: "item"
+				item: "minecraft:rail"
+			}]
+			rewards: [{
+				id: "6744E6AD3F5328DD"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 8.0d
+			description: ["3 redstone ore in a jumbo furnace will make a redstone dust"]
+			dependencies: ["4ADE60FEF4165B56"]
+			id: "32953767237ABD2F"
+			tasks: [{
+				id: "7C1E17FFC95E56EC"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+			rewards: [{
+				id: "34346D67D4071F66"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 3
+			}]
+		}
+		{
+			x: 0.5d
+			y: 7.0d
+			description: ["Can be made in a tier 5 miner. After crafting 36 of the ore"]
+			dependencies: ["16E53B43D43DF3FA"]
+			id: "4ADE60FEF4165B56"
+			tasks: [{
+				id: "5D1CA7565EEFDBCE"
+				type: "item"
+				title: "Any #forge:ores/redstone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/redstone"
+					}
+				}
+			}]
+			rewards: [{
+				id: "78F0081341BF7889"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.0d
+			description: ["Found inside colored stone when broken with the prospectors pickaxe."]
+			dependencies: ["2F6370C05C7CE2D4"]
+			id: "16E53B43D43DF3FA"
+			tasks: [{
+				id: "534C0173E6248A6A"
+				type: "item"
+				item: "caveopolis:redstone_fragment"
+			}]
+			rewards: [{
+				id: "0B9B30797DA14337"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			shape: "square"
+			description: ["Allows your prospectors pickaxe to collect redstone fragments"]
+			dependencies: ["1A9C1C8827F5E753"]
+			id: "2F6370C05C7CE2D4"
+			tasks: [{
+				id: "2CA517CD3D2597B9"
+				type: "item"
+				item: "techopolis:research_papers_redstone"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "35DA35A1708E9C78"
+					type: "command"
+					auto: "enabled"
+					command: "/gamestage add @p redstone"
+					player_command: false
+				}
+				{
+					id: "75773AED1BD20070"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			description: ["The fluid absorber is a machine that will create a fluid. See the miners guide book for more information"]
+			dependencies: ["67FBB0440F23A5AB"]
+			id: "74DBA04853F82320"
+			tasks: [{
+				id: "5BC490261DBC47D7"
+				type: "item"
+				item: "miners:fluid_absorber"
+			}]
+			rewards: [{
+				id: "24391259292093A9"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: ["Can be used to cap multiblocks to increase speed"]
+			dependencies: ["06938867F7C87DDA"]
+			id: "5D4456BF3022D778"
+			tasks: [{
+				id: "062A16A2EFC66EBB"
+				type: "item"
+				item: "minecraft:iron_block"
+			}]
+			rewards: [{
+				id: "12075C2A946F793B"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			description: ["Just a block of aluminum"]
+			dependencies: ["29C4025B689A8430"]
+			id: "4E163D2E36B02693"
+			tasks: [{
+				id: "74EE615999E8FCBE"
+				type: "item"
+				item: "alltheores:aluminum_block"
+			}]
+			rewards: [{
+				id: "087E3D0AB842D155"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

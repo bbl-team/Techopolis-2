@@ -1,0 +1,227 @@
+{
+	id: "588DB759C2E02D36"
+	group: "62C5FE5ECA80879B"
+	order_index: 1
+	filename: "space__program"
+	title: "Space Program"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Used to create rockets"]
+			dependencies: ["0AAF858997A3FC40"]
+			id: "7B4BB9BBC387F55C"
+			tasks: [{
+				id: "4D555DC531A412FA"
+				type: "item"
+				item: "beyond_earth:nasa_workbench"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			description: ["To start your journey to space"]
+			dependencies: [
+				"4940CE1FACE39993"
+				"0FDE012661E254AD"
+			]
+			id: "0AAF858997A3FC40"
+			tasks: [{
+				id: "175815224C548E64"
+				type: "item"
+				item: "beyond_earth:compressor"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: ["The first tier of rocket"]
+			dependencies: ["7B4BB9BBC387F55C"]
+			id: "7DD0E293B16E4D7A"
+			tasks: [{
+				id: "1354FFF4C1BAA1F1"
+				type: "item"
+				item: {
+					id: "beyond_earth:rocket_t1"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["Used to launch rockets into space"]
+			dependencies: ["7DD0E293B16E4D7A"]
+			id: "407604CC45FD1562"
+			tasks: [{
+				id: "2DB1684BD5AD9750"
+				type: "item"
+				item: "beyond_earth:rocket_launch_pad"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			description: ["Oil can be created in a magma crucible from hellish technium"]
+			dependencies: ["407604CC45FD1562"]
+			id: "1334D7E39B0986AB"
+			tasks: [{
+				id: "7E7701DBE4A52B8E"
+				type: "checkmark"
+				title: "Obtaining Oil"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			dependencies: [
+				"6F9CB1DF3431ABBF"
+				"1334D7E39B0986AB"
+			]
+			id: "0888A6EC1D383FD0"
+			tasks: [{
+				id: "39105E665E8FF0CA"
+				type: "item"
+				item: "beyond_earth:fuel_bucket"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: ["Used to turn oil into fuel"]
+			dependencies: ["4940CE1FACE39993"]
+			id: "6F9CB1DF3431ABBF"
+			tasks: [{
+				id: "401649DCBD8B8052"
+				type: "item"
+				item: "beyond_earth:fuel_refinery"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			description: ["Part of the space suit"]
+			dependencies: ["4940CE1FACE39993"]
+			id: "1885A45829DEDCE6"
+			tasks: [{
+				id: "641C03F2B48F7B7A"
+				type: "item"
+				item: {
+					id: "beyond_earth:space_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			description: ["Part of the space suit"]
+			dependencies: [
+				"4940CE1FACE39993"
+				"7F998A17FBC96E3F"
+			]
+			id: "17303423E044A0A9"
+			tasks: [{
+				id: "241F78152EB3802E"
+				type: "item"
+				item: {
+					id: "beyond_earth:space_suit"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							oxygenStorage: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			description: ["Part of the space suit"]
+			dependencies: ["4940CE1FACE39993"]
+			id: "2CCDE243662EC32A"
+			tasks: [{
+				id: "3ABFEC14B833B687"
+				type: "item"
+				item: {
+					id: "beyond_earth:space_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			description: ["Part of the space suit"]
+			dependencies: ["4940CE1FACE39993"]
+			id: "7F4B286FC86DF235"
+			tasks: [{
+				id: "5E1FC026411C1BEF"
+				type: "item"
+				item: {
+					id: "beyond_earth:space_pants"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["4940CE1FACE39993"]
+			id: "7F998A17FBC96E3F"
+			tasks: [{
+				id: "00FAC62E0CE9595B"
+				type: "item"
+				item: "beyond_earth:oxygen_tank"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: ["When filled with water will create oxygen. The space suit chestplate requires oxygen to protect you in space"]
+			dependencies: ["7F998A17FBC96E3F"]
+			id: "2FF5BBD9E1F48728"
+			tasks: [{
+				id: "602A138FF6D52D7D"
+				type: "item"
+				item: "beyond_earth:oxygen_loader"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			description: ["Unlocks beyond earth"]
+			id: "0FDE012661E254AD"
+			tasks: [{
+				id: "42434FDE3B4338CA"
+				type: "item"
+				item: "techopolis:research_papers_beyond_earth"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "74CAD1CA1EE515F9"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p beyond_earth"
+				player_command: false
+			}]
+		}
+	]
+	quest_links: [ ]
+}

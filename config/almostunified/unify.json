@@ -1,6 +1,7 @@
 {
   "modPriorities": [
     "minecraft",
+	"techopolis",
     "kubejs",
     "crafttweaker",
     "create",

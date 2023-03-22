@@ -1,0 +1,10 @@
+{
+	id: "5D8C732192AE15E2"
+	order_index: 17
+	title: "Uranium Ore"
+	loot_size: 1
+	rewards: [
+		{ item: "alltheores:uranium_ore", count: 36 }
+		{ item: "alltheores:deepslate_uranium_ore", count: 36 }
+	]
+}

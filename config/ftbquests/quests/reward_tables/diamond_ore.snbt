@@ -1,0 +1,10 @@
+{
+	id: "026D3BDF4E347217"
+	order_index: 14
+	title: "Diamond Ore"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:diamond_ore", count: 36 }
+		{ item: "minecraft:deepslate_diamond_ore", count: 36 }
+	]
+}
