@@ -4,8 +4,8 @@
 ServerEvents.tags('block', event => {
 
 	event.get('miners:miner_tier_1').add()
-	event.get('miners:miner_tier_2').add('#forge:ores/coal', '#forge:stone', '#techopolis:colored_stone','minecraft:dripstone_block')
-	event.get('miners:miner_tier_3').add('#forge:ores/tin', 'techopolis:grout')
+	event.get('miners:miner_tier_2').add('#forge:ores/coal', '#forge:stone', '#techopolis:colored_stone','minecraft:dripstone_block', 'compressium:cobblestone_1')
+	event.get('miners:miner_tier_3').add('#forge:ores/tin', 'techopolis:grout', 'compressium:cobblestone_2')
 	event.get('miners:miner_tier_4').add('#forge:ores/aluminum')
 	event.get('miners:miner_tier_5').add('#forge:ores/redstone', '#forge:ores/nickel', '#forge:ores/silver')
 	event.get('miners:miner_tier_6').add('#forge:ores/lead', 'techopolis:crystal_ore')
@@ -23,8 +23,8 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('item', event => {
 
 	event.get('miners:miner_tier_1').add()
-	event.get('miners:miner_tier_2').add('#forge:ores/coal', '#forge:stone', '#techopolis:colored_stone','minecraft:dripstone_block')
-	event.get('miners:miner_tier_3').add('#forge:ores/tin', 'techopolis:grout')
+	event.get('miners:miner_tier_2').add('#forge:ores/coal', '#forge:stone', '#techopolis:colored_stone','minecraft:dripstone_block', 'compressium:cobblestone_1')
+	event.get('miners:miner_tier_3').add('#forge:ores/tin', 'techopolis:grout','compressium:cobblestone_2')
     event.get('miners:miner_tier_4').add('#forge:ores/aluminum')
 	event.get('miners:miner_tier_5').add('#forge:ores/redstone', '#forge:ores/nickel', '#forge:ores/silver')
 	event.get('miners:miner_tier_6').add('#forge:ores/lead', 'techopolis:crystal_ore')

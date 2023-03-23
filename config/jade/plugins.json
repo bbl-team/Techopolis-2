@@ -78,6 +78,9 @@
     "energy": true,
     "tooltip_renderer": true
   },
+  "enigmaticgraves": {
+    "grave": true
+  },
   "immersiveengineering": {
     "hemp": true,
     "multiblock_icon": true
@@ -92,9 +95,6 @@
   },
   "waystones": {
     "waystone": true
-  },
-  "gravestone": {
-    "grave": true
   },
   "ae2": {
     "part_icon": true,

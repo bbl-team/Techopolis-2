@@ -20,7 +20,7 @@
 				id: "172CA6B392861E77"
 				type: "item"
 				item: "opolisutilities:b_bucks"
-				count: 12L
+				count: 8L
 				consume_items: true
 			}]
 			rewards: [{
@@ -43,7 +43,7 @@
 				id: "734726069C320054"
 				type: "item"
 				item: "opolisutilities:b_bucks"
-				count: 12L
+				count: 8L
 				consume_items: true
 			}]
 			rewards: [{
@@ -66,7 +66,7 @@
 				id: "0D905A28780BD07C"
 				type: "item"
 				item: "opolisutilities:b_bucks"
-				count: 12L
+				count: 8L
 				consume_items: true
 			}]
 			rewards: [{
@@ -89,7 +89,7 @@
 				id: "743205970B9547C7"
 				type: "item"
 				item: "opolisutilities:b_bucks"
-				count: 12L
+				count: 8L
 				consume_items: true
 			}]
 		}
