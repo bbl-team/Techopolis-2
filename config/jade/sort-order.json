@@ -71,6 +71,8 @@
   "mekanism:entity_data_provider": null,
   "mekanism:tooltip_renderer": null,
   "mekanism:remove_builtin": null,
+  "gravestone:grave": null,
+  "enigmaticgraves:grave": null,
   "extendedcrafting:crafting_core": null,
   "extendedcrafting:basic_table": null,
   "extendedcrafting:advanced_table": null,
@@ -93,6 +95,7 @@
   "mekanism:remove_builtin": null,
   "immersiveengineering:hemp": null,
   "immersiveengineering:multiblock_icon": null,
+  "enigmaticgraves:grave": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
   "minecraft:command_block": null,
@@ -142,6 +145,5 @@
   "ae2:part_name": null,
   "ae2:part_icon": null,
   "ae2:part_tooltip": null,
-  "ae2:part_mod_name": null,
-  "gravestone:grave": null
+  "ae2:part_mod_name": null
 }

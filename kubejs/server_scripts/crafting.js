@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_simple_storage', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/steel', L:advanced_technium}).id('techopolis:rp_simple_storage')
 	
 	event.shaped('techopolis:research_papers_ae2', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/diamond', L:ultimate_technium}).id('techopolis:rp_ae2')
-	event.shaped('techopolis:research_papers_rs', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/aluminum', L:'#forge:storage_blocks/diamond'}).id('techopolis:rp_refined_storage')
+	event.shaped('techopolis:research_papers_rs', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:ultimate_technium, L:'#forge:storage_blocks/diamond'}).id('techopolis:rp_refined_storage')
 
 	
 	//Research Papers (misc)
@@ -242,6 +242,8 @@ ServerEvents.recipes(event => {
 
 	//Recipe Remove
 
+	event.remove({id:'caveopolis:coal_fragment'})
+	event.remove({id:'caveopolis:charcoal_fragment'})
 	event.remove({id:'opolisutilities:resource_generator/resource_generator'})
 	event.remove({id:'opolisutilities:resource_generator_2'})
 	event.remove({id:'alltheores:steel_dust_from_alloy_blending'})

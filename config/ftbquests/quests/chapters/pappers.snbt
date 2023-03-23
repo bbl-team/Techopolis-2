@@ -428,6 +428,7 @@
 				type: "item"
 				item: "opolisutilities:b_bucks"
 				count: 6L
+				consume_items: true
 			}]
 			rewards: [{
 				id: "7BD3EA4D0C5282E3"

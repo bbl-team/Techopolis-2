@@ -19,7 +19,7 @@ BlockEvents.rightClicked(event => {
     if(event.block.hasTag('forge:cobblestone')){
         if (player.mainHandItem == 'techopolis:prospectors_pickaxe') {
             if (event.player.stages.has('skyblock_recipes')) {
-                server.runCommandSilent(`give @p caveopolis:cobblestone_pebble 3`)
+                server.runCommandSilent(`give @p minecraft:cobblestone`)
             }
         }
     }
@@ -40,36 +40,56 @@ ServerEvents.recipes(event => {
 
 //    event.shaped('1x minecraft:diamond', ['BBB','BBB','BBB'], {B:'minecraft:dirt'}).id('techopolis:hexlands_diamond').stage('hexland_recipes')
 
-    //Superflat Recipes
-
-    event.shaped('3x minecraft:gravel', ['D C','   ','C D'], {D:'minecraft:dirt',C:cobblestone}).id('techopolis:flatlands_gravel').stage('superflat_recipes')
-    event.shaped('3x minecraft:sand', ['D C','   ','C D'], {D:'minecraft:dirt',C:gravel}).id('techopolis:flatlands_sand').stage('superflat_recipes')
-    event.shaped('3x minecraft:clay_ball', ['D C','   ','C D'], {D:'minecraft:dirt',C:sand}).id('techopolis:flatlands_clay').stage('superflat_recipes')
-    event.shaped(Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}'), [' L ','LCL',' L '], {L:lapis, C:'ceramicbucket:ceramic_bucket'}).id('techopolis:flatlands_water_bucket').stage('superflat_recipes')
-    event.shaped(Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:lava"}}'), [' L ','LCL',' L '], {L:redstone, C:'ceramicbucket:ceramic_bucket'}).id('techopolis:flatlands_lava_bucket').stage('superflat_recipes')
-    event.shapeless('1x minecraft:birch_sapling', ['minecraft:oak_sapling']).id('techopolis:flatlands_birch').stage('superflat_recipes')
-    event.shapeless('1x minecraft:jungle_sapling', ['minecraft:birch_sapling']).id('techopolis:flatlands_jungle').stage('superflat_recipes')
-    event.shapeless('1x minecraft:dark_oak_sapling', ['minecraft:jungle_sapling']).id('techopolis:flatlands_dark_oak').stage('superflat_recipes')
-    event.shapeless('1x minecraft:acacia_sapling', ['minecraft:dark_oak_sapling']).id('techopolis:flatlands_acacia').stage('superflat_recipes')
-    event.shapeless('1x minecraft:spruce_sapling', ['minecraft:acacia_sapling']).id('techopolis:flatlands_spruce').stage('superflat_recipes')
-    event.shapeless('1x minecraft:oak_sapling', ['minecraft:spruce_sapling']).id('techopolis:flatlands_oak').stage('superflat_recipes')
 
     //Skyblock Recipes
 
-    event.shaped('1x minecraft:dirt', ['LLL','L L','LLL'], {L:'#minecraft:leaves'}).id('techopolis:skyblock_dirt').stage('skyblock_recipes')
-    event.shaped('1x minecraft:gravel', ['D'], {D:'minecraft:dirt'}).id('techopolis:skyblock_gravel').stage('skyblock_recipes')
-    event.shaped('1x minecraft:sand', ['D'], {D:'minecraft:gravel'}).id('techopolis:skyblock_sand').stage('skyblock_recipes')
-    event.shaped('1x minecraft:clay', ['D'], {D:'minecraft:sand'}).id('techopolis:skyblock_clay').stage('skyblock_recipes')
-    event.shaped(Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}'), [' L ','LCL',' L '], {L:lapis, C:'ceramicbucket:ceramic_bucket'}).id('techopolis:skyblock_water_bucket').stage('skyblock_recipes')
-    event.shaped(Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:lava"}}'), [' L ','LCL',' L '], {L:redstone, C:'ceramicbucket:ceramic_bucket'}).id('techopolis:skyblock_lava_bucket').stage('skyblock_recipes')
-    event.shapeless('1x minecraft:birch_sapling', ['minecraft:oak_sapling']).id('techopolis:skyblock_birch').stage('skyblock_recipes')
-    event.shapeless('1x minecraft:jungle_sapling', ['minecraft:birch_sapling']).id('techopolis:skyblock_jungle').stage('skyblock_recipes')
-    event.shapeless('1x minecraft:dark_oak_sapling', ['minecraft:jungle_sapling']).id('techopolis:skyblock_dark_oak').stage('skyblock_recipes')
-    event.shapeless('1x minecraft:acacia_sapling', ['minecraft:dark_oak_sapling']).id('techopolis:skyblock_acacia').stage('skyblock_recipes')
-    event.shapeless('1x minecraft:spruce_sapling', ['minecraft:acacia_sapling']).id('techopolis:skyblock_spruce').stage('skyblock_recipes')
-    event.shapeless('1x minecraft:oak_sapling', ['minecraft:spruce_sapling']).id('techopolis:skyblock_oak').stage('skyblock_recipes')
+    event.shaped('1x minecraft:dirt', ['LLL','L L','LLL'], {L:'#minecraft:leaves'}).stage('skyblock_recipes')
+    event.shaped('1x minecraft:grass_block', ['LLL','LDL','LLL'], {L:'#minecraft:leaves', D:'minecraft:dirt'}).stage('skyblock_recipes')
+    event.shaped('1x minecraft:gravel', ['D'], {D:'minecraft:dirt'}).stage('skyblock_recipes')
+    event.shaped('1x minecraft:sand', ['D'], {D:'minecraft:gravel'}).stage('skyblock_recipes')
+    event.shaped('1x minecraft:clay', ['D'], {D:'minecraft:sand'}).stage('skyblock_recipes')
+    event.shaped(Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}'), [' L ','LCL',' L '], {L:lapis, C:'ceramicbucket:ceramic_bucket'}).stage('skyblock_recipes')
+    event.shaped(Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:lava"}}'), [' L ','LCL',' L '], {L:redstone, C:'ceramicbucket:ceramic_bucket'}).stage('skyblock_recipes')
+    
+    event.shapeless('1x minecraft:birch_sapling', ['minecraft:oak_sapling']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:jungle_sapling', ['minecraft:birch_sapling']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:dark_oak_sapling', ['minecraft:jungle_sapling']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:acacia_sapling', ['minecraft:dark_oak_sapling']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:spruce_sapling', ['minecraft:acacia_sapling']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:oak_sapling', ['minecraft:spruce_sapling']).stage('skyblock_recipes')
 
+    event.shapeless('1x minecraft:wheat_seeds', ['minecraft:beetroot_seeds']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:beetroot_seeds', ['minecraft:pumpkin_seeds']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:pumpkin_seeds', ['minecraft:melon_seeds']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:melon_seeds', ['immersiveengineering:seed']).stage('skyblock_recipes')
+    event.shapeless('1x immersiveengineering:seed', ['minecraft:wheat_seeds']).stage('skyblock_recipes')
 
+    event.shapeless('1x minecraft:apple', ['minecraft:carrot']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:carrot', ['minecraft:potato']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:potato', ['minecraft:sweet_berries']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:sweet_berries', ['minecraft:apple']).stage('skyblock_recipes')
+
+    event.shapeless('1x #minecraft:leaves', ['minecraft:cactus']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:cactus', ['minecraft:kelp']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:kelp', ['minecraft:bamboo']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:bamboo', ['minecraft:sugar_cane']).stage('skyblock_recipes')
+
+    
+    //Superflat Recipes
+
+    event.shaped('3x minecraft:gravel', ['D C','   ','C D'], {D:'minecraft:dirt',C:cobblestone}).stage('superflat_recipes')
+    event.shaped('1x minecraft:grass_block', ['LLL','LDL','LLL'], {L:'#minecraft:leaves', D:'minecraft:dirt'}).stage('superflat_recipes')
+    event.shaped('3x minecraft:sand', ['D C','   ','C D'], {D:'minecraft:dirt',C:gravel}).stage('superflat_recipes')
+    event.shaped('3x minecraft:clay_ball', ['D C','   ','C D'], {D:'minecraft:dirt',C:sand}).stage('superflat_recipes')
+    event.shaped(Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}'), ['L L',' C ','L L'], {L:lapis, C:'ceramicbucket:ceramic_bucket'}).stage('superflat_recipes')
+    event.shaped(Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:lava"}}'), ['L L',' C ','L L'], {L:redstone, C:'ceramicbucket:ceramic_bucket'}).stage('superflat_recipes')
+   
+    event.shapeless('2x minecraft:oak_sapling', ['minecraft:birch_sapling','minecraft:birch_sapling']).stage('superflat_recipes')
+    event.shapeless('2x minecraft:birch_sapling', ['minecraft:jungle_sapling','minecraft:jungle_sapling']).stage('superflat_recipes')
+    event.shapeless('2x minecraft:jungle_sapling', ['minecraft:dark_oak_sapling','minecraft:dark_oak_sapling']).stage('superflat_recipes')
+    event.shapeless('2x minecraft:dark_oak_sapling', ['minecraft:acacia_sapling','minecraft:acacia_sapling']).stage('superflat_recipes')
+    event.shapeless('2x minecraft:acacia_sapling', ['minecraft:spruce_sapling','minecraft:spruce_sapling']).stage('superflat_recipes')
+    event.shapeless('2x minecraft:spruce_sapling', ['minecraft:oak_sapling','minecraft:oak_sapling']).stage('superflat_recipes')
 
     
 
@@ -110,6 +130,8 @@ ServerEvents.recipes(event => {
     addStageByMod("tempad", "tempad")
     addStageByMod("tiab", "tiab")
     addStageByMod("flux_networks", "fluxnetworks")
+    addStageByMod("kubejs", "skyblock_recipes")
+    addStageByMod("kubejs", "superflat_recipes")
 
     // clear stages from certain tag based recipes
     let storageTags = AlmostUnified.getTags().filter(tag => {
@@ -165,7 +187,7 @@ PlayerEvents.loggedIn(event => {
     if (!event.player.stages.has('starting_items')) {
 
         event.player.stages.add('starting_items')
-        event.player.give('minecraft:wooden_sword')
+        event.player.give('minecraft:wooden_axe')
         event.player.give('16x minecraft:apple')
         server.runCommandSilent(`gamerule doMobSpawning false`)
         server.runCommandSilent(`gamerule doTraderSpawning false`)

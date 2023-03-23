@@ -47,12 +47,14 @@
 					id: "18E22F8DE79BB57A"
 					type: "item"
 					item: "techopolis:research_papers_b_bucks_5"
+					consume_items: true
 				}
 				{
 					id: "3C294188627EB5A0"
 					type: "item"
 					item: "opolisutilities:b_bucks"
 					count: 16L
+					consume_items: true
 				}
 			]
 			rewards: [{
@@ -74,12 +76,14 @@
 					id: "152B41E6555A66C3"
 					type: "item"
 					item: "techopolis:research_papers_b_bucks_6"
+					consume_items: true
 				}
 				{
 					id: "1ACAA201BDAFD3D4"
 					type: "item"
 					item: "opolisutilities:b_bucks"
 					count: 16L
+					consume_items: true
 				}
 			]
 			rewards: [{
