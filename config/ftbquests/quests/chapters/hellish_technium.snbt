@@ -4,6 +4,7 @@
 	order_index: 2
 	filename: "hellish_technium"
 	title: "Hellish Technium"
+	icon: "techopolis:hellish_technium_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -11,10 +12,7 @@
 			x: -0.5d
 			y: 0.0d
 			description: ["The next tier of technium"]
-			dependencies: [
-				"01DD316BE500FF09"
-				"06E6D269540FF637"
-			]
+			dependencies: ["06E6D269540FF637"]
 			id: "4940CE1FACE39993"
 			tasks: [{
 				id: "7F37C600ADB36DFA"
@@ -28,23 +26,7 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -1.0d
-			description: ["Used to make technium"]
-			id: "01DD316BE500FF09"
-			tasks: [{
-				id: "4A4332A720B8D0F5"
-				type: "item"
-				item: "extendedcrafting:black_iron_ingot"
-			}]
-			rewards: [{
-				id: "7382A5355C74A528"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: -1.0d
+			x: -0.5d
 			y: -1.0d
 			description: ["Used to make technium"]
 			dependencies: ["0ED532C326EB845C"]

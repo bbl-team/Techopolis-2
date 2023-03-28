@@ -8,7 +8,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.5d
+			x: -0.5d
 			y: -0.5d
 			shape: "square"
 			subtitle: "Unlocks Refined Storage, a mass storage mod, also unlocks quartz ore"
@@ -92,7 +92,7 @@
 		{
 			title: "Processor Binding"
 			icon: "refinedstorage:processor_binding"
-			x: 0.5d
+			x: -0.5d
 			y: 1.0d
 			subtitle: "Used to make refined storage processors"
 			dependencies: ["39E6CF877B31B6EF"]
@@ -138,6 +138,126 @@
 				type: "command"
 				auto: "enabled"
 				command: "/gamestage add @p b_bucks_3"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks angel rings, the power of flight"
+			dependencies: ["7A8CF1E50FF6B35E"]
+			id: "2D5F497D5D2E3410"
+			tasks: [
+				{
+					id: "0272F570445029AD"
+					type: "item"
+					item: "techopolis:research_papers_angel_ring"
+					consume_items: true
+				}
+				{
+					id: "64CAF2A86808B329"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 24L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "05A4D0C9FE6625F6"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p angel_ring"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Allows trading with villagers"
+			dependencies: ["28612D6665C7F943"]
+			id: "6A6C1E8C7E97AA43"
+			tasks: [
+				{
+					id: "637C900B7777ED6D"
+					type: "item"
+					item: "techopolis:research_papers_villager_trades"
+					consume_items: true
+				}
+				{
+					id: "274BD04CF1DE97C3"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "356AB79D3DD9A8BE"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p villager_trades"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlock Xnet"
+			dependencies: ["4C6BFFBE6130E502"]
+			id: "792B83C50FC38F7F"
+			tasks: [
+				{
+					id: "24C6B7427A7C714B"
+					type: "item"
+					item: "techopolis:research_papers_xnet"
+					consume_items: true
+				}
+				{
+					id: "1637FA49AD99B249"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "39A3666102B8EA3A"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p xnet"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks LaserIO"
+			dependencies: ["4C6BFFBE6130E502"]
+			id: "75B3714D9E28440A"
+			tasks: [
+				{
+					id: "6B2C800997284D54"
+					type: "item"
+					item: "techopolis:research_papers_laserio"
+					consume_items: true
+				}
+				{
+					id: "24B438129450D28B"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "4ECCDD106E779735"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p laserio"
 				player_command: false
 			}]
 		}

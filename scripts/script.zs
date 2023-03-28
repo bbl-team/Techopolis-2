@@ -13,8 +13,10 @@ import mods.itemstages.Restriction;
 //mods.recipestages.Recipes.setRecipeStageByMod("waystones", "waystones");
 //mods.recipestages.Recipes.setRecipeStageByMod("powah", "powah");
 //mods.recipestages.Recipes.setRecipeStageByMod("beyond_earth", "beyond_earth");
-//mods.recipestages.Recipes.setRecipeStageByMod("compressium", "compressium");
+//mods.recipestages.Recipes.setRecipeStageByMod("", "compressium");
 //mods.recipestages.Recipes.setRecipeStageByMod("framed_blocks", "framedblocks");
+
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "compressium");
 
 
 //REMOVED DONT NEED TO
@@ -31,14 +33,32 @@ ItemStages.createModRestriction("storagenetwork", "simple_storage");
 ItemStages.createModRestriction("fluxnetworks", "flux_networks");
 ItemStages.createModRestriction("tempad", "tempad");
 ItemStages.createModRestriction("tiab", "tiab");
+ItemStages.createModRestriction("trashcans", "trash_cans");
+ItemStages.createModRestriction("laserio", "laserio");
+ItemStages.createModRestriction("xnet", "xnet");
+ItemStages.createModRestriction("rftoolsbase", "xnet");
+ItemStages.createModRestriction("buildinggadgets", "building_gadgets");
 
 ItemStages.createModRestriction("littlelogistics", "little_logistics");
 ItemStages.createModRestriction("thermal", "thermal");
+
 ItemStages.createModRestriction("ae2", "ae2");
+ItemStages.createModRestriction("appmek", "ae2");
+ItemStages.createModRestriction("ae2wtlib", "ae2");
+ItemStages.createModRestriction("aeinfinitybooster", "ae2");
+ItemStages.createModRestriction("merequester", "ae2");
+
 ItemStages.createModRestriction("refinedstorage", "refinedstorage");
+ItemStages.createModRestriction("rsrequestify", "refinedstorage");
+ItemStages.createModRestriction("extrastorage", "refinedstorage");
+ItemStages.createModRestriction("rsinfinitybooster", "refinedstorage");
+ItemStages.createModRestriction("refinedstorageaddons", "refinedstorage");
+
+
 ItemStages.createModRestriction("mekanism", "mekanism");
 ItemStages.createModRestriction("waystones", "waystones");
 ItemStages.createModRestriction("powah", "powah");
+ItemStages.createModRestriction("angelring", "angel_ring");
 
 ItemStages.createModRestriction("beyond_earth", "beyond_earth");
 ItemStages.createModRestriction("constructionwand", "construction_wand");

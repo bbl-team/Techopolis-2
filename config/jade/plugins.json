@@ -93,6 +93,9 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "mcjtylib": {
+    "jadeaddons": true
+  },
   "waystones": {
     "waystone": true
   },

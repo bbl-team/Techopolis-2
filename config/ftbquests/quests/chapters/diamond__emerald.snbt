@@ -4,7 +4,7 @@
 	order_index: 0
 	filename: "diamond__emerald"
 	title: "Diamond \\& Emerald"
-	icon: "miners:miner_tier_7"
+	icon: "minecraft:emerald"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -150,25 +150,8 @@
 		{
 			x: -1.5d
 			y: 3.0d
-			description: ["Allows the mining of new ores"]
-			dependencies: ["2BFC9EF9A5F18491"]
-			id: "73BDA8127D3F7A2A"
-			tasks: [{
-				id: "56ED8A1A0A764844"
-				type: "item"
-				item: "miners:miner_tier_7"
-			}]
-			rewards: [{
-				id: "60D9451257A665A0"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: -1.5d
-			y: 4.0d
 			description: ["Used as the support frame for tier 7 miners"]
-			dependencies: ["73BDA8127D3F7A2A"]
+			dependencies: ["2BFC9EF9A5F18491"]
 			id: "667A7951F63580CC"
 			tasks: [{
 				id: "4BADAE47AF566923"
@@ -184,25 +167,8 @@
 		{
 			x: -0.5d
 			y: 3.0d
-			description: ["Allows the mining of new ores"]
-			dependencies: ["083C8E8E7BDD1140"]
-			id: "25C218686FF44CBD"
-			tasks: [{
-				id: "77475D78C48E7E55"
-				type: "item"
-				item: "miners:miner_tier_8"
-			}]
-			rewards: [{
-				id: "2D5E0DB44D533E12"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: -0.5d
-			y: 4.0d
 			description: ["Used as the support frame for tier 8 miners"]
-			dependencies: ["25C218686FF44CBD"]
+			dependencies: ["083C8E8E7BDD1140"]
 			id: "3D985E8F592D42B5"
 			tasks: [{
 				id: "7EC8F8BD8CF11162"

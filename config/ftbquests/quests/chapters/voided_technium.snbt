@@ -9,6 +9,7 @@
 	quests: [{
 		x: 0.0d
 		y: 0.0d
+		description: ["So techy"]
 		id: "74BADCFA2F5010B6"
 		tasks: [{
 			id: "77CB615397F2F417"

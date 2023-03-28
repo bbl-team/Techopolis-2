@@ -1,0 +1,10 @@
+{
+	"name": "The World And You",
+	"landing_text": "All the information about the different world types in Techopolis 2",
+	"model": "miners:miners_book",
+	"version": 1,
+	"subtitle": "Everything you need to know about your world",
+	"show_progress": false,
+	"advancement_namespaces": ["miners"],
+	"creative_tab": "miners"
+}

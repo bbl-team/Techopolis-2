@@ -2,6 +2,17 @@
 
 //Recipes Restrictions Handled by Kubejs 
 
+//No Trading
+
+MoreJSEvents.playerStartTrading((event) => {
+    // We don't have the stage, so no trades for us :(
+    if (!event.player.stages.has("villager_trades")) {
+        event.forEachOffers((o, i) => {
+            o.disabled = true;
+        });
+    }
+});
+
 //Superflat right click grass for pebbles
 
 BlockEvents.rightClicked(event => {
@@ -13,18 +24,6 @@ BlockEvents.rightClicked(event => {
         }
     }
 })
-
-BlockEvents.rightClicked(event => {
-    const {player, server} = event
-    if(event.block.hasTag('forge:cobblestone')){
-        if (player.mainHandItem == 'techopolis:prospectors_pickaxe') {
-            if (event.player.stages.has('skyblock_recipes')) {
-                server.runCommandSilent(`give @p minecraft:cobblestone`)
-            }
-        }
-    }
-})
-
 
 ServerEvents.recipes(event => {
 
@@ -73,12 +72,15 @@ ServerEvents.recipes(event => {
     event.shapeless('1x minecraft:cactus', ['minecraft:kelp']).stage('skyblock_recipes')
     event.shapeless('1x minecraft:kelp', ['minecraft:bamboo']).stage('skyblock_recipes')
     event.shapeless('1x minecraft:bamboo', ['minecraft:sugar_cane']).stage('skyblock_recipes')
+    event.shapeless('1x minecraft:sugar_cane', ['minecraft:bamboo','minecraft:bamboo']).stage('skyblock_recipes')
+    event.shaped('9x techopolis:grout', ['GSG','SCS','GSG'], {G: gravel, S: sand, C:'minecraft:clay'}).id('techopolis:grout_crafting').stage('skyblock_recipes')
+
 
     
     //Superflat Recipes
 
     event.shaped('3x minecraft:gravel', ['D C','   ','C D'], {D:'minecraft:dirt',C:cobblestone}).stage('superflat_recipes')
-    event.shaped('1x minecraft:grass_block', ['LLL','LDL','LLL'], {L:'#minecraft:leaves', D:'minecraft:dirt'}).stage('superflat_recipes')
+    event.shaped('1x minecraft:grass_block', ['LLL','LDL','LLL'], {L:'#minecraft:leaves', D:'minecraft:dirt'}).stage('superflat_recipes') //FIX
     event.shaped('3x minecraft:sand', ['D C','   ','C D'], {D:'minecraft:dirt',C:gravel}).stage('superflat_recipes')
     event.shaped('3x minecraft:clay_ball', ['D C','   ','C D'], {D:'minecraft:dirt',C:sand}).stage('superflat_recipes')
     event.shaped(Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}'), ['L L',' C ','L L'], {L:lapis, C:'ceramicbucket:ceramic_bucket'}).stage('superflat_recipes')
@@ -132,7 +134,23 @@ ServerEvents.recipes(event => {
     addStageByMod("flux_networks", "fluxnetworks")
     addStageByMod("kubejs", "skyblock_recipes")
     addStageByMod("kubejs", "superflat_recipes")
+    addStageByMod("trash_cans", "trashcans")
+    addStageByMod("angel_ring", "angelring")
+    addStageByMod("laserio", "laserio")
+    addStageByMod("xnet", "xnet")
+    addStageByMod("xnet", "rftoolsbase")
+    addStageByMod("building_gadgets", "buildinggadgets")
 
+    addStageByMod("ae2", "appmek")
+    addStageByMod("ae2", "ae2wtlib")
+    addStageByMod("ae2", "aeinfinitybooster")
+    addStageByMod("ae2", "merequester")
+
+    addStageByMod("refinedstorage", "rsrequestify")
+    addStageByMod("refinedstorage", "extrastorage")
+    addStageByMod("refinedstorage", "rsinfinitybooster")
+    addStageByMod("refinedstorage", "refinedstorageaddons")
+ 
     // clear stages from certain tag based recipes
     let storageTags = AlmostUnified.getTags().filter(tag => {
         return /forge:storage_blocks/.test(tag)
@@ -189,6 +207,7 @@ PlayerEvents.loggedIn(event => {
         event.player.stages.add('starting_items')
         event.player.give('minecraft:wooden_axe')
         event.player.give('16x minecraft:apple')
+        event.player.give(Item.of('patchouli:guide_book', '{"patchouli:book":"patchouli:world_types"}'))
         server.runCommandSilent(`gamerule doMobSpawning false`)
         server.runCommandSilent(`gamerule doTraderSpawning false`)
         server.runCommandSilent(`gamerule doWeatherCycle false`)
@@ -226,13 +245,14 @@ PlayerEvents.loggedIn(event => {
     console.log(`Current world type is ${worldType}`)
 })	
 
-//Stage Coal & Lapis
-
+/* OLD
 BlockEvents.broken(event => {
     const {server, player} = event
     if(event.player.stages.has('coal_and_lapis')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                event.cancel()
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/coal_and_lapis`)
             }
         }
@@ -243,10 +263,12 @@ BlockEvents.broken(event => {
 
 BlockEvents.broken(event => {
     const {server, player} = event
-    if(event.player.stages.has('copper_and_tin')) {
+    if(event.player.stages.has('copper_and_tin') && event.player.stages.has('coal_and_lapis')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/copper_and_tin`)
+                event.player.stages.remove('coal_and_lapis')
             }
         }
     }
@@ -259,6 +281,7 @@ BlockEvents.broken(event => {
     if(event.player.stages.has('iron_and_aluminum')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/iron_and_aluminum`)
             }
         }
@@ -272,6 +295,7 @@ BlockEvents.broken(event => {
     if(event.player.stages.has('redstone')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/redstone`)
             }
         }
@@ -285,6 +309,7 @@ BlockEvents.broken(event => {
     if(event.player.stages.has('nickel')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/nickel`)
             }
         }
@@ -298,7 +323,9 @@ BlockEvents.broken(event => {
     if(event.player.stages.has('silver_and_gold')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/silver_and_gold`)
+                event.player.stages.remove('iron_and_aluminum')
             }
         }
     }
@@ -311,6 +338,7 @@ BlockEvents.broken(event => {
     if(event.player.stages.has('lead')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/lead`)
             }
         }
@@ -321,9 +349,10 @@ BlockEvents.broken(event => {
 
 BlockEvents.broken(event => {
     const {server, player} = event
-    if(event.player.stages.has('lead')) {
+    if(event.player.stages.has('crystal')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/crystal`)
             }
         }
@@ -337,7 +366,10 @@ BlockEvents.broken(event => {
     if(event.player.stages.has('diamond_and_emerald')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/diamond_and_emerald`)
+                event.player.stages.remove('silver_and_gold')
+
             }
         }
     }
@@ -350,6 +382,7 @@ BlockEvents.broken(event => {
     if(event.player.stages.has('osmium')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/osmium`)
             }
         }
@@ -363,8 +396,42 @@ BlockEvents.broken(event => {
     if(event.player.stages.has('uranium')) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
             if (event.block.hasTag(`techopolis:colored_stone`)){
+                server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`)
                 server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot techopolis:ores/uranium`)
             }
         }
     }
 })
+*/
+
+BlockEvents.broken(event => {
+    const { server, player } = event;
+    const stages = {
+      coal_and_lapis: { loot: 'techopolis:ores/coal_and_lapis' },
+      copper_and_tin: { loot: 'techopolis:ores/copper_and_tin', requires: ['coal_and_lapis'] },
+      iron_and_aluminum: { loot: 'techopolis:ores/iron_and_aluminum' },
+      redstone: { loot: 'techopolis:ores/redstone' },
+      nickel: { loot: 'techopolis:ores/nickel' },
+      silver_and_gold: { loot: 'techopolis:ores/silver_and_gold', requires: ['iron_and_aluminum'] },
+      lead: { loot: 'techopolis:ores/lead' },
+      crystal: { loot: 'techopolis:ores/crystal' },
+      osmium: { loot: 'techopolis:ores/osmium' },
+      uranium: { loot: 'techopolis:ores/uranium' },
+      diamond_and_emerald: { loot: 'techopolis:ores/diamond_and_emerald', requires: ['silver_and_gold'] }
+    };
+  
+    for (const [stage, { loot, requires }] of Object.entries(stages)) {
+      if (event.player.stages.has(stage) && (!requires || requires.every(r => event.player.stages.has(r)))) {
+        if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
+          if (event.block.hasTag(`techopolis:colored_stone`)) {
+            server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`);
+            server.runCommandSilent(`loot spawn ${event.block.x} ${event.block.y} ${event.block.z} loot ${loot}`);
+          }
+        }
+      }
+    }
+})
+  
+  
+  
+  

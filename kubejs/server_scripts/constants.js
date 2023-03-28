@@ -11,6 +11,8 @@ const ultimate_technium = 'techopolis:ultimate_technium_ingot'
 const hellish_technium = 'techopolis:hellish_technium_ingot'
 const voided_technium = 'techopolis:voided_technium_ingot'
 
+const netherite_ingot = 'minecraft:netherite_ingot'
+
 const hopper = 'minecraft:hopper'
 const wooden_hopper = 'woodenhopper:wooden_hopper'
 

@@ -1,0 +1,5 @@
+{
+  "type": "miners:miner_blocks",
+  "blockTag": "forge:ores/netherite_scrap",
+  "minerTier": 6
+}

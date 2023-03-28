@@ -4,6 +4,7 @@
 	order_index: 1
 	filename: "extended_crafting"
 	title: "Extended Crafting"
+	icon: "extendedcrafting:frame"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -139,6 +140,12 @@
 				id: "4F9DA55B02E26C0A"
 				type: "item"
 				item: "extendedcrafting:black_iron_ingot"
+			}]
+			rewards: [{
+				id: "10517CF445D57E44"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+				count: 4
 			}]
 		}
 	]

@@ -181,7 +181,7 @@
 			x: -1.0d
 			y: 1.5d
 			shape: "square"
-			description: ["Can be used to find coal and lapis fragments inside colored stone"]
+			description: ["Can be used to find coal and lapis fragments inside colored stone. You can also enable and disable certain ores in the Ores Are Us Questline"]
 			dependencies: [
 				"63F50BA9A109C2A8"
 				"600C4EBE7AA4E881"
@@ -209,13 +209,13 @@
 		{
 			x: 0.0d
 			y: -1.5d
-			description: ["Your first miner. Use the miners guide book for more information!"]
+			description: ["The heart of the miners mod"]
 			dependencies: ["01979ABBD28C7205"]
 			id: "71B4B8123D5C4126"
 			tasks: [{
-				id: "452A199FF2B5A0A1"
+				id: "761C55B05F57CFE1"
 				type: "item"
-				item: "miners:miner_tier_1"
+				item: "miners:miner_base_block"
 			}]
 			rewards: [{
 				id: "54AD235187958D20"
@@ -373,6 +373,23 @@
 			}]
 			rewards: [{
 				id: "53DBFF503C22683C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			description: ["This item can help you create miner structures quicker. Shift right click to change better frame or resource mode. Having the correct or more amount of block will place them for you"]
+			dependencies: ["71B4B8123D5C4126"]
+			id: "4909AFE0EA6C95D4"
+			tasks: [{
+				id: "503B8A43B26A6D3E"
+				type: "item"
+				item: "miners:miner_structure_placer"
+			}]
+			rewards: [{
+				id: "1670A0AD91483A63"
 				type: "item"
 				item: "opolisutilities:b_bucks"
 			}]

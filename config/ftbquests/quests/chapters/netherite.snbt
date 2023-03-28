@@ -159,23 +159,6 @@
 		}
 		{
 			x: 1.5d
-			y: 2.0d
-			description: ["Allows the mining of new ores"]
-			dependencies: ["2E904794348E63B1"]
-			id: "279CFAC7CF89B854"
-			tasks: [{
-				id: "1CAD2242BBA7C0F1"
-				type: "item"
-				item: "miners:miner_tier_9"
-			}]
-			rewards: [{
-				id: "76ACEE214D99B262"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: 1.5d
 			y: 1.0d
 			description: ["Can be used to cap multiblocks to increase speed"]
 			dependencies: ["0317C3DFA9206EC4"]
@@ -193,9 +176,9 @@
 		}
 		{
 			x: 1.5d
-			y: 3.0d
+			y: 2.0d
 			description: ["Used as the support frame for tier 9 miners"]
-			dependencies: ["279CFAC7CF89B854"]
+			dependencies: ["2E904794348E63B1"]
 			id: "4D1D9A99B538F769"
 			tasks: [{
 				id: "181D08426CFD3D15"

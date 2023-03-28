@@ -22,6 +22,11 @@
 				type: "item"
 				item: "techopolis:ultimate_technium_ingot"
 			}]
+			rewards: [{
+				id: "0FA3A6C0D38555CA"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -0.5d
@@ -37,6 +42,11 @@
 				type: "item"
 				item: "techopolis:infused_crystalline"
 			}]
+			rewards: [{
+				id: "3E64B0C280913564"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.5d
@@ -48,6 +58,11 @@
 				id: "71A3D3F5C5614C64"
 				type: "item"
 				item: "immersiveengineering:sheetmetal_uranium"
+			}]
+			rewards: [{
+				id: "79B55645B721F47D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

@@ -4,7 +4,7 @@
 	order_index: 2
 	filename: "miner_tier_3"
 	title: "Copper \\& Tin"
-	icon: "miners:miner_tier_3"
+	icon: "minecraft:copper_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -27,27 +27,10 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 1.0d
-			description: ["Allows the mining of new ores"]
-			dependencies: ["0FB7CA5CD479C47F"]
-			id: "513A8CFE17CD1682"
-			tasks: [{
-				id: "10AFFDCEA83E9188"
-				type: "item"
-				item: "miners:miner_tier_3"
-			}]
-			rewards: [{
-				id: "4161118EE9555442"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: -0.5d
-			y: 2.0d
+			x: -1.5d
+			y: -1.0d
 			description: ["Used as the support frame for tier 3 miners"]
-			dependencies: ["513A8CFE17CD1682"]
+			dependencies: ["4AE876E9D7B9C821"]
 			id: "79797A838F69D864"
 			tasks: [{
 				id: "5F48F29F90707574"

@@ -4,7 +4,7 @@
 	order_index: 0
 	filename: "iron_and_aluminum"
 	title: "Iron \\& Aluminum"
-	icon: "miners:miner_tier_5"
+	icon: "minecraft:iron_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -148,26 +148,9 @@
 		}
 		{
 			x: -1.5d
-			y: 3.0d
-			description: ["Allows the mining of new ores"]
-			dependencies: ["06938867F7C87DDA"]
-			id: "3A80FB2F4FC01FD6"
-			tasks: [{
-				id: "1669485DE92710C0"
-				type: "item"
-				item: "miners:miner_tier_5"
-			}]
-			rewards: [{
-				id: "3DA2EB66B4DF07CB"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: -1.5d
-			y: 4.0d
+			y: 3.5d
 			description: ["Used as the support frame for tier 5 miners"]
-			dependencies: ["3A80FB2F4FC01FD6"]
+			dependencies: ["06938867F7C87DDA"]
 			id: "67FBB0440F23A5AB"
 			tasks: [{
 				id: "7EEA3B505FAD1E7C"
@@ -341,7 +324,7 @@
 		}
 		{
 			x: -1.5d
-			y: 5.0d
+			y: 4.5d
 			description: ["The fluid absorber is a machine that will create a fluid. See the miners guide book for more information"]
 			dependencies: ["67FBB0440F23A5AB"]
 			id: "74DBA04853F82320"
