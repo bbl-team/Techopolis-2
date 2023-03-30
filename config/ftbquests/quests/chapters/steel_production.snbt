@@ -397,7 +397,7 @@
 			icon: "immersiveengineering:assembler"
 			x: -2.0d
 			y: 0.0d
-			description: ["The assembler is a machine that do crafting for you, useful to make treated wood"]
+			description: ["The assembler is a machine that can do crafting for you, useful for making treated wood"]
 			dependencies: ["750C60FAC30747EC"]
 			id: "15554B105E03B734"
 			tasks: [{

@@ -610,11 +610,12 @@
 				id: "70BD218398BAF7D0"
 				type: "command"
 				auto: "enabled"
-				command: "/gamestage add @p nickel"
+				command: "/gamestage add @p crystal"
 				player_command: false
 			}]
 		}
 		{
+			title: "Disable Crystal"
 			icon: "techopolis:crystal_fragment"
 			x: -8.0d
 			y: 0.5d
@@ -927,6 +928,29 @@
 				auto: "enabled"
 				command: "/gamestage remove @p diamond_and_emerald"
 				player_command: false
+			}]
+		}
+		{
+			title: "Gem Ores"
+			icon: "alltheores:ruby_ore"
+			x: 4.0d
+			y: 0.5d
+			subtitle: "Buy a node of ore"
+			dependencies: ["2972DB6BA0DB9583"]
+			can_repeat: true
+			id: "00AFBE90D80C4294"
+			tasks: [{
+				id: "77A179691E8ACCF2"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1C6C723C87967137"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5481812306636293250L
 			}]
 		}
 	]

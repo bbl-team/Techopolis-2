@@ -42,6 +42,7 @@
 			y: -2.5d
 			shape: "square"
 			subtitle: "Allows the purchasing of niter ore"
+			description: ["From the Ores Are Us questline"]
 			dependencies: ["1ADDF2856FA22558"]
 			id: "03A682276628C44C"
 			tasks: [
@@ -151,6 +152,116 @@
 				command: "/gamestage add @p b_bucks_2"
 				player_command: false
 			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Unlock Xnet"
+			id: "792B83C50FC38F7F"
+			tasks: [
+				{
+					id: "24C6B7427A7C714B"
+					type: "item"
+					item: "techopolis:research_papers_xnet"
+					consume_items: true
+				}
+				{
+					id: "1637FA49AD99B249"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "39A3666102B8EA3A"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p xnet"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Unlocks LaserIO"
+			id: "75B3714D9E28440A"
+			tasks: [
+				{
+					id: "6B2C800997284D54"
+					type: "item"
+					item: "techopolis:research_papers_laserio"
+					consume_items: true
+				}
+				{
+					id: "24B438129450D28B"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "4ECCDD106E779735"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p laserio"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Unlocks angel rings, the power of flight"
+			dependencies: ["7A8CF1E50FF6B35E"]
+			id: "2D5F497D5D2E3410"
+			tasks: [
+				{
+					id: "0272F570445029AD"
+					type: "item"
+					item: "techopolis:research_papers_angel_ring"
+					consume_items: true
+				}
+				{
+					id: "64CAF2A86808B329"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 24L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "05A4D0C9FE6625F6"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p angel_ring"
+				player_command: false
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Unlocks Gem Ores from the shop"
+			id: "2972DB6BA0DB9583"
+			tasks: [
+				{
+					id: "0D8CCE302CC2854E"
+					type: "item"
+					item: "techopolis:research_papers_gem_ores"
+					consume_items: true
+				}
+				{
+					id: "0BBE448E70E414C6"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
 		}
 	]
 	quest_links: [ ]

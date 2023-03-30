@@ -113,7 +113,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 0.5d
 			y: -0.5d
 			shape: "square"
 			subtitle: "Unlocks a crafting recipe for B Bucks"
@@ -142,37 +142,7 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -0.5d
-			shape: "square"
-			subtitle: "Unlocks angel rings, the power of flight"
-			dependencies: ["7A8CF1E50FF6B35E"]
-			id: "2D5F497D5D2E3410"
-			tasks: [
-				{
-					id: "0272F570445029AD"
-					type: "item"
-					item: "techopolis:research_papers_angel_ring"
-					consume_items: true
-				}
-				{
-					id: "64CAF2A86808B329"
-					type: "item"
-					item: "opolisutilities:b_bucks"
-					count: 24L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "05A4D0C9FE6625F6"
-				type: "command"
-				auto: "enabled"
-				command: "/gamestage add @p angel_ring"
-				player_command: false
-			}]
-		}
-		{
-			x: 5.5d
+			x: 1.5d
 			y: -0.5d
 			shape: "square"
 			subtitle: "Allows trading with villagers"
@@ -202,62 +172,31 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 2.5d
 			y: -0.5d
 			shape: "square"
-			subtitle: "Unlock Xnet"
-			dependencies: ["4C6BFFBE6130E502"]
-			id: "792B83C50FC38F7F"
+			subtitle: "Unlocks Ender Storage Mod"
+			id: "3712EB746A81925D"
 			tasks: [
 				{
-					id: "24C6B7427A7C714B"
+					id: "62E660DD3AC12178"
 					type: "item"
-					item: "techopolis:research_papers_xnet"
+					item: "techopolis:research_papers_ender_chests"
 					consume_items: true
 				}
 				{
-					id: "1637FA49AD99B249"
+					id: "46B0490387D5AE5C"
 					type: "item"
 					item: "opolisutilities:b_bucks"
-					count: 16L
+					count: 8L
 					consume_items: true
 				}
 			]
 			rewards: [{
-				id: "39A3666102B8EA3A"
+				id: "514BBF663D614FDB"
 				type: "command"
 				auto: "enabled"
-				command: "/gamestage add @p xnet"
-				player_command: false
-			}]
-		}
-		{
-			x: 1.5d
-			y: -0.5d
-			shape: "square"
-			subtitle: "Unlocks LaserIO"
-			dependencies: ["4C6BFFBE6130E502"]
-			id: "75B3714D9E28440A"
-			tasks: [
-				{
-					id: "6B2C800997284D54"
-					type: "item"
-					item: "techopolis:research_papers_laserio"
-					consume_items: true
-				}
-				{
-					id: "24B438129450D28B"
-					type: "item"
-					item: "opolisutilities:b_bucks"
-					count: 16L
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "4ECCDD106E779735"
-				type: "command"
-				auto: "enabled"
-				command: "/gamestage add @p laserio"
+				command: "/gamestage add @p ender_storage"
 				player_command: false
 			}]
 		}
