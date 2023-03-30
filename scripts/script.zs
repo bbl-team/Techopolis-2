@@ -38,6 +38,8 @@ ItemStages.createModRestriction("laserio", "laserio");
 ItemStages.createModRestriction("xnet", "xnet");
 ItemStages.createModRestriction("rftoolsbase", "xnet");
 ItemStages.createModRestriction("buildinggadgets", "building_gadgets");
+ItemStages.createModRestriction("elevatorid", "elevators");
+ItemStages.createModRestriction("enderstorage", "ender_storage");
 
 ItemStages.createModRestriction("littlelogistics", "little_logistics");
 ItemStages.createModRestriction("thermal", "thermal");

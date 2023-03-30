@@ -63,6 +63,9 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:research_papers_villager_trades').displayName('Research Papers: Villager Trades').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Villager Trading§r")
 	event.create('techopolis:research_papers_laserio').displayName('Research Papers: LaserIO').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks LaserIO§r")
 	event.create('techopolis:research_papers_xnet').displayName('Research Papers: XNet').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks XNet§r")
+	event.create('techopolis:research_papers_ender_chests').displayName('Research Papers: Ender Chests').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Ender Chests§r")
+	event.create('techopolis:research_papers_elevators').displayName('Research Papers: Elevators').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Elevators§r")
+	event.create('techopolis:research_papers_gem_ores').displayName('Research Papers: Gem Ores').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Gem Ores§r")
 	
 	
 	event.create('techopolis:research_papers_metal_press').displayName('Research Pappers: Metal Press').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Provides the blocks needed to make the Metal Press§r")

@@ -98,6 +98,12 @@ const gold_dust = '#forge:dusts/gold'
 const steel_dust = '#forge:dusts/steel'
 const silver_dust = '#forge:dusts/silver'
 
+
+const gold_nugget = '#forge:nuggets/gold'
+const redstone_block = '#forge:storage_blocks/redstone'
+const string = 'minecraft:string'
+
+
 const copper_wire = '#forge:wires/copper'
 
 const copper_rod = '#forge:rods/copper'

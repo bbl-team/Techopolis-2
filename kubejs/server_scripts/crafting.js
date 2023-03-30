@@ -4,6 +4,21 @@ console.info('Hello, World! (You will see this line every time server resources 
 
 ServerEvents.recipes(event => {
 
+	event.shaped('1x minecraft:feather', ['  S',' SS','SS '], {S:string}).id('techopolis:feather')
+	event.custom({"type": "thermal:pulverizer","ingredient": {"item": "thermal:rf_coil"},"result": [{"item": "minecraft:blaze_powder","count": 1}],"energy_mod": 0.5}).id('techopolis:thermal/machines/pulverizer/blaze_powder')
+
+
+
+	//LaserIO
+
+	event.shaped('2x laserio:logic_chip_raw', ['RGR','TST','RGR'], {R:redstone, G:gold_nugget, S:elite_technium, T:'thermal:signalum_ingot'}).id('laserio:logic_chip_raw')
+
+	event.shaped('1x laserio:card_energy', ['RBR','TST','GGG'], {R:redstone, B:redstone_block, T:'thermal:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_energy')
+	event.shaped('1x laserio:card_fluid', ['RBR','TST','GGG'], {R:redstone, B:bucket, T:'thermal:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_fluid')
+	event.shaped('1x laserio:card_item', ['RBR','TST','GGG'], {R:redstone, B:chest, T:'thermal:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_item')
+	event.shaped('1x laserio:card_redstone', ['RBR','TST','GGG'], {R:redstone_block, B:redstone_block, T:'thermal:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_redstone')
+
+
 	//Building Gadgets
 
 	event.shaped('1x buildinggadgets:gadget_building', ['IRI','TRT','ILI'], {I:iron_ingot, T:advanced_technium, R:redstone, L:lapis}).id('buildinggadgets:gadget_building')
@@ -119,8 +134,11 @@ ServerEvents.recipes(event => {
 	event.replaceInput({mod: 'storagenetwork'}, 'minecraft:blaze_powder', '#forge:dusts/aluminum')
 	event.replaceInput({mod: 'tempad'}, 'minecraft:quartz', elite_technium)
 	event.replaceInput({mod: 'tempad'}, 'minecraft:glowstone', 'minecraft:clock')
+	event.replaceInput({mod: 'elevatorid'}, 'minecraft:ender_pearl', basic_technium)
+
 	event.replaceInput({id: 'thermal:machine_chiller'}, 'minecraft:packed_ice', advanced_technium)
 	event.replaceInput({id: 'immersiveengineering:crafting/dynamo'}, 'immersiveengineering:component_iron', '#forge:ingots/aluminum')
+	event.replaceInput({id: 'laserio:filter_count'}, 'minecraft:observer', 'minecraft:dropper')
 
 
 	
@@ -129,7 +147,7 @@ ServerEvents.recipes(event => {
 	event.replaceInput({id: 'thermal:machine_frame'}, 'minecraft:iron_ingot', 'alltheores:silver_ingot')
 	event.replaceInput({id: 'thermal:machine_frame'}, '#forge:gears/tin', '#forge:gears/electrum')
 	event.replaceInput({id: 'thermal:machine_crucible'}, 'minecraft:nether_bricks', 'thermal:obsidian_glass')
-	
+
 	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "minecraft:sand","count": 1}],"result": [{"item": "minecraft:glass","count": 1}],"energy": 800}).id('techopolis:machines/smelter/glass')
 
 	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "forge:obsidian","count": 1},{"value": [{"tag": "forge:dusts/steel"}],"count": 1},{"tag": "forge:sand",
@@ -150,6 +168,9 @@ ServerEvents.recipes(event => {
 	event.custom({"type": "thermal:smelter","ingredients": [{"item": "alltheores:ruby","count": 1},{"value": [{"item": "alltheores:sapphire"}],"count": 1},{"item": "alltheores:peridot",
 			"count": 1}],"result": [{"item": "minecraft:amethyst_shard","count": 1}],"energy": 5000}).id('techopolis:amethyst')
 
+	event.custom({"type": "thermal:smelter","ingredients": [{"item": "alltheores:ruby","count": 1},{"value": [{"item": "alltheores:sapphire"}],"count": 1},{"item": "alltheores:peridot",
+			"count": 1}],"result": [{"item": "minecraft:amethyst_shard","count": 1}],"energy": 5000}).id('techopolis:amethyst')
+
 	event.custom({"type": "thermal:crystallizer","ingredients": [{"fluid": "techopolis:liquid_glass","amount": 250},{"item": "thermal:niter"}],"result": [{"item": "techopolis:crystal_base"}],"energy": 2500})
 	event.custom({"type": "thermal:crystallizer","ingredients": [{"fluid": "techopolis:liquid_glass","amount": 250},{"item": "alltheores:ruby_dust"}],"result": [{"item": "alltheores:ruby"}],"energy": 2500})
 	event.custom({"type": "thermal:crystallizer","ingredients": [{"fluid": "techopolis:liquid_glass","amount": 250},{"item": "alltheores:sapphire_dust"}],"result": [{"item": "alltheores:sapphire"}],"energy": 2500})
@@ -165,6 +186,8 @@ ServerEvents.recipes(event => {
 
 	event.custom({"type": "thermal:pulverizer","ingredient": {"item": "techopolis:crystalline"},"result": [{"item": "techopolis:crystalline_dust","count": 1}],"energy_mod": 0.5})
 	event.custom({"type": "thermal:pulverizer","ingredient": {"item": "minecraft:prismarine_shard"},"result": [{"item": "techopolis:prismarine_dust","count": 1}],"energy_mod": 0.5})
+
+	event.custom({"type": "thermal:pulverizer","ingredient": {"item": "techopolis:crystal_ore"},"result": [{"item": "techopolis:crystalline","count": 1}],"energy_mod": 0.5})
 
 	//Mekanism
 
@@ -210,8 +233,8 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_trash_cans', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'compressium:cobblestone_2', L: basic_technium}).id('techopolis:rp_trash_cans')
 	event.shaped('techopolis:research_papers_angel_ring', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/gold', L: elite_technium}).id('techopolis:rp_angel_ring')
 	event.shaped('techopolis:research_papers_villager_trades', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/emerald', L: ultimate_technium}).id('techopolis:rp_villager_trades')
-	event.shaped('techopolis:research_papers_laserio', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:ultimate_technium, L: '#forge:storage_blocks/quartz'}).id('techopolis:rp_laserio')
-	event.shaped('techopolis:research_papers_xnet', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/quartz', L: ultimate_technium}).id('techopolis:rp_xnet')
+	event.shaped('techopolis:research_papers_laserio', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:elite_technium, L: '#forge:storage_blocks/quartz'}).id('techopolis:rp_laserio')
+	event.shaped('techopolis:research_papers_xnet', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/quartz', L: elite_technium}).id('techopolis:rp_xnet')
 
 	//Reseach Papers (mods)
 
@@ -224,6 +247,9 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_construction_wand', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/coal', L:'#forge:ingots/bronze'}).id('techopolis:rp_construction_wands')
 	event.shaped('techopolis:research_papers_framed_blocks', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/tin', L:'immersiveengineering:treated_wood_horizontal'}).id('techopolis:rp_framed_blocks')
 	event.shaped('techopolis:research_papers_simple_storage', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/steel', L:advanced_technium}).id('techopolis:rp_simple_storage')
+	event.shaped('techopolis:research_papers_elevators', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#minecraft:wool', L:advanced_technium}).id('techopolis:rp_elevators')
+	event.shaped('techopolis:research_papers_ender_chests', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:ender_pearl', L:ultimate_technium}).id('techopolis:rp_ender_chests')
+	event.shaped('techopolis:research_papers_gem_ores', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'techopolis:crystal_ore', L:elite_technium}).id('techopolis:rp_gem_ores')
 	
 	event.shaped('techopolis:research_papers_ae2', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/diamond', L:ultimate_technium}).id('techopolis:rp_ae2')
 	event.shaped('techopolis:research_papers_rs', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:ultimate_technium, L:'#forge:storage_blocks/diamond'}).id('techopolis:rp_refined_storage')
@@ -241,6 +267,15 @@ ServerEvents.recipes(event => {
 	//Miners
 
 	event.shaped('1x miners:tree_absorber', ['SCS','LPL','SCS'], {S:'minecraft:smooth_stone', L:'#minecraft:planks', C:'#minecraft:planks', P:'minecraft:stone_axe'}).id('miners:miners/tree_absorber')
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/niter","minerTier": 6})
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/ender","minerTier": 5})
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/ruby","minerTier": 6})
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/sapphire","minerTier": 6})
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/peridot","minerTier": 6})
+
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:sandstone/colorless","minerTier": 4})
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:storage_blocks/clay","minerTier": 4})
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:gravel","minerTier": 4})
 
 	//Beyond Earth
 
@@ -258,7 +293,14 @@ ServerEvents.recipes(event => {
 	event.replaceInput({id: 'beyond_earth:oxygen_tank'}, '#forge:plates/iron', 'techopolis:hellish_technium_ingot')
 	event.replaceInput({id: 'angelring:leadstone_angel_ring'}, '#forge:storage_blocks/cinnabar', 'minecraft:redstone_block')
 	event.replaceInput({id: 'angelring:resonant_angel_ring'}, 'thermal:blizz_powder', 'minecraft:blaze_powder')
+	event.replaceInput({id: 'angelring:angel_ring'}, 'minecraft:nether_star', elite_technium)
+	event.replaceInput({id: 'angelring:energetic_angel_ring'}, 'minecraft:nether_star', elite_technium)
+	event.replaceInput({id: 'angelring:leadstone_angel_ring'}, 'minecraft:nether_star', elite_technium)
+	event.replaceInput({id: 'angelring:hardened_angel_ring'}, 'minecraft:nether_star', elite_technium)
+	event.replaceInput({id: 'angelring:reinforced_angel_ring'}, 'minecraft:nether_star', elite_technium)
+	event.replaceInput({id: 'angelring:resonant_angel_ring'}, 'minecraft:nether_star', elite_technium)
 	event.replaceInput({id: 'angelring:diamond_ring'}, 'minecraft:elytra', '#forge:gears/diamond')
+	event.replaceInput({id: 'angelring:diamond_ring'}, 'minecraft:ghast_tear', elite_technium)
 
 
 

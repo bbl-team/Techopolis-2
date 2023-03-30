@@ -259,25 +259,8 @@
 		{
 			x: -6.0d
 			y: -0.5d
-			description: ["Allows the mining of new ores"]
-			dependencies: ["0A8781A8F8C61547"]
-			id: "37018F8E79DB06C2"
-			tasks: [{
-				id: "5AAABE476CAC7E1F"
-				type: "item"
-				item: "miners:miner_tier_4"
-			}]
-			rewards: [{
-				id: "508B40692B0AD712"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: -6.0d
-			y: 0.5d
 			description: ["Used as the support frame for tier 4 miners"]
-			dependencies: ["37018F8E79DB06C2"]
+			dependencies: ["0A8781A8F8C61547"]
 			id: "7F40BA316DE9D4FA"
 			tasks: [{
 				id: "351CAE57FECD6BFB"

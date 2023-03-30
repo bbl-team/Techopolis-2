@@ -28,11 +28,11 @@ BlockEvents.rightClicked(event => {
 ServerEvents.recipes(event => {
 
     event.shaped('1x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: basic_technium}).id('techopolis:b_bucks_1').stage('b_bucks_1')
-    event.shaped('1x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: advanced_technium}).id('techopolis:b_bucks_2').stage('b_bucks_2')
-    event.shaped('1x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: elite_technium}).id('techopolis:b_bucks_3').stage('b_bucks_3')
-    event.shaped('1x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: ultimate_technium}).id('techopolis:b_bucks_4').stage('b_bucks_4')
-    event.shaped('1x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: hellish_technium}).id('techopolis:b_bucks_5').stage('b_bucks_5')
-    event.shaped('1x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: voided_technium}).id('techopolis:b_bucks_6').stage('b_bucks_6')
+    event.shaped('4x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: advanced_technium}).id('techopolis:b_bucks_2').stage('b_bucks_2')
+    event.shaped('8x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: elite_technium}).id('techopolis:b_bucks_3').stage('b_bucks_3')
+    event.shaped('12x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: ultimate_technium}).id('techopolis:b_bucks_4').stage('b_bucks_4')
+    event.shaped('16x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: hellish_technium}).id('techopolis:b_bucks_5').stage('b_bucks_5')
+    event.shaped('20x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: voided_technium}).id('techopolis:b_bucks_6').stage('b_bucks_6')
 
 
 //World Exclusive recipes
@@ -140,6 +140,8 @@ ServerEvents.recipes(event => {
     addStageByMod("xnet", "xnet")
     addStageByMod("xnet", "rftoolsbase")
     addStageByMod("building_gadgets", "buildinggadgets")
+    addStageByMod("elevators", "elevatorid")
+    addStageByMod("ender_storage", "enderstorage")
 
     addStageByMod("ae2", "appmek")
     addStageByMod("ae2", "ae2wtlib")
@@ -407,21 +409,21 @@ BlockEvents.broken(event => {
 BlockEvents.broken(event => {
     const { server, player } = event;
     const stages = {
-      coal_and_lapis: { loot: 'techopolis:ores/coal_and_lapis' },
-      copper_and_tin: { loot: 'techopolis:ores/copper_and_tin', requires: ['coal_and_lapis'] },
+      coal_and_lapis: { loot: 'techopolis:ores/coal_and_lapis'},
+      copper_and_tin: { loot: 'techopolis:ores/copper_and_tin'},
       iron_and_aluminum: { loot: 'techopolis:ores/iron_and_aluminum' },
       redstone: { loot: 'techopolis:ores/redstone' },
       nickel: { loot: 'techopolis:ores/nickel' },
-      silver_and_gold: { loot: 'techopolis:ores/silver_and_gold', requires: ['iron_and_aluminum'] },
+      silver_and_gold: { loot: 'techopolis:ores/silver_and_gold'},
       lead: { loot: 'techopolis:ores/lead' },
       crystal: { loot: 'techopolis:ores/crystal' },
       osmium: { loot: 'techopolis:ores/osmium' },
       uranium: { loot: 'techopolis:ores/uranium' },
-      diamond_and_emerald: { loot: 'techopolis:ores/diamond_and_emerald', requires: ['silver_and_gold'] }
+      diamond_and_emerald: { loot: 'techopolis:ores/diamond_and_emerald'}
     };
   
-    for (const [stage, { loot, requires }] of Object.entries(stages)) {
-      if (event.player.stages.has(stage) && (!requires || requires.every(r => event.player.stages.has(r)))) {
+    for (const [stage, { loot}] of Object.entries(stages)) {
+      if (event.player.stages.has(stage)) {
         if (player.mainHandItem === 'techopolis:prospectors_pickaxe') {
           if (event.block.hasTag(`techopolis:colored_stone`)) {
             server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} air`);

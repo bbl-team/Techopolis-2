@@ -251,6 +251,35 @@
 				}
 			}]
 		}
+		{
+			x: 5.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Unlocks Elevators Mod"
+			id: "6543F93BF53D3074"
+			tasks: [
+				{
+					id: "237A78926A57C38B"
+					type: "item"
+					item: "techopolis:research_papers_elevators"
+					consume_items: true
+				}
+				{
+					id: "28E2082D60207B93"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "42165BFF14A2B9B2"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p elevators"
+				player_command: false
+			}]
+		}
 	]
 	quest_links: [ ]
 }
