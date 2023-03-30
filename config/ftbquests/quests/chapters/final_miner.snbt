@@ -4,31 +4,25 @@
 	order_index: 0
 	filename: "final_miner"
 	title: "Final Miner"
+	icon: "minecraft:beacon"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: 0.0d
-			y: 0.5d
+			y: -0.5d
 			description: ["Used as the support frame for tier 10 miners"]
-			dependencies: ["051A8B46FE9B2AC6"]
+			dependencies: ["648F6DAF2770C1BC"]
 			id: "0B5A9CDB488819B8"
 			tasks: [{
 				id: "5CB5E1F1DE75DAFE"
 				type: "item"
 				item: "miners:ultimate_support_frame"
 			}]
-		}
-		{
-			x: 0.0d
-			y: -0.5d
-			description: ["Allows the mining of new ores"]
-			dependencies: ["648F6DAF2770C1BC"]
-			id: "051A8B46FE9B2AC6"
-			tasks: [{
-				id: "1A1D55AA82302FC8"
+			rewards: [{
+				id: "76BAA163DEE977EC"
 				type: "item"
-				item: "miners:miner_tier_10"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -42,6 +36,11 @@
 				type: "item"
 				item: "minecraft:beacon"
 			}]
+			rewards: [{
+				id: "3F7CAE442CE863F8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
@@ -53,6 +52,11 @@
 				id: "524D78A297E6F6D7"
 				type: "item"
 				item: "minecraft:nether_star"
+			}]
+			rewards: [{
+				id: "7C6B3C87011C83E7"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

@@ -58,6 +58,12 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:research_papers_building_gadgets').displayName('Research Papers: Building Gadgets').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Building Gadgets§r")
 	event.create('techopolis:research_papers_beyond_earth').displayName('Research Papers: Beyond Earth').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Beyond Earth§r")
 	event.create('techopolis:research_papers_tiab').displayName('Research Papers: Time In A Bottle').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Time In A Bottle§r")
+	event.create('techopolis:research_papers_trash_cans').displayName('Research Papers: Trash Cans').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Trash Cans§r")
+	event.create('techopolis:research_papers_angel_ring').displayName('Research Papers: Angel Ring').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Angel Ring§r")
+	event.create('techopolis:research_papers_villager_trades').displayName('Research Papers: Villager Trades').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Villager Trading§r")
+	event.create('techopolis:research_papers_laserio').displayName('Research Papers: LaserIO').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks LaserIO§r")
+	event.create('techopolis:research_papers_xnet').displayName('Research Papers: XNet').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks XNet§r")
+	
 	
 	event.create('techopolis:research_papers_metal_press').displayName('Research Pappers: Metal Press').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Provides the blocks needed to make the Metal Press§r")
 	event.create('techopolis:blank_research_papers').texture("minecraft:item/paper").color(0, 0x9A4D00).tooltip("§2Used to make research papers §r")

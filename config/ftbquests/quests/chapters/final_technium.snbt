@@ -9,11 +9,19 @@
 	quests: [{
 		x: 0.5d
 		y: 0.0d
+		description: ["GG"]
+		dependencies: ["74BADCFA2F5010B6"]
 		id: "75CD1605D73AC0F5"
 		tasks: [{
 			id: "3E469A64736F9E80"
 			type: "item"
 			item: "techopolis:final_technium_ingot"
+			count: 32L
+		}]
+		rewards: [{
+			id: "1172987A13A51562"
+			type: "item"
+			item: "opolisutilities:b_bucks"
 		}]
 	}]
 	quest_links: [ ]

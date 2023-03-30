@@ -147,11 +147,24 @@
 				type: "checkmark"
 				title: "World Types"
 			}]
-			rewards: [{
-				id: "1F6A572070D99BC8"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
+			rewards: [
+				{
+					id: "1F6A572070D99BC8"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+				}
+				{
+					id: "73403773A676D0B9"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "patchouli:world_types"
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -3.5d

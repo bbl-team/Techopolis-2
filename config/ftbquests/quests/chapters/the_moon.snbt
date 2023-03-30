@@ -4,6 +4,13 @@
 	order_index: 2
 	filename: "the_moon"
 	title: "Travel The World"
+	icon: {
+		id: "beyond_earth:netherite_space_helmet"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -18,6 +25,11 @@
 				type: "item"
 				item: "beyond_earth:moon_stone"
 			}]
+			rewards: [{
+				id: "77E6D0D7246F04C7"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
@@ -30,6 +42,11 @@
 				type: "item"
 				item: "beyond_earth:desh_nugget"
 			}]
+			rewards: [{
+				id: "16BD304FC0729BBB"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
@@ -40,6 +57,11 @@
 				id: "50789BA36C15F37D"
 				type: "item"
 				item: "beyond_earth:desh_ingot"
+			}]
+			rewards: [{
+				id: "3564A1698CB27EDD"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -57,6 +79,11 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "54B55762D544AC0E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.0d
@@ -68,6 +95,11 @@
 				id: "59DC4F0CD50662E4"
 				type: "item"
 				item: "beyond_earth:mars_stone"
+			}]
+			rewards: [{
+				id: "1DD4D865019630B9"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -81,6 +113,11 @@
 				type: "item"
 				item: "beyond_earth:ostrum_nugget"
 			}]
+			rewards: [{
+				id: "734161EC44C8CB9E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 3.0d
@@ -91,6 +128,11 @@
 				id: "7320F275235A851B"
 				type: "item"
 				item: "beyond_earth:ostrum_ingot"
+			}]
+			rewards: [{
+				id: "05103E1381122AA7"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -107,6 +149,11 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+			rewards: [{
+				id: "1D09BFCCCB05C90F"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -125,6 +172,11 @@
 				type: "item"
 				item: "beyond_earth:venus_stone"
 			}]
+			rewards: [{
+				id: "66066169D1046F64"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 5.0d
@@ -137,6 +189,11 @@
 				type: "item"
 				item: "beyond_earth:calorite_nugget"
 			}]
+			rewards: [{
+				id: "6C1D45F7B49A9298"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 6.0d
@@ -147,6 +204,11 @@
 				id: "6DAF4DF67FF25F6F"
 				type: "item"
 				item: "beyond_earth:calorite_ingot"
+			}]
+			rewards: [{
+				id: "5C9F0AE21E86605F"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -164,6 +226,11 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "656802A14455F413"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 2.5d
@@ -180,6 +247,11 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "4E3FE1053DD20628"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -203,6 +275,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5380AFF079CEAC36"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 4.5d
@@ -220,6 +297,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "00B4FD44ACBE9DC8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 5.5d
@@ -236,6 +318,11 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "7213C199F0C0C7C8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

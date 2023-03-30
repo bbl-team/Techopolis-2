@@ -4,6 +4,13 @@
 	order_index: 1
 	filename: "space__program"
 	title: "Space Program"
+	icon: {
+		id: "beyond_earth:space_helmet"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -17,6 +24,11 @@
 				id: "4D555DC531A412FA"
 				type: "item"
 				item: "beyond_earth:nasa_workbench"
+			}]
+			rewards: [{
+				id: "735C641841D57A20"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -32,6 +44,11 @@
 				id: "175815224C548E64"
 				type: "item"
 				item: "beyond_earth:compressor"
+			}]
+			rewards: [{
+				id: "36E5054EF9CCE449"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -49,6 +66,11 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "5B5D3FF634238E50"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 0.0d
@@ -61,6 +83,11 @@
 				type: "item"
 				item: "beyond_earth:rocket_launch_pad"
 			}]
+			rewards: [{
+				id: "70021D17A8F12D04"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 1.5d
@@ -72,6 +99,11 @@
 				id: "7E7701DBE4A52B8E"
 				type: "checkmark"
 				title: "Obtaining Oil"
+			}]
+			rewards: [{
+				id: "5F051798C31EBA71"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -87,6 +119,11 @@
 				type: "item"
 				item: "beyond_earth:fuel_bucket"
 			}]
+			rewards: [{
+				id: "1E187EE0417EC62D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 3.0d
@@ -98,6 +135,11 @@
 				id: "401649DCBD8B8052"
 				type: "item"
 				item: "beyond_earth:fuel_refinery"
+			}]
+			rewards: [{
+				id: "2984EDDE63F664FA"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -116,6 +158,11 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "248BE6481FC84D0B"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -143,6 +190,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "107808772CE35389"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 5.0d
@@ -160,6 +212,11 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "0D03E4B5BA250F35"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -179,6 +236,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1E2EE8AF51C8A5B8"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: 3.0d
@@ -189,6 +251,11 @@
 				id: "00FAC62E0CE9595B"
 				type: "item"
 				item: "beyond_earth:oxygen_tank"
+			}]
+			rewards: [{
+				id: "7E135041EE50175D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 		{
@@ -206,6 +273,7 @@
 		{
 			x: 0.0d
 			y: -2.0d
+			shape: "square"
 			description: ["Unlocks beyond earth"]
 			id: "0FDE012661E254AD"
 			tasks: [{

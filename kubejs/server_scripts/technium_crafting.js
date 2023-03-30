@@ -329,6 +329,45 @@ ServerEvents.recipes(event => {
 		}
 	}).id('techopolis:voided_technium_ingot')
 
+	//Final Technium
+
+	event.custom({
+		"type": "extendedcrafting:shaped_table",
+		"pattern": [
+		  "AAABBBAAA",
+		  "ABBCCCBBA",
+		  "ABDDEDDBA",
+		  "BCDEFEDCB",
+		  "BCEFFFECB",
+		  "BCDEFEDCB",
+		  "ABDDEDDBA",
+		  "ABBCCCBBA",
+		  "AAABBBAAA"
+		],
+		"key": {
+		  "A": {
+			"item": "techopolis:basic_technium_ingot"
+		  },
+		  "B": {
+			"item": "techopolis:advanced_technium_ingot"
+		  },
+		  "C": {
+			"item": "techopolis:elite_technium_ingot"
+		  },
+		  "D": {
+			"item": "techopolis:ultimate_technium_ingot"
+		  },
+		  "E": {
+			"item": "techopolis:hellish_technium_ingot"
+		  },
+		  "F": {
+			"item": "techopolis:voided_technium_ingot"
+		  }
+		},
+		"result": {
+		  "item": "techopolis:final_technium_ingot"
+		}
+	}).id('techopolis:final_technium_ingot')
 
 
 

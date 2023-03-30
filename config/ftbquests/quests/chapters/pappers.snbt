@@ -40,26 +40,6 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 3.5d
-			id: "792B83C50FC38F7F"
-			tasks: [{
-				id: "52545C5B01D1967B"
-				type: "checkmark"
-				title: "Laser Io"
-			}]
-		}
-		{
-			x: -2.5d
-			y: 3.5d
-			id: "75B3714D9E28440A"
-			tasks: [{
-				id: "75E9C0ABDEC780E4"
-				type: "checkmark"
-				title: "x net"
-			}]
-		}
-		{
 			x: -9.0d
 			y: -2.5d
 			shape: "square"
@@ -512,6 +492,35 @@
 				id: "4E527D9F3AC4481B"
 				type: "command"
 				command: "/gamestage add @p framed_blocks"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.0d
+			y: -2.5d
+			shape: "square"
+			dependencies: ["339FA84203923031"]
+			id: "1A575B981CB41A94"
+			tasks: [
+				{
+					id: "7E02EA99F96B2B9B"
+					type: "item"
+					item: "techopolis:research_papers_trash_cans"
+					consume_items: true
+				}
+				{
+					id: "4B44693505074BD3"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "1A5417167951C7F5"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p trash_cans"
 				player_command: false
 			}]
 		}

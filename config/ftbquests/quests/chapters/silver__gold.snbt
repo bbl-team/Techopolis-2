@@ -4,7 +4,7 @@
 	order_index: 0
 	filename: "silver__gold"
 	title: "Silver \\& Gold"
-	icon: "miners:miner_tier_6"
+	icon: "minecraft:gold_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -171,25 +171,8 @@
 		{
 			x: 1.0d
 			y: 3.5d
-			description: ["Allows the mining of new ores"]
-			dependencies: ["1536B900C06EFB4B"]
-			id: "6A5CE5DEF7464094"
-			tasks: [{
-				id: "74635147BF2A1D2B"
-				type: "item"
-				item: "miners:miner_tier_6"
-			}]
-			rewards: [{
-				id: "11581BA66A60AF04"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: 1.0d
-			y: 4.5d
 			description: ["Used as the support frame for tier 6 miners"]
-			dependencies: ["6A5CE5DEF7464094"]
+			dependencies: ["1536B900C06EFB4B"]
 			id: "3408533719C7A45E"
 			tasks: [{
 				id: "49D09D56DFA2D548"

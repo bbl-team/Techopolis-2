@@ -4,7 +4,7 @@
 	order_index: 1
 	filename: "coal__lapis"
 	title: "Coal \\& Lapis"
-	icon: "miners:miner_tier_2"
+	icon: "minecraft:lapis_lazuli"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -82,29 +82,11 @@
 		{
 			x: 0.5d
 			y: 2.0d
-			description: ["Allows the mining of new ores and blocks"]
+			description: ["Used as the support frame for tier 2 miners"]
 			dependencies: [
-				"339C3067A93E65E7"
 				"00A314F17EACA3B8"
 				"3A2E405A8654435D"
 			]
-			id: "46289E8C580B19D0"
-			tasks: [{
-				id: "490F41270C2DE108"
-				type: "item"
-				item: "miners:miner_tier_2"
-			}]
-			rewards: [{
-				id: "5106E3D4522A697F"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: 0.5d
-			y: 3.0d
-			description: ["Used as the support frame for tier 2 miners"]
-			dependencies: ["46289E8C580B19D0"]
 			id: "0A97CA0CF1C0F04E"
 			tasks: [{
 				id: "5F56A0C31E11684A"

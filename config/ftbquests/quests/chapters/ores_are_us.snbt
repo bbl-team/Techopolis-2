@@ -10,8 +10,8 @@
 		{
 			title: "Copper Ore"
 			icon: "minecraft:copper_ore"
-			x: -1.5d
-			y: -2.0d
+			x: 1.0d
+			y: -2.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["7FDF4DCFDCF8820F"]
 			can_repeat: true
@@ -33,8 +33,8 @@
 		{
 			title: "Lapis Ore"
 			icon: "minecraft:lapis_ore"
-			x: -2.5d
-			y: -2.0d
+			x: 0.0d
+			y: -2.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["387F6E6102BAC495"]
 			can_repeat: true
@@ -56,8 +56,8 @@
 		{
 			title: "Coal Ore"
 			icon: "minecraft:coal_ore"
-			x: -3.5d
-			y: -2.0d
+			x: -1.0d
+			y: -2.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["387F6E6102BAC495"]
 			can_repeat: true
@@ -79,8 +79,8 @@
 		{
 			title: "Tin Ore"
 			icon: "alltheores:tin_ore"
-			x: -0.5d
-			y: -2.0d
+			x: 2.0d
+			y: -2.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["7FDF4DCFDCF8820F"]
 			can_repeat: true
@@ -92,12 +92,18 @@
 				count: 8L
 				consume_items: true
 			}]
+			rewards: [{
+				id: "5474110F8E2DFBC1"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1631645752823129408L
+			}]
 		}
 		{
 			title: "Iron Ore"
 			icon: "minecraft:iron_ore"
-			x: -3.5d
-			y: -1.0d
+			x: -1.0d
+			y: -1.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["54E3D524E91021A3"]
 			can_repeat: true
@@ -119,8 +125,8 @@
 		{
 			title: "Aluminum Ore"
 			icon: "alltheores:aluminum_ore"
-			x: -2.5d
-			y: -1.0d
+			x: 0.0d
+			y: -1.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["54E3D524E91021A3"]
 			can_repeat: true
@@ -142,8 +148,8 @@
 		{
 			title: "Redstone Ore"
 			icon: "minecraft:redstone_ore"
-			x: -1.5d
-			y: -1.0d
+			x: 1.0d
+			y: -1.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["2F6370C05C7CE2D4"]
 			can_repeat: true
@@ -165,8 +171,8 @@
 		{
 			title: "Gold Ore"
 			icon: "minecraft:gold_ore"
-			x: -2.5d
-			y: 0.0d
+			x: 0.0d
+			y: -0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["6FB83E8D157794FB"]
 			can_repeat: true
@@ -188,8 +194,8 @@
 		{
 			title: "Silver Ore"
 			icon: "alltheores:silver_ore"
-			x: -3.5d
-			y: 0.0d
+			x: -1.0d
+			y: -0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["6FB83E8D157794FB"]
 			can_repeat: true
@@ -211,8 +217,8 @@
 		{
 			title: "Lead Ore"
 			icon: "mekanism:lead_ore"
-			x: -1.5d
-			y: 0.0d
+			x: 1.0d
+			y: -0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["3A7B8FE35CD46B6A"]
 			can_repeat: true
@@ -234,8 +240,8 @@
 		{
 			title: "Niter Ore"
 			icon: "thermal:niter_ore"
-			x: -0.5d
-			y: 0.0d
+			x: 2.0d
+			y: -0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["03A682276628C44C"]
 			can_repeat: true
@@ -257,8 +263,8 @@
 		{
 			title: "Crystal Ore"
 			icon: "techopolis:crystal_ore"
-			x: 0.5d
-			y: 0.0d
+			x: 3.0d
+			y: -0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["0CA1B3A8B242C68F"]
 			can_repeat: true
@@ -280,8 +286,8 @@
 		{
 			title: "Nickel Ore"
 			icon: "alltheores:nickel_ore"
-			x: -0.5d
-			y: -1.0d
+			x: 2.0d
+			y: -1.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["70D42E3638198D5B"]
 			id: "2EF39F406B2D0A52"
@@ -302,8 +308,8 @@
 		{
 			title: "Diamond Ore"
 			icon: "minecraft:diamond_ore"
-			x: -3.5d
-			y: 1.0d
+			x: -1.0d
+			y: 0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["754CDB1500697856"]
 			can_repeat: true
@@ -325,8 +331,8 @@
 		{
 			title: "Emerald Ore"
 			icon: "minecraft:emerald_ore"
-			x: -2.5d
-			y: 1.0d
+			x: 0.0d
+			y: 0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["754CDB1500697856"]
 			can_repeat: true
@@ -348,8 +354,8 @@
 		{
 			title: "Quartz Ore"
 			icon: "minecraft:nether_quartz_ore"
-			x: -1.5d
-			y: 1.0d
+			x: 1.0d
+			y: 0.5d
 			subtitle: "Buy a node of ore"
 			min_required_dependencies: 1
 			dependencies: [
@@ -375,8 +381,8 @@
 		{
 			title: "Ender Ore"
 			icon: "opolisutilities:ender_ore"
-			x: 1.5d
-			y: 0.0d
+			x: 4.0d
+			y: -0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["0A31B8C60B5F35A3"]
 			can_repeat: true
@@ -398,8 +404,8 @@
 		{
 			title: "Osmium Ore"
 			icon: "alltheores:osmium_ore"
-			x: -0.5d
-			y: 1.0d
+			x: 2.0d
+			y: 0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["77993E2FE0139206"]
 			can_repeat: true
@@ -421,8 +427,8 @@
 		{
 			title: "Uranium Ore"
 			icon: "alltheores:uranium_ore"
-			x: 0.5d
-			y: 1.0d
+			x: 3.0d
+			y: 0.5d
 			subtitle: "Buy a node of ore"
 			dependencies: ["20F6AF13651B0E56"]
 			can_repeat: true
@@ -439,6 +445,488 @@
 				type: "choice"
 				exclude_from_claim_all: true
 				table_id: 6740889330298787298L
+			}]
+		}
+		{
+			icon: {
+				id: "techopolis:prospectors_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.0d
+			y: -3.5d
+			description: ["Customize what fragments your prospectors pickaxe can mine from colored stone"]
+			dependencies: ["387F6E6102BAC495"]
+			id: "2E771D84CC377423"
+			tasks: [{
+				id: "406F7C98B51431D3"
+				type: "checkmark"
+				title: "Pickaxe Configurator"
+			}]
+		}
+		{
+			title: "Enable Redstone"
+			icon: "caveopolis:redstone_fragment"
+			x: -9.0d
+			y: -2.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["2F6370C05C7CE2D4"]
+			can_repeat: true
+			id: "3145690FB479103C"
+			tasks: [{
+				id: "056385627D4AA6D0"
+				type: "checkmark"
+				title: "Redstone"
+			}]
+			rewards: [{
+				id: "0E35A7381E23103F"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p redstone"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:redstone_fragment"
+			x: -8.0d
+			y: -2.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["2F6370C05C7CE2D4"]
+			can_repeat: true
+			id: "77C85DE7DE5D3FC8"
+			tasks: [{
+				id: "223102337CA6DFDA"
+				type: "checkmark"
+				title: "Disable Redstone"
+			}]
+			rewards: [{
+				id: "2F2F06A901CF4F93"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p redstone"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:lead_fragment"
+			x: -9.0d
+			y: -0.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["3A7B8FE35CD46B6A"]
+			can_repeat: true
+			id: "39647D2F4FE9B935"
+			tasks: [{
+				id: "104D1CC227F93F89"
+				type: "checkmark"
+				title: "Enable Lead"
+			}]
+			rewards: [{
+				id: "194BE1CEE42DEDD7"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p lead"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:lead_fragment"
+			x: -8.0d
+			y: -0.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["3A7B8FE35CD46B6A"]
+			can_repeat: true
+			id: "0AE490697F74110F"
+			tasks: [{
+				id: "3653BB260DD08A8C"
+				type: "checkmark"
+				title: "Disable Lead"
+			}]
+			rewards: [{
+				id: "6C948497830C9334"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p lead"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:nickel_fragment"
+			x: -9.0d
+			y: -1.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["70D42E3638198D5B"]
+			can_repeat: true
+			id: "2AE5D8EF951962FC"
+			tasks: [{
+				id: "2EEA1BED2A72C927"
+				type: "checkmark"
+				title: "Enable Nickel"
+			}]
+			rewards: [{
+				id: "6E21EEAB5AF939A8"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p nickel"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:nickel_fragment"
+			x: -8.0d
+			y: -1.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["70D42E3638198D5B"]
+			can_repeat: true
+			id: "6F64004BEA56A23E"
+			tasks: [{
+				id: "1964F4EC9DDFCB49"
+				type: "checkmark"
+				title: "Disable Nickel"
+			}]
+			rewards: [{
+				id: "1A80996FA3765573"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p nickel"
+				player_command: false
+			}]
+		}
+		{
+			icon: "techopolis:crystal_fragment"
+			x: -9.0d
+			y: 0.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["0CA1B3A8B242C68F"]
+			can_repeat: true
+			id: "32F6CCF3D0B63C7F"
+			tasks: [{
+				id: "4972F6C68BDA7597"
+				type: "checkmark"
+				title: "Enable Crystal"
+			}]
+			rewards: [{
+				id: "70BD218398BAF7D0"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p nickel"
+				player_command: false
+			}]
+		}
+		{
+			icon: "techopolis:crystal_fragment"
+			x: -8.0d
+			y: 0.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["0CA1B3A8B242C68F"]
+			can_repeat: true
+			id: "27EA3179863F2C40"
+			tasks: [{
+				id: "116BADB3626B3CCD"
+				type: "checkmark"
+				title: "Disable Nickel"
+			}]
+			rewards: [{
+				id: "05E138703B13DB1E"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p crystal"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:osmium_fragment"
+			x: -9.0d
+			y: 1.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["77993E2FE0139206"]
+			can_repeat: true
+			id: "41978E6397C9F820"
+			tasks: [{
+				id: "31AF34E9574DC288"
+				type: "checkmark"
+				title: "Enable Osmium"
+			}]
+			rewards: [{
+				id: "0DA6FDC244493186"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p osmium "
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:osmium_fragment"
+			x: -8.0d
+			y: 1.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["77993E2FE0139206"]
+			can_repeat: true
+			id: "1EE5B18AFCEBEA98"
+			tasks: [{
+				id: "408D76F66181585B"
+				type: "checkmark"
+				title: "Disable Osmium"
+			}]
+			rewards: [{
+				id: "630149A860483E61"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p osmium"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:uranium_fragment"
+			x: -9.0d
+			y: 2.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["20F6AF13651B0E56"]
+			can_repeat: true
+			id: "54CF10867F7D078C"
+			tasks: [{
+				id: "424B9E62ABEB0DD3"
+				type: "checkmark"
+				title: "Enable Uranium"
+			}]
+			rewards: [{
+				id: "182D65C2E835EF34"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p uranium"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:uranium_fragment"
+			x: -8.0d
+			y: 2.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["20F6AF13651B0E56"]
+			can_repeat: true
+			id: "2BABF9FB58D04A56"
+			tasks: [{
+				id: "77BD373212C962D4"
+				type: "checkmark"
+				title: "Disable Uranium"
+			}]
+			rewards: [{
+				id: "58DE2E1396BF9AF5"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p uranium"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:coal_fragment"
+			x: -6.0d
+			y: -2.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["387F6E6102BAC495"]
+			can_repeat: true
+			id: "44A21BF7088EEFFA"
+			tasks: [{
+				id: "31FF10E13AF3CB98"
+				type: "checkmark"
+				title: "Enable Coal \\& Lapis"
+			}]
+			rewards: [{
+				id: "75C6F55A81AE9290"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p coal_and_lapis"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:coal_fragment"
+			x: -5.0d
+			y: -2.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["387F6E6102BAC495"]
+			can_repeat: true
+			id: "3F630C05216F5E4E"
+			tasks: [{
+				id: "0775D19D715C4AF2"
+				type: "checkmark"
+				title: "Disable Coal \\& Lapis"
+			}]
+			rewards: [{
+				id: "6E80011724B4FD48"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p coal_and_lapis"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:copper_fragment"
+			x: -6.0d
+			y: -1.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["7FDF4DCFDCF8820F"]
+			can_repeat: true
+			id: "055EF066EDA864FB"
+			tasks: [{
+				id: "00817664FE66DA9D"
+				type: "checkmark"
+				title: "Enable Copper \\& Tin"
+			}]
+			rewards: [{
+				id: "260D5EC63C808DDC"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p copper_and_tin"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:copper_fragment"
+			x: -5.0d
+			y: -1.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["7FDF4DCFDCF8820F"]
+			can_repeat: true
+			id: "3136C9BB199D08E3"
+			tasks: [{
+				id: "1BF1C9330B1DB706"
+				type: "checkmark"
+				title: "Disable Copper \\& Tin"
+			}]
+			rewards: [{
+				id: "389D8D79B85D2573"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p copper_and_tin"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:iron_fragment"
+			x: -6.0d
+			y: -0.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["54E3D524E91021A3"]
+			can_repeat: true
+			id: "172F9E89456444B6"
+			tasks: [{
+				id: "18F878A79C714300"
+				type: "checkmark"
+				title: "Enable Iron \\& Aluminum"
+			}]
+			rewards: [{
+				id: "377C5F95F125FF80"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p iron_and_aluminum"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:iron_fragment"
+			x: -5.0d
+			y: -0.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["54E3D524E91021A3"]
+			can_repeat: true
+			id: "71782ED25CAFC85A"
+			tasks: [{
+				id: "6F5DE0B442E372C8"
+				type: "checkmark"
+				title: "Disable Iron \\& Aluminum"
+			}]
+			rewards: [{
+				id: "47FC6FC24F8B1E56"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p iron_and_aluminum"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:silver_fragment"
+			x: -6.0d
+			y: 0.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["6FB83E8D157794FB"]
+			can_repeat: true
+			id: "0F1E2F785BE5F2D4"
+			tasks: [{
+				id: "4EA83EB51C3834D4"
+				type: "checkmark"
+				title: "Enable Silver \\& Gold"
+			}]
+			rewards: [{
+				id: "503B1BD95579E114"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p silver_and_gold"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:silver_fragment"
+			x: -5.0d
+			y: 0.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["6FB83E8D157794FB"]
+			can_repeat: true
+			id: "24DB1FFC56E2CE87"
+			tasks: [{
+				id: "73B2ECE84B6661DE"
+				type: "checkmark"
+				title: "Disable Silver \\& Gold"
+			}]
+			rewards: [{
+				id: "18D706D60B23E627"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p silver_and_gold"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:diamond_fragment"
+			x: -6.0d
+			y: 1.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["754CDB1500697856"]
+			can_repeat: true
+			id: "4617B6A7997C1827"
+			tasks: [{
+				id: "209E27F41773F0F5"
+				type: "checkmark"
+				title: "Enable Diamond \\& Emerald"
+			}]
+			rewards: [{
+				id: "7AFD225DFCC41F42"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p diamond_and_emerald"
+				player_command: false
+			}]
+		}
+		{
+			icon: "caveopolis:diamond_fragment"
+			x: -5.0d
+			y: 1.5d
+			subtitle: "From Colored Stone"
+			dependencies: ["754CDB1500697856"]
+			can_repeat: true
+			id: "1468313FE5CBAB19"
+			tasks: [{
+				id: "4C0EADFF70B10E5E"
+				type: "checkmark"
+				title: "Disable Diamond \\& Emerald"
+			}]
+			rewards: [{
+				id: "7665B8FA4CFB95B0"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage remove @p diamond_and_emerald"
+				player_command: false
 			}]
 		}
 	]

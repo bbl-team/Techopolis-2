@@ -51,6 +51,11 @@
 					item: "immersiveengineering:conveyor_basic"
 					count: 2
 				}
+				{
+					id: "38DDBC1FFB057275"
+					type: "item"
+					item: "immersiveengineering:manual"
+				}
 			]
 		}
 		{
@@ -224,10 +229,13 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 0.0d
+			x: 2.0d
+			y: 0.5d
 			description: ["Allows the metal press to make wires"]
-			dependencies: ["62CA8057322A2EEF"]
+			dependencies: [
+				"63FEC76BD7089928"
+				"62CA8057322A2EEF"
+			]
 			id: "6B3A52BDB5E49A20"
 			tasks: [{
 				id: "2EFB02BBAD1ECB7B"
@@ -258,7 +266,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 0.5d
 			y: -1.0d
 			description: ["Made in the metal press"]
 			dependencies: ["165A2A5B4A7F5E92"]
@@ -277,8 +285,8 @@
 		{
 			title: "Bottling Machine"
 			icon: "immersiveengineering:bottling_machine"
-			x: -1.0d
-			y: 1.5d
+			x: -0.5d
+			y: 1.0d
 			description: ["Bottles up fluids, used to make lava bottles"]
 			dependencies: ["750C60FAC30747EC"]
 			id: "225CCAACE7BE7AAA"
@@ -295,7 +303,7 @@
 		}
 		{
 			x: -1.0d
-			y: 0.5d
+			y: 0.0d
 			description: ["Made in the metal press"]
 			dependencies: ["165A2A5B4A7F5E92"]
 			id: "750C60FAC30747EC"
@@ -311,10 +319,13 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -2.0d
+			x: 2.0d
+			y: -1.5d
 			description: ["Allows the metal press to make gears"]
-			dependencies: ["62CA8057322A2EEF"]
+			dependencies: [
+				"63FEC76BD7089928"
+				"62CA8057322A2EEF"
+			]
 			id: "3695DA717A970405"
 			tasks: [{
 				id: "1B10C1BCD6126A08"
@@ -328,10 +339,13 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.0d
+			x: 2.5d
+			y: -0.5d
 			description: ["Allows the metal press to make rods"]
-			dependencies: ["62CA8057322A2EEF"]
+			dependencies: [
+				"63FEC76BD7089928"
+				"62CA8057322A2EEF"
+			]
 			id: "745524543D920584"
 			tasks: [{
 				id: "77459F0927056917"
@@ -345,8 +359,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 0.5d
+			x: -1.5d
+			y: 1.0d
 			description: ["The fluid can help you fill areas with fluid source blocks. Useful for filling the area for the fluid absorber"]
 			dependencies: ["750C60FAC30747EC"]
 			id: "2098220F8FC9F556"
@@ -357,6 +371,42 @@
 			}]
 			rewards: [{
 				id: "0C5A0E97EFB07B1E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			description: ["Used to make the other plates in a enginers workbench"]
+			dependencies: ["750C60FAC30747EC"]
+			id: "63FEC76BD7089928"
+			tasks: [{
+				id: "34A2182C6C51F498"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "molds"
+					}
+				}
+			}]
+		}
+		{
+			icon: "immersiveengineering:assembler"
+			x: -2.0d
+			y: 0.0d
+			description: ["The assembler is a machine that do crafting for you, useful to make treated wood"]
+			dependencies: ["750C60FAC30747EC"]
+			id: "15554B105E03B734"
+			tasks: [{
+				id: "66E34ADCB4C9E544"
+				type: "checkmark"
+				title: "Assembler"
+			}]
+			rewards: [{
+				id: "385E859F02E16D6E"
 				type: "item"
 				item: "opolisutilities:b_bucks"
 			}]
