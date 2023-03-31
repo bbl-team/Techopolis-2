@@ -102,7 +102,7 @@
 		{
 			x: 1.5d
 			y: 2.0d
-			description: ["5 lapis ore in a jumbo furnace will make lapis"]
+			description: ["Lapis ore in a jumbo furnace will make lapis"]
 			dependencies: ["00A314F17EACA3B8"]
 			id: "4AE876E9D7B9C821"
 			tasks: [{
@@ -120,7 +120,7 @@
 		{
 			x: -0.5d
 			y: 2.0d
-			description: ["5 coal ore in a jumbo furnace will make coal"]
+			description: ["Coal ore in a jumbo furnace will make coal"]
 			dependencies: ["3A2E405A8654435D"]
 			id: "0A782ED04D2AAF58"
 			tasks: [{

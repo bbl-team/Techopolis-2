@@ -43,7 +43,7 @@
 			x: -9.0d
 			y: -2.5d
 			shape: "square"
-			subtitle: "Unlocks Comprssium Mod"
+			subtitle: "Unlocks Compressium Mod"
 			description: ["Used to compress blocks like cobblestone"]
 			id: "339FA84203923031"
 			tasks: [

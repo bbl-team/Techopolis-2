@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
 	event.shaped('1x minecraft:feather', ['  S',' SS','SS '], {S:string}).id('techopolis:feather')
 	event.custom({"type": "thermal:pulverizer","ingredient": {"item": "thermal:rf_coil"},"result": [{"item": "minecraft:blaze_powder","count": 1}],"energy_mod": 0.5}).id('techopolis:thermal/machines/pulverizer/blaze_powder')
 
-
+	event.shaped('9x minecraft:furnace', ['CCC','C C','CCC'], {C:'compressium:cobblestone_1'}).id('techopolis:furnace_9')
 
 	//LaserIO
 
@@ -224,7 +224,6 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_nether', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'techopolis:lava_bottle', L:ultimate_technium}).id('techopolis:rp_nether')
 	
 	
-	event.shaped('techopolis:research_papers_ender', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/gold', L: elite_technium}).id('techopolis:rp_ender')
 	event.shaped('techopolis:research_papers_waystones', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/redstone', L: '#forge:plates/iron'}).id('techopolis:rp_waystones')
 	event.shaped('techopolis:research_papers_flux_networks', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:ender_pearl', L: elite_technium}).id('techopolis:rp_flux_networks')
 	event.shaped('techopolis:research_papers_tempad', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'waystones:waystone', L: elite_technium}).id('techopolis:rp_tempad')
@@ -232,6 +231,8 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_tiab', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:advanced_technium, L: advanced_technium}).id('techopolis:rp_tiab')
 	event.shaped('techopolis:research_papers_trash_cans', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'compressium:cobblestone_2', L: basic_technium}).id('techopolis:rp_trash_cans')
 	event.shaped('techopolis:research_papers_angel_ring', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/gold', L: elite_technium}).id('techopolis:rp_angel_ring')
+	event.shaped('techopolis:research_papers_ender', ['LCL','CPC','LCL'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/gold', L: elite_technium}).id('techopolis:rp_ender')
+
 	event.shaped('techopolis:research_papers_villager_trades', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/emerald', L: ultimate_technium}).id('techopolis:rp_villager_trades')
 	event.shaped('techopolis:research_papers_laserio', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:elite_technium, L: '#forge:storage_blocks/quartz'}).id('techopolis:rp_laserio')
 	event.shaped('techopolis:research_papers_xnet', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/quartz', L: elite_technium}).id('techopolis:rp_xnet')
@@ -337,6 +338,7 @@ ServerEvents.recipes(event => {
 	event.remove({id:'storagenetwork:picker_remote'})
 	event.remove({id:'storagenetwork:collector_remote'})
 	event.remove({id:'storagenetwork:builder_remote'})
+	event.remove({id:'beyond_earth:steel_ingot_blasting'})
 
 
 

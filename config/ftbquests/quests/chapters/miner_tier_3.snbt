@@ -95,6 +95,7 @@
 			x: -2.5d
 			y: -1.0d
 			description: ["Just a block of coal"]
+			dependencies: ["0A782ED04D2AAF58"]
 			id: "38C73DCF420B6E5B"
 			tasks: [{
 				id: "1A5DCFDFB499025B"
@@ -168,7 +169,7 @@
 		{
 			x: -3.0d
 			y: 3.0d
-			description: ["5 copper ore in a jumbo furnace will make a copper ingot"]
+			description: ["Copper ore in a jumbo furnace will make a copper ingot"]
 			dependencies: ["47B0E076825A61B7"]
 			id: "619596D72ACC9321"
 			tasks: [{
@@ -186,7 +187,7 @@
 		{
 			x: -2.0d
 			y: 3.0d
-			description: ["5 tin ore in a jumbo furnace will make a tin ingot"]
+			description: ["Tin ore in a jumbo furnace will make a tin ingot"]
 			dependencies: ["2FC1E7DD3C363B42"]
 			id: "5B64B3B72A3B2846"
 			tasks: [{

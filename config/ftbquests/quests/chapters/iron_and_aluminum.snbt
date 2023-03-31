@@ -113,7 +113,7 @@
 		{
 			x: -1.0d
 			y: 2.0d
-			description: ["5 iron ore in a jumbo furnace will make a iron ingot"]
+			description: ["Iron ore in a jumbo furnace will make a iron ingot"]
 			dependencies: ["47519063E00FCB19"]
 			id: "06938867F7C87DDA"
 			tasks: [{
@@ -131,7 +131,7 @@
 		{
 			x: 0.0d
 			y: 2.0d
-			description: ["5 aluminum ore in a jumbo furnace will make a aluminum ingot"]
+			description: ["Aluminum ore in a jumbo furnace will make a aluminum ingot"]
 			dependencies: ["526EF4B8CE492AE0"]
 			id: "29C4025B689A8430"
 			tasks: [{
