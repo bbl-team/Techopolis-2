@@ -21,3 +21,7 @@ config/sidebar_buttons.json
 config/ftbbackups2.json
 config/contentcreatorintegration/default/
 config/contentcreatorintegration/contentcreatorintegration.toml
+config/jei/
+config/oculis.properties
+config/skyblockbuilder/data/
+fancymenu_data/

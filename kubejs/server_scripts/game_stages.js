@@ -74,6 +74,7 @@ ServerEvents.recipes(event => {
     event.shapeless('1x minecraft:bamboo', ['minecraft:sugar_cane']).stage('skyblock_recipes')
     event.shapeless('1x minecraft:sugar_cane', ['minecraft:bamboo','minecraft:bamboo']).stage('skyblock_recipes')
     event.shaped('9x techopolis:grout', ['GSG','SCS','GSG'], {G: gravel, S: sand, C:'minecraft:clay'}).id('techopolis:grout_crafting').stage('skyblock_recipes')
+    event.shaped('8x fluxnetworks:flux_dust', ['RRR','ROR','RRR'], {R: redstone, O: 'minecraft:obsidian'}).id('techopolis:flux_in_skyblock').stage('skyblock_recipes')
 
 
     

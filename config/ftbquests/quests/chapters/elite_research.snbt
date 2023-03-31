@@ -129,6 +129,7 @@
 			y: -2.5d
 			shape: "square"
 			subtitle: "Unlocks a crafting recipe for B Bucks"
+			dependencies: ["2509E345839FFA86"]
 			id: "160104871F0B60AC"
 			tasks: [
 				{
@@ -158,6 +159,7 @@
 			y: -2.5d
 			shape: "square"
 			subtitle: "Unlock Xnet"
+			dependencies: ["1CA69C7B4695EA81"]
 			id: "792B83C50FC38F7F"
 			tasks: [
 				{
@@ -187,6 +189,7 @@
 			y: -2.5d
 			shape: "square"
 			subtitle: "Unlocks LaserIO"
+			dependencies: ["1CA69C7B4695EA81"]
 			id: "75B3714D9E28440A"
 			tasks: [
 				{
@@ -246,6 +249,7 @@
 			y: -2.5d
 			shape: "square"
 			subtitle: "Unlocks Gem Ores from the shop"
+			dependencies: ["1CA69C7B4695EA81"]
 			id: "2972DB6BA0DB9583"
 			tasks: [
 				{
