@@ -1,0 +1,233 @@
+{
+	id: "634BAF465EAD542B"
+	group: "7921F36F1DB604AD"
+	order_index: 2
+	filename: "essence"
+	title: "Essence"
+	icon: "essence:essence_station"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Unlocks Essence Ore to buy"
+			description: ["Unlocked Essence Mod. Useful for mob drops"]
+			dependencies: ["7E150897DC9E5587"]
+			id: "72C362A13A48A392"
+			tasks: [{
+				id: "6B1D9D0431FCCB73"
+				type: "item"
+				item: "techopolis:research_papers_essence"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2DA9132DFB8E14F7"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["72C362A13A48A392"]
+			id: "25FAB2F6C5C15A05"
+			tasks: [{
+				id: "7480FD21B36FB2C1"
+				type: "item"
+				item: "essence:basic_ore_essence"
+			}]
+			rewards: [{
+				id: "1D077BB43FCA6472"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.0d
+			description: ["For all your essence needs"]
+			dependencies: ["25FAB2F6C5C15A05"]
+			id: "4E5497BF4020D61E"
+			tasks: [{
+				id: "3E4A1F0C00E7588F"
+				type: "item"
+				item: "essence:essence_station"
+			}]
+			rewards: [{
+				id: "7682659F7289E32C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			description: ["Used in a essence station to upgrade essence into the next tier"]
+			dependencies: ["25FAB2F6C5C15A05"]
+			id: "0CD5A2920147CCD4"
+			tasks: [{
+				id: "561A485B7103D093"
+				type: "item"
+				item: {
+					id: "essence:essence_upgrader"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "10F748B214044722"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: ["Made in the essence station"]
+			dependencies: [
+				"0CD5A2920147CCD4"
+				"4E5497BF4020D61E"
+			]
+			id: "4A05A5023D09E8B7"
+			tasks: [{
+				id: "662FB4327DF8B97A"
+				type: "item"
+				item: "essence:advanced_ore_essence"
+			}]
+			rewards: [{
+				id: "3E92D42873906076"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: ["Block of essence"]
+			dependencies: ["4A05A5023D09E8B7"]
+			id: "41642F16A3AF478E"
+			tasks: [{
+				id: "217256A7CD26CDDC"
+				type: "item"
+				item: "essence:advanced_ore_essence_block"
+			}]
+			rewards: [{
+				id: "64E664D301B74C0B"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: ["Made in the essence station"]
+			dependencies: ["41642F16A3AF478E"]
+			id: "409B7D2750A0A15C"
+			tasks: [{
+				id: "3F5A1F909FD2C7B4"
+				type: "item"
+				item: "essence:elite_ore_essence"
+			}]
+			rewards: [{
+				id: "2A0B844B4ECAF15E"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: ["Used to convert between mob and ore essence"]
+			dependencies: ["409B7D2750A0A15C"]
+			id: "04B47BFA61AB335D"
+			tasks: [{
+				id: "0DCF96ACB60623FD"
+				type: "item"
+				item: {
+					id: "essence:essence_converter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "684BB0F5BA4A5C3D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 7.0d
+			description: ["Used to make some basic mob drops"]
+			dependencies: ["04B47BFA61AB335D"]
+			id: "38C76BDBACD4318D"
+			tasks: [{
+				id: "4EE44C9B692C2C31"
+				type: "item"
+				item: "essence:basic_mob_essence"
+			}]
+			rewards: [{
+				id: "2A8A7171B570E7AA"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			description: ["Used to make some advanced mob drops"]
+			dependencies: ["04B47BFA61AB335D"]
+			id: "183EF47A9EE8D574"
+			tasks: [{
+				id: "2A3925201100299B"
+				type: "item"
+				item: "essence:advanced_mob_essence"
+			}]
+			rewards: [{
+				id: "582B6C9960D03985"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 7.0d
+			description: ["Used to make some elite mob drops"]
+			dependencies: ["04B47BFA61AB335D"]
+			id: "79873A03BC3AFB04"
+			tasks: [{
+				id: "464930AB696B033E"
+				type: "item"
+				item: "essence:elite_mob_essence"
+			}]
+			rewards: [{
+				id: "550F128854C62182"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 8.0d
+			description: ["Oh very techopolis"]
+			dependencies: ["79873A03BC3AFB04"]
+			id: "0D8D3F5C06516837"
+			tasks: [{
+				id: "6998256DA9CCFDCF"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+			rewards: [{
+				id: "253328CF0695DEC6"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

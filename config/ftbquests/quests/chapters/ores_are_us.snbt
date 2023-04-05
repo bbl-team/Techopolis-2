@@ -953,6 +953,29 @@
 				table_id: 5481812306636293250L
 			}]
 		}
+		{
+			title: "Essence Ore"
+			icon: "essence:essence_ore"
+			x: 5.0d
+			y: 0.5d
+			subtitle: "Buy a node of ore"
+			dependencies: ["72C362A13A48A392"]
+			can_repeat: true
+			id: "703EC891D07EA26C"
+			tasks: [{
+				id: "052CDAC14A0BAB01"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 12L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "626E403AD14107D5"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 3356702670525429953L
+			}]
+		}
 	]
 	quest_links: [ ]
 }

@@ -6,13 +6,16 @@
 	default_autoclaim_rewards: "disabled"
 	default_quest_shape: "circle"
 	default_quest_disable_jei: false
-	emergency_items: [{
-		id: "patchouli:guide_book"
-		Count: 1b
-		tag: {
-			"patchouli:book": "miners:guide_book"
+	emergency_items: [
+		{
+			id: "patchouli:guide_book"
+			Count: 1b
+			tag: {
+				"patchouli:book": "miners:guide_book"
+			}
 		}
-	}]
+		{ id: "minecraft:oak_sapling", Count: 1b }
+	]
 	emergency_items_cooldown: 30
 	drop_loot_crates: false
 	loot_crate_no_drop: {
