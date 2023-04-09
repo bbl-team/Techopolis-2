@@ -15,6 +15,13 @@
 			}
 		}
 		{ id: "minecraft:oak_sapling", Count: 1b }
+		{
+			id: "patchouli:guide_book"
+			Count: 1b
+			tag: {
+				"patchouli:book": "patchouli:world_types"
+			}
+		}
 	]
 	emergency_items_cooldown: 30
 	drop_loot_crates: false

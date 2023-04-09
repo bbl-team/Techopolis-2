@@ -4,10 +4,13 @@ console.info('Hello, World! (You will see this line every time server resources 
 
 ServerEvents.recipes(event => {
 
+	event.shaped('4x opolisutilities:soaked_paper', [' L ','LBL',' L '], {L:'opolisutilities:log_sheet', B:Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT()}).id('techopolis:extra_soaked_paper')
 	event.shaped('1x minecraft:feather', ['  S',' SS','SS '], {S:string}).id('techopolis:feather')
 	event.shaped('4x minecraft:chest', ['PPP','P P','PPP'], {P:logs}).id('techopolis:chests')
 	event.shaped('16x minecraft:stick', ['P','P'], {P:logs}).id('techopolis:sticks')
 	event.shaped('1x caveopolis:mixed_stone_ingot', ['C','I'], {I:iron_ingot, C: cobblestone}).id('techopolis:caveopolis_mixed_stone_ingot')
+	event.shaped('1x minecraft:slime_ball', ['VVV','VVV','VVV'], {V:'minecraft:vine'}).id('techopolis:slime_ball')
+
 
 	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay']).id('techopolis:clay_ball')
 	event.shapeless('1x minecraft:wheat_seeds', ['minecraft:wheat']).id('techopolis:wheat_seeds')
@@ -24,7 +27,7 @@ ServerEvents.recipes(event => {
 
 	//LaserIO
 
-	event.shaped('2x laserio:logic_chip_raw', ['RGR','TST','RGR'], {R:redstone, G:gold_nugget, S:elite_technium, T:'alltheores:signalum_ingot'}).id('laserio:logic_chip_raw')
+	event.shaped('12x laserio:logic_chip_raw', ['RGR','TST','RGR'], {R:redstone, G:gold_nugget, S:elite_technium, T:'alltheores:signalum_ingot'}).id('laserio:logic_chip_raw')
 
 	event.shaped('1x laserio:card_energy', ['RBR','TST','GGG'], {R:redstone, B:redstone_block, T:'alltheores:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_energy')
 	event.shaped('1x laserio:card_fluid', ['RBR','TST','GGG'], {R:redstone, B:bucket, T:'alltheores:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_fluid')
@@ -88,13 +91,7 @@ ServerEvents.recipes(event => {
 
 	event.shaped(Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'), [' E ','BBB','PPP'], {B: '#forge:dyes/blue', P:'minecraft:paper', E:'immersiveengineering:graphite_electrode'}).id('techopolis:electrode_blueprint')
 
-
-
-	//IE Metal Press
-
-	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/signalum"},"mold":"immersiveengineering:mold_plate","result":{"tag":"forge:plates/signalum"}})
-	event.custom({"type":"immersiveengineering:metal_press","conditions":[{"type":"forge:not","value":{"type":"forge:tag_empty","tag":"forge:gears/signalum"}}],"energy":2400,"input":{"base_ingredient":{"tag":"forge:ingots/signalum"},"count":4},"mold":"immersiveengineering:mold_gear","result":{"tag":"forge:gears/signalum"}})
-	event.custom({"type":"immersiveengineering:metal_press","conditions":[{"type":"forge:not","value":{"type":"forge:tag_empty","tag":"forge:rods/signalum"}}],"energy":2400,"input":{"tag":"forge:ingots/signalum"},"mold":"immersiveengineering:mold_rod","result":{"base_ingredient":{"tag":"forge:rods/signalum"},"count":2}})
+	event.custom({"type":"immersiveengineering:blueprint","category":"molds","inputs":[{"base_ingredient":{"item":'alltheores:steel_ingot'},"count":3},{"item":"immersiveengineering:wirecutter"}],"result":{"item":"immersiveengineering:mold_plate"}}).id('immersiveengineering:blueprint/mold_plate')
 
 	// Misc Crafting
 
@@ -133,8 +130,6 @@ ServerEvents.recipes(event => {
 	event.shaped('4x extendedcrafting:black_iron_ingot', ['NIN','INI','NIN'], {N: netherite_ingot, I: iron_ingot}).id('extendedcrafting:black_iron_ingot')
 	
 	
-
-	
 	//Replace 
 
 	event.replaceInput({id: 'craftingautomat:autocrafter'}, 'minecraft:dropper', 'minecraft:crafting_table')
@@ -149,6 +144,8 @@ ServerEvents.recipes(event => {
 	event.replaceInput({mod: 'tempad'}, 'minecraft:quartz', elite_technium)
 	event.replaceInput({mod: 'tempad'}, 'minecraft:glowstone', 'minecraft:clock')
 	event.replaceInput({mod: 'elevatorid'}, 'minecraft:ender_pearl', basic_technium)
+	event.replaceInput({mod: 'constructionwand'}, 'minecraft:diamond', basic_technium)
+	event.replaceInput({mod: 'constructionwand'}, 'minecraft:iron_ingot', bronze_ingot)
 
 	event.replaceInput({id: 'thermal:machine_chiller'}, 'minecraft:packed_ice', advanced_technium)
 	event.replaceInput({id: 'immersiveengineering:crafting/dynamo'}, 'immersiveengineering:component_iron', '#forge:ingots/aluminum')
@@ -158,11 +155,16 @@ ServerEvents.recipes(event => {
 	
 	//Thermal
 
+	event.custom({"type": "thermal:pyrolyzer","ingredient": {"item": "minecraft:coal"},"result": [{"item": "immersiveengineering:coal_coke"},{"item": "thermal:tar","chance": 0.25},{"fluid": "thermal:creosote","amount": 250}],"experience": 0.15}).id('thermal:machines/pyrolyzer/pyrolyzer_coal')
+	event.custom({"type": "thermal:pyrolyzer","ingredient": {"item": "thermal:bitumen"},"result": [{"item": "immersiveengineering:coal_coke"},{"item": "thermal:tar","chance": 0.50},{"fluid": "thermal:heavy_oil","amount": 50}], "energy":4000, "experience": 0.15}).id('thermal:machines/pyrolyzer/pyrolyzer_bitumen')
+
 	event.replaceInput({id: 'thermal:machine_frame'}, AlmostUnified.getPreferredItemForTag('forge:ingots/iron'), 'alltheores:silver_ingot')
 	event.replaceInput({id: 'thermal:machine_frame'}, AlmostUnified.getPreferredItemForTag('forge:gears/tin'), '#forge:gears/electrum')
 	event.replaceInput({id: 'thermal:machine_crucible'}, 'minecraft:nether_bricks', 'thermal:obsidian_glass')
 
 	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "minecraft:sand","count": 1}],"result": [{"item": "minecraft:glass","count": 1}],"energy": 800}).id('techopolis:machines/smelter/glass')
+	event.custom({"type": "thermal:smelter","ingredients": [{"item": "minecraft:stone","count": 1}],"result": [{"item": "minecraft:smooth_stone","count": 1}],"energy": 800}).id('techopolis:machines/smelter/smooth_stone')
+	event.custom({"type": "thermal:smelter","ingredient": {"tag": "forge:dusts/osmium"},"result": [{"item": "alltheores:osmium_ingot","count": 1}],"energy_mod": 0.5})
 
 	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "forge:obsidian","count": 1},{"value": [{"tag": "forge:dusts/steel"}],"count": 1},{"tag": "forge:sand",
 			"count": 1}],"result": [{"item": "thermal:obsidian_glass","count": 2}],"energy": 4800}).id('thermal:machines/smelter/smelter_glass_obsidian')
@@ -184,6 +186,9 @@ ServerEvents.recipes(event => {
 
 	event.custom({"type": "thermal:smelter","ingredients": [{"item": "alltheores:ruby","count": 1},{"value": [{"item": "alltheores:sapphire"}],"count": 1},{"item": "alltheores:peridot",
 			"count": 1}],"result": [{"item": "minecraft:amethyst_shard","count": 1}],"energy": 5000}).id('techopolis:amethyst')
+
+	event.custom({type: "thermal:bottler", ingredients: [{item: "minecraft:glass_bottle"},{fluid: "minecraft:lava",amount: 200}],
+			result: [{item: "techopolis:lava_bottle"}]}).id('techopolis:lava_bottle_thermal')
 
 	event.custom({"type": "thermal:crystallizer","ingredients": [{"fluid": "techopolis:liquid_glass","amount": 250},{"item": "thermal:niter"}],"result": [{"item": "techopolis:crystal_base"}],"energy": 2500})
 	event.custom({"type": "thermal:crystallizer","ingredients": [{"fluid": "techopolis:liquid_glass","amount": 250},{"item": "alltheores:ruby_dust"}],"result": [{"item": "alltheores:ruby"}],"energy": 2500})
@@ -252,6 +257,7 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_villager_trades', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/emerald', L: ultimate_technium}).id('techopolis:rp_villager_trades')
 	event.shaped('techopolis:research_papers_laserio', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:elite_technium, L: '#forge:storage_blocks/quartz'}).id('techopolis:rp_laserio')
 	event.shaped('techopolis:research_papers_xnet', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/quartz', L: elite_technium}).id('techopolis:rp_xnet')
+	event.shaped('techopolis:research_papers_beyond_earth', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:beacon', L: hellish_technium}).id('techopolis:rp_beyond_earth')
 
 	//Reseach Papers (mods)
 
@@ -271,6 +277,7 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_ae2', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/diamond', L:ultimate_technium}).id('techopolis:rp_ae2')
 	event.shaped('techopolis:research_papers_rs', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:ultimate_technium, L:'#forge:storage_blocks/diamond'}).id('techopolis:rp_refined_storage')
 	event.shaped('techopolis:research_papers_essence', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:ultimate_technium, L:'#forge:storage_blocks/black_iron'}).id('techopolis:rp_essence')
+	event.shaped('techopolis:research_papers_chipped', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:stone_bricks', L:'#minecraft:logs'}).id('techopolis:rp_chipped')
 
 	
 	//Research Papers (misc)
@@ -299,6 +306,8 @@ ServerEvents.recipes(event => {
 
 	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:essence_ore","minerTier": 8})
 	event.custom({type: "miners:fluid_absorber",fluid: "beyond_earth:oil"})
+	event.custom({type: "miners:fluid_absorber",fluid: "immersiveengineering:plantoil"})
+	event.custom({type: "miners:fluid_absorber",fluid: "immersiveengineering:ethanol"})
 
 	//Beyond Earth
 
@@ -327,10 +336,55 @@ ServerEvents.recipes(event => {
 	event.replaceInput({id: 'thermal:augments/upgrade_augment_2'}, 'minecraft:quartz', advanced_technium)
 
 
+	//Metal press and servo press recipes
+
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/signalum"},"mold":"immersiveengineering:mold_plate","result":{"tag":"forge:plates/signalum"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/aluminum"},"mold":"immersiveengineering:mold_plate","result":{"tag":"forge:plates/aluminum"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/iridium"},"mold":"immersiveengineering:mold_plate","result":{"tag":"forge:plates/iridium"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:gems/diamond"},"mold":"immersiveengineering:mold_plate","result":{"tag":"forge:plates/diamond"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/lumium"},"mold":"immersiveengineering:mold_plate","result":{"tag":"forge:plates/lumium"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/desh"},"mold":"immersiveengineering:mold_plate","result":{"tag":"forge:plates/desh"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/netherite"},"mold":"immersiveengineering:mold_plate","result":{"tag":"forge:plates/netherite"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/enderium"},"mold":"immersiveengineering:mold_plate","result":{"tag":"forge:plates/enderium"}})
+	
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"base_ingredient":{"tag":"forge:ingots/signalum"},"count":4},"mold":"immersiveengineering:mold_gear","result":{"tag":"forge:gears/signalum"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"base_ingredient":{"tag":"forge:ingots/iridium"},"count":4},"mold":"immersiveengineering:mold_gear","result":{"tag":"forge:gears/iridium"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"base_ingredient":{"tag":"forge:ingots/lumium"},"count":4},"mold":"immersiveengineering:mold_gear","result":{"tag":"forge:gears/lumium"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"base_ingredient":{"tag":"forge:ingots/netherite"},"count":4},"mold":"immersiveengineering:mold_gear","result":{"tag":"forge:gears/netherite"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"base_ingredient":{"tag":"forge:ingots/enderium"},"count":4},"mold":"immersiveengineering:mold_gear","result":{"tag":"forge:gears/enderium"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"base_ingredient":{"item":'minecraft:diamond'},"count":4},"mold":"immersiveengineering:mold_gear","result":{"item":"alltheores:diamond_gear"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"base_ingredient":{"tag":"forge:gems/lapis"},"count":4},"mold":"immersiveengineering:mold_gear","result":{"tag":"forge:gears/lapis"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"base_ingredient":{"tag":"forge:gems/emerald"},"count":4},"mold":"immersiveengineering:mold_gear","result":{"tag":"forge:gears/emerald"}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"base_ingredient":{"tag":"forge:gems/quartz"},"count":4},"mold":"immersiveengineering:mold_gear","result":{"tag":"forge:gears/quartz"}})
+		
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/signalum"},"mold":"immersiveengineering:mold_rod","result":{"base_ingredient":{"tag":"forge:rods/signalum"},"count":2}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/aluminum"},"mold":"immersiveengineering:mold_rod","result":{"base_ingredient":{"tag":"forge:rods/aluminum"},"count":2}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/iridium"},"mold":"immersiveengineering:mold_rod","result":{"base_ingredient":{"tag":"forge:rods/iridium"},"count":2}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:gems/diamond"},"mold":"immersiveengineering:mold_rod","result":{"base_ingredient":{"tag":"forge:rods/diamond"},"count":2}})
+	event.custom({"type":"immersiveengineering:metal_press","energy":2400,"input":{"tag":"forge:ingots/lumium"},"mold":"immersiveengineering:mold_rod","result":{"base_ingredient":{"tag":"forge:rods/lumium"},"count":2}})
+
+	event.custom({"type": "thermal:press","ingredient": {"tag": "forge:ingots/desh"},"result": [{"item": "beyond_earth:desh_plate"}]})
+	event.custom({"type": "thermal:press","ingredient": {"tag": "forge:ingots/brass"},"result": [{"item": "alltheores:brass_plate"}]})
+	event.custom({"type": "thermal:press","ingredient": {"tag": "forge:gems/diamond"},"result": [{"item": "alltheores:diamond_plate"}]})
+	event.custom({"type": "thermal:press","ingredient": {"tag": "forge:ingots/zinc"},"result": [{"item": "alltheores:zinc_plate"}]})
+	event.custom({"type": "thermal:press","ingredient": {"tag": "forge:ingots/iridium"},"result": [{"item": "alltheores:iridium_plate"}]})
+	event.custom({"type": "thermal:press","ingredient": {"tag": "forge:ingots/osmium"},"result": [{"item": "alltheores:osmium_plate"}]})
+	event.custom({"type": "thermal:press","ingredient": {"tag": "forge:ingots/platium"},"result": [{"item": "alltheores:platium_plate"}]})
+
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:gems/quartz","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "thermal:quartz_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:gems/emerald","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "thermal:emerald_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:gems/lapis","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "thermal:lapis_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"item": "minecraft:diamond","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:diamond_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/constantan","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:constantan_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/zinc","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:zinc_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/uranium","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:uranium_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/platinum","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:platinum_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/osmium","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:osmium_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/iridium","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:iridium_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/aluminum","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:aluminum_gear"}]})
+	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/brass","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:brass_gear"}]})
 
 
-
-	//Smelting that was removed
 
 	//Recipe Remove
 
@@ -352,7 +406,6 @@ ServerEvents.recipes(event => {
 	event.remove({input:'minecraft:fire_charge', output: '#forge:dusts'})
 	event.remove({input:'minecraft:fire_charge', output: '#thermal:glass/hardened'})
 	event.remove({input:'#forge:nuggets/iron', output: '#forge:gears'})
-	event.remove({id:'/thermal:machines/press//'})
 	event.remove({type:'opolisutilities:resource_generator'})
 	event.remove({type:'opolisutilities:resource_generator_2'})
 	event.remove({type:'opolisutilities:rg2_blocks'})
@@ -370,7 +423,9 @@ ServerEvents.recipes(event => {
 	event.remove({id:'ae2:misc/vanilla_comparator'})
 	event.remove({id:'minecraft:redstone_from_smelting_deepslate_redstone_ore'})
 	event.remove({id:'minecraft:redstone_from_blasting_deepslate_redstone_ore'})
-
+	event.remove({id:'thermal:device_rock_gen'})
+	event.remove({id:'beyond_earth:iron_rod'})
+	event.remove({id:'/thermal:parts//'})
 
 
 

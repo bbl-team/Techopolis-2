@@ -66,9 +66,10 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:research_papers_ender_chests').displayName('Research Papers: Ender Chests').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Ender Chests§r")
 	event.create('techopolis:research_papers_elevators').displayName('Research Papers: Elevators').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Elevators§r")
 	event.create('techopolis:research_papers_gem_ores').displayName('Research Papers: Gem Ores').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Gem Ores§r")
+	event.create('techopolis:research_papers_chipped').displayName('Research Papers: Chipped').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Chipped§r")
 	
 	
-	event.create('techopolis:research_papers_metal_press').displayName('Research Pappers: Metal Press').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Provides the blocks needed to make the Metal Press§r")
+	event.create('techopolis:research_papers_metal_press').displayName('Research Papers: Metal Press').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Unlocks Provides the blocks needed to make the Metal Press§r")
 	event.create('techopolis:blank_research_papers').texture("minecraft:item/paper").color(0, 0x9A4D00).tooltip("§2Used to make research papers §r")
 	event.create('techopolis:aluminum_fragment').texture("caveopolis:item/mixed_stone_fragment").color(0, 0xF6FCFC)
 	event.create('techopolis:crystal_fragment').texture("caveopolis:item/mixed_stone_fragment").color(0, 0xF6FCFC)

@@ -352,81 +352,9 @@
 			}]
 		}
 		{
-			title: "Diamond Wand"
-			icon: {
-				id: "constructionwand:diamond_wand"
-				Count: 1b
-				tag: {
-					wand_options: { }
-					Damage: 0
-				}
-			}
-			x: -1.0d
-			y: -3.5d
-			subtitle: "Placing those blocks"
-			dependencies: ["4FB13938D928B882"]
-			can_repeat: true
-			id: "214125B561A163DC"
-			tasks: [{
-				id: "70209D47DF1CA1D8"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-				count: 8L
-				consume_items: true
-			}]
-			rewards: [{
-				id: "3B24CC7EA63A6F4A"
-				type: "item"
-				item: {
-					id: "constructionwand:diamond_wand"
-					Count: 1b
-					tag: {
-						wand_options: { }
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
-			title: "Iron Wand"
-			icon: {
-				id: "constructionwand:iron_wand"
-				Count: 1b
-				tag: {
-					wand_options: { }
-					Damage: 0
-				}
-			}
-			x: 0.0d
-			y: -3.5d
-			subtitle: "Placing those blocks"
-			dependencies: ["4FB13938D928B882"]
-			can_repeat: true
-			id: "15BFDDD36BF269D6"
-			tasks: [{
-				id: "7EB79FA1CC71C93C"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-				count: 6L
-				consume_items: true
-			}]
-			rewards: [{
-				id: "7BD3EA4D0C5282E3"
-				type: "item"
-				item: {
-					id: "constructionwand:iron_wand"
-					Count: 1b
-					tag: {
-						wand_options: { }
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
 			title: "Angel Core"
 			icon: "constructionwand:core_angel"
-			x: -1.0d
+			x: -0.5d
 			y: -1.5d
 			subtitle: "Allows your wand to place blocks in the air"
 			dependencies: ["4FB13938D928B882"]
@@ -448,8 +376,8 @@
 		{
 			title: "Destruction Core"
 			icon: "constructionwand:core_destruction"
-			x: 0.0d
-			y: -1.5d
+			x: -0.5d
+			y: -3.5d
 			subtitle: "Break blocks fast"
 			dependencies: ["4FB13938D928B882"]
 			can_repeat: true
@@ -468,7 +396,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 0.5d
 			y: -2.5d
 			shape: "square"
 			subtitle: "Unlocks Framed Blocks"
@@ -521,6 +449,35 @@
 				type: "command"
 				auto: "enabled"
 				command: "/gamestage add @p trash_cans"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Unlocks Chipped"
+			id: "0BADCA99B83E5E6E"
+			tasks: [
+				{
+					id: "36DC1024E563306F"
+					type: "item"
+					item: "techopolis:research_papers_chipped"
+					consume_items: true
+				}
+				{
+					id: "4155CC7F21FB552F"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 12L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "125FF668704277F2"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p chipped"
 				player_command: false
 			}]
 		}

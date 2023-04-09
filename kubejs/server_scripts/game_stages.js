@@ -24,7 +24,7 @@ MoreJSEvents.playerStartTrading((event) => {
 BlockEvents.rightClicked(event => {
     const {player, server} = event
     if(event.block.hasTag('minecraft:dirt')){
-        if (event.player.stages.has('superflat_recipes') && event.player.isCrouching()) {
+        if (event.player.stages.has('superflat_recipes') && event.player.isCrouching() && player.mainHandItem === 'minecraft:air' && player.offHandItem === 'minecraft:air') {
             event.player.give('caveopolis:cobblestone_pebble')
         }
     }
@@ -154,6 +154,7 @@ ServerEvents.recipes(event => {
     addStageByMod("building_gadgets", "buildinggadgets")
     addStageByMod("elevators", "elevatorid")
     addStageByMod("ender_storage", "enderstorage")
+    addStageByMod("chipped", "chipped")
 
     addStageByMod("ae2", "appmek")
     addStageByMod("ae2", "ae2wtlib")

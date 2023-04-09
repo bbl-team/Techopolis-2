@@ -22,9 +22,10 @@
 				consume_items: true
 			}]
 			rewards: [{
-				id: "2DA9132DFB8E14F7"
-				type: "item"
-				item: "opolisutilities:b_bucks"
+				id: "298B81E607096BE2"
+				type: "command"
+				command: "/gamestage add @p essence"
+				player_command: false
 			}]
 		}
 		{
