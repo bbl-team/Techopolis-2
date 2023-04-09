@@ -8,11 +8,15 @@ ServerEvents.recipes(event => {
 	//Ore Remmove Recipes (Smelting)
 
 	event.remove({type:'minecraft:smelting', input:'#forge:ores'})
+	event.remove({type:'minecraft:smelting', input:'essence:essence_ore'})
+	event.remove({type:'minecraft:smelting', input:'essence:deepslate_essence_ore'})
 	event.remove({type:'minecraft:smelting', input:'#forge:dusts', output:'#forge:ingots'})
 
 	//Ore Remmove Recipes (Blasing)
 
 	event.remove({type:'minecraft:blasting', input:'#forge:ores'})
+	event.remove({type:'minecraft:blasting', input:'essence:essence_ore'})
+	event.remove({type:'minecraft:blasting', input:'essence:deepslate_essence_ore'})
 	event.remove({type:'minecraft:blasting', input:'#forge:dusts', output:'#forge:ingots'})
 
 	//Ore Crafting
@@ -101,7 +105,7 @@ ServerEvents.recipes(event => {
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/uranium", count: 8}], result:{item: "alltheores:uranium_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_uranium')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/osmium", count: 8}], result:{item: "alltheores:osmium_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_osmium')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/ender", count: 6}], result:{item: "opolisutilities:ender_pearl_fragment"},experience: 0.1}).id('techopolis:jumbo_furnace_ender')
-
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "techopolis:essence_ore", count: 3}], result:{item: "essence:basic_ore_essence"},experience: 0.1}).id('techopolis:jumbo_furnace_essence')
 
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "forge:nbt", item: "beyond_earth:moon_stone", count: 16}], result:{item: "beyond_earth:desh_nugget"},experience: 0.1}).id('techopolis:jumbo_furnace_desh')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "forge:nbt", item: "beyond_earth:mars_stone", count: 16}], result:{item: "beyond_earth:ostrum_nugget"},experience: 0.1}).id('techopolis:jumbo_furnace_ostrum')

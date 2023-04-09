@@ -5,18 +5,31 @@ console.info('Hello, World! (You will see this line every time server resources 
 ServerEvents.recipes(event => {
 
 	event.shaped('1x minecraft:feather', ['  S',' SS','SS '], {S:string}).id('techopolis:feather')
+	event.shaped('4x minecraft:chest', ['PPP','P P','PPP'], {P:logs}).id('techopolis:chests')
+	event.shaped('16x minecraft:stick', ['P','P'], {P:logs}).id('techopolis:sticks')
+	event.shaped('1x caveopolis:mixed_stone_ingot', ['C','I'], {I:iron_ingot, C: cobblestone}).id('techopolis:caveopolis_mixed_stone_ingot')
+
+	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay']).id('techopolis:clay_ball')
+	event.shapeless('1x minecraft:wheat_seeds', ['minecraft:wheat']).id('techopolis:wheat_seeds')
+	event.shapeless('1x ae2:certus_quartz_crystal', ['minecraft:quartz']).id('techopolis:certus').stage('ae2')
+
 	event.custom({"type": "thermal:pulverizer","ingredient": {"item": "thermal:rf_coil"},"result": [{"item": "minecraft:blaze_powder","count": 1}],"energy_mod": 0.5}).id('techopolis:thermal/machines/pulverizer/blaze_powder')
 
 	event.shaped('9x minecraft:furnace', ['CCC','C C','CCC'], {C:'compressium:cobblestone_1'}).id('techopolis:furnace_9')
 
+	//Essence
+
+	event.shaped('1x essence:essence_station', ['III','IBI','III'], {I:iron_ingot, B:'essence:basic_ore_essence'}).id('essence:essence_station/essence_station')
+
+
 	//LaserIO
 
-	event.shaped('2x laserio:logic_chip_raw', ['RGR','TST','RGR'], {R:redstone, G:gold_nugget, S:elite_technium, T:'thermal:signalum_ingot'}).id('laserio:logic_chip_raw')
+	event.shaped('2x laserio:logic_chip_raw', ['RGR','TST','RGR'], {R:redstone, G:gold_nugget, S:elite_technium, T:'alltheores:signalum_ingot'}).id('laserio:logic_chip_raw')
 
-	event.shaped('1x laserio:card_energy', ['RBR','TST','GGG'], {R:redstone, B:redstone_block, T:'thermal:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_energy')
-	event.shaped('1x laserio:card_fluid', ['RBR','TST','GGG'], {R:redstone, B:bucket, T:'thermal:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_fluid')
-	event.shaped('1x laserio:card_item', ['RBR','TST','GGG'], {R:redstone, B:chest, T:'thermal:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_item')
-	event.shaped('1x laserio:card_redstone', ['RBR','TST','GGG'], {R:redstone_block, B:redstone_block, T:'thermal:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_redstone')
+	event.shaped('1x laserio:card_energy', ['RBR','TST','GGG'], {R:redstone, B:redstone_block, T:'alltheores:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_energy')
+	event.shaped('1x laserio:card_fluid', ['RBR','TST','GGG'], {R:redstone, B:bucket, T:'alltheores:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_fluid')
+	event.shaped('1x laserio:card_item', ['RBR','TST','GGG'], {R:redstone, B:chest, T:'alltheores:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_item')
+	event.shaped('1x laserio:card_redstone', ['RBR','TST','GGG'], {R:redstone_block, B:redstone_block, T:'alltheores:signalum_ingot', G:gold_nugget, S:'laserio:logic_chip'}).id('laserio:card_redstone')
 
 
 	//Building Gadgets
@@ -35,7 +48,6 @@ ServerEvents.recipes(event => {
 
 	event.smelting('minecraft:charcoal', '#minecraft:logs').id('techopolis:charcoal').xp(0.1)  
 	event.smelting('techopolis:prospectors_pickaxe', 'minecraft:stone_pickaxe').id('techopolis:prospectors_pickaxe').xp(0.1)  
-	event.smelting('ae2:certus_quartz_crystal', 'minecraft:quartz').id('techopolis:certus_quartz').xp(0.1)  
 
 	//Drying table
 
@@ -128,10 +140,12 @@ ServerEvents.recipes(event => {
 	event.replaceInput({id: 'craftingautomat:autocrafter'}, 'minecraft:dropper', 'minecraft:crafting_table')
 	event.replaceInput({id: 'littlelogistics:transmitter_component'}, 'minecraft:ender_pearl', 'minecraft:redstone')
 	event.replaceInput({id: 'littlelogistics:rapid_hopper'}, '#forge:ingots/gold', basic_technium)
-	event.replaceInput({mod: 'storagenetwork'}, '#forge:ingots/aluminum', '#forge:ingots/aluminum')
+	event.replaceInput({mod: 'littlelogistics'}, 'minecraft:glowstone_dust', basic_technium)
+	event.replaceInput({mod: 'storagenetwork'}, '#forge:ingots/gold', '#forge:ingots/aluminum')
 	event.replaceInput({mod: 'storagenetwork'}, '#forge:gems/diamond', advanced_technium)
 	event.replaceInput({mod: 'storagenetwork'}, 'minecraft:quartz', '#forge:gears/steel')
 	event.replaceInput({mod: 'storagenetwork'}, 'minecraft:blaze_powder', '#forge:dusts/aluminum')
+	event.replaceInput({mod: 'storagenetwork'}, 'minecraft:observer', 'minecraft:dropper')
 	event.replaceInput({mod: 'tempad'}, 'minecraft:quartz', elite_technium)
 	event.replaceInput({mod: 'tempad'}, 'minecraft:glowstone', 'minecraft:clock')
 	event.replaceInput({mod: 'elevatorid'}, 'minecraft:ender_pearl', basic_technium)
@@ -144,8 +158,8 @@ ServerEvents.recipes(event => {
 	
 	//Thermal
 
-	event.replaceInput({id: 'thermal:machine_frame'}, 'minecraft:iron_ingot', 'alltheores:silver_ingot')
-	event.replaceInput({id: 'thermal:machine_frame'}, '#forge:gears/tin', '#forge:gears/electrum')
+	event.replaceInput({id: 'thermal:machine_frame'}, AlmostUnified.getPreferredItemForTag('forge:ingots/iron'), 'alltheores:silver_ingot')
+	event.replaceInput({id: 'thermal:machine_frame'}, AlmostUnified.getPreferredItemForTag('forge:gears/tin'), '#forge:gears/electrum')
 	event.replaceInput({id: 'thermal:machine_crucible'}, 'minecraft:nether_bricks', 'thermal:obsidian_glass')
 
 	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "minecraft:sand","count": 1}],"result": [{"item": "minecraft:glass","count": 1}],"energy": 800}).id('techopolis:machines/smelter/glass')
@@ -188,10 +202,12 @@ ServerEvents.recipes(event => {
 	event.custom({"type": "thermal:pulverizer","ingredient": {"item": "minecraft:prismarine_shard"},"result": [{"item": "techopolis:prismarine_dust","count": 1}],"energy_mod": 0.5})
 
 	event.custom({"type": "thermal:pulverizer","ingredient": {"item": "techopolis:crystal_ore"},"result": [{"item": "techopolis:crystalline","count": 1}],"energy_mod": 0.5})
+	event.custom({"type": "thermal:smelter","ingredient": {"tag": "forge:ores/peridot"},"result": [{"item": "alltheores:peridot","chance": 1.5},{"item": "thermal:rich_slag","chance": 0.15}],"experience": 0.5})
 
 	//Mekanism
 
-	event.replaceInput({id: 'mekanism:steel_casing'}, '#forge:ingots/osmium', elite_technium)
+	event.replaceInput({id: 'mekanism:steel_casing'}, 'alltheores:osmium_ingot', elite_technium)
+	event.replaceInput({ output: "mekanism:steel_casing" }, "#forge:ingots/osmium", elite_technium)
 	event.custom({"type":"mekanism:metallurgic_infusing","chemicalInput":{"amount":10,"tag":"mekanism:redstone"},"itemInput":{"ingredient":{"item":"techopolis:infused_crystalline"}},"output":{"item":"mekanism:alloy_infused"}}).id('mekanism:metallurgic_infusing/alloy/infused')
 	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"item":"minecraft:polished_basalt"}},"output":{"item":"ae2:sky_stone_block"}}).id('techopolis:sky_stone')
 
@@ -254,6 +270,7 @@ ServerEvents.recipes(event => {
 	
 	event.shaped('techopolis:research_papers_ae2', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/diamond', L:ultimate_technium}).id('techopolis:rp_ae2')
 	event.shaped('techopolis:research_papers_rs', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:ultimate_technium, L:'#forge:storage_blocks/diamond'}).id('techopolis:rp_refined_storage')
+	event.shaped('techopolis:research_papers_essence', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:ultimate_technium, L:'#forge:storage_blocks/black_iron'}).id('techopolis:rp_essence')
 
 	
 	//Research Papers (misc)
@@ -274,9 +291,14 @@ ServerEvents.recipes(event => {
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/sapphire","minerTier": 6})
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/peridot","minerTier": 6})
 
-	event.custom({type: "miners:miner_blocks",blockTag: "forge:sandstone/colorless","minerTier": 4})
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:sandstone/colorless","minerTier": 6})
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:storage_blocks/clay","minerTier": 4})
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:gravel","minerTier": 4})
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:sand","minerTier": 4})
+	event.custom({type: "miners:miner_blocks",blockTag: "minecraft:dirt","minerTier": 3})
+
+	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:essence_ore","minerTier": 8})
+	event.custom({type: "miners:fluid_absorber",fluid: "beyond_earth:oil"})
 
 	//Beyond Earth
 
@@ -302,6 +324,9 @@ ServerEvents.recipes(event => {
 	event.replaceInput({id: 'angelring:resonant_angel_ring'}, 'minecraft:nether_star', elite_technium)
 	event.replaceInput({id: 'angelring:diamond_ring'}, 'minecraft:elytra', '#forge:gears/diamond')
 	event.replaceInput({id: 'angelring:diamond_ring'}, 'minecraft:ghast_tear', elite_technium)
+	event.replaceInput({id: 'thermal:augments/upgrade_augment_2'}, 'minecraft:quartz', advanced_technium)
+
+
 
 
 
@@ -339,6 +364,15 @@ ServerEvents.recipes(event => {
 	event.remove({id:'storagenetwork:collector_remote'})
 	event.remove({id:'storagenetwork:builder_remote'})
 	event.remove({id:'beyond_earth:steel_ingot_blasting'})
+	event.remove({id:'thermal:machines/pulverizer/pulverizer_andesite'})
+	event.remove({id:'thermal:machines/pulverizer/pulverizer_granite'})
+	event.remove({id:'thermal:machines/pulverizer/pulverizer_diorite'})
+	event.remove({id:'ae2:misc/vanilla_comparator'})
+	event.remove({id:'minecraft:redstone_from_smelting_deepslate_redstone_ore'})
+	event.remove({id:'minecraft:redstone_from_blasting_deepslate_redstone_ore'})
+
+
+
 
 
 

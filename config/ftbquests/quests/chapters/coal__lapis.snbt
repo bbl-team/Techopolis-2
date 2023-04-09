@@ -225,40 +225,6 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 3.0d
-			description: ["Produces a redstone pulse every 2 seconds"]
-			dependencies: ["588BB5E2078A325A"]
-			id: "4645B206F5734C66"
-			tasks: [{
-				id: "525DDE490C2FEEDE"
-				type: "item"
-				item: "opolisutilities:redstone_clock"
-			}]
-			rewards: [{
-				id: "141D2DC259CCEC36"
-				type: "item"
-				item: "opolisutilities:b_bucks"
-			}]
-		}
-		{
-			x: 2.5d
-			y: 3.0d
-			description: ["Auto crafts saved receives when it recives a redstone pulse. Useful for simple crafts"]
-			dependencies: ["4AE876E9D7B9C821"]
-			id: "588BB5E2078A325A"
-			tasks: [{
-				id: "040DD43C981EF79C"
-				type: "item"
-				item: "craftingautomat:autocrafter"
-			}]
-			rewards: [{
-				id: "6058F20406A815AD"
-				type: "item"
-				item: "craftingautomat:autocrafter"
-			}]
-		}
-		{
 			x: 0.5d
 			y: 6.0d
 			description: ["Used to take items out of inventories"]

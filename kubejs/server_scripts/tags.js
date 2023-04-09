@@ -4,8 +4,8 @@
 ServerEvents.tags('block', event => {
 
 	event.get('miners:miner_tier_1').add()
-	event.get('miners:miner_tier_2').add('minecraft:dripstone_block', 'compressium:cobblestone_1')
-	event.get('miners:miner_tier_3').add('compressium:cobblestone_2')
+	event.get('miners:miner_tier_2').add('minecraft:dripstone_block', 'minecraft:calcite')
+	event.get('miners:miner_tier_3')
 	event.get('miners:miner_tier_4')
 	event.get('miners:miner_tier_5')
 	event.get('miners:miner_tier_6').add('techopolis:crystal_ore')
@@ -21,8 +21,8 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('item', event => {
 
 	event.get('miners:miner_tier_1')
-	event.get('miners:miner_tier_2').add('minecraft:dripstone_block', 'compressium:cobblestone_1')
-	event.get('miners:miner_tier_3').add('compressium:cobblestone_2')
+	event.get('miners:miner_tier_2').add('minecraft:dripstone_block', 'minecraft:calcite')
+	event.get('miners:miner_tier_3')
 	event.get('miners:miner_tier_4')
 	event.get('miners:miner_tier_5')
 	event.get('miners:miner_tier_6').add('techopolis:crystal_ore')
@@ -44,8 +44,6 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('fluid', event => {
-
-	event.get('miners:fluid_absorber_fluid').add('beyond_earth:oil')
 
 })
 ServerEvents.blockLootTables(event => {

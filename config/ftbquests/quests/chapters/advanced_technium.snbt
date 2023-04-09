@@ -136,7 +136,7 @@
 		{
 			x: -0.5d
 			y: 2.0d
-			description: ["Nickel ore in a jumbo furnace will make a copper ingot"]
+			description: ["Nickel ore in a jumbo furnace will make a nickel ingot"]
 			dependencies: ["1B10854F711792BD"]
 			id: "0F7D01350DEFC340"
 			tasks: [{

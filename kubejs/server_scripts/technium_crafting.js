@@ -329,6 +329,56 @@ ServerEvents.recipes(event => {
 		}
 	}).id('techopolis:voided_technium_ingot')
 
+	//Bone
+
+	event.custom({
+		"type": "extendedcrafting:shaped_table",
+		"pattern": [
+		  "         ",
+		  "         ",
+		  "AA     AA",
+		  "AAAAAAAAA",
+		  "AAAAAAAAA",
+		  "AAAAAAAAA",
+		  "AA     AA",
+		  "         ",
+		  "         "
+		],
+		"key": {
+		  "A": {
+			"item": "essence:basic_mob_essence"
+		  }
+		},
+		"result": {
+		  "item": "minecraft:bone"
+		}
+	}).id('techopolis:bone')
+
+	//Nether Star
+
+	event.custom({
+		"type": "extendedcrafting:shaped_table",
+		"pattern": [
+		  "    A    ",
+		  "   AAA   ",
+		  "   AAA   ",
+		  " AAAAAAA ",
+		  "AAAAAAAAA",
+		  " AAAAAAA ",
+		  "   AAA   ",
+		  "   AAA   ",
+		  "    A    "
+		],
+		"key": {
+		  "A": {
+			"item": "essence:elite_mob_essence"
+		  }
+		},
+		"result": {
+		  "item": "minecraft:nether_star"
+		}
+	}).id('techopolis:nether_star')
+
 	//Final Technium
 
 	event.custom({
