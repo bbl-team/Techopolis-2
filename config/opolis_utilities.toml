@@ -9,7 +9,7 @@
 	#Modpack name
 	"Modpack name" = "Techopolis 2"
 	#Modpack Version
-	"Modpack Version" = "B3.0"
+	"Modpack Version" = "B4.2"
 	#Mobs basic loot bag drop chance 0.0 = always, 1.0 = never, 0.5 = 50% chance, default = 0.75
 	"Mob Drop Chance" = 0.95
 

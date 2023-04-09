@@ -2,8 +2,8 @@
   "pools": [
     {
       "rolls": {
-        "min": 48,
-        "max": 64
+        "min": 24,
+        "max": 40
       },
       "entries": [		
         {"type": "minecraft:item", "weight": 25, "name": "caveopolis:copper_fragment"},

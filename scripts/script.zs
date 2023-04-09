@@ -1,6 +1,10 @@
 import mods.itemstages.ItemStages;
 import mods.itemstages.Restriction;
 
+//LOCKED MOD FEATURES
+
+
+
 //EXTENDED CRAFTING FIXES
 
 mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "simple_storage");
@@ -27,6 +31,17 @@ mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "bey
 mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "compressium");
 mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "immersive_aircraft");
 mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "extended_crafting");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "b_bucks_1");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "b_bucks_2");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "b_bucks_3");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "b_bucks_4");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "b_bucks_5");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "b_bucks_6");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "nether");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "debris");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "skyblock_recipes");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "superflat_recipes");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "chipped");
 
 
 //REFINED STORAGE FIXES
@@ -55,6 +70,17 @@ mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "be
 mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "compressium");
 mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "immersive_aircraft");
 mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "extended_crafting");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "b_bucks_1");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "b_bucks_2");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "b_bucks_3");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "b_bucks_4");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "b_bucks_5");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "b_bucks_6");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "nether");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "debris");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "skyblock_recipes");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "superflat_recipes");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "chipped");
 
 //AE2 FIXES
 
@@ -82,12 +108,23 @@ mods.recipestages.Recipes.setPackageStages("main.java.appeng", "beyond_earth");
 mods.recipestages.Recipes.setPackageStages("main.java.appeng", "compressium");
 mods.recipestages.Recipes.setPackageStages("main.java.appeng", "immersive_aircraft");
 mods.recipestages.Recipes.setPackageStages("main.java.appeng", "extended_crafting");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_1");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_2");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_3");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_4");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_5");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_6");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "nether");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "debris");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "skyblock_recipes");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "superflat_recipes");
+mods.recipestages.Recipes.setPackageStages("main.java.appeng", "chipped");
 
 
 //REMOVED DONT NEED TO
 
-ItemStages.createModRestriction("ftbquests", "null");
-ItemStages.createModRestriction("itemfilters", "null");
+//ItemStages.createModRestriction("ftbquests", "null");
+//ItemStages.createModRestriction("itemfilters", "null");
 
 //BLOCKS ITEM STAGES (mod id, stage)
 
@@ -126,6 +163,7 @@ ItemStages.createModRestriction("constructionwand", "construction_wand");
 ItemStages.restrict(<item:beyond_earth:nasa_workbench>, "beyond_earth");
 ItemStages.createModRestriction("compressium", "compressium");
 ItemStages.createModRestriction("immersive_aircraft", "immersive_aircraft");
+ItemStages.createModRestriction("chipped", "chipped");
 ItemStages.restrict(<tag:items:techopolis:extended_crafting>, "extended_crafting");
 
 

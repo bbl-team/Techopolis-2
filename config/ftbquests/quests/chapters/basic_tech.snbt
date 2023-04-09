@@ -344,10 +344,10 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -0.5d
+			x: -3.5d
+			y: 2.5d
 			description: ["The tree absorber is a huge multiblock that will create tree resources for you. See the miners guide book for more information"]
-			dependencies: ["02D13FBDA8D3D5A8"]
+			dependencies: ["339C3067A93E65E7"]
 			id: "26F70A55222021C1"
 			tasks: [{
 				id: "205D13804740FF6E"

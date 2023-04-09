@@ -113,10 +113,11 @@
 			}]
 		}
 		{
+			title: "Tech Bucks III"
 			x: 0.5d
 			y: -0.5d
 			shape: "square"
-			subtitle: "Unlocks a crafting recipe for B Bucks"
+			subtitle: "Unlocks a crafting recipe for Tech Bucks"
 			id: "3CBDCA222A5B8482"
 			tasks: [
 				{

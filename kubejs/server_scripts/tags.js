@@ -36,6 +36,7 @@ ServerEvents.tags('item', event => {
 	event.get('techopolis:ultimate_technium_ingot').add('techopolis:ultimate_technium_ingot')
 	
 	event.get('forge:storage_blocks/coal_coke').remove('thermal:coal_coke_block')
+	event.get('forge:coal_coke').remove('thermal:coal_coke')
 
 	event.get('forge:silicon').add('techopolis:silicon')
 

@@ -9,4 +9,6 @@ JEIEvents.hideItems(event => {
 	event.hide('storagenetwork:picker_remote')
 	event.hide('storagenetwork:collector_remote')
 	event.hide('storagenetwork:builder_remote')
+	event.hide('thermal:device_rock_gen')
+	event.hide('ae2:facade')
 })

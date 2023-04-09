@@ -8,10 +8,11 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Tech Bucks IV"
 			x: -3.0d
 			y: -2.0d
 			shape: "square"
-			subtitle: "Unlocks a crafting recipe for B Bucks"
+			subtitle: "Unlocks a crafting recipe for Tech Bucks"
 			id: "24B868757BF27597"
 			tasks: [
 				{
@@ -37,10 +38,11 @@
 			}]
 		}
 		{
+			title: "Tech Bucks 5"
 			x: -2.0d
 			y: -2.0d
 			shape: "square"
-			subtitle: "Unlocks a crafting recipe for B Bucks"
+			subtitle: "Unlocks a crafting recipe for Tech Bucks"
 			id: "2A10C8DB432AE75D"
 			tasks: [
 				{
@@ -66,10 +68,11 @@
 			}]
 		}
 		{
+			title: "Tech Bucks VI"
 			x: -1.0d
 			y: -2.0d
 			shape: "square"
-			subtitle: "Unlocks a crafting recipe for B Bucks"
+			subtitle: "Unlocks a crafting recipe for Tech Bucks"
 			id: "2529E02FEAA0680D"
 			tasks: [
 				{

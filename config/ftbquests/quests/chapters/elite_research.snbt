@@ -115,20 +115,11 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -2.5d
-			id: "0AB9E1EF912FD749"
-			tasks: [{
-				id: "5B1A85CC18956119"
-				type: "checkmark"
-				title: "essence"
-			}]
-		}
-		{
+			title: "Tech Bucks II"
 			x: 2.5d
 			y: -2.5d
 			shape: "square"
-			subtitle: "Unlocks a crafting recipe for B Bucks"
+			subtitle: "Unlocks a crafting recipe for Tech Bucks"
 			dependencies: ["2509E345839FFA86"]
 			id: "160104871F0B60AC"
 			tasks: [

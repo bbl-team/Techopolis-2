@@ -121,6 +121,7 @@
 			}]
 		}
 		{
+			title: "Tech Bucks"
 			x: -2.5d
 			y: -3.0d
 			description: ["These are used to purchase research and items in the research papers quest line"]

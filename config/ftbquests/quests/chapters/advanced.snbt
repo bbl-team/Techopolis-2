@@ -8,10 +8,11 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Teck Bucks I"
 			x: -3.5d
 			y: -0.5d
 			shape: "square"
-			subtitle: "Unlocks a crafting recipe for B Bucks"
+			subtitle: "Unlocks a crafting recipe for Tech Bucks"
 			dependencies: ["3F6F97E9CBAE07CC"]
 			id: "5FD0F6B5EE2DB404"
 			tasks: [
