@@ -84,41 +84,46 @@ mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "ch
 
 //AE2 FIXES
 
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "simple_storage");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "storage_drawers");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "framed_blocks");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "flux_networks");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "tempad");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "tiab");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "trash_cans");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "laserio");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "xnet");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "building_gadgets");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "elevators");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "ender_storage");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "little_logistics");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "thermal");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "ae2");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "refinedstorage");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "mekanism");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "waystones");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "powah");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "angel_ring");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "beyond_earth");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "compressium");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "immersive_aircraft");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "extended_crafting");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_1");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_2");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_3");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_4");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_5");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "b_bucks_6");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "nether");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "debris");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "skyblock_recipes");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "superflat_recipes");
-mods.recipestages.Recipes.setPackageStages("main.java.appeng", "chipped");
+mods.recipestages.Recipes.setPackageStages("appeng", "simple_storage");
+mods.recipestages.Recipes.setPackageStages("appeng", "storage_drawers");
+mods.recipestages.Recipes.setPackageStages("appeng", "framed_blocks");
+mods.recipestages.Recipes.setPackageStages("appeng", "flux_networks");
+mods.recipestages.Recipes.setPackageStages("appeng", "tempad");
+mods.recipestages.Recipes.setPackageStages("appeng", "tiab");
+mods.recipestages.Recipes.setPackageStages("appeng", "trash_cans");
+mods.recipestages.Recipes.setPackageStages("appeng", "laserio");
+mods.recipestages.Recipes.setPackageStages("appeng", "xnet");
+mods.recipestages.Recipes.setPackageStages("appeng", "building_gadgets");
+mods.recipestages.Recipes.setPackageStages("appeng", "elevators");
+mods.recipestages.Recipes.setPackageStages("appeng", "ender_storage");
+mods.recipestages.Recipes.setPackageStages("appeng", "little_logistics");
+mods.recipestages.Recipes.setPackageStages("appeng", "thermal");
+mods.recipestages.Recipes.setPackageStages("appeng", "ae2");
+mods.recipestages.Recipes.setPackageStages("appeng", "refinedstorage");
+mods.recipestages.Recipes.setPackageStages("appeng", "mekanism");
+mods.recipestages.Recipes.setPackageStages("appeng", "waystones");
+mods.recipestages.Recipes.setPackageStages("appeng", "powah");
+mods.recipestages.Recipes.setPackageStages("appeng", "angel_ring");
+mods.recipestages.Recipes.setPackageStages("appeng", "beyond_earth");
+mods.recipestages.Recipes.setPackageStages("appeng", "compressium");
+mods.recipestages.Recipes.setPackageStages("appeng", "immersive_aircraft");
+mods.recipestages.Recipes.setPackageStages("appeng", "extended_crafting");
+mods.recipestages.Recipes.setPackageStages("appeng", "b_bucks_1");
+mods.recipestages.Recipes.setPackageStages("appeng", "b_bucks_2");
+mods.recipestages.Recipes.setPackageStages("appeng", "b_bucks_3");
+mods.recipestages.Recipes.setPackageStages("appeng", "b_bucks_4");
+mods.recipestages.Recipes.setPackageStages("appeng", "b_bucks_5");
+mods.recipestages.Recipes.setPackageStages("appeng", "b_bucks_6");
+mods.recipestages.Recipes.setPackageStages("appeng", "nether");
+mods.recipestages.Recipes.setPackageStages("appeng", "debris");
+mods.recipestages.Recipes.setPackageStages("appeng", "skyblock_recipes");
+mods.recipestages.Recipes.setPackageStages("appeng", "superflat_recipes");
+mods.recipestages.Recipes.setPackageStages("appeng", "chipped");
+
+//DRAWERS
+
+mods.recipestages.Recipes.setContainerStages("com.jaquadro.minecraft.storagedrawers.util.CompactingHelper", "compressium");
+
 
 
 //REMOVED DONT NEED TO

@@ -30,12 +30,12 @@ StartupEvents.registry('item', event => {
 	event.create('techopolis:research_papers_uranium').displayName('Research Papers: Uranium').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2You can now craft Uranium ore§r")
 	
 	event.create('techopolis:research_papers_ender').displayName('Research Papers: Ender Ore').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2You can now purchase ender ore§r")	
-	event.create('techopolis:research_papers_b_bucks_1').displayName('Research Papers: B Bucks 1').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
-	event.create('techopolis:research_papers_b_bucks_2').displayName('Research Papers: B Bucks 2').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
-	event.create('techopolis:research_papers_b_bucks_3').displayName('Research Papers: B Bucks 3').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
-	event.create('techopolis:research_papers_b_bucks_4').displayName('Research Papers: B Bucks 4').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
-	event.create('techopolis:research_papers_b_bucks_5').displayName('Research Papers: B Bucks 5').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
-	event.create('techopolis:research_papers_b_bucks_6').displayName('Research Papers: B Bucks 6').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
+	event.create('techopolis:research_papers_b_bucks_1').displayName('Research Papers: Tech Bucks 1').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
+	event.create('techopolis:research_papers_b_bucks_2').displayName('Research Papers: Tech Bucks 2').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
+	event.create('techopolis:research_papers_b_bucks_3').displayName('Research Papers: Tech Bucks 3').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
+	event.create('techopolis:research_papers_b_bucks_4').displayName('Research Papers: Tech Bucks 4').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
+	event.create('techopolis:research_papers_b_bucks_5').displayName('Research Papers: Tech Bucks 5').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
+	event.create('techopolis:research_papers_b_bucks_6').displayName('Research Papers: Tech Bucks 6').texture("minecraft:item/enchanted_book").color(0, 0x9A4D00).glow(true).tooltip("§2Allows the crafting of B Bucks§r")
 
 	//research Mods
 

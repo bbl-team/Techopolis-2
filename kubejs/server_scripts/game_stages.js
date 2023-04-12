@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
     addStageByMod("waystones", "waystones")
     addStageByMod("powah", "powah")
     addStageByMod("beyond_earth", "beyond_earth")
-    addStageByMod("compressium", "compressium")
+//  addStageByMod("compressium", "compressium")
     addStageByMod("constructionwand", "construction_wand")
     addStageByMod("nether", "nether")
     addStageByMod("debris", "debris")
