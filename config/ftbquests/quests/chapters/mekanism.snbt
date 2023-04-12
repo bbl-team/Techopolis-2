@@ -202,8 +202,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 5.0d
+			x: 5.0d
+			y: 1.0d
 			description: ["Crushes items"]
 			dependencies: ["43D76D595C7442DA"]
 			id: "360D3BFC61367898"
@@ -278,7 +278,6 @@
 			description: ["Thats some kinda alloy"]
 			dependencies: [
 				"2BD36ED37780E421"
-				"360D3BFC61367898"
 				"7AC0701120EB66C7"
 			]
 			id: "5F3FA8616DC98F72"

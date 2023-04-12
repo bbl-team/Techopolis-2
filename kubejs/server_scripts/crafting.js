@@ -4,7 +4,6 @@ console.info('Hello, World! (You will see this line every time server resources 
 
 ServerEvents.recipes(event => {
 
-	event.shaped('4x opolisutilities:soaked_paper', [' L ','LBL',' L '], {L:'opolisutilities:log_sheet', B:Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT()}).id('techopolis:extra_soaked_paper')
 	event.shaped('1x minecraft:feather', ['  S',' SS','SS '], {S:string}).id('techopolis:feather')
 	event.shaped('4x minecraft:chest', ['PPP','P P','PPP'], {P:logs}).id('techopolis:chests')
 	event.shaped('16x minecraft:stick', ['P','P'], {P:logs}).id('techopolis:sticks')
@@ -100,9 +99,8 @@ ServerEvents.recipes(event => {
 	event.shaped('1x minecraft:gravel', ['G G','   ','G G'], {G:'techopolis:grout_dust'}).id('techopolis:gravel_from_grout')
 	event.shaped('1x minecraft:sand', [' G ','G G',' G '], {G:'techopolis:grout_dust'}).id('techopolis:sand_from_grout')
 	event.shaped('1x minecraft:clay_ball', ['G'], {G:'techopolis:grout_dust'}).id('techopolis:clay_ball_from_grout')
-	event.shaped('1x minecraft:nether_star', ['WWW', 'SIS', ' S '], {W:'minecraft:wither_skeleton_skull', S:'minecraft:soul_sand', I:hellish_technium}).id('techopolis:nether_star')
 
-	event.shaped('3x opolisutilities:soaked_paper', [' L ', 'LBL', ' L '], {B:Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT(), L:'opolisutilities:log_sheet'}).id('techopolis:nether_star')
+	event.shaped('4x opolisutilities:soaked_paper', [' L ', 'LBL', ' L '], {B:Item.of('ceramicbucket:ceramic_bucket', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT(), L:'opolisutilities:log_sheet'}).id('techopolis:soaked_paper_ceramic_bucket')
 
 	event.shaped('1x minecraft:netherrack', [' L ','LSL',' L '], {L:'techopolis:lava_bottle', S:'#techopolis:colored_stone'}).id('techopolis:netherrack').stage('nether')
 	event.shaped('1x minecraft:soul_sand', [' L ','LSL',' L '], {L:'techopolis:lava_bottle', S:'#minecraft:sand'}).id('techopolis:sand').stage('nether')
@@ -165,6 +163,12 @@ ServerEvents.recipes(event => {
 	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "minecraft:sand","count": 1}],"result": [{"item": "minecraft:glass","count": 1}],"energy": 800}).id('techopolis:machines/smelter/glass')
 	event.custom({"type": "thermal:smelter","ingredients": [{"item": "minecraft:stone","count": 1}],"result": [{"item": "minecraft:smooth_stone","count": 1}],"energy": 800}).id('techopolis:machines/smelter/smooth_stone')
 	event.custom({"type": "thermal:smelter","ingredient": {"tag": "forge:dusts/osmium"},"result": [{"item": "alltheores:osmium_ingot","count": 1}],"energy_mod": 0.5})
+
+	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "forge:dusts/silver","count": 1},{"value": [{"tag": "forge:dusts/tin"}],"count": 3},{"item": "techopolis:advanced_technium_ingot",
+			"count": 1}],"result": [{"item": "alltheores:lumium_ingot","count": 4}],"energy": 12000}).id('thermal:machines/smelter/smelter_alloy_lumium')
+
+	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "forge:ingots/silver","count": 1},{"value": [{"tag": "forge:ingots/tin"}],"count": 3},{"item": "techopolis:advanced_technium_ingot",
+			"count": 1}],"result": [{"item": "alltheores:lumium_ingot","count": 4}],"energy": 12000}).id('thermal:machines/smelter/smelter_alloy_lumium_from_ingot')
 
 	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "forge:obsidian","count": 1},{"value": [{"tag": "forge:dusts/steel"}],"count": 1},{"tag": "forge:sand",
 			"count": 1}],"result": [{"item": "thermal:obsidian_glass","count": 2}],"energy": 4800}).id('thermal:machines/smelter/smelter_glass_obsidian')
@@ -255,8 +259,8 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_ender', ['LCL','CPC','LCL'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/gold', L: elite_technium}).id('techopolis:rp_ender')
 
 	event.shaped('techopolis:research_papers_villager_trades', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/emerald', L: ultimate_technium}).id('techopolis:rp_villager_trades')
-	event.shaped('techopolis:research_papers_laserio', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:elite_technium, L: '#forge:storage_blocks/quartz'}).id('techopolis:rp_laserio')
-	event.shaped('techopolis:research_papers_xnet', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/quartz', L: elite_technium}).id('techopolis:rp_xnet')
+	event.shaped('techopolis:research_papers_laserio', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:elite_technium, L: '#forge:storage_blocks/redstone'}).id('techopolis:rp_laserio')
+	event.shaped('techopolis:research_papers_xnet', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/redstone', L: elite_technium}).id('techopolis:rp_xnet')
 	event.shaped('techopolis:research_papers_beyond_earth', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:beacon', L: hellish_technium}).id('techopolis:rp_beyond_earth')
 
 	//Reseach Papers (mods)
@@ -425,6 +429,8 @@ ServerEvents.recipes(event => {
 	event.remove({id:'minecraft:redstone_from_blasting_deepslate_redstone_ore'})
 	event.remove({id:'thermal:device_rock_gen'})
 	event.remove({id:'beyond_earth:iron_rod'})
+	event.remove({id:'thermal:lumium_dust_4'})
+	event.remove({id:'alltheores:lumium_dust_from_alloy_blending'})
 	event.remove({id:'/thermal:parts//'})
 
 

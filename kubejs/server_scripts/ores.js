@@ -102,6 +102,10 @@ ServerEvents.recipes(event => {
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/diamond", count: 8}], result:{item: "minecraft:diamond"},experience: 0.1}).id('techopolis:jumbo_furnace_diamond')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/emerald", count: 8}], result:{item: "minecraft:emerald"},experience: 0.1}).id('techopolis:jumbo_furnace_emerald')
 	
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/desh", count: 8}], result:{item: "beyond_earth:desh_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_desh_ore')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/calorite", count: 8}], result:{item: "beyond_earth:calorite_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_calorite_ore')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/ostrum", count: 8}], result:{item: "beyond_earth:ostrum_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_ostrum_ore')
+	
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/uranium", count: 8}], result:{item: "alltheores:uranium_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_uranium')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/osmium", count: 8}], result:{item: "alltheores:osmium_ingot"},experience: 0.1}).id('techopolis:jumbo_furnace_osmium')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "jumbofurnace:tag_stack", tag: "forge:ores/ender", count: 6}], result:{item: "opolisutilities:ender_pearl_fragment"},experience: 0.1}).id('techopolis:jumbo_furnace_ender')
@@ -113,6 +117,7 @@ ServerEvents.recipes(event => {
 	
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "forge:nbt", item: "techopolis:crystal_ore", count: 6}], result:{item: "techopolis:crystalline"},experience: 0.1}).id('techopolis:jumbo_furnace_crystalline')
 	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "forge:nbt", item: "minecraft:smooth_stone", count: 1}], result:{item: "caveopolis:light_gray_colored_stone"},experience: 0.1}).id('techopolis:caveopolis_colored_stone')
+	event.custom({type: "jumbofurnace:jumbo_smelting",ingredients:[{"type": "forge:nbt", item: "thermal:netherite_dust", count: 1}], result:{item: "minecraft:netherite_ingot"},experience: 0.1}).id('techopolis:netherite_ingot_jumbo')
 
 
 	//Ore Processing Unification	
