@@ -653,7 +653,7 @@
 				id: "0DA6FDC244493186"
 				type: "command"
 				auto: "enabled"
-				command: "/gamestage add @p osmium "
+				command: "/gamestage add @p osmium"
 				player_command: false
 			}]
 		}
@@ -974,6 +974,75 @@
 				type: "choice"
 				exclude_from_claim_all: true
 				table_id: 3356702670525429953L
+			}]
+		}
+		{
+			title: "Dye Ore"
+			icon: "techopolis:dye_ore"
+			x: 3.0d
+			y: -2.5d
+			subtitle: "Buy a node of ore"
+			dependencies: ["3968D1D737126E9F"]
+			can_repeat: true
+			id: "650542A2FBA26057"
+			tasks: [{
+				id: "318C6EC8063C41B9"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "476BE6668687A0D7"
+				type: "item"
+				item: "techopolis:dye_ore"
+				count: 36
+			}]
+		}
+		{
+			title: "Fluorite"
+			icon: "mekanism:fluorite_ore"
+			x: -1.0d
+			y: 1.5d
+			subtitle: "Buy a node of ore"
+			dependencies: ["73D0296853EB556D"]
+			can_repeat: true
+			id: "11F3496C88142C7F"
+			tasks: [{
+				id: "6EAEBD26B398268C"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "54E57063DD069AFC"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 4735408485300409248L
+			}]
+		}
+		{
+			title: "Stone Types"
+			icon: "minecraft:deepslate"
+			x: 4.0d
+			y: -2.5d
+			subtitle: "Buy a node of stone"
+			dependencies: ["387F6E6102BAC495"]
+			can_repeat: true
+			id: "56C75808B5BEDF1B"
+			tasks: [{
+				id: "38FB3F458A9BFB66"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0932396193C23F46"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 3158392039121856202L
 			}]
 		}
 	]

@@ -1,15 +1,15 @@
 {
   "modPriorities": [
     "minecraft",
-	"techopolis",
+    "techopolis",
     "kubejs",
     "crafttweaker",
     "create",
-	"alltheores",
+    "alltheores",
     "thermal",
     "immersiveengineering",
     "mekanism",
-	"refinedstorage"
+    "refinedstorage"
   ],
   "stoneStrata": [
     "stone",
@@ -32,7 +32,7 @@
     "forge:wires/{material}",
     "forge:storage_blocks/{material}",
     "forge:storage_blocks/raw_{material}",
-	"forge:silicon"
+    "forge:silicon"
   ],
   "materials": [
     "aeternium",
@@ -82,10 +82,11 @@
     "tungsten",
     "uranium",
     "zinc",
-	"silicon",
-	"wood"
+    "silicon",
+    "wood"
   ],
   "priorityOverrides": {},
+  "tagOwnerships": {},
   "ignoredTags": [],
   "ignoredItems": [],
   "ignoredRecipeTypes": [

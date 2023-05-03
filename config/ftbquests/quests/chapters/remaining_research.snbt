@@ -13,6 +13,7 @@
 			y: -2.0d
 			shape: "square"
 			subtitle: "Unlocks a crafting recipe for Tech Bucks"
+			dependencies: ["28612D6665C7F943"]
 			id: "24B868757BF27597"
 			tasks: [
 				{
@@ -38,11 +39,12 @@
 			}]
 		}
 		{
-			title: "Tech Bucks 5"
+			title: "Tech Bucks V"
 			x: -2.0d
 			y: -2.0d
 			shape: "square"
 			subtitle: "Unlocks a crafting recipe for Tech Bucks"
+			dependencies: ["4940CE1FACE39993"]
 			id: "2A10C8DB432AE75D"
 			tasks: [
 				{
@@ -73,6 +75,7 @@
 			y: -2.0d
 			shape: "square"
 			subtitle: "Unlocks a crafting recipe for Tech Bucks"
+			dependencies: ["74BADCFA2F5010B6"]
 			id: "2529E02FEAA0680D"
 			tasks: [
 				{
@@ -96,6 +99,29 @@
 				command: "/gamestage add @p b_bucks_6"
 				player_command: false
 			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Allows the purchasing of fluorite ore"
+			dependencies: ["74BADCFA2F5010B6"]
+			id: "73D0296853EB556D"
+			tasks: [
+				{
+					id: "608F89BD6D1403C4"
+					type: "item"
+					item: "techopolis:research_papers_fluorite"
+					consume_items: true
+				}
+				{
+					id: "6F017BEF4E4985C5"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 16L
+					consume_items: true
+				}
+			]
 		}
 	]
 	quest_links: [ ]

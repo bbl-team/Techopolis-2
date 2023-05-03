@@ -120,6 +120,11 @@
 				type: "item"
 				item: "powah:reactor_starter"
 			}]
+			rewards: [{
+				id: "394FD05A42C6D8E5"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -0.5d

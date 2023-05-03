@@ -384,40 +384,123 @@ ServerEvents.recipes(event => {
 	event.custom({
 		"type": "extendedcrafting:shaped_table",
 		"pattern": [
-		  "AAABBBAAA",
 		  "ABBCCCBBA",
-		  "ABDDEDDBA",
-		  "BCDEFEDCB",
-		  "BCEFFFECB",
-		  "BCDEFEDCB",
-		  "ABDDEDDBA",
-		  "ABBCCCBBA",
-		  "AAABBBAAA"
+		  "BDCEFECGB",
+		  "BCHHIHHCB",
+		  "CEHIJIHEC",
+		  "CKILRMINC",
+		  "CEHIJIHEC",
+		  "BCHHIHHCB",
+		  "BOCEPECQB",
+		  "ABBCCCBBA"
 		],
 		"key": {
 		  "A": {
-			"item": "techopolis:basic_technium_ingot"
+			"item": "techopolis:quantum_compressed_dye"
 		  },
 		  "B": {
-			"item": "techopolis:advanced_technium_ingot"
+			"item": "techopolis:basic_technium_ingot"
 		  },
 		  "C": {
-			"item": "techopolis:elite_technium_ingot"
+			"item": "techopolis:advanced_technium_ingot"
 		  },
 		  "D": {
-			"item": "techopolis:ultimate_technium_ingot"
+			"item": "techopolis:mod_mastery_thermal"
 		  },
 		  "E": {
-			"item": "techopolis:hellish_technium_ingot"
+			"item": "techopolis:elite_technium_ingot"
 		  },
 		  "F": {
+			"item": "techopolis:mod_mastery_compressium"
+		  },
+		  "G": {
+			"item": "techopolis:mod_mastery_flux"
+		  },
+		  "H": {
+			"item": "techopolis:ultimate_technium_ingot"
+		  },
+		  "I": {
+			"item": "techopolis:hellish_technium_ingot"
+		  },
+		  "J": {
 			"item": "techopolis:voided_technium_ingot"
+		  },
+		  "K": {
+			"item": "techopolis:mod_mastery_mekanism"
+		  },
+		  "L": {
+			"item": "techopolis:mod_mastery_waystones"
+		  },
+		  "M": {
+			"item": "techopolis:mod_mastery_beyond"
+		  },
+		  "N": {
+			"item": "techopolis:mod_mastery_immersive"
+		  },
+		  "O": {
+			"item": "techopolis:mod_mastery_bucks"
+		  },
+		  "P": {
+			"item": "techopolis:mod_mastery_essence"
+		  },
+		  "Q": {
+			"item": "techopolis:mod_mastery_digital"
+		  },
+		  "R": {
+			"item": "angelring:resonant_angel_ring"
 		  }
 		},
 		"result": {
 		  "item": "techopolis:final_technium_ingot"
 		}
-	}).id('techopolis:final_technium_ingot')
+	  }).id('techopolis:final_technium_ingot')
+
+	event.custom({
+		"type": "extendedcrafting:shaped_table",
+		"pattern": [
+		  "AABAAABAA",
+		  "ACBDADBCA",
+		  "BBBEFEBBB",
+		  "ADEEGEEDA",
+		  "AAFHIHFAA",
+		  "ADEEGEEDA",
+		  "BBBEFEBBB",
+		  "ACBDADBCA",
+		  "AABAAABAA"
+		],
+		"key": {
+		  "A": {
+			"item": "essence:elite_ore_essence"
+		  },
+		  "B": {
+			"item": "essence:elite_mob_essence"
+		  },
+		  "C": {
+			"item": "essence:basic_mob_essence_block"
+		  },
+		  "D": {
+			"item": "essence:advanced_mob_essence"
+		  },
+		  "E": {
+			"item": "essence:advanced_ore_essence"
+		  },
+		  "F": {
+			"item": "essence:basic_ore_essence_block"
+		  },
+		  "G": {
+			"item": "essence:elite_ore_essence_block"
+		  },
+		  "H": {
+			"item": "essence:elite_mob_essence_block"
+		  },
+		  "I": {
+			"item": "techopolis:mod_mastery_papers"
+		  }
+		},
+		"result": {
+		  "item": "techopolis:mod_mastery_essence"
+		}
+	  }).id('techopolis:mod_mastery_essence')
 
 
 

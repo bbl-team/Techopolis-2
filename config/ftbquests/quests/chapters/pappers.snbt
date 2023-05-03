@@ -481,6 +481,35 @@
 				player_command: false
 			}]
 		}
+		{
+			x: 2.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Unlocks Iron Chests Mod"
+			id: "0040BCDBA9891627"
+			tasks: [
+				{
+					id: "66BB17987F8FA263"
+					type: "item"
+					item: "techopolis:research_papers_iron_chests"
+					consume_items: true
+				}
+				{
+					id: "27132839EEAB8316"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 12L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "130AB38721389287"
+				type: "command"
+				auto: "enabled"
+				command: "/gamestage add @p iron_chests"
+				player_command: false
+			}]
+		}
 	]
 	quest_links: [ ]
 }

@@ -216,6 +216,11 @@
 				type: "item"
 				item: "alltheores:bronze_ingot"
 			}]
+			rewards: [{
+				id: "268A313DE3A04C6D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -4.0d

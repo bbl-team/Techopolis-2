@@ -57,7 +57,7 @@
 	#Entities that CAN be picked up (useWhitelistEntities must be true)
 	allowedEntities = []
 	#Blocks that CAN be picked up (useWhitelistBlocks must be true)
-	allowedBlocks = ["minecraft:chest"]
+	allowedBlocks = ["ironchest:*", "storagedrawers:*", "framedcompactdrawers:*", "minecraft:chest", "minecraft:barrel"]
 	#Entities that CAN have other entities stacked on top of them (useWhitelistStacking must be true)
 	allowedStacking = []
 

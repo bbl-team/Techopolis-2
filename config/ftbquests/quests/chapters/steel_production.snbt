@@ -392,6 +392,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "25318BD7A035F375"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			icon: "immersiveengineering:assembler"

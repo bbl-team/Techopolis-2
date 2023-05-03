@@ -302,7 +302,7 @@
 		{
 			x: 3.0d
 			y: -1.0d
-			description: ["Hardened glass is very sdtrong"]
+			description: ["Hardened glass is very strong"]
 			dependencies: ["2420D51CE175BB3A"]
 			id: "323417A71D25B20F"
 			tasks: [{
@@ -399,6 +399,11 @@
 				type: "item"
 				item: "thermal:machine_chiller"
 			}]
+			rewards: [{
+				id: "486DD2D497C71679"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
 		}
 		{
 			x: -1.0d
@@ -410,6 +415,11 @@
 				id: "563178F977C4A360"
 				type: "item"
 				item: "minecraft:obsidian"
+			}]
+			rewards: [{
+				id: "139427680B4D6794"
+				type: "item"
+				item: "opolisutilities:b_bucks"
 			}]
 		}
 	]

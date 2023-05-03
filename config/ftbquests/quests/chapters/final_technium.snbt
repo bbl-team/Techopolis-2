@@ -6,23 +6,198 @@
 	title: "Final Technium"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 0.5d
-		y: 0.0d
-		description: ["GG"]
-		dependencies: ["74BADCFA2F5010B6"]
-		id: "75CD1605D73AC0F5"
-		tasks: [{
-			id: "3E469A64736F9E80"
-			type: "item"
-			item: "techopolis:final_technium_ingot"
-			count: 32L
-		}]
-		rewards: [{
-			id: "1172987A13A51562"
-			type: "item"
-			item: "opolisutilities:b_bucks"
-		}]
-	}]
+	quests: [
+		{
+			x: 0.5d
+			y: 0.0d
+			subtitle: "Such power..."
+			description: ["The Mastery Of Technium"]
+			dependencies: [
+				"74BADCFA2F5010B6"
+				"4E54DB365FF214C1"
+				"1F8311CC4566DB1A"
+				"4A8FDC6734B51068"
+				"1B3172586E872FD9"
+				"749E2985B7600541"
+				"784E24B91BDFC563"
+				"70BD493A91C27F88"
+				"5685E2C31E1F6EB7"
+				"5B3A9FAC97288B30"
+				"210D5C36E58C1858"
+			]
+			id: "75CD1605D73AC0F5"
+			tasks: [{
+				id: "3E469A64736F9E80"
+				type: "item"
+				item: "techopolis:final_technium_ingot"
+				count: 16L
+			}]
+			rewards: [{
+				id: "1172987A13A51562"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "5B3A9FAC97288B30"
+			tasks: [{
+				id: "776D3A789F4700A7"
+				type: "item"
+				item: "techopolis:mod_mastery_compressium"
+			}]
+			rewards: [{
+				id: "322A084F0A357185"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.7142857142857153d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "5685E2C31E1F6EB7"
+			tasks: [{
+				id: "56D27457D998724F"
+				type: "item"
+				item: "techopolis:mod_mastery_mekanism"
+			}]
+			rewards: [{
+				id: "1E36212BD3CE4E43"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "4E54DB365FF214C1"
+			tasks: [{
+				id: "5AF5C589006AAB13"
+				type: "item"
+				item: "techopolis:mod_mastery_essence"
+			}]
+			rewards: [{
+				id: "3116EB6679B95DB3"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "1F8311CC4566DB1A"
+			tasks: [{
+				id: "6FE5351B30A62531"
+				type: "item"
+				item: "techopolis:mod_mastery_immersive"
+			}]
+			rewards: [{
+				id: "1836D83DA76A5320"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "210D5C36E58C1858"
+			tasks: [{
+				id: "186CB3FBEBD0E812"
+				type: "item"
+				item: "techopolis:mod_mastery_thermal"
+			}]
+			rewards: [{
+				id: "1BB094447790C4EE"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "4A8FDC6734B51068"
+			tasks: [{
+				id: "673348C667E06471"
+				type: "item"
+				item: "techopolis:mod_mastery_flux"
+			}]
+			rewards: [{
+				id: "639FA09F5E4AC674"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "749E2985B7600541"
+			tasks: [{
+				id: "70B81881A75EC9FC"
+				type: "item"
+				item: "techopolis:mod_mastery_digital"
+			}]
+			rewards: [{
+				id: "088A84921E11C7EB"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "70BD493A91C27F88"
+			tasks: [{
+				id: "1C4F93A192553942"
+				type: "item"
+				item: "techopolis:mod_mastery_bucks"
+			}]
+			rewards: [{
+				id: "06CE2BE6824576BD"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.7142857142857082d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "1B3172586E872FD9"
+			tasks: [{
+				id: "0ED2BAF9C54E742E"
+				type: "item"
+				item: "techopolis:mod_mastery_waystones"
+			}]
+			rewards: [{
+				id: "59F0CCB73A1F1332"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["52242F8BBC4F63E8"]
+			id: "784E24B91BDFC563"
+			tasks: [{
+				id: "006A0712E450112A"
+				type: "item"
+				item: "techopolis:mod_mastery_beyond"
+			}]
+			rewards: [{
+				id: "327F96842F7AC965"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+	]
 	quest_links: [ ]
 }
