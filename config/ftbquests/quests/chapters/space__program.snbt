@@ -1,7 +1,7 @@
 {
 	id: "588DB759C2E02D36"
 	group: "62C5FE5ECA80879B"
-	order_index: 1
+	order_index: 0
 	filename: "space__program"
 	title: "Space Program"
 	icon: {
@@ -144,7 +144,7 @@
 		}
 		{
 			x: 2.0d
-			y: -1.0d
+			y: -2.0d
 			description: ["Part of the space suit"]
 			dependencies: ["4940CE1FACE39993"]
 			id: "1885A45829DEDCE6"
@@ -167,7 +167,7 @@
 		}
 		{
 			x: 3.0d
-			y: -1.0d
+			y: -2.0d
 			description: ["Part of the space suit"]
 			dependencies: [
 				"4940CE1FACE39993"
@@ -198,7 +198,7 @@
 		}
 		{
 			x: 5.0d
-			y: -1.0d
+			y: -2.0d
 			description: ["Part of the space suit"]
 			dependencies: ["4940CE1FACE39993"]
 			id: "2CCDE243662EC32A"
@@ -221,7 +221,7 @@
 		}
 		{
 			x: 4.0d
-			y: -1.0d
+			y: -2.0d
 			description: ["Part of the space suit"]
 			dependencies: ["4940CE1FACE39993"]
 			id: "7F4B286FC86DF235"
@@ -244,7 +244,7 @@
 		}
 		{
 			x: 3.0d
-			y: 0.0d
+			y: -1.0d
 			dependencies: ["4940CE1FACE39993"]
 			id: "7F998A17FBC96E3F"
 			tasks: [{
@@ -260,7 +260,7 @@
 		}
 		{
 			x: 3.0d
-			y: 1.0d
+			y: 0.0d
 			description: ["When filled with water will create oxygen. The space suit chestplate requires oxygen to protect you in space"]
 			dependencies: ["7F998A17FBC96E3F"]
 			id: "2FF5BBD9E1F48728"
@@ -275,6 +275,7 @@
 			y: -2.0d
 			shape: "square"
 			description: ["Unlocks beyond earth"]
+			dependencies: ["648F6DAF2770C1BC"]
 			id: "0FDE012661E254AD"
 			tasks: [{
 				id: "42434FDE3B4338CA"

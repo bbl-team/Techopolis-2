@@ -42,6 +42,7 @@ mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "deb
 mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "skyblock_recipes");
 mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "superflat_recipes");
 mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "chipped");
+mods.recipestages.Recipes.setPackageStages("com.blakebr0.extendedcrafting", "iron_chests");
 
 
 //REFINED STORAGE FIXES
@@ -81,6 +82,7 @@ mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "de
 mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "skyblock_recipes");
 mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "superflat_recipes");
 mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "chipped");
+mods.recipestages.Recipes.setPackageStages("com.refinedmods.refinedstorage", "iron_chests");
 
 //AE2 FIXES
 
@@ -119,12 +121,7 @@ mods.recipestages.Recipes.setPackageStages("appeng", "debris");
 mods.recipestages.Recipes.setPackageStages("appeng", "skyblock_recipes");
 mods.recipestages.Recipes.setPackageStages("appeng", "superflat_recipes");
 mods.recipestages.Recipes.setPackageStages("appeng", "chipped");
-
-//DRAWERS
-
-mods.recipestages.Recipes.setContainerStages("com.jaquadro.minecraft.storagedrawers.util.CompactingHelper", "compressium");
-
-
+mods.recipestages.Recipes.setPackageStages("appeng", "iron_chests");
 
 //REMOVED DONT NEED TO
 
@@ -169,6 +166,7 @@ ItemStages.restrict(<item:beyond_earth:nasa_workbench>, "beyond_earth");
 ItemStages.createModRestriction("compressium", "compressium");
 ItemStages.createModRestriction("immersive_aircraft", "immersive_aircraft");
 ItemStages.createModRestriction("chipped", "chipped");
+ItemStages.createModRestriction("ironchest", "iron_chests");
 ItemStages.restrict(<tag:items:techopolis:extended_crafting>, "extended_crafting");
 
 

@@ -2,10 +2,10 @@
 #Settings for Singularities.
 [Singularities]
 	#Should the default recipe for the Ultimate Singularity be generated?
-	ultimateSingularityRecipe = true
+	ultimateSingularityRecipe = false
 	#The default amount of items required to create a Singularity.
 	#Range: > 1
-	defaultMaterialsRequired = 9
+	defaultMaterialsRequired = 8
 	#Should default recipes be generated for Singularities?
 	defaultRecipes = true
 	#The default amount of FE required to create a Singularity.
@@ -57,7 +57,7 @@
 	powerCapacity = 10000000
 	#How much FE/t the Quantum Compressor should use when crafting by default.
 	#Range: > 0
-	powerRate = 5000
+	powerRate = 200000
 	#Should the Quantum Compressor be enabled?
 	enabled = true
 

@@ -10,6 +10,31 @@ ServerEvents.recipes(event => {
 	event.shaped('1x caveopolis:mixed_stone_ingot', ['C','I'], {I:iron_ingot, C: cobblestone}).id('techopolis:caveopolis_mixed_stone_ingot')
 	event.shaped('1x minecraft:slime_ball', ['VVV','VVV','VVV'], {V:'minecraft:vine'}).id('techopolis:slime_ball')
 
+	event.shaped('1x chipped:big_lantern', [' L ','L L',' L '], {L:'minecraft:lantern'}).id('techopolis:big_lantern')
+	event.shaped('1x chipped:big_soul_lantern', [' L ','L L',' L '], {L:'minecraft:soul_lantern'}).id('techopolis:big_soul_lantern')
+
+	event.shaped('1x powah:player_aerial_pearl', [' T ','TPT',' T '], {P:'powah:aerial_pearl', T: elite_technium}).id('techopolis:player_aerial_pearl')
+
+
+	event.shaped('1x minecraft:blue_dye', ['BBB'], {B:'mekanism:dye_base'}).id('techopolis:blue_dye')
+	event.shaped('1x minecraft:light_blue_dye', ['BB ','  B'], {B:'mekanism:dye_base'}).id('techopolis:light_blue_dye')
+	event.shaped('1x minecraft:white_dye', ['B  ',' BB'], {B:'mekanism:dye_base'}).id('techopolis:white_dye')
+	
+	event.shaped('1x minecraft:orange_dye', ['BB','B '], {B:'mekanism:dye_base'}).id('techopolis:orange_dye')
+	event.shaped('1x minecraft:pink_dye', [' B ','B  ','  B'], {B:'mekanism:dye_base'}).id('techopolis:pink_dye') 
+	event.shaped('1x minecraft:yellow_dye', ['B B',' B '], {B:'mekanism:dye_base'}).id('techopolis:yellow_dye')
+	event.shaped('1x minecraft:lime_dye', [' B','BB'], {B:'mekanism:dye_base'}).id('techopolis:lime_dye')
+	
+	event.shaped('1x minecraft:magenta_dye', ['B','B', 'B'], {B:'mekanism:dye_base'}).id('techopolis:magenta_dye')
+	event.shaped('1x minecraft:gray_dye', ['B ',' B', ' B'], {B:'mekanism:dye_base'}).id('techopolis:gray_dye')
+	event.shaped('1x minecraft:light_gray_dye', ['B ','B ', ' B'], {B:'mekanism:dye_base'}).id('techopolis:light_gray_dye')
+	event.shaped('1x minecraft:cyan_dye', [' B','B ', ' B'], {B:'mekanism:dye_base'}).id('techopolis:cyan_dye')
+	event.shaped('1x minecraft:purple_dye', ['B  ',' B ', '  B'], {B:'mekanism:dye_base'}).id('techopolis:purple_dye')
+
+	event.shaped('1x minecraft:brown_dye', ['B B','   ', '  B'], {B:'mekanism:dye_base'}).id('techopolis:brown_dye')
+	event.shaped('1x minecraft:green_dye', ['  B','B  ', 'B  '], {B:'mekanism:dye_base'}).id('techopolis:green_dye')
+	event.shaped('1x minecraft:black_dye', ['B  ','   ', ' BB'], {B:'mekanism:dye_base'}).id('techopolis:black_dye')
+	event.shaped('1x minecraft:red_dye', ['  B','   ', 'B B'], {B:'mekanism:dye_base'}).id('techopolis:red_dye')
 
 	event.shapeless('4x minecraft:clay_ball', ['minecraft:clay']).id('techopolis:clay_ball')
 	event.shapeless('1x minecraft:wheat_seeds', ['minecraft:wheat']).id('techopolis:wheat_seeds')
@@ -19,6 +44,16 @@ ServerEvents.recipes(event => {
 
 	event.shaped('9x minecraft:furnace', ['CCC','C C','CCC'], {C:'compressium:cobblestone_1'}).id('techopolis:furnace_9')
 
+	//Custom Compressor Recipes
+
+	function quantumCompressor(input, output, catalyst, power, inputCount){
+		event.custom({ "type": "extendedcrafting:compressor", "powerCost": power, "inputCount": inputCount, "ingredient": { "item": input }, "catalyst": { "item": catalyst }, "result": { "item": output } })
+  	}
+  
+  	quantumCompressor('mekanism:dye_base', 'techopolis:quantum_compressed_dye', 'extendedcrafting:ultimate_catalyst', 100000, 1024)
+  	quantumCompressor('opolisutilities:b_bucks', 'techopolis:mod_mastery_bucks', 'techopolis:mod_mastery_papers', 100000, 128)
+  
+	
 	//Essence
 
 	event.shaped('1x essence:essence_station', ['III','IBI','III'], {I:iron_ingot, B:'essence:basic_ore_essence'}).id('essence:essence_station/essence_station')
@@ -84,6 +119,8 @@ ServerEvents.recipes(event => {
 
 	event.custom({"type":"immersiveengineering:bottling_machine","fluid":{"amount":200,"tag":"minecraft:lava"},"input":{"item":"minecraft:glass_bottle"},"results":[{"item":"techopolis:lava_bottle"}]})
 	event.custom({"type":"immersiveengineering:bottling_machine","fluid":{"amount":125,"tag":"forge:creosote"},"input":{"tag":"minecraft:planks"},"results":[{"item":"immersiveengineering:treated_wood_horizontal"}]})
+	
+	event.custom({"type":"immersiveengineering:bottling_machine","fluid":{"amount":1000,"tag":"forge:phenolic_resin"},"input":{"item":"techopolis:mod_mastery_papers"},"results":[{"item":"techopolis:mod_mastery_immersive"}]})
 
 	event.shaped('4x immersiveengineering:wirecoil_copper', ['CCC','CTC','CCC'], {C: copper_ingot, T: stick}).id('techopolis:additional_copper_wire_recipe')
 	event.shaped('1x immersiveengineering:mold_plate', ['SSS','S S','SSS'], {S: steel_ingot}).id('techopolis:mold_plate')
@@ -153,8 +190,10 @@ ServerEvents.recipes(event => {
 	
 	//Thermal
 
-	event.custom({"type": "thermal:pyrolyzer","ingredient": {"item": "minecraft:coal"},"result": [{"item": "immersiveengineering:coal_coke"},{"item": "thermal:tar","chance": 0.25},{"fluid": "thermal:creosote","amount": 250}],"experience": 0.15}).id('thermal:machines/pyrolyzer/pyrolyzer_coal')
+	event.custom({"type": "thermal:pyrolyzer","ingredient": {"item": "minecraft:coal"},"result": [{"item": "immersiveengineering:coal_coke"},{"item": "thermal:tar","chance": 0.25},{"fluid": "immersiveengineering:creosote","amount": 250}],"experience": 0.15}).id('thermal:machines/pyrolyzer/pyrolyzer_coal')
 	event.custom({"type": "thermal:pyrolyzer","ingredient": {"item": "thermal:bitumen"},"result": [{"item": "immersiveengineering:coal_coke"},{"item": "thermal:tar","chance": 0.50},{"fluid": "thermal:heavy_oil","amount": 50}], "energy":4000, "experience": 0.15}).id('thermal:machines/pyrolyzer/pyrolyzer_bitumen')
+	event.custom({"type": "thermal:pyrolyzer","ingredient": {"tag": "minecraft:logs"},"result": [{"item": "minecraft:charcoal"},{"fluid": "immersiveengineering:creosote","amount": 125}],"experience": 0.15}).id('thermal:machines/pyrolyzer/pyrolyzer_logs')
+
 
 	event.replaceInput({id: 'thermal:machine_frame'}, AlmostUnified.getPreferredItemForTag('forge:ingots/iron'), 'alltheores:silver_ingot')
 	event.replaceInput({id: 'thermal:machine_frame'}, AlmostUnified.getPreferredItemForTag('forge:gears/tin'), '#forge:gears/electrum')
@@ -163,6 +202,9 @@ ServerEvents.recipes(event => {
 	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "minecraft:sand","count": 1}],"result": [{"item": "minecraft:glass","count": 1}],"energy": 800}).id('techopolis:machines/smelter/glass')
 	event.custom({"type": "thermal:smelter","ingredients": [{"item": "minecraft:stone","count": 1}],"result": [{"item": "minecraft:smooth_stone","count": 1}],"energy": 800}).id('techopolis:machines/smelter/smooth_stone')
 	event.custom({"type": "thermal:smelter","ingredient": {"tag": "forge:dusts/osmium"},"result": [{"item": "alltheores:osmium_ingot","count": 1}],"energy_mod": 0.5})
+
+	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "forge:gears/diamond","count": 8},{"value": [{"item": "thermal:upgrade_augment_3"}],"count": 6},{"item": "techopolis:mod_mastery_papers",
+			"count": 1}],"result": [{"item": "techopolis:mod_mastery_thermal","count": 1}],"energy": 8000}).id('thermal:mod_mastery_thermal')
 
 	event.custom({"type": "thermal:smelter","ingredients": [{"tag": "forge:dusts/silver","count": 1},{"value": [{"tag": "forge:dusts/tin"}],"count": 3},{"item": "techopolis:advanced_technium_ingot",
 			"count": 1}],"result": [{"item": "alltheores:lumium_ingot","count": 4}],"energy": 12000}).id('thermal:machines/smelter/smelter_alloy_lumium')
@@ -213,12 +255,17 @@ ServerEvents.recipes(event => {
 	event.custom({"type": "thermal:pulverizer","ingredient": {"item": "techopolis:crystal_ore"},"result": [{"item": "techopolis:crystalline","count": 1}],"energy_mod": 0.5})
 	event.custom({"type": "thermal:smelter","ingredient": {"tag": "forge:ores/peridot"},"result": [{"item": "alltheores:peridot","chance": 1.5},{"item": "thermal:rich_slag","chance": 0.15}],"experience": 0.5})
 
+	event.custom({"type":"mekanism:injecting","chemicalInput":{"amount":1,"gas":"mekanism:hydrogen_chloride"},"itemInput":{"ingredient":{"tag":"forge:ores/dye"}},"output":{"count":8,"item":"mekanism:dye_base"}})
+
 	//Mekanism
 
 	event.replaceInput({id: 'mekanism:steel_casing'}, 'alltheores:osmium_ingot', elite_technium)
 	event.replaceInput({ output: "mekanism:steel_casing" }, "#forge:ingots/osmium", elite_technium)
 	event.custom({"type":"mekanism:metallurgic_infusing","chemicalInput":{"amount":10,"tag":"mekanism:redstone"},"itemInput":{"ingredient":{"item":"techopolis:infused_crystalline"}},"output":{"item":"mekanism:alloy_infused"}}).id('mekanism:metallurgic_infusing/alloy/infused')
 	event.custom({"type":"mekanism:enriching","input":{"ingredient":{"item":"minecraft:polished_basalt"}},"output":{"item":"ae2:sky_stone_block"}}).id('techopolis:sky_stone')
+	event.custom({type:"mekanism:oxidizing",input:{"ingredient":{"item":"alltheores:uranium_ingot"}},"output":{"amount":200,"gas":"mekanism:nuclear_waste"}}).id('techopolis:nuclear_waste')
+	event.custom({type:"mekanism:oxidizing",input:{"ingredient":{"item":"powah:uraninite"}},"output":{"amount":500,"gas":"mekanism:nuclear_waste"}}).id('techopolis:nuclear_waste')
+
 
 	//Powah
 
@@ -229,7 +276,13 @@ ServerEvents.recipes(event => {
 	//Reseach Papers (ores + quest progression)
 
 	event.shaped('techopolis:blank_research_papers', ['PPP','P P','PPP'], {P:'minecraft:paper'}).id('techopolis:research_papers')
-
+	event.shaped('techopolis:mod_mastery_papers', ['PPP','PTP','PPP'], {P:'minecraft:paper', T:voided_technium}).id('techopolis:mastery_papers')
+	event.shaped('techopolis:mod_mastery_flux', ['PPP','PTP','PPP'], {P:'fluxnetworks:flux_block', T:'techopolis:mod_mastery_papers'}).id('techopolis:mod_mastery_flux')
+	event.shaped('techopolis:mod_mastery_waystones', ['PPP','PTP','PPP'], {P:'waystones:warp_stone', T:'techopolis:mod_mastery_papers'}).id('techopolis:mod_mastery_waystones')
+	event.shaped('techopolis:mod_mastery_beyond', ['CPC','PTP','CPC'], {C:'#forge:storage_blocks/calorite', P:'beyond_earth:rover', T:'techopolis:mod_mastery_papers'}).id('techopolis:mod_mastery_beyond')
+		
+	event.shaped('techopolis:mod_mastery_digital', ['PPP','PTP','PPP'], {P:'extrastorage:storagepart_256k', T:'techopolis:mod_mastery_papers'}).id('techopolis:mod_mastery_digital_1')
+	event.shaped('techopolis:mod_mastery_digital', ['PPP','PTP','PPP'], {P:'ae2:cell_component_256k', T:'techopolis:mod_mastery_papers'}).id('techopolis:mod_mastery_digital_2')
 
 	event.shaped('techopolis:research_papers_copper_and_tin', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/coal', L:'#forge:storage_blocks/lapis'}).id('techopolis:rp_copper_and_tin')
 	event.shaped('techopolis:research_papers_iron_and_aluminum', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/bronze', L:basic_technium}).id('techopolis:rp_iron_and_alumium')	
@@ -247,6 +300,8 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_uranium', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'mekanism:alloy_atomic', L:elite_technium}).id('techopolis:rp_uranium')
 	event.shaped('techopolis:research_papers_debris', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:netherrack', L:ultimate_technium}).id('techopolis:rp_debris')
 	event.shaped('techopolis:research_papers_nether', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'techopolis:lava_bottle', L:ultimate_technium}).id('techopolis:rp_nether')
+	event.shaped('techopolis:research_papers_dye_ore', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:blue_dye', L:advanced_technium}).id('techopolis:rp_dye_ore')
+	event.shaped('techopolis:research_papers_fluorite', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:nether_star', L:voided_technium}).id('techopolis:rp_fluorite')
 	
 	
 	event.shaped('techopolis:research_papers_waystones', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/redstone', L: '#forge:plates/iron'}).id('techopolis:rp_waystones')
@@ -262,6 +317,12 @@ ServerEvents.recipes(event => {
 	event.shaped('techopolis:research_papers_laserio', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:elite_technium, L: '#forge:storage_blocks/redstone'}).id('techopolis:rp_laserio')
 	event.shaped('techopolis:research_papers_xnet', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'#forge:storage_blocks/redstone', L: elite_technium}).id('techopolis:rp_xnet')
 	event.shaped('techopolis:research_papers_beyond_earth', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C:'minecraft:beacon', L: hellish_technium}).id('techopolis:rp_beyond_earth')
+	event.shaped('techopolis:research_papers_iron_chests', ['CLC','LPL','CLC'], {P:'techopolis:blank_research_papers', C: chest, L: basic_technium}).id('techopolis:rp_iron_chests')
+	
+	//Mastery
+
+	event.shaped('techopolis:mod_mastery_compressium', ['CCC','CPC','CCC'], {C:'compressium:cobblestone_9', P:'techopolis:mod_mastery_papers'}).id('techopolis:mm_compressium')
+	event.shaped('techopolis:mod_mastery_mekanism', [' C ','CPC',' C '], {C:'mekanism:quantum_entangloporter', P:'techopolis:mod_mastery_papers'}).id('techopolis:mm_mekanism')
 
 	//Reseach Papers (mods)
 
@@ -301,6 +362,9 @@ ServerEvents.recipes(event => {
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/ruby","minerTier": 6})
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/sapphire","minerTier": 6})
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/peridot","minerTier": 6})
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/fluorite","minerTier": 8})
+
+	event.custom({type: "miners:miner_blocks",blockTag: "forge:ores/dye","minerTier": 5})
 
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:sandstone/colorless","minerTier": 6})
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:storage_blocks/clay","minerTier": 4})
@@ -308,10 +372,20 @@ ServerEvents.recipes(event => {
 	event.custom({type: "miners:miner_blocks",blockTag: "forge:sand","minerTier": 4})
 	event.custom({type: "miners:miner_blocks",blockTag: "minecraft:dirt","minerTier": 3})
 
+	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:cobblestone_3","minerTier": 4})
+	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:cobblestone_4","minerTier": 5})
+	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:cobblestone_5","minerTier": 6})
+	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:cobblestone_6","minerTier": 7})
+	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:cobblestone_7","minerTier": 8})
+	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:cobblestone_8","minerTier": 9})
+	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:cobblestone_9","minerTier": 10})
+
 	event.custom({type: "miners:miner_blocks",blockTag: "techopolis:essence_ore","minerTier": 8})
 	event.custom({type: "miners:fluid_absorber",fluid: "beyond_earth:oil"})
 	event.custom({type: "miners:fluid_absorber",fluid: "immersiveengineering:plantoil"})
 	event.custom({type: "miners:fluid_absorber",fluid: "immersiveengineering:ethanol"})
+
+
 
 	//Beyond Earth
 
@@ -338,6 +412,7 @@ ServerEvents.recipes(event => {
 	event.replaceInput({id: 'angelring:diamond_ring'}, 'minecraft:elytra', '#forge:gears/diamond')
 	event.replaceInput({id: 'angelring:diamond_ring'}, 'minecraft:ghast_tear', elite_technium)
 	event.replaceInput({id: 'thermal:augments/upgrade_augment_2'}, 'minecraft:quartz', advanced_technium)
+	event.replaceInput({id: 'xnet:controller'}, 'minecraft:comparator', elite_technium)
 
 
 	//Metal press and servo press recipes
@@ -388,7 +463,48 @@ ServerEvents.recipes(event => {
 	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/aluminum","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:aluminum_gear"}]})
 	event.custom({"type": "thermal:press","ingredients": [{"tag": "forge:ingots/brass","count": 4},{"item": "thermal:press_gear_die"}],"result": [{"item": "alltheores:brass_gear"}]})
 
+	//Ingots From Dusts Mek and Thermal
 
+	function oresSmelting (types){
+
+	event.custom({"type":"mekanism:smelting","input":{"amount":2,"ingredient":{"tag":`forge:dusts/${types}`}},"output":AlmostUnified.getPreferredItemForTag(`forge:ingots/${types}`)}).id(`techopolis:mekanism/smelter/${types}_to_ingot`)
+	event.custom({"type":"thermal:furnace","ingredient": {"tag": `forge:dusts/${types}`,"count": 2} ,"result": AlmostUnified.getPreferredItemForTag(`forge:ingots/${types}`),"experience": 0.3,"energy_mod": 2.0}).id(`techopolis:thermal/smelter/${types}_to_ingot`)
+	}
+
+	oresSmelting ('iron')
+	oresSmelting ('osmium')
+	oresSmelting ('gold')
+	oresSmelting ('aluminum')
+	oresSmelting ('lead')
+	oresSmelting ('nickel')
+	oresSmelting ('platinum')
+	oresSmelting ('silver')
+	oresSmelting ('tin')
+	oresSmelting ('uranium')
+	oresSmelting ('zinc')
+	oresSmelting ('iridium')
+	oresSmelting ('bronze')
+	oresSmelting ('enderium')
+	oresSmelting ('luminum')
+	oresSmelting ('electrum')
+	
+
+
+	function gemEnderPulverEnrich (types, outputItem){
+
+	event.custom({"type":"mekanism:enriching","input":{"amount":2,"ingredient":{"tag":`forge:ores/${types}`}},"output": {"item": outputItem}}).id(`techopolis:mekanism/enriching/${types}`)
+	event.custom({"type": "thermal:pulverizer","ingredient": {"tag": `forge:ores/${types}`, count: 2},"result": [{"item": outputItem,"count": 1}],"energy_mod": 0.5}).id(`techopolis:thermal/pulverizer/${types}`)
+	}
+
+	gemEnderPulverEnrich ('ender', 'opolisutilities:ender_pearl_fragment')
+	
+	function gemEssencePulverEnrich (types, outputItem){
+
+		event.custom({"type":"mekanism:enriching","input":{"amount":1,"ingredient":{"tag":`forge:ores/${types}`}},"output": {"item": outputItem, "count": 5}}).id(`techopolis:mekanism/enriching/${types}`)
+		event.custom({"type": "thermal:pulverizer","ingredient": {"tag": `forge:ores/${types}`, count: 1},"result": [{"item": outputItem,"count": 5}],"energy_mod": 0.5}).id(`techopolis:thermal/pulverizer/${types}`)
+	}
+	gemEssencePulverEnrich ('essence', 'essence:basic_ore_essence')
+	gemEssencePulverEnrich ('dye', 'techopolis:dye_base')
 
 	//Recipe Remove
 
@@ -432,6 +548,7 @@ ServerEvents.recipes(event => {
 	event.remove({id:'thermal:lumium_dust_4'})
 	event.remove({id:'alltheores:lumium_dust_from_alloy_blending'})
 	event.remove({id:'/thermal:parts//'})
+	event.remove({id:'mekanism:dye_base'})
 
 
 

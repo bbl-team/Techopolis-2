@@ -34,10 +34,10 @@ ServerEvents.recipes(event => {
 
     event.shaped('1x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: basic_technium}).id('techopolis:b_bucks_1').stage('b_bucks_1')
     event.shaped('4x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: advanced_technium}).id('techopolis:b_bucks_2').stage('b_bucks_2')
-    event.shaped('8x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: elite_technium}).id('techopolis:b_bucks_3').stage('b_bucks_3')
-    event.shaped('12x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: ultimate_technium}).id('techopolis:b_bucks_4').stage('b_bucks_4')
-    event.shaped('16x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: hellish_technium}).id('techopolis:b_bucks_5').stage('b_bucks_5')
-    event.shaped('20x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: voided_technium}).id('techopolis:b_bucks_6').stage('b_bucks_6')
+    event.shaped('7x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: elite_technium}).id('techopolis:b_bucks_3').stage('b_bucks_3')
+    event.shaped('10x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: ultimate_technium}).id('techopolis:b_bucks_4').stage('b_bucks_4')
+    event.shaped('50x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: hellish_technium}).id('techopolis:b_bucks_5').stage('b_bucks_5')
+    event.shaped('64x opolisutilities:b_bucks', ['BBB','BTB','BBB'], {B:bronze_ingot, T: voided_technium}).id('techopolis:b_bucks_6').stage('b_bucks_6')
 
 
 //World Exclusive recipes
@@ -155,6 +155,7 @@ ServerEvents.recipes(event => {
     addStageByMod("elevators", "elevatorid")
     addStageByMod("ender_storage", "enderstorage")
     addStageByMod("chipped", "chipped")
+    addStageByMod("iron_chests", "ironchest")
 
     addStageByMod("ae2", "appmek")
     addStageByMod("ae2", "ae2wtlib")

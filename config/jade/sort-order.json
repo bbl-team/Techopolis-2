@@ -91,10 +91,6 @@
   "beyond_earth:entity": null,
   "mcjtylib:jadeaddons": null,
   "waystones:waystone": null,
-  "mekanism:data_provider": null,
-  "mekanism:entity_data_provider": null,
-  "mekanism:tooltip_renderer": null,
-  "mekanism:remove_builtin": null,
   "minecraft:fluid": null,
   "immersiveengineering:hemp": null,
   "immersiveengineering:multiblock_icon": null,
@@ -147,5 +143,9 @@
   "ae2:part_name": null,
   "ae2:part_icon": null,
   "ae2:part_tooltip": null,
-  "ae2:part_mod_name": null
+  "ae2:part_mod_name": null,
+  "mekanism:data_provider": null,
+  "mekanism:entity_data_provider": null,
+  "mekanism:tooltip_renderer": null,
+  "mekanism:remove_builtin": null
 }

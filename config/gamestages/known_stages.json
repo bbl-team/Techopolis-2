@@ -27,7 +27,7 @@
  "b_bucks_2",
  "b_bucks_3",
  "b_bucks_4",
- "b_bucks_5",;
+ "b_bucks_5",
  "b_bucks_6",
  "nether",
  "debris",
@@ -36,6 +36,7 @@
  "null",
  "villager_trades",
  "essence",
- "chipped"
+ "chipped",
+ "iron_chests"
 
 ]

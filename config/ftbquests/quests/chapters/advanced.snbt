@@ -281,6 +281,29 @@
 				player_command: false
 			}]
 		}
+		{
+			x: 3.5d
+			y: -0.5d
+			shape: "square"
+			subtitle: "Allows the purchasing of dye ore"
+			dependencies: ["2509E345839FFA86"]
+			id: "3968D1D737126E9F"
+			tasks: [
+				{
+					id: "783EC86332B1BF38"
+					type: "item"
+					item: "techopolis:research_papers_dye_ore"
+					consume_items: true
+				}
+				{
+					id: "44ED79DA753BBA8D"
+					type: "item"
+					item: "opolisutilities:b_bucks"
+					count: 8L
+					consume_items: true
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }

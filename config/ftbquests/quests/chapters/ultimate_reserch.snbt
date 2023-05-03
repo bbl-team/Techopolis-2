@@ -118,6 +118,7 @@
 			y: -0.5d
 			shape: "square"
 			subtitle: "Unlocks a crafting recipe for Tech Bucks"
+			dependencies: ["1CA69C7B4695EA81"]
 			id: "3CBDCA222A5B8482"
 			tasks: [
 				{
@@ -177,6 +178,7 @@
 			y: -0.5d
 			shape: "square"
 			subtitle: "Unlocks Ender Storage Mod"
+			dependencies: ["28612D6665C7F943"]
 			id: "3712EB746A81925D"
 			tasks: [
 				{
