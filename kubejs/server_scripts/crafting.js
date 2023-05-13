@@ -181,6 +181,9 @@ ServerEvents.recipes(event => {
 	event.replaceInput({mod: 'elevatorid'}, 'minecraft:ender_pearl', basic_technium)
 	event.replaceInput({mod: 'constructionwand'}, 'minecraft:diamond', basic_technium)
 	event.replaceInput({mod: 'constructionwand'}, 'minecraft:iron_ingot', bronze_ingot)
+	event.replaceInput({mod: 'torchmaster'}, 'minecraft:diamond', basic_technium)
+	event.replaceInput({mod: 'torchmaster'}, 'minecraft:gold_ingot', basic_technium)
+	event.replaceInput({mod: 'torchmaster'}, 'minecraft:glowstone_dust', 'minecraft:torch')
 
 	event.replaceInput({id: 'thermal:machine_chiller'}, 'minecraft:packed_ice', advanced_technium)
 	event.replaceInput({id: 'immersiveengineering:crafting/dynamo'}, 'immersiveengineering:component_iron', '#forge:ingots/aluminum')
@@ -384,6 +387,9 @@ ServerEvents.recipes(event => {
 	event.custom({type: "miners:fluid_absorber",fluid: "beyond_earth:oil"})
 	event.custom({type: "miners:fluid_absorber",fluid: "immersiveengineering:plantoil"})
 	event.custom({type: "miners:fluid_absorber",fluid: "immersiveengineering:ethanol"})
+
+	event.custom({type: "miners:cap_blocks","block": "minecraft:beacon","tickRate": 10}).id('miners:cap_blocks/beacon')
+	event.custom({type: "miners:cap_blocks","block": "forge:storage_blocks/netherite","tickRate": 20}).id('miners:cap_blocks/netherite')
 
 
 
