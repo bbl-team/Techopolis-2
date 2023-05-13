@@ -3,7 +3,7 @@
     "version": "1.19.2",
     "modLoaders": [
       {
-        "id": "forge-43.2.7",
+        "id": "forge-43.2.11",
         "primary": true
       }
     ]
@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Techopolis 2",
-  "version": "B9.0",
+  "version": "1.0",
   "author": "",
   "files": [
     {
@@ -46,7 +46,7 @@
     },
     {
       "projectID": 239197,
-      "fileID": 4462134,
+      "fileID": 4528883,
       "required": true
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "projectID": 309927,
-      "fileID": 4493912,
+      "fileID": 4523009,
       "required": true
     },
     {
@@ -166,12 +166,12 @@
     },
     {
       "projectID": 410295,
-      "fileID": 4136430,
+      "fileID": 4514910,
       "required": true
     },
     {
       "projectID": 633823,
-      "fileID": 4502464,
+      "fileID": 4522173,
       "required": true
     },
     {
@@ -241,7 +241,7 @@
     },
     {
       "projectID": 289412,
-      "fileID": 4478932,
+      "fileID": 4530022,
       "required": true
     },
     {
@@ -251,7 +251,7 @@
     },
     {
       "projectID": 32274,
-      "fileID": 4473123,
+      "fileID": 4532924,
       "required": true
     },
     {
@@ -311,7 +311,7 @@
     },
     {
       "projectID": 419699,
-      "fileID": 4476084,
+      "fileID": 4521273,
       "required": true
     },
     {
@@ -331,7 +331,7 @@
     },
     {
       "projectID": 367706,
-      "fileID": 4483445,
+      "fileID": 4503132,
       "required": true
     },
     {
@@ -356,12 +356,12 @@
     },
     {
       "projectID": 404465,
-      "fileID": 4478919,
+      "fileID": 4500548,
       "required": true
     },
     {
       "projectID": 639186,
-      "fileID": 4120760,
+      "fileID": 4533873,
       "required": true
     },
     {
@@ -396,7 +396,7 @@
     },
     {
       "projectID": 314906,
-      "fileID": 4478935,
+      "fileID": 4496315,
       "required": true
     },
     {
@@ -435,6 +435,11 @@
       "required": true
     },
     {
+      "projectID": 254268,
+      "fileID": 3965528,
+      "required": true
+    },
+    {
       "projectID": 570050,
       "fileID": 4446369,
       "required": true
@@ -451,7 +456,7 @@
     },
     {
       "projectID": 585546,
-      "fileID": 4487686,
+      "fileID": 4528907,
       "required": true
     },
     {
@@ -476,7 +481,7 @@
     },
     {
       "projectID": 633483,
-      "fileID": 4489347,
+      "fileID": 4525233,
       "required": true
     },
     {
@@ -491,7 +496,7 @@
     },
     {
       "projectID": 233071,
-      "fileID": 4412675,
+      "fileID": 4513858,
       "required": true
     },
     {
@@ -501,7 +506,7 @@
     },
     {
       "projectID": 446691,
-      "fileID": 4503848,
+      "fileID": 4511804,
       "required": true
     },
     {
